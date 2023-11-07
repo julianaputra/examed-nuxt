@@ -1,0 +1,216 @@
+//=======================================================//
+//                                                       //
+// Timedoor CSS Preset Library                           //
+// v. 2.1.1                                              //
+// last update : 28 / 06 / 2023                          //
+//                                                       //
+//=======================================================//
+//                                                       //
+// Table of Content                                      //
+//                                                       //
+// COL 20% ------------------------------------- [COL20] //
+// EFFECT ------------------------------------- [EFFECT] //
+// SPACING ------------------------------------- [SPACE] //
+// FONT SIZE ------------------------------------ [FONT] //
+// RATIO CLASS --------------------------------- [RATIO] //
+//                                                       //
+//=======================================================//
+
+//=======================================================//
+// COL 20% ------------------------------------- [COL20] //
+//=======================================================//
+
+.col-20 {
+    flex: 0 0 20%;
+    max-width: 20%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+@each $short, $mediaWidth in (sm,576px), (md,768px), (lg,992px), (xl,1200px) {
+    @media (min-width: #{$mediaWidth}) {
+        .col-#{$short}-20 {
+            flex: 0 0 20%;
+            max-width: 20%;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+    }
+}
+
+//=======================================================//
+// EFFECT ------------------------------------- [EFFECT] //
+//=======================================================//
+
+$shimmer-background: #ddd !default;
+$shimmer-size: 25px !default;
+$shimmer-duration: 1s !default;
+$shimmer-color: rgba(255,255,255,.6) !default;
+
+.effect {
+    position: relative;
+    overflow: hidden;
+    &--ripple {
+        @extend .effect;
+    }
+    &--shimmer {
+        @extend .effect;
+        &:before {
+            content: "";
+            position: absolute;
+            z-index: 25;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background-color: $shimmer-background;
+        }
+        &:after {
+            content: "";
+            position: absolute;
+            z-index: 25;
+            top: -25%;
+            width: $shimmer-size;
+            height: 150%;
+            background-color: $shimmer-color;
+            animation: shimmer $shimmer-duration;
+            animation-iteration-count: infinite;
+            transform: rotate(15deg);
+        }
+    }
+}
+
+@keyframes ripple {
+    from {
+        opacity: 1;
+        transform: scale(0);
+    }
+    to {
+        opacity: 0;
+        transform: scale(2);
+    }
+}
+
+@keyframes shimmer {
+    from {
+        left: -25%;
+    }
+    to {
+        left: 125%;
+    }
+}
+
+$ripple-color-light: rgba(255, 255, 255, 0.15) !default;
+$ripple-color-dark: rgba(0, 0, 0, 0.1) !default;
+
+.ripple-container {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 0;
+    width: 0;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+.ripple-effect {
+    margin-top: 0px;
+    margin-left: 0px;
+    width: 1px;
+    height: 1px;
+    background-color: $ripple-color-light;
+    transition: all 0.4s cubic-bezier(0.4, 0.0, 0.2, 1);
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+.ripple-effect.light {
+    background-color: $ripple-color-light;
+}
+
+.ripple-effect.dark {
+    background-color: $ripple-color-dark;
+}
+
+//=======================================================//
+// SPACING ------------------------------------- [SPACE] //
+//=======================================================//
+
+$spacingMap: (
+    none: all,
+    x: duo,
+    y: duo,
+    t: top,
+    r: right,
+    b: bottom,
+    l: left,
+);
+
+$spacingStart: 0;
+$spacingIncrement: 5 !default;
+$spacingTarget: 100 !default;
+$i: $spacingStart;
+
+@each $short, $direction in $spacingMap {
+    @if ($short == none) {
+        @while $i <= $spacingTarget {
+            .m-#{$i}px {
+                margin: #{$i}px;
+            }
+            .p-#{$i}px {
+                padding: #{$i}px;
+            }
+            $i: $i + $spacingIncrement;
+        }
+    }
+    @if ( $short == x ) {
+        @while $i <= $spacingTarget {
+            .m#{$short}-#{$i}px {
+                margin-right: #{$i}px;
+                margin-left: #{$i}px;
+            }
+            .p#{$short}-#{$i}px {
+                padding-right: #{$i}px;
+                padding-left: #{$i}px;
+            }
+            $i: $i + $spacingIncrement;
+        }
+    } 
+    @if ( $short == y ) {
+        @while $i <= $spacingTarget {
+            .m#{$short}-#{$i}px {
+                margin-top: #{$i}px;
+                margin-bottom: #{$i}px;
+            }
+            .p#{$short}-#{$i}px {
+                padding-top: #{$i}px;
+                padding-bottom: #{$i}px;
+            }
+            $i: $i + $spacingIncrement;
+        }
+    }
+    @while $i <= $spacingTarget {
+        .m#{$short}-#{$i}px {
+            margin-#{$direction}: #{$i}px;
+        }
+        .p#{$short}-#{$i}px {
+            padding-#{$direction}: #{$i}px;
+        }
+        $i: $i + $spacingIncrement;
+    } 
+}
+
+//=======================================================//
+// FONT SIZE ------------------------------------ [FONT] //
+//=======================================================//
+
+$fontSize: 8 !default;
+$fontTarget: 72 !default;
+$fontIncrement: 2 !default;
+
+@while $fontSize <= $fontTarget {
+    .font#{$fontSize} {
+        font-size: #{$fontSize}px;
+    }
+    $fontSize: $fontSize + $fontIncrement;
+}

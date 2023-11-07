@@ -1,0 +1,132 @@
+@use 'sass:math';
+@use 'sass:map';
+@use '_variable.scss' as *;
+@use '_function.scss' as *;
+
+// |‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾| //
+// | tmdrMIX v.1.2.1                         | //
+// | last update : 28 / 06 / 2023            | //
+// |_________________________________________| //
+
+// transform with fallback
+@mixin transform($declaration) {
+    -webkit-transform: #{$declaration};
+    -moz-transform: #{$declaration};
+    -ms-transform: #{$declaration};
+    -o-transform: #{$declaration};
+    transform: #{$declaration};
+}
+
+// transition with fallback
+@mixin transition($option) {
+    -webkit-transition: #{$option};
+    -moz-transition: #{$option};
+    -ms-transition: #{$option};
+    -o-transition: #{$option};
+    transition: #{$option};
+}
+
+// display flex with fallback
+@mixin displayFlex {
+    display: block;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+// make ratio classes
+@mixin imageRatio(
+    $imageWidth,
+    $imageHeight,
+    $maxWidth: false,
+    $objectFit: cover,
+    $className: 'image'
+) {
+    &__#{$className}-container {
+        position: relative;
+        width: 100%;
+        @if ($maxWidth) {
+            display: inline-block;
+            @if ($maxWidth == true) {
+                max-width: #{$imageWidth}px;
+            } @else {
+                max-width: #{$maxWidth}px;
+            }
+        } @else {
+            display: block;
+        }
+        &:before {
+            content: '';
+            display: block;
+            padding-top: math.div($imageHeight, $imageWidth) * 100%;
+        }
+
+        .ratio-item {
+            object-fit: $objectFit;
+        }
+    }
+}
+
+// text elypsis mixin
+@mixin elypsis($font-size: 16, $lines-to-show: 1, $line-height: 1.4) {
+    display: block; /* Fallback for non-webkit */
+    display: -webkit-box;
+    height: #{$font-size * $line-height * $lines-to-show}px; /* Fallback for non-webkit */
+    font-size: #{$font-size}px;
+    line-height: $line-height;
+    -webkit-line-clamp: $lines-to-show;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+// element state mixin
+@mixin fullState {
+    &:hover,
+    &:active,
+    &:focus,
+    &:active:hover,
+    &:active:focus {
+        @content;
+    }
+}
+
+// responsive Font Size
+@mixin fontSize($fontName, $fontSize, $useRem: true) {
+    @each $breakpoint, $value in map.get($fontSizes, $fontName, $fontSize) {
+        @if ($breakpoint == 'default') {
+            @each $property,
+                $value in map.get($fontSizes, $fontName, $fontSize, default)
+            {
+                @if ($useRem == true and $property == 'font-size') {
+                    font-size: remSize($value);
+                } @else if ($useRem == false and $property == 'font-size') {
+                    font-size: #{$value}px;
+                } @else {
+                    #{$property}: #{$value};
+                }
+            }
+        } @else {
+            @media screen and (max-width: #{$breakpoint}px ) {
+                @each $property,
+                    $value
+                        in map.get(
+                            $fontSizes,
+                            $fontName,
+                            $fontSize,
+                            $breakpoint
+                        )
+                {
+                    @if ($useRem == true and $property == 'font-size') {
+                        font-size: remSize($value);
+                    } @else if ($useRem == false and $property == 'font-size') {
+                        font-size: #{$value}px;
+                    } @else {
+                        #{$property}: #{$value};
+                    }
+                }
+            }
+        }
+    }
+}
