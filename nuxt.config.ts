@@ -47,7 +47,6 @@ export default defineNuxtConfig({
     ],
     vueI18n: './i18n.config.ts'
   },
-  components: [{ path: '~/components/layouts' }, { path: '~/components/ui' }],
   runtimeConfig: {
     public: {
       apiUrl: process.env.API_URL
