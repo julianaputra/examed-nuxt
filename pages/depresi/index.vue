@@ -5,7 +5,7 @@
         <UiBreadcrumbs :breadcrumbs="breadcrumbItem"></UiBreadcrumbs>
         <h1 class="title section__title">Depresi</h1>
         <div class="row">
-          <div class="col-lg-3">
+          <div class="col-lg-4 col-xxl-3">
             <UiCard :border="false">
               <template #title>Pilihan Menu</template>
               <template #content>
@@ -22,8 +22,8 @@
               </template>
             </UiCard>
           </div>
-          <div class="col-lg-9">
-            <TransitionGroup mode="out-in">
+          <div class="col-lg-8 col-xxl-9">
+            <Transition mode="out-in">
               <UiCard v-if="activeContent" title-size="small">
                 <template #title>{{ activeContent.title }}</template>
                 <template #content>
@@ -41,7 +41,7 @@
                   </div>
                 </template>
               </UiCard>
-            </TransitionGroup>
+            </Transition>
           </div>
         </div>
       </div>

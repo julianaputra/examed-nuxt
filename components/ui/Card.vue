@@ -22,7 +22,7 @@ const props = defineProps({
 })
 
 const className = computed(() => {
-  props.titleSize === 'small' ? 'heading--secondary' : 'heading'
+  return props.titleSize === 'small' ? 'heading--secondary' : 'heading'
 })
 </script>
 

@@ -26,13 +26,14 @@ const className = computed(() => {
   return props.variant === 'outline' ? 'themeBtn--outline' : 'themeBtn'
 })
 
-const emit = defineEmits(['click'])
+// const emit = defineEmits(['click'])
 </script>
 
 <style lang="scss" scoped>
 .themeBtn {
   position: relative;
-  min-width: 180px;
+  // min-width: 180px;
+  flex: 1 1 100%;
   text-align: center;
   padding: 15px 24px;
   border-radius: 12px;

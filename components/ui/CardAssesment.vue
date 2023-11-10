@@ -9,20 +9,39 @@
 
     <hr class="card__hr" />
     <div class="row justify-content-center">
-      <div class="col-lg-8">
-        <h3 class="card__subtitle" v-if="$slots.subtitle">
+      <div class="col-lg-10 col-xxl-8">
+        <h3 v-if="$slots.subtitle" :class="className">
           <slot name="subtitle"></slot>
         </h3>
-        <slot name="content"></slot>
+        <div class="card__body">
+          <slot name="content"></slot>
+        </div>
         <hr class="card__hr--bottom" />
-        <div class="card__buttons">
-          <UiButton variant="outline">Outline</UiButton>
-          <UiButton>Solid</UiButton>
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="card__buttons">
+              <!-- <UiButton variant="outline">Tidak</UiButton> -->
+              <UiButton>Lanjutkan</UiButton>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </template>
+
+<script setup lang="ts">
+const props = defineProps({
+  titleBig: {
+    type: Boolean,
+    default: false
+  }
+})
+
+const className = computed(() => {
+  return props.titleBig === true ? 'card__subtitle--big' : 'card__subtitle'
+})
+</script>
 
 <style lang="scss" scoped>
 .card {
@@ -51,11 +70,31 @@
     color: #122032;
     line-height: 1.4;
     margin-bottom: 24px;
+
+    &--big {
+      @extend .card__subtitle;
+      color: #c75c91;
+      font-size: 32px;
+      font-weight: 500;
+      margin-bottom: 32px;
+    }
   }
 
   &__back-icon {
     display: inline-block;
     margin-right: 8px;
+  }
+
+  &__body {
+    :slotted(ul, ol) {
+      padding-left: 28px;
+
+      li {
+        color: rgba(18, 32, 50, 0.8);
+        font-size: 18px;
+        font-weight: 400;
+      }
+    }
   }
 
   &__buttons {

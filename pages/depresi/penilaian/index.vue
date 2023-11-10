@@ -8,16 +8,23 @@
           <div class="col-lg-12">
             <UiCardAssesment>
               <template #title>Presentasi Umum Depresi</template>
-              <template #subtitle
-                >Apakah pasien tersebut pernah mengalami setidaknya satu dari
-                gejala inti depresi berikut selama minimal 2 minggu?</template
-              >
+              <template #subtitle>
+                Apakah pasien tersebut pernah mengalami setidaknya satu dari
+                gejala inti depresi berikut selama minimal 2 minggu?
+              </template>
               <template #content>
-                <UiCheckbox>Energi rendah, kelelahan, masalah tidur</UiCheckbox>
+                <ul>
+                  <li>Suasana hati tertekan yang terus-menerus</li>
+                  <li>
+                    Minat atau kesenangan yang sangat berkurang terhadap
+                    aktivitas
+                  </li>
+                </ul>
                 <UiCheckbox
                   >Beberapa gejala fisik yang persisten tanpa penyebab yang
                   jelas</UiCheckbox
                 >
+                <UiCheckbox>Energi rendah, kelelahan, masalah tidur</UiCheckbox>
                 <UiCheckbox
                   >Kesedihan terus-menerus atau suasana hati tertekan,
                   kecemasan</UiCheckbox

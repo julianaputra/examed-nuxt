@@ -19,6 +19,7 @@
   -ms-user-select: none;
   user-select: none;
   margin-bottom: 10px;
+  color: rgba(18, 32, 50, 0.8);
 }
 
 /* Hide the browser's default checkbox */
