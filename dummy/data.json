@@ -17,12 +17,24 @@
         "type": "link",
         "links": [
           {
+            "disabled": false,
             "title": "Presentasi Umum Depresi",
-            "to": "/"
+            "to": "/depresi/penilaian"
           },
           {
+            "disabled": false,
             "title": "STEP 1 : Menilai depresi",
-            "to": "/"
+            "to": "/depresi/penilaian"
+          },
+          {
+            "disabled": false,
+            "title": "STEP 2 : Apakah ada kemungkinan pasien mengalami gangguan mentai selain depresi",
+            "to": "/depresi/penilaian"
+          },
+          {
+            "disabled": true,
+            "title": "STEP 3: Menilai kondisi MNS yang terjadi bersamaan",
+            "to": "/depresi/penilaian"
           }
         ]
       }

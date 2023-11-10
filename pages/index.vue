@@ -1,6 +1,8 @@
 <template>
   <main>
-    <h1>Hello</h1>
+    <div class="container">
+      <nuxt-link to="/depresi" class="title">Click here</nuxt-link>
+    </div>
   </main>
 </template>
 

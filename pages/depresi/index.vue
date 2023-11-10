@@ -1,45 +1,46 @@
 <template>
   <main>
-    <section class="overview">
+    <section class="section overview">
       <div class="container">
-        <UiBreadcrumbs></UiBreadcrumbs>
-        <h1 class="title overview__title">Depresi</h1>
+        <UiBreadcrumbs :breadcrumbs="breadcrumbItem"></UiBreadcrumbs>
+        <h1 class="title section__title">Depresi</h1>
         <div class="row">
           <div class="col-lg-3">
-            <div class="overview__card">
-              <h2 class="heading">Pilihan Menu</h2>
-              <div class="overview__menu">
-                <UiMenuButton
-                  v-for="(menu, menuIndex) in menus"
-                  :key="`menu-${menuIndex}`"
-                  :icon="menu.icon"
-                  :class="{ active: activeMenu === menu.id }"
-                  @click="setActiveMenu(menu.id)"
-                  >{{ menu.title }}</UiMenuButton
-                >
-              </div>
-            </div>
+            <UiCard :border="false">
+              <template #title>Pilihan Menu</template>
+              <template #content>
+                <div class="overview__menu">
+                  <UiMenuButton
+                    v-for="(menu, menuIndex) in menus"
+                    :key="`menu-${menuIndex}`"
+                    :icon="menu.icon"
+                    :class="{ active: activeMenu === menu.id }"
+                    @click="setActiveMenu(menu.id)"
+                    >{{ menu.title }}</UiMenuButton
+                  >
+                </div>
+              </template>
+            </UiCard>
           </div>
           <div class="col-lg-9">
             <TransitionGroup mode="out-in">
-              <div v-if="activeContent" class="overview__card">
-                <h2 class="heading--secondary overview__subtitle">
-                  {{ activeContent.title }}
-                </h2>
-                <hr class="overview__hr" />
-                <div
-                  v-if="activeContent.content?.type == 'text'"
-                  class="paragraph"
-                  v-html="activeContent.content?.text"
-                ></div>
-                <div v-if="activeContent.content?.type == 'link'">
-                  <UiSelectionButton
-                    v-for="(link, linkIndex) in activeContent.content.links"
-                    :key="`menu-link-${linkIndex}`"
-                    :data="link"
-                  ></UiSelectionButton>
-                </div>
-              </div>
+              <UiCard v-if="activeContent" title-size="small">
+                <template #title>{{ activeContent.title }}</template>
+                <template #content>
+                  <div
+                    v-if="activeContent.content?.type == 'text'"
+                    class="paragraph"
+                    v-html="activeContent.content?.text"
+                  ></div>
+                  <div v-if="activeContent.content?.type == 'link'">
+                    <UiSelectionButton
+                      v-for="(link, linkIndex) in activeContent.content.links"
+                      :key="`menu-link-${linkIndex}`"
+                      :data="link"
+                    ></UiSelectionButton>
+                  </div>
+                </template>
+              </UiCard>
             </TransitionGroup>
           </div>
         </div>
@@ -55,6 +56,17 @@ definePageMeta({
   title: 'Home',
   description: 'This is homepage description'
 })
+
+const breadcrumbItem = ref([
+  {
+    title: 'Home',
+    to: '/'
+  },
+  {
+    title: 'Depresi',
+    to: '/depresi'
+  }
+])
 
 const menus = ref(dataJson.data)
 
@@ -79,24 +91,6 @@ const setActiveMenu = (e: any) => {
 
 <style lang="scss" scoped>
 .overview {
-  padding: 100px 0;
-
-  &__title {
-    margin-bottom: 40px;
-  }
-
-  &__card {
-    background-color: #fff;
-    padding: 40px;
-    border: 1px solid #e9e9e9;
-    border-radius: 14px;
-  }
-
-  &__hr {
-    margin: 24px 0;
-    color: rgba(19, 24, 44, 1);
-  }
-
   &__menu {
     display: flex;
     justify-content: center;

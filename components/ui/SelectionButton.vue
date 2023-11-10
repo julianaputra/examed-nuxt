@@ -1,10 +1,14 @@
 <template>
-  <Nuxt-link class="selection-button" :to="props.data.to">
+  <nuxt-link
+    :class="{ disabled: props.data.disabled === true }"
+    class="selection-button"
+    :to="props.data.to"
+  >
     <span class="selection-button__text"> {{ props.data.title }} </span>
     <div class="selection-button__arrow">
       <Icon name="basil:arrow-right-outline" width="32" height="32" />
     </div>
-  </Nuxt-link>
+  </nuxt-link>
 </template>
 <script setup lang="ts">
 const props = defineProps({
@@ -24,6 +28,11 @@ const props = defineProps({
   padding: 12px 0;
   margin-bottom: 12px;
   transition: 0.3s;
+
+  &.disabled {
+    pointer-events: none;
+    opacity: 0.3;
+  }
 
   &:hover {
     border-color: #303178;
