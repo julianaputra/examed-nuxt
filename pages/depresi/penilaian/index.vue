@@ -3,46 +3,48 @@
     <section class="section">
       <div class="container">
         <UiBreadcrumbs :breadcrumbs="breadcrumbItem"></UiBreadcrumbs>
-        <h1 class="title section__title">Penilaian</h1>
-        <div class="row">
-          <div class="col-lg-12">
-            <UiCardAssesment title-big>
-              <template #title>Presentasi Umum Depresi</template>
-              <template #subtitle>
-                Apakah pasien tersebut pernah mengalami setidaknya satu dari
-                gejala inti depresi berikut selama minimal 2 minggu?
-              </template>
-              <template #content>
-                <ul>
-                  <li>Suasana hati tertekan yang terus-menerus</li>
-                  <li>
-                    Minat atau kesenangan yang sangat berkurang terhadap
-                    aktivitas
-                  </li>
-                </ul>
+        <h1 class="title section__title">{{ penilaian.title }}</h1>
+        <Transition mode="out-in">
+          <UiCardAssesment
+            :key="activeQuestion?.id"
+            :title-big="activeQuestion?.isResult"
+          >
+            <template #title>{{ activeQuestion?.title }}</template>
+            <template #subtitle v-if="activeQuestion?.questions.title">
+              {{ activeQuestion?.questions.title }}
+            </template>
+            <template #content v-if="activeQuestion?.questions.content">
+              <div v-if="activeQuestion?.questions.type === 'checkbox'">
                 <UiCheckbox
-                  >Beberapa gejala fisik yang persisten tanpa penyebab yang
-                  jelas</UiCheckbox
+                  v-for="(q, qIndex) in activeQuestion.questions.content"
+                  :key="qIndex"
+                  >{{ q }}</UiCheckbox
                 >
-                <UiCheckbox>Energi rendah, kelelahan, masalah tidur</UiCheckbox>
-                <UiCheckbox
-                  >Kesedihan terus-menerus atau suasana hati tertekan,
-                  kecemasan</UiCheckbox
-                >
-                <UiCheckbox
-                  >Hilangnya minat atau kesenangan dalam aktivitas yang biasanya
-                  menyenangkan</UiCheckbox
-                >
-              </template>
-            </UiCardAssesment>
-          </div>
-        </div>
+              </div>
+              <div
+                v-if="activeQuestion?.questions.type === 'text'"
+                v-html="activeQuestion.questions.content"
+              ></div>
+            </template>
+            <template #footer>
+              <div v-if="activeQuestion?.answer" class="card__buttons">
+                <UiButton variant="outline">Tidak</UiButton>
+                <UiButton @click="nextQuestion">Ya</UiButton>
+              </div>
+              <div v-else class="card__buttons">
+                <UiButton @click="nextQuestion">Lanjutkan</UiButton>
+              </div>
+            </template>
+          </UiCardAssesment>
+        </Transition>
       </div>
     </section>
   </main>
 </template>
 
 <script setup lang="ts">
+import dataJson from '@/dummy/penilaian.json'
+
 const breadcrumbItem = ref([
   {
     title: 'Home',
@@ -57,4 +59,20 @@ const breadcrumbItem = ref([
     to: '/depresi/penilaian'
   }
 ])
+
+const penilaian = ref(dataJson.data)
+
+const questionId = ref(1)
+
+const activeQuestion = computed(() => {
+  // return penilaian.value.questions
+  const result = penilaian.value.questions.find((pn) => {
+    return pn.id === questionId.value
+  })
+  return result
+})
+
+const nextQuestion = () => {
+  questionId.value++
+}
 </script>

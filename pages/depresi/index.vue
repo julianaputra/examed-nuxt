@@ -24,15 +24,15 @@
           </div>
           <div class="col-lg-8 col-xxl-9">
             <Transition mode="out-in">
-              <UiCard v-if="activeContent" title-size="small">
-                <template #title>{{ activeContent.title }}</template>
+              <UiCard :key="activeContent?.id" title-size="small">
+                <template #title>{{ activeContent?.title }}</template>
                 <template #content>
                   <div
-                    v-if="activeContent.content?.type == 'text'"
+                    v-if="activeContent?.content.type == 'text'"
                     class="paragraph"
-                    v-html="activeContent.content?.text"
+                    v-html="activeContent?.content.text"
                   ></div>
-                  <div v-if="activeContent.content?.type == 'link'">
+                  <div v-if="activeContent?.content.type == 'link'">
                     <UiSelectionButton
                       v-for="(link, linkIndex) in activeContent.content.links"
                       :key="`menu-link-${linkIndex}`"
@@ -50,7 +50,7 @@
 </template>
 
 <script setup lang="ts">
-import dataJson from '../../dummy/data.json'
+import dataJson from '@/dummy/data.json'
 
 definePageMeta({
   title: 'Home',
@@ -81,11 +81,7 @@ const activeContent = computed(() => {
 })
 
 const setActiveMenu = (e: any) => {
-  activeMenu.value = 0
-
-  setTimeout(() => {
-    activeMenu.value = e
-  }, 300)
+  activeMenu.value = e
 }
 </script>
 

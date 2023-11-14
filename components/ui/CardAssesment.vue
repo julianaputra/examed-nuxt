@@ -13,16 +13,13 @@
         <h3 v-if="$slots.subtitle" :class="className">
           <slot name="subtitle"></slot>
         </h3>
-        <div class="card__body">
+        <div v-if="$slots.content" class="card__body">
           <slot name="content"></slot>
         </div>
         <hr class="card__hr--bottom" />
         <div class="row">
           <div class="col-lg-4">
-            <div class="card__buttons">
-              <UiButton variant="outline">Tidak</UiButton>
-              <UiButton to="/">Lanjutkan</UiButton>
-            </div>
+            <slot name="footer"></slot>
           </div>
         </div>
       </div>
@@ -85,8 +82,9 @@ const className = computed(() => {
     margin-right: 8px;
   }
 
-  &__body {
-    :slotted(ul, ol) {
+  :deep(*) &__body {
+    ul,
+    ol {
       padding-left: 28px;
 
       li {
@@ -97,7 +95,7 @@ const className = computed(() => {
     }
   }
 
-  &__buttons {
+  :deep(*) &__buttons {
     display: flex;
     gap: 12px;
   }

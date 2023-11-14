@@ -1,0 +1,144 @@
+{
+  "data": {
+    "id": 1,
+    "title": "Penilaian",
+    "questions": [
+      {
+        "id": 1,
+        "title": "Presentasi Umum Depresi",
+        "questions": {
+          "title": "",
+          "type": "checkbox",
+          "content": [
+            "Beberapa gejala fisik yang persisten tanpa penyebab yang jelas",
+            "Energi rendah, kelelahan, masalah tidur",
+            "Kesedihan terus-menerus atau suasana hati tertekan, kecemasan",
+            "Hilangnya minat atau kesenangan dalam aktivitas yang biasanya menyenangkan"
+          ]
+        },
+        "isResult": false,
+        "answer": false
+      },
+      {
+        "id": 2,
+        "title": "STEP 1 : Menilai depresi",
+        "questions": {
+          "title": "Apakah pasien tersebut pernah mengalami setidaknya satu dari gejala inti depresi berikut selama minimal 2 minggu?",
+          "type": "text",
+          "content": "<ul><li>Suasana hati tertekan yang terus-menerus</li><li>Minat atau kesenangan yang sangat berkurang terhadap aktivitas</li></ul>"
+        },
+        "isResult": false,
+        "answer": true
+      },
+      {
+        "id": 3,
+        "title": "STEP 1 : Menilai depresi",
+        "questions": {
+          "title": "Apakah pasien tersebut mengalami beberapa gejala tambahan berikut selama minimal 2 minggu:",
+          "type": "checkbox",
+          "content": [
+            "Tidur terganggu atau terlalu banyak tidur",
+            "Perubahan nafsu makan atau berat badan yang signifikan (menurun atau menambah)",
+            "Keyakinan akan ketidakberhargaan atau rasa bersalah yang berlebihan",
+            "Kelelahan atau kehilangan energi",
+            "Konsentrasi berkurang",
+            "Keragu-raguan",
+            "Agitasi atau kegelisahan fisik yang terlihat",
+            "Berbicara atau bergerak lebih lambat dari biasanya",
+            "Keputusasaan",
+            "Pikiran atau tindakan bunuh diri"
+          ]
+        },
+        "isResult": false,
+        "answer": true
+      },
+      {
+        "id": 4,
+        "title": "STEP 1 : Menilai depresi",
+        "questions": {
+          "title": "Apakah pasien tersebut mengalami kesulitan besar dalam menjalankan fungsi sehari-hari dalam bidang pribadi, keluarga, sosial, pendidikan, pekerjaan atau bidang lainnya?",
+          "type": "title only",
+          "content": null
+        },
+        "isResult": false,
+        "answer": true
+      },
+      {
+        "id": 5,
+        "title": "Hasil Assessment",
+        "questions": {
+          "title": "Pertimbangkan DEPRESI",
+          "type": "text",
+          "content": "<ul><li>Pasien dengan depresi mungkin mengalami psikotik gejala psikotik seperti delusi atau halusinasi. Jika ada, pengobatan untuk depresi perlu disesuaikan. BERKONSULTASI DENGAN SPESIALIS</li></ul>"
+        },
+        "isResult": true,
+        "answer": false
+      },
+      {
+        "id": 6,
+        "title": "STEP 2 : Mencari penjelasan lain yang mungkin untuk gejala-gejala tersebut",
+        "questions": {
+          "title": "Apakah ini kondisi fisik yang dapat menyerupikan atau memperbesar depresi?",
+          "type": "text",
+          "content": "<ul><li>Anemia</li><li>Malnutrisi</li><li>Hipotiroidisme</li><li>Perubahan mood akibat penggunaan narkoba</li><li>Efek samping pengobatan (misalnya perubahan mood akibat steroid)</li></ul>"
+        },
+        "isResult": false,
+        "answer": false
+      },
+      {
+        "id": 7,
+        "title": "Hasil Assessment",
+        "questions": {
+          "title": "Kelola kondisi fisik",
+          "type": "title only",
+          "content": null
+        },
+        "isResult": true,
+        "answer": false
+      },
+      {
+        "id": 8,
+        "title": "STEP 2 : Apakah ada kemungkinan pasien mengalami gangguan mentai selain depresi",
+        "questions": {
+          "title": "Apakah gejala depresi tetap ada setelah pengobatan?",
+          "type": "title only",
+          "content": null
+        },
+        "isResult": false,
+        "answer": true
+      },
+      {
+        "id": 9,
+        "title": "STEP 2 : Mencari penjelasan lain yang mungkin untuk gejala-gejala tersebut",
+        "questions": {
+          "title": "Apakah beberapa gejala berikut terjadi secara bersamaan, berlangsung selama minimal 1 minggu, dan cukup parah sehingga mengganggu pekerjaan dan aktivitas sosial secara signifikan atau memerlukan rawat inap atau kurungan?",
+          "type": "checkbox",
+          "content": [
+            "Peningkatan suasana hati dan/atau mudah tersinggung",
+            "Penurunan kebutuhan tidur",
+            "Peningkatan aktivitas, perasaan energi meningkat, makin banyak bicara atau bicara cepat",
+            "Perilaku impulsif atau sembrono seperti pengeluaran berlebihan, pengambilan keputusan penting tanpa perencanaan, dan kecerobohan seksual",
+            "Hilangnya hambatan sosial yang normal mengakibatkan tidak pantas perilaku",
+            "Mudah teralihkan perhatiannya",
+            "Harga diri yang meningkat secara tidak realistis"
+          ]
+        },
+        "isResult": false,
+        "answer": true
+      },
+      {
+        "id": 10,
+        "title": "Hasil Assessment",
+        "questions": {
+          "title": "Kemungkinan pasien mengalami Episode depresi pada gangguan bipolar mungkin terjadi, buka PROTOKOL 2 (Depresi pada gangguan Bipolar). ",
+          "type": "text",
+          "content": [
+            "<ul><li>Kembali ke menu Depresi dan buka menu management bagian PROTOKOL 2 (Depresi pada gangguan Bipolar). Pasien dengan episode depresi pada gangguan bipolar berisiko mengalami mania. Pengobatannya berbeda dengan depresi.</li></ul>"
+          ]
+        },
+        "isResult": true,
+        "answer": false
+      }
+    ]
+  }
+}
