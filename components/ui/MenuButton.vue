@@ -65,5 +65,9 @@ const props = defineProps({
     flex-basis: 100%;
     text-align: left;
   }
+
+  &__arrow {
+    color: #122032;
+  }
 }
 </style>

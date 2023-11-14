@@ -1,5 +1,5 @@
 <template>
-  <nuxt-link v-if="to" to="/" :class="className">
+  <nuxt-link v-if="props.to" :to="props.to" :class="className">
     <span>
       <slot></slot>
     </span>
@@ -32,6 +32,7 @@ const className = computed(() => {
 <style lang="scss" scoped>
 .themeBtn {
   position: relative;
+  display: inline-block;
   // min-width: 180px;
   flex: 1 1 100%;
   text-align: center;
@@ -53,6 +54,7 @@ const className = computed(() => {
     right: 0;
     bottom: 0;
     background: linear-gradient(152deg, #5355c4 -147.46%, #131336 98.25%);
+    border-radius: 12px;
     opacity: 0;
     transition: opacity 0.15s ease;
   }

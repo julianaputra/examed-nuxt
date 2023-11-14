@@ -6,7 +6,7 @@
         <h1 class="title section__title">Penilaian</h1>
         <div class="row">
           <div class="col-lg-12">
-            <UiCardAssesment>
+            <UiCardAssesment title-big>
               <template #title>Presentasi Umum Depresi</template>
               <template #subtitle>
                 Apakah pasien tersebut pernah mengalami setidaknya satu dari

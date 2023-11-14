@@ -20,8 +20,8 @@
         <div class="row">
           <div class="col-lg-4">
             <div class="card__buttons">
-              <!-- <UiButton variant="outline">Tidak</UiButton> -->
-              <UiButton>Lanjutkan</UiButton>
+              <UiButton variant="outline">Tidak</UiButton>
+              <UiButton to="/">Lanjutkan</UiButton>
             </div>
           </div>
         </div>
