@@ -10,10 +10,10 @@
             :title-big="activeQuestion?.isResult"
           >
             <template #title>{{ activeQuestion?.title }}</template>
-            <template #subtitle v-if="activeQuestion?.questions.title">
+            <template v-if="activeQuestion?.questions.title" #subtitle>
               {{ activeQuestion?.questions.title }}
             </template>
-            <template #content v-if="activeQuestion?.questions.content">
+            <template v-if="activeQuestion?.questions.content" #content>
               <div v-if="activeQuestion?.questions.type === 'checkbox'">
                 <UiCheckbox
                   v-for="(q, qIndex) in activeQuestion.questions.content"
@@ -32,7 +32,13 @@
                 <UiButton @click="nextQuestion">Ya</UiButton>
               </div>
               <div v-else class="card__buttons">
-                <UiButton @click="nextQuestion">Lanjutkan</UiButton>
+                <UiButton
+                  @click="nextQuestion"
+                  v-if="activeQuestion?.to"
+                  :to="activeQuestion.to"
+                  >Lanjutkan</UiButton
+                >
+                <UiButton @click="nextQuestion" v-else>Lanjutkan</UiButton>
               </div>
             </template>
           </UiCardAssesment>

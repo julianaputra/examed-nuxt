@@ -17,24 +17,24 @@
         "type": "link",
         "links": [
           {
-            "disabled": false,
             "title": "Presentasi Umum Depresi",
-            "to": "/depresi/penilaian"
+            "to": "/depresi/penilaian",
+            "disabled": false
           },
           {
-            "disabled": false,
             "title": "STEP 1 : Menilai depresi",
-            "to": "/depresi/penilaian"
+            "to": "/depresi/penilaian",
+            "disabled": false
           },
           {
-            "disabled": false,
             "title": "STEP 2 : Apakah ada kemungkinan pasien mengalami gangguan mentai selain depresi",
-            "to": "/depresi/penilaian"
+            "to": "/depresi/penilaian",
+            "disabled": false
           },
           {
-            "disabled": true,
             "title": "STEP 3: Menilai kondisi MNS yang terjadi bersamaan",
-            "to": "/depresi/penilaian"
+            "to": "/depresi/penilaian",
+            "disabled": true
           }
         ]
       }
@@ -48,19 +48,23 @@
         "links": [
           {
             "title": "Manajemen Protokol 1 (Depresi)",
-            "to": "/"
+            "to": "/",
+            "disabled": false
           },
           {
             "title": "Manajemen Protokol 2 (Depresi pada gangguan bipolar)",
-            "to": "/"
+            "to": "/",
+            "disabled": false
           },
           {
             "title": "Populasi Khusus",
-            "to": "/"
+            "to": "/",
+            "disabled": false
           },
           {
             "title": "Menggali aspek diagnosis holistik",
-            "to": "/"
+            "to": "/",
+            "disabled": false
           }
         ]
       }
@@ -74,15 +78,18 @@
         "links": [
           {
             "title": "Nilai perbaikan kondisi pasien",
-            "to": "/"
+            "to": "/",
+            "disabled": false
           },
           {
             "title": "Pantau pengobatan pasien",
-            "to": "/"
+            "to": "/",
+            "disabled": false
           },
           {
             "title": "Sesuaikan pengobatan bila diperlukan",
-            "to": "/"
+            "to": "/",
+            "disabled": false
           }
         ]
       }

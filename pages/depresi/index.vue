@@ -36,8 +36,10 @@
                     <UiSelectionButton
                       v-for="(link, linkIndex) in activeContent.content.links"
                       :key="`menu-link-${linkIndex}`"
-                      :data="link"
-                    ></UiSelectionButton>
+                      :disabled="link.disabled"
+                      :to="link.to"
+                      >{{ link.title }}</UiSelectionButton
+                    >
                   </div>
                 </template>
               </UiCard>

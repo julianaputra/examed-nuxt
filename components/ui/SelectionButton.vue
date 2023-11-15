@@ -1,20 +1,25 @@
 <template>
   <nuxt-link
-    :class="{ disabled: props.data.disabled === true }"
     class="selection-button"
-    :to="props.data.to"
+    :class="{ disabled: props.disabled === true }"
+    :to="props.to"
   >
-    <span class="selection-button__text"> {{ props.data.title }} </span>
-    <div class="selection-button__arrow">
+    <span class="selection-button__text"> <slot></slot> </span>
+
+    <div v-if="props.to" class="selection-button__arrow">
       <Icon name="basil:arrow-right-outline" width="32" height="32" />
     </div>
   </nuxt-link>
 </template>
 <script setup lang="ts">
 const props = defineProps({
-  data: {
-    type: Object,
-    default: () => {}
+  disabled: {
+    type: Boolean,
+    default: false
+  },
+  to: {
+    type: String,
+    default: ''
   }
 })
 </script>
@@ -23,6 +28,7 @@ const props = defineProps({
 .selection-button {
   display: flex;
   align-items: center;
+  gap: 60px;
   text-decoration: none;
   border-bottom: 1px solid rgba(19, 24, 44, 0.1);
   padding: 12px 0;

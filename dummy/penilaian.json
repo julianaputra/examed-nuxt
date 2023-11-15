@@ -17,6 +17,7 @@
           ]
         },
         "isResult": false,
+        "to": null,
         "answer": false
       },
       {
@@ -28,6 +29,7 @@
           "content": "<ul><li>Suasana hati tertekan yang terus-menerus</li><li>Minat atau kesenangan yang sangat berkurang terhadap aktivitas</li></ul>"
         },
         "isResult": false,
+        "to": null,
         "answer": true
       },
       {
@@ -50,6 +52,7 @@
           ]
         },
         "isResult": false,
+        "to": null,
         "answer": true
       },
       {
@@ -61,6 +64,7 @@
           "content": null
         },
         "isResult": false,
+        "to": null,
         "answer": true
       },
       {
@@ -72,6 +76,7 @@
           "content": "<ul><li>Pasien dengan depresi mungkin mengalami psikotik gejala psikotik seperti delusi atau halusinasi. Jika ada, pengobatan untuk depresi perlu disesuaikan. BERKONSULTASI DENGAN SPESIALIS</li></ul>"
         },
         "isResult": true,
+        "to": null,
         "answer": false
       },
       {
@@ -83,6 +88,7 @@
           "content": "<ul><li>Anemia</li><li>Malnutrisi</li><li>Hipotiroidisme</li><li>Perubahan mood akibat penggunaan narkoba</li><li>Efek samping pengobatan (misalnya perubahan mood akibat steroid)</li></ul>"
         },
         "isResult": false,
+        "to": null,
         "answer": false
       },
       {
@@ -94,6 +100,7 @@
           "content": null
         },
         "isResult": true,
+        "to": null,
         "answer": false
       },
       {
@@ -105,6 +112,7 @@
           "content": null
         },
         "isResult": false,
+        "to": null,
         "answer": true
       },
       {
@@ -124,6 +132,7 @@
           ]
         },
         "isResult": false,
+        "to": null,
         "answer": true
       },
       {
@@ -137,6 +146,7 @@
           ]
         },
         "isResult": true,
+        "to": "/depresi/penilaian/summary",
         "answer": false
       }
     ]
