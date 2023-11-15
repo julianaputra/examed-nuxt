@@ -32,6 +32,9 @@
                     :to="sumList?.to"
                     >{{ sumList.title }}</UiSelectionButton
                   >
+                  <div class="card__button-wrapper">
+                    <UiButton to="/depresi">Kembali ke Menu Utama</UiButton>
+                  </div>
                 </div>
               </div>
             </div>
@@ -196,23 +199,12 @@ const changeActiveSummary = (e: any) => {
     }
   }
 
-  :deep(*) &__body {
+  &__body {
     padding: 50px 40px 60px 40px;
-    ul,
-    ol {
-      padding-left: 28px;
-
-      li {
-        color: rgba(18, 32, 50, 0.8);
-        font-size: 18px;
-        font-weight: 400;
-      }
-    }
   }
 
-  :deep(*) &__buttons {
-    display: flex;
-    gap: 12px;
+  &__button-wrapper {
+    margin-top: 48px;
   }
 }
 </style>
