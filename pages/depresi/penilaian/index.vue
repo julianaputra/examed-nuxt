@@ -33,12 +33,12 @@
               </div>
               <div v-else class="card__buttons">
                 <UiButton
-                  @click="nextQuestion"
                   v-if="activeQuestion?.to"
                   :to="activeQuestion.to"
+                  @click="nextQuestion"
                   >Lanjutkan</UiButton
                 >
-                <UiButton @click="nextQuestion" v-else>Lanjutkan</UiButton>
+                <UiButton v-else @click="nextQuestion">Lanjutkan</UiButton>
               </div>
             </template>
           </UiCardAssesment>

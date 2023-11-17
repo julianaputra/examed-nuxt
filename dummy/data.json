@@ -48,22 +48,22 @@
         "links": [
           {
             "title": "Manajemen Protokol 1 (Depresi)",
-            "to": "/",
+            "to": "/depresi/manajemen",
             "disabled": false
           },
           {
             "title": "Manajemen Protokol 2 (Depresi pada gangguan bipolar)",
-            "to": "/",
+            "to": "/depresi/manajemen",
             "disabled": false
           },
           {
             "title": "Populasi Khusus",
-            "to": "/",
+            "to": "/depresi/manajemen",
             "disabled": false
           },
           {
             "title": "Menggali aspek diagnosis holistik",
-            "to": "/",
+            "to": "/depresi/manajemen",
             "disabled": false
           }
         ]

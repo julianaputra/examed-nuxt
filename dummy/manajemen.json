@@ -1,0 +1,50 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "title": "Intervensi psikososial",
+      "to": "/depresi/manajemen/1",
+      "list": [
+        {
+          "id": 1,
+          "title": "2.1 Psikoedukasi: pesan-pesan penting bagi pasien dan pengasuhnya",
+          "content": "<ul><li>Depresi adalah kondisi yang sangat umum yang dapat terjadi kepada siapa saja.</li><li>Terjadinya depresi bukan berarti orang tersebut orang tersebut lemah atau malas.</li><li> Sikap negatif orang lain (mis. 'Kamu seharusnya lebih kuat', 'Tenangkan dirimu') mungkin karena depresi adalah bukanlah kondisi yang terlihat, tidak seperti patah tulang atau luka. Ada Ada juga kesalahpahaman bahwa orang dengan depresi dapat dapat dengan mudah mengendalikan gejala-gejala mereka hanya dengan kemauan keras.</li><li>Orang dengan depresi cenderung memiliki opini negatif yang tidak realistis negatif yang tidak realistis tentang diri mereka sendiri, kehidupan mereka, dan masa depan mereka. Situasi mereka Situasi mereka saat ini mungkin sangat sulit, tetapi depresi dapat menyebabkan pikiran yang tidak dapat dibenarkan tentang keputusasaan dan tidak berharga. Pandangan-pandangan ini kemungkinan akan membaik setelah depresi membaik.</li><li>Pikiran untuk melukai diri sendiri atau bunuh diri adalah hal yang umum. Jika mereka menyadari pikiran-pikiran ini, mereka tidak boleh bertindak atas pikiran-pikiran tersebut, tetapi harus memberi tahu orang yang dipercaya dan segera kembali untuk meminta bantuan segera.</li></ul>"
+        },
+        {
+          "id": 2,
+          "title": "2.2 Mengurangi stres dan memperkuat dukungan sosial",
+          "content": "<ul><li>Kaji dan coba kurangi pemicu stres. (Buka » ECP)</li><li>Aktifkan kembali jejaring sosial orang tersebut sebelumnya. Identifikasi aktivitas sosial sebelumnya yang, jika dimulai kembali, berpotensi memberikan dukungan psikososial langsung atau tidak langsung, misalnya pertemuan keluarga, mengunjungi tetangga, dan aktivitas komunitas.</li></ul>"
+        },
+        {
+          "id": 3,
+          "title": "2.3 Meningkatkan fungsi dalam aktivitas sehari-hari dan kehidupan bermasyarakat",
+          "content": "<ul><li>Meskipun sulit, dorong orang tersebut untuk mencoba melakukan sebanyak mungkin hal berikut:</li><ul><li>Cobalah untuk memulai kembali (atau melanjutkan) aktivitas yang sebelumnya menyenangkan.</li><li>Usahakan untuk menjaga waktu tidur dan bangun yang teratur.</li><li>Cobalah untuk menjadi aktif secara fisik mungkin.</li><li>Usahakan makan teratur meskipun ada perubahan nafsu makan.</li><li>Cobalah untuk menghabiskan waktu bersama teman dan keluarga tepercaya.</li><li>Cobalah untuk berpartisipasi dalam komunitas dan kegiatan sosial lainnya sebanyak mungkin.</li></ul><li>Jelaskan kepada orang tersebut dan pengasuhnya bahwa semua aktivitas ini dapat membantu meningkatkan suasana hati.</li></ul>"
+        },
+        {
+          "id": 4,
+          "title": "2.4 Perawatan psikologis singkat untuk depresi",
+          "content": "<p>Panduan ini tidak memberikan protokol khusus untuk menerapkan intervensi psikologis singkat. WHO, di antara lembaga-lembaga lainnya, telah mengembangkan manual yang menjelaskan penggunaannya untuk depresi. Contohnya adalah, Problem Management Plus, (<a href='http://www.who.int/mental_health/emergencies/ problem_manajemen_plus/en/' target='_blank'>http://www.who.int/mental_health/emergencies/ problem_manajemen_plus/en/</a>), yang menggambarkan penggunaan aktivasi perilaku, pelatihan relaksasi, pengobatan pemecahan masalah dan penguatan dukungan sosial.</p><p>Selain itu, manual Group Interpersonal Therapy (IPT) untuk Depresi menjelaskan pengobatan depresi kelompok (<a href='http://www.who.int/mental_health/mhgap/interpersonal_therapy/en' target='_blank'>http://www.who.int/mental_health/mhgap/interpersonal_therapy/en</a>). Berpikir Sehat, (<a href='http://www.who.int/mental_health/ibu-anak/ berpikir_sehat/en' target='_blank'>http://www.who.int/mental_health/ibu-anak/ berpikir_sehat/en</a>), menjelaskan penggunaan terapi perilaku kognitif untuk depresi perinatal.</p>"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Intervensi farmakologi",
+      "to": "/depresi/manajemen/2",
+      "list": [
+        {
+          "title": "2.5 Pertimbangkan antidepresan",
+          "content": ""
+        },
+        {
+          "title": "Antidepresan pada populasi khusus",
+          "content": ""
+        },
+        {
+          "title": "Jenis dan dosis antidepresan",
+          "content": ""
+        }
+      ]
+    }
+  ]
+}

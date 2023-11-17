@@ -20,7 +20,7 @@
             </nav>
           </div>
           <Transition mode="out-in">
-            <div class="card__body" :key="getActiveSummary?.id">
+            <div :key="getActiveSummary?.id" class="card__body">
               <div class="row justify-content-center">
                 <div class="col-lg-10 col-xxl-8">
                   <h2 class="heading--secondary">
@@ -28,7 +28,8 @@
                   </h2>
                   <hr class="card__hr--bottom" />
                   <UiSelectionButton
-                    v-for="sumList in getActiveSummary?.lists"
+                    v-for="(sumList, sumListIndex) in getActiveSummary?.lists"
+                    :key="sumListIndex"
                     :to="sumList?.to"
                     >{{ sumList.title }}</UiSelectionButton
                   >
