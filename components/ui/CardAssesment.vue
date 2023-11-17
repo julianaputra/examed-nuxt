@@ -20,8 +20,8 @@
         <div v-if="$slots.content" class="card__body">
           <slot name="content"></slot>
         </div>
-        <hr class="card__hr--bottom" />
-        <div class="row">
+        <hr v-if="$slots.footer" class="card__hr--bottom" />
+        <div v-if="$slots.footer" class="row">
           <div class="col-lg-4">
             <slot name="footer"></slot>
           </div>
@@ -98,6 +98,16 @@ const className = computed(() => {
         font-size: 18px;
         font-weight: 400;
       }
+    }
+
+    p {
+      color: rgba(18, 32, 50, 0.8);
+      font-size: 18px;
+      font-weight: 400;
+    }
+
+    a {
+      color: #303178;
     }
   }
 
