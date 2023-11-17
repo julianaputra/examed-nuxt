@@ -1,0 +1,197 @@
+{
+    "data": [
+        {
+            "id": 1,
+            "module": "depresi",
+            "title": "Presentasi Umum Depresi",
+            "question": {
+                "title": "",
+                "type": "checkbox",
+                "content": [
+                    "Beberapa gejala fisik yang persisten tanpa penyebab yang jelas",
+                    "Energi rendah, kelelahan, masalah tidur",
+                    "Kesedihan terus-menerus atau suasana hati tertekan, kecemasan",
+                    "Hilangnya minat atau kesenangan dalam aktivitas yang biasanya menyenangkan"
+                ]
+            },
+            "isResult": false,
+            "answer": 2,
+            "href": null
+        },
+        {
+            "id": 2,
+            "module": "depresi",
+            "title": "STEP 1 : Menilai depresi",
+            "question": {
+                "title": "Apakah pasien tersebut pernah mengalami setidaknya satu dari gejala inti depresi berikut selama minimal 2 minggu?",
+                "type": "text",
+                "content": "<ul><li>Suasana hati tertekan yang terus-menerus</li><li>Minat atau kesenangan yang sangat berkurang terhadap aktivitas</li></ul>"
+            },
+            "isResult": false,
+            "answer": {
+                "true": 4,
+                "false": 3
+            },
+            "href": null
+        },
+        {
+            "id": 3,
+            "module": "depresi",
+            "title": "Hasil Assessment",
+            "question": {
+                "title": "Depresi tidak mungkin terjadi",
+                "type": "text",
+                "content": null
+            },
+            "isResult": true,
+            "answer": null,
+            "href": null
+        },
+        {
+            "id": 4,
+            "module": "depresi",
+            "title": "STEP 1 : Menilai depresi",
+            "question": {
+                "title": "Apakah pasien tersebut mengalami beberapa gejala tambahan berikut selama minimal 2 minggu:",
+                "type": "checkbox",
+                "content": [
+                    "Tidur terganggu atau terlalu banyak tidur",
+                    "Perubahan nafsu makan atau berat badan yang signifikan (menurun atau menambah)",
+                    "Keyakinan akan ketidakberhargaan atau rasa bersalah yang berlebihan",
+                    "Kelelahan atau kehilangan energi",
+                    "Konsentrasi berkurang",
+                    "Keragu-raguan",
+                    "Agitasi atau kegelisahan fisik yang terlihat",
+                    "Berbicara atau bergerak lebih lambat dari biasanya",
+                    "Keputusasaan",
+                    "Pikiran atau tindakan bunuh diri"
+                ]
+            },
+            "isResult": false,
+            "answer": {
+                "true": 5,
+                "false": 3
+            },
+            "href": null
+        },
+        {
+            "id": 5,
+            "module": "depresi",
+            "title": "STEP 1 : Menilai depresi",
+            "question": {
+                "title": "Apakah pasien tersebut mengalami kesulitan besar dalam menjalankan fungsi sehari-hari dalam bidang pribadi, keluarga, sosial, pendidikan, pekerjaan atau bidang lainnya?",
+                "type": "text",
+                "content": null
+            },
+            "isResult": false,
+            "answer": {
+                "true": 6,
+                "false": 3
+            },
+            "href": null
+        },
+        {
+            "id": 6,
+            "module": "depresi",
+            "title": "Hasil Assessment",
+            "question": {
+                "title": "Pertimbangkan DEPRESI",
+                "type": "text",
+                "content": "<ul><li>Pasien dengan depresi mungkin mengalami psikotik gejala psikotik seperti delusi atau halusinasi. Jika ada, pengobatan untuk depresi perlu disesuaikan. BERKONSULTASI DENGAN SPESIALIS</li></ul>"
+            },
+            "isResult": true,
+            "answer": 7,
+            "href": null
+        },
+        {
+            "id": 7,
+            "module": "depresi",
+            "title": "STEP 2 : Mencari penjelasan lain yang mungkin untuk gejala-gejala tersebut",
+            "questions": {
+                "title": "Apakah ini kondisi fisik yang dapat menyerupikan atau memperbesar depresi?",
+                "type": "text",
+                "content": "<ul><li>Anemia</li><li>Malnutrisi</li><li>Hipotiroidisme</li><li>Perubahan mood akibat penggunaan narkoba</li><li>Efek samping pengobatan (misalnya perubahan mood akibat steroid)</li></ul>"
+            },
+            "isResult": false,
+            "answer": {
+                "true": 9,
+                "false": 8
+            },
+            "href": null
+        },
+        {
+            "id": 8,
+            "module": "depresi",
+            "title": "STEP 2 : Mencari penjelasan lain yang mungkin untuk gejala-gejala tersebut",
+            "questions": {
+                "title": "APAKAH ADA SEJARAH MANIA?",
+                "type": "text",
+                "content": null
+            },
+            "isResult": false,
+            "answer": {
+                "true": 12,
+                "false": 11
+            },
+            "href": null
+        },
+        {
+            "id": 9,
+            "module": "depresi",
+            "title": "STEP 2 : Mencari penjelasan lain yang mungkin untuk gejala-gejala tersebut",
+            "questions": {
+                "title": "Kelola Kondisi Fisik",
+                "type": "text",
+                "content": null
+            },
+            "isResult": true,
+            "answer": 10,
+            "href": null
+        },
+        {
+            "id": 10,
+            "module": "depresi",
+            "title": "STEP 2 : Mencari penjelasan lain yang mungkin untuk gejala-gejala tersebut",
+            "questions": {
+                "title": "Apakah gejala depresi tetap ada setelah pengobatan?",
+                "type": "text",
+                "content": null
+            },
+            "isResult": false,
+            "answer": {
+                "true": 8,
+                "false": 19
+            },
+            "href": null
+        },
+        {
+            "id": 11,
+            "module": "depresi",
+            "title": "STEP 2 : Mencari penjelasan lain yang mungkin untuk gejala-gejala tersebut",
+            "questions": {
+                "title": "APAKAH ADA KERUGIAN BESAR",
+                "type": "text",
+                "content": null
+            },
+            "isResult": false,
+            "answer": {
+                "true": 14,
+                "false": 13
+            },
+            "href": null
+        },
+        {
+            "id": 12,
+            "module": "depresi",
+            "title": "STEP 2 : Mencari penjelasan lain yang mungkin untuk gejala-gejala tersebut",
+            "questions": {
+                "title": "Episode depresif dalam bipolar gangguan mungkin terjadi",
+                "type": "text",
+                "content": null
+            },
+            "isResult": true,
+            "answer": false,
+            "href": "/depresi/manajemen/1"
+        }
+    ]
+}

@@ -1,0 +1,95 @@
+{
+    "data": [
+        {
+            "id": 1,
+            "parentId": null,
+            "title": "Manajemen Protokol 1 (Depresi)",
+            "type": "link",
+            "content": null
+        },
+        {
+            "id": 2,
+            "parentId": null,
+            "title": "Manajemen Protokol 2",
+            "type": "link",
+            "content": null
+        },
+        {
+            "id": 3,
+            "parentId": null,
+            "title": "Populasi Khusus",
+            "type": "link",
+            "content": null
+        },
+        {
+            "id": 4,
+            "parentId": 1,
+            "title": "Intervensi psikososial",
+            "type": "link",
+            "content": null
+        },
+        {
+            "id": 5,
+            "parentId": 1,
+            "title": "Intervensi farmakologi",
+            "type": "link",
+            "content": null
+        },
+        {
+            "id": 6,
+            "parentId": 4,
+            "title": "2.1 Psikoedukasi: pesan",
+            "type": "collapse",
+            "content": "html"
+        },
+        {
+            "id": 7,
+            "parentId": 4,
+            "title": "2.2 Psikoedukasi: pesan",
+            "type": "collapse",
+            "content": "html"
+        },
+        {
+            "id": 8,
+            "parentId": 4,
+            "title": "2.3 Psikoedukasi: pesan",
+            "type": "collapse",
+            "content": "html"
+        },
+        {
+            "id": 9,
+            "parentId": 4,
+            "title": "2.4 Psikoedukasi: pesan",
+            "type": "collapse",
+            "content": "html"
+        },
+        {
+            "id": 10,
+            "parentId": 2,
+            "title": "Depresi pada gangguan bipolar",
+            "type": "text",
+            "content": "html"
+        },
+        {
+            "id": 11,
+            "parentId": 5,
+            "title": "2.5 Pertimbangkan antidepresi",
+            "type": "collapse",
+            "content": "html"
+        },
+        {
+            "id": 12,
+            "parentId": 5,
+            "title": "Antidepresan",
+            "type": "link",
+            "content": null
+        },
+        {
+            "id": 13,
+            "parentId": 5,
+            "title": "Jenis dan antidepresan",
+            "type": "link",
+            "content": null
+        }
+    ]
+}

@@ -1,0 +1,252 @@
+{
+    "data": [
+        {
+            "id": 1,
+            "title": "Presentasi Umum Depresi",
+            "question": {
+                "title": null,
+                "type": "checkbox",
+                "content": [
+                    "Beberapa gejala fisik yang persisten tanpa penyebab yang jelas",
+                    "Energi rendah, kelelahan, masalah tidur",
+                    "Kesedihan terus-menerus atau suasana hati tertekan, kecemasan",
+                    "Hilangnya minat atau kesenangan dalam aktivitas yang biasanya menyenangkan"
+                ]
+            },
+            "isResult": false,
+            "isStep": true,
+            "answer": {
+                "type": "continue",
+                "target": 2
+            },
+            "href": null
+        },
+        {
+            "id": 2,
+            "title": "Apakah orang tersebut mengalami depresi?",
+            "question": {
+                "title": "Apakah orang tersebut pernah mengalami setidaknya satu dari gejala inti depresi berikut selama minimal 2 minggu?",
+                "type": "text",
+                "content": "<ul><li>Mood depresi yang persisten</li><li>Minat atau kesenangan terhadap aktivitas berkurang secara nyata</li></ul>"
+            },
+            "isResult": false,
+            "isStep": true,
+            "answer": {
+                "type": "true-false",
+                "target": {
+                    "true": 4,
+                    "false": 3
+                }
+            },
+            "href": null
+        },
+        {
+            "id": 3,
+            "title": "Hasil Assesment",
+            "question": {
+                "title": "Depresi tidak mungkin terjadi",
+                "type": "text",
+                "content": "<ul><li>Kunjungi modul lainnya</li></ul>"
+            },
+            "isResult": true,
+            "isStep": false,
+            "answer": {
+                "type": "continue",
+                "target": null
+            },
+            "href": null
+        },
+        {
+            "id": 4,
+            "title": "Apakah orang tersebut mengalami depresi?",
+            "question": {
+                "title": "Apakah orang tersebut mengalami beberapa gejala tambahan berikut selama minimal 2 minggu:",
+                "type": "checkbox",
+                "content": [
+                    "Tidur terganggu atau terlalu banyak tidur",
+                    "Perubahan nafsu makan atau berat badan yang signifikan (menurunkan atau menambah)",
+                    "Keyakinan akan ketidakberhargaan atau rasa bersalah yang berlebihan",
+                    "Kelelahan atau kehilangan energi",
+                    "Konsentrasi berkurang",
+                    "Keragu-raguan",
+                    "Agitasi atau kegelisahan fisik yang terlihat",
+                    "Berbicara atau bergerak lebih lambat dari biasanya",
+                    "Keputusasaan",
+                    "Pikiran atau tindakan bunuh diri"
+                ]
+            },
+            "isResult": false,
+            "isStep": false,
+            "answer": {
+                "type": "true-false",
+                "target": {
+                    "true": 5,
+                    "false": 3
+                }
+            },
+            "href": null
+        },
+        {
+            "id": 5,
+            "title": "Apakah orang tersebut mengalami depresi?",
+            "question": {
+                "title": "Apakah orang tersebut mengalami kesulitan besar dalam menjalankan fungsi sehari-hari dalam bidang pribadi, keluarga, sosial, pendidikan, pekerjaan atau bidang lainnya?",
+                "type": "checkbox",
+                "content": null
+            },
+            "isResult": false,
+            "isStep": false,
+            "answer": {
+                "type": "true-false",
+                "target": {
+                    "true": 6,
+                    "false": 3
+                }
+            },
+            "href": null
+        },
+        {
+            "id": 6,
+            "title": "Hasil Assesment",
+            "question": {
+                "title": "Pertimbangkan DEPRESI",
+                "type": "text",
+                "content": "<ul><li>Seseorang dengan depresi mungkin memiliki gejala psikotik seperti delusi atau halusinasi. Jika ada, pengobatan untuk depresi perlu disesuaikan. <strong>KONSULTASIKAN DENGAN SPESIAL</strong></li></ul>"
+            },
+            "isResult": true,
+            "isStep": false,
+            "answer": {
+                "type": "continue",
+                "target": 7
+            },
+            "href": null
+        },
+        {
+            "id": 7,
+            "title": "Apakah ada kemungkinan penjelasan lain untuk gejalanya?",
+            "question": {
+                "title": "Apakah ini kondisi fisik yang dapat menyerupakan atau memperbesar depresi?",
+                "type": "text",
+                "content": "<ul><li>anemia</li><li>malnutrisi</li><li>hipotiroidisme</li><li>perubahan mood akibat penggunaan narkoba</li><li>efek samping pengubatan (misalnya perubahan mood akibat steroid)</li></ul>"
+            },
+            "isResult": false,
+            "isStep": true,
+            "answer": {
+                "type": "true-false",
+                "target": {
+                    "true": 9,
+                    "false": 8
+                }
+            },
+            "href": null
+        },
+        {
+            "id": 8,
+            "title": "Apakah ada kemungkinan penjelasan lain untuk gejalanya?",
+            "question": {
+                "title": "Apakah ada sejarah mania?",
+                "type": "text",
+                "content": "<p>Apakah beberapa gejala berikut terjadi secara bersamaan, berlangsung selama minimal 1 minggu, dan cukup parah sehingga mengganggu pekerjaan dan aktivitas sosial secara signifikan atau memerlukan rawat inap atau kurungan?</p><ul><li>anemia</li><li>malnutrisi</li><li>hipotiroidisme</li><li>perubahan mood akibat penggunaan narkoba</li><li>efek samping pengubatan (misalnya perubahan mood akibat steroid)</li></ul>"
+            },
+            "isResult": false,
+            "isStep": false,
+            "answer": {
+                "type": "true-false",
+                "target": {
+                    "true": 9,
+                    "false": 8
+                }
+            },
+            "href": null
+        },
+        {
+            "id": 9,
+            "title": "Hasil Assesment",
+            "question": {
+                "title": "Kelola kondisi fisik",
+                "type": "text",
+                "content": null
+            },
+            "isResult": true,
+            "isStep": false,
+            "answer": {
+                "type": "continue",
+                "target": 10
+            },
+            "href": null
+        },
+        {
+            "id": 10,
+            "title": "Apakah ada kemungkinan penjelasan lain untuk gejalanya?",
+            "question": {
+                "title": "Apakah gejala depresi tetap ada setelah pengobatan?",
+                "type": "text",
+                "content": null
+            },
+            "isResult": false,
+            "isStep": false,
+            "answer": {
+                "type": "true-false",
+                "target": {
+                    "true": 8,
+                    "false": 19
+                }
+            },
+            "href": null
+        },
+        {
+            "id": 10,
+            "title": "Apakah ada kemungkinan penjelasan lain untuk gejalanya?",
+            "question": {
+                "title": "Apakah gejala depresi tetap ada setelah pengobatan?",
+                "type": "text",
+                "content": null
+            },
+            "isResult": false,
+            "isStep": false,
+            "answer": {
+                "type": "true-false",
+                "target": {
+                    "true": 8,
+                    "false": 19
+                }
+            },
+            "href": null
+        },
+        {
+            "id": 11,
+            "title": "Apakah ada kemungkinan penjelasan lain untuk gejalanya?",
+            "question": {
+                "title": "Apakah ada kerugian besar (misal bereavement) dalam 6 bulan terakhir?",
+                "type": "text",
+                "content": null
+            },
+            "isResult": false,
+            "isStep": false,
+            "answer": {
+                "type": "true-false",
+                "target": {
+                    "true": 14,
+                    "false": 13
+                }
+            },
+            "href": null
+        },
+        {
+            "id": 12,
+            "title": "Hasil Assesment",
+            "question": {
+                "title": "Episode Depresif dalam Bipolar Gangguan mungkin terjadi",
+                "type": "text",
+                "content": "<ul><li>Orang dengan episode depresi pada gangguan bipolar berisiko mengalami mania. Pengobatannya berbeda dengan depresi. <a href='#'>Protokol 2</a> harus diterapkan.</li></ul>"
+            },
+            "isResult": true,
+            "isStep": false,
+            "answer": {
+                "type": "continue",
+                "target": null
+            },
+            "href": null
+        }
+    ]
+}

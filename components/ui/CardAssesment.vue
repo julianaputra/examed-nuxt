@@ -1,11 +1,15 @@
 <template>
   <div class="card">
-    <nuxt-link to="/depresi" class="heading--secondary card__title">
+    <div
+      role="button"
+      class="heading--secondary card__title"
+      @click="$emit('back')"
+    >
       <div class="card__back-icon">
         <Icon name="basil:arrow-left-solid" width="32" height="32"></Icon>
       </div>
       <slot name="title"></slot>
-    </nuxt-link>
+    </div>
 
     <hr class="card__hr" />
     <div class="row justify-content-center">
@@ -34,6 +38,8 @@ const props = defineProps({
     default: false
   }
 })
+
+defineEmits(['back'])
 
 const className = computed(() => {
   return props.titleBig === true ? 'card__subtitle--big' : 'card__subtitle'
