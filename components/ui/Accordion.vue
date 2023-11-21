@@ -1,30 +1,27 @@
 <template>
-  <div :id="props.title" class="accordion">
-    <div
-      v-for="(sm, smIndex) in props.item"
-      :key="smIndex"
-      class="accordion-item"
-    >
-      <div class="accordion-header">
-        <button
-          class="accordion__button collapsed"
-          type="button"
-          data-bs-toggle="collapse"
-          :data-bs-target="`#collapse-${smIndex}`"
-        >
-          <span class="accordion__text">{{ sm.title }}</span>
-          <div class="accordion__arrow">
-            <Icon name="basil:arrow-down-solid" width="32" height="32" />
-          </div>
-        </button>
-      </div>
-      <div
-        :id="`collapse-${smIndex}`"
-        class="accordion-collapse collapse"
-        :data-bs-parent="`#${props.title}`"
+  <div class="accordion-item">
+    <div class="accordion-header">
+      <button
+        class="accordion__button collapsed"
+        type="button"
+        data-bs-toggle="collapse"
+        :data-bs-target="`#collapse-${props.item.id}`"
       >
-        <div class="accordion-body accordion__body" v-html="sm.content"></div>
-      </div>
+        <span class="accordion__text">{{ props.item.title }}</span>
+        <div class="accordion__arrow">
+          <Icon name="basil:arrow-down-solid" width="32" height="32" />
+        </div>
+      </button>
+    </div>
+    <div
+      :id="`collapse-${props.item.id}`"
+      class="accordion-collapse collapse"
+      :data-bs-parent="`#${props.title}`"
+    >
+      <div
+        class="accordion-body accordion__body"
+        v-html="props.item.content"
+      ></div>
     </div>
   </div>
 </template>

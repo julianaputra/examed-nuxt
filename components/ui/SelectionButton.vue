@@ -6,7 +6,7 @@
   >
     <span class="selection-button__text"> <slot></slot> </span>
 
-    <div v-if="props.to" class="selection-button__arrow">
+    <div v-if="props.hasIcon" class="selection-button__arrow">
       <Icon name="basil:arrow-right-outline" width="32" height="32" />
     </div>
   </nuxt-link>
@@ -20,6 +20,10 @@ const props = defineProps({
   to: {
     type: String,
     default: ''
+  },
+  hasIcon: {
+    type: Boolean,
+    default: true
   }
 })
 </script>
@@ -33,6 +37,7 @@ const props = defineProps({
   border-bottom: 1px solid rgba(19, 24, 44, 0.1);
   padding: 12px 0;
   margin-bottom: 12px;
+  cursor: pointer;
   transition: 0.3s;
 
   &.disabled {

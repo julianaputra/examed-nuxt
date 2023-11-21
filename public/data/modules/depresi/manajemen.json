@@ -10,7 +10,7 @@
     {
       "id": 2,
       "parentId": null,
-      "title": "Manajemen Protokol 2",
+      "title": "Manajemen Protokol 2 (Depresi pada gangguan bipolar)",
       "type": "link",
       "content": null
     },
@@ -38,56 +38,56 @@
     {
       "id": 6,
       "parentId": 4,
-      "title": "2.1 Psikoedukasi: pesan",
+      "title": "2.1 Psikoedukasi: pesan-pesan penting bagi pasien dan pengasuhnya",
       "type": "collapse",
       "content": "html"
     },
     {
       "id": 7,
       "parentId": 4,
-      "title": "2.2 Psikoedukasi: pesan",
+      "title": "2.2 Mengurangi stres dan memperkuat dukungan sosial",
       "type": "collapse",
       "content": "html"
     },
     {
       "id": 8,
       "parentId": 4,
-      "title": "2.3 Psikoedukasi: pesan",
+      "title": "2.3 Meningkatkan fungsi dalam aktivitas sehari-hari dan kehidupan bermasyarakat",
       "type": "collapse",
       "content": "html"
     },
     {
       "id": 9,
       "parentId": 4,
-      "title": "2.4 Psikoedukasi: pesan",
+      "title": "2.4 Perawatan psikologis singkat untuk depresi",
       "type": "collapse",
       "content": "html"
     },
     {
       "id": 10,
       "parentId": 2,
-      "title": "Depresi pada gangguan bipolar",
+      "title": "",
       "type": "text",
-      "content": "html"
+      "content": "<h4>Depresi pada gangguan bipolar</h4><ul><li>Konsultasikan dengan psikiater di daerah anda.</li><li>Jika tidak ada psikiater di wilayan anda lanjutkan ke PROTOKOL 1 . Namun, JANGAN PERNAH meresepkan antidepresan saja tanpa penstabil suasana hati seperti litium, karbamazepin, atau valproate karena antidepresan dapat menyebabkan mania pada pasien dengan gangguan bipolar (Lihat bagian PSY).</li><li>Jika gejala mania muncul, beritahu pasien tersebut dan pengasuhnya untuk segera menghentikan antidepresan dan kembali untuk mendapatkan bantuan.</li></ul>"
     },
     {
       "id": 11,
       "parentId": 5,
-      "title": "2.5 Pertimbangkan antidepresi",
+      "title": "2.5 Pertimbangkan antidepresan",
       "type": "collapse",
       "content": "html"
     },
     {
       "id": 12,
       "parentId": 5,
-      "title": "Antidepresan",
+      "title": "Antidepresan pada populasi khusus",
       "type": "link",
       "content": null
     },
     {
       "id": 13,
       "parentId": 5,
-      "title": "Jenis dan antidepresan",
+      "title": "Jenis dan dosis antidepresan",
       "type": "link",
       "content": null
     }
