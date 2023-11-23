@@ -1,95 +1,199 @@
 {
-  "data": [
-    {
-      "id": 1,
-      "parentId": null,
-      "title": "Manajemen Protokol 1 (Depresi)",
-      "type": "link",
-      "content": null
-    },
-    {
-      "id": 2,
-      "parentId": null,
-      "title": "Manajemen Protokol 2 (Depresi pada gangguan bipolar)",
-      "type": "link",
-      "content": null
-    },
-    {
-      "id": 3,
-      "parentId": null,
-      "title": "Populasi Khusus",
-      "type": "link",
-      "content": null
-    },
-    {
-      "id": 4,
-      "parentId": 1,
-      "title": "Intervensi psikososial",
-      "type": "link",
-      "content": null
-    },
-    {
-      "id": 5,
-      "parentId": 1,
-      "title": "Intervensi farmakologi",
-      "type": "link",
-      "content": null
-    },
-    {
-      "id": 6,
-      "parentId": 4,
-      "title": "2.1 Psikoedukasi: pesan-pesan penting bagi pasien dan pengasuhnya",
-      "type": "collapse",
-      "content": "html"
-    },
-    {
-      "id": 7,
-      "parentId": 4,
-      "title": "2.2 Mengurangi stres dan memperkuat dukungan sosial",
-      "type": "collapse",
-      "content": "html"
-    },
-    {
-      "id": 8,
-      "parentId": 4,
-      "title": "2.3 Meningkatkan fungsi dalam aktivitas sehari-hari dan kehidupan bermasyarakat",
-      "type": "collapse",
-      "content": "html"
-    },
-    {
-      "id": 9,
-      "parentId": 4,
-      "title": "2.4 Perawatan psikologis singkat untuk depresi",
-      "type": "collapse",
-      "content": "html"
-    },
-    {
-      "id": 10,
-      "parentId": 2,
-      "title": "",
-      "type": "text",
-      "content": "<h4>Depresi pada gangguan bipolar</h4><ul><li>Konsultasikan dengan psikiater di daerah anda.</li><li>Jika tidak ada psikiater di wilayan anda lanjutkan ke PROTOKOL 1 . Namun, JANGAN PERNAH meresepkan antidepresan saja tanpa penstabil suasana hati seperti litium, karbamazepin, atau valproate karena antidepresan dapat menyebabkan mania pada pasien dengan gangguan bipolar (Lihat bagian PSY).</li><li>Jika gejala mania muncul, beritahu pasien tersebut dan pengasuhnya untuk segera menghentikan antidepresan dan kembali untuk mendapatkan bantuan.</li></ul>"
-    },
-    {
-      "id": 11,
-      "parentId": 5,
-      "title": "2.5 Pertimbangkan antidepresan",
-      "type": "collapse",
-      "content": "html"
-    },
-    {
-      "id": 12,
-      "parentId": 5,
-      "title": "Antidepresan pada populasi khusus",
-      "type": "link",
-      "content": null
-    },
-    {
-      "id": 13,
-      "parentId": 5,
-      "title": "Jenis dan dosis antidepresan",
-      "type": "link",
-      "content": null
-    }
-  ]
+    "data": [{
+            "id": 1,
+            "parentId": null,
+            "title": "Manajemen Protokol 1 (Depresi)",
+            "type": "link",
+            "content": null
+        },
+        {
+            "id": 2,
+            "parentId": null,
+            "title": "Manajemen Protokol 2 (Depresi pada gangguan bipolar)",
+            "type": "link",
+            "content": null
+        },
+        {
+            "id": 3,
+            "parentId": null,
+            "title": "Populasi Khusus",
+            "type": "link",
+            "content": null
+        },
+        {
+            "id": 4,
+            "parentId": 1,
+            "title": "Intervensi psikososial",
+            "type": "link",
+            "content": null
+        },
+        {
+            "id": 5,
+            "parentId": 1,
+            "title": "Intervensi farmakologi",
+            "type": "link",
+            "content": null
+        },
+        {
+            "id": 6,
+            "parentId": 4,
+            "title": "2.1 Psikoedukasi: pesan-pesan penting bagi pasien dan pengasuhnya",
+            "type": "collapse",
+            "content": "<ul><li>Depresi adalah suatu kondisi yang sangat umum dan dapat terjadi pada siapa saja<li>Terjadinya depresi bukan berarti orang tersebut lemah atau malas.<li>Sikap negatif orang lain (misalnya “Kamu harus lebih kuat”, “Tenangkan dirimu”) mungkin karena depresi bukanlah suatu kondisi yang terlihat, tidak seperti patah tulang atau luka. Ada juga kesalahpahaman bahwa penderita depresi dapat dengan mudah mengendalikan gejalanya hanya dengan kemauan keras.<li>Orang dengan depresi cenderung memiliki opini negatif yang tidak realistis tentang diri mereka sendiri, kehidupan mereka, dan masa depan mereka. Situasi mereka saat ini mungkin sangat sulit, namun depresi dapat menyebabkan pemikiran yang tidak beralasan tentang keputusasaan dan ketidakberhargaan. Pandangan ini kemungkinan besar akan membaik setelah depresinya membaik.<li>Pikiran untuk menyakiti diri sendiri atau bunuh diri adalah hal biasa. Jika mereka melihat pemikiran ini, mereka tidak boleh menindaklanjutinya, namun harus memberitahu orang yang dipercaya dan segera kembali untuk meminta bantuan.</ul>"
+        },
+        {
+            "id": 7,
+            "parentId": 4,
+            "title": "2.2 Mengurangi stres dan memperkuat dukungan sosial",
+            "type": "collapse",
+            "content": "<ul><li>Kaji dan coba kurangi pemicu stres. (Buka » ECP)<li>Aktifkan kembali jejaring sosial orang tersebut sebelumnya. Identifikasi aktivitas sosial sebelumnya yang, jika dimulai kembali, berpotensi memberikan dukungan psikososial langsung atau tidak langsung, misalnya pertemuan keluarga, mengunjungi tetangga, dan aktivitas komunitas.</ul>"
+        },
+        {
+            "id": 8,
+            "parentId": 4,
+            "title": "2.3 Meningkatkan fungsi dalam aktivitas sehari-hari dan kehidupan bermasyarakat",
+            "type": "collapse",
+            "content": "<ul><li>Meskipun sulit, dorong orang tersebut untuk mencoba melakukan sebanyak mungkin hal berikut:<ul><li>Cobalah untuk memulai kembali (atau melanjutkan) aktivitas yang sebelumnya menyenangkan.<li>Usahakan untuk menjaga waktu tidur dan bangun yang teratur.<li>Cobalah untuk menjadi aktif secara fisik mungkin.<li>Usahakan makan teratur meskipun ada perubahan nafsu makan.<li>Cobalah untuk menghabiskan waktu bersama teman dan keluarga tepercaya.<li>Cobalah untuk berpartisipasi dalam komunitas dan kegiatan sosial lainnya sebanyak mungkin</ul><li>Jelaskan kepada orang tersebut dan pengasuhnya bahwa semua aktivitas ini dapat membantu meningkatkan suasana hati.</ul>"
+        },
+        {
+            "id": 9,
+            "parentId": 4,
+            "title": "2.4 Perawatan psikologis singkat untuk depresi",
+            "type": "collapse",
+            "content": "<ul>Panduan ini tidak memberikan protokol khusus untuk menerapkan intervensi psikologis singkat. WHO, di antara lembaga-lembaga lainnya, telah mengembangkan manual yang menjelaskan penggunaannya untuk depresi. Contohnya adalah, Problem Management Plus, <a href='http://www.who.int/mental_health/emergencies/problem_manajemen_plus/en/'>http://www.who.int/mental_health/emergencies/problem_manajemen_plus/en/</a> ,yang menggambarkan penggunaan aktivasi perilaku, pelatihan relaksasi, pengobatan pemecahan masalah dan penguatan dukungan sosial. Selain itu, manual Group Interpersonal Therapy (IPT) untuk Depresi menjelaskan pengobatan depresi kelompok <a href='http://www.who.int/mental_health/mhgap/interpersonal_therapy/en'>http://www.who.int/mental_health/mhgap/interpersonal_therapy/en </a>Berpikir Sehat,<a href='www.who.int/mental_health/ibu-anak/ berpikir_sehat/en'> http://www.who.int/mental_health/ibu-anak/ berpikir_sehat/en </a>menjelaskan penggunaan terapi perilaku kognitif untuk depresi perinatal</ul>"
+        },
+        {
+            "id": 10,
+            "parentId": 2,
+            "title": "",
+            "type": "text",
+            "content": "<h4>Depresi pada gangguan bipolar</h4><ul><li>Konsultasikan dengan psikiater di daerah anda.</li><li>Jika tidak ada psikiater di wilayan anda lanjutkan ke PROTOKOL 1 . Namun, JANGAN PERNAH meresepkan antidepresan saja tanpa penstabil suasana hati seperti litium, karbamazepin, atau valproate karena antidepresan dapat menyebabkan mania pada pasien dengan gangguan bipolar (Lihat bagian PSY).</li><li>Jika gejala mania muncul, beritahu pasien tersebut dan pengasuhnya untuk segera menghentikan antidepresan dan kembali untuk mendapatkan bantuan.</li></ul>"
+        },
+        {
+            "id": 11,
+            "parentId": 5,
+            "title": "2.5 Pertimbangkan antidepresan",
+            "type": "collapse",
+            "content": "<li>Diskusikan dengan orang tersebut dan putuskan bersama apakah akan meresepkan antidepresan. Menerangkan bahwa:</li><ul><li>Antidepresan tidak membuat ketagihan<li>Sangat penting untuk minum obat setiap hari ditentukan.<li>Beberapa efek samping mungkin dialami dalam beberapa hari pertama tetapi biasanya hilang.<li>Biasanya diperlukan waktu beberapa minggu sebelum perbaikan suasana hati, minat, atau energi terlihat.</ul><li>Pertimbangkan usia orang tersebut, kondisi medis yang terjadi bersamaan, dan profil efek samping obat.<li>Mulailah dengan hanya satu obat dengan dosis awal terendah<li>Obat antidepresan biasanya perlu dilanjutkan setidaknya selama 9-12 bulan setelah gejala hilang<li>Pengobatan tidak boleh dihentikan hanya karena orang tersebut mengalami perbaikan. Didik orang tersebut pada jangka waktu yang disarankan untuk minum obat</li><h3 style=color:red>Peringatan</h3><ul><li>jika orang tersebut mengalami episode manik, segera hentikan obat antidepresan; ini dapat memicu episode manik pada gangguan bipolar yang tidak diobati.<li>jangan gabungkan dengan antidepresan lain karena dapat menyebabkan sindrom serotonin.<li>Antidepresan dapat meningkatkan keinginan bunuh diri, terutama pada remaja dan dewasa muda.</ul>"
+        },
+        {
+            "id": 12,
+            "parentId": 5,
+            "title": "Antidepresan pada populasi khusus",
+            "type": "link",
+            "content": null
+        },
+        {
+            "id": 13,
+            "parentId": 5,
+            "title": "Jenis dan dosis antidepresan",
+            "type": "link",
+            "content": null
+        },
+        {
+            "id": 14,
+            "parentId": 12,
+            "title": "Remaja usia 12 Tahun ke atas",
+            "type": "collapse",
+            "content": "<ul><li>Jika gejala tetap ada atau memburuk meskipun telah dilakukan intervensi psikososial, pertimbangkan fluoxetine (tetapi bukan serotonin selektif lainnyareuptake inhibitor (SSRI) atau antidepresan trisiklik (TCA)).<li>Jika fluoxetine diresepkan, mintalah remaja tersebut untuk kembali setiap minggu, selama 4 minggu pertama, untuk memantau pemikiran atau rencana bunuh diri.</ul>"
+        },
+        {
+            "id": 15,
+            "parentId": 12,
+            "title": "WANITA YANG HAMIL ATAU MENYUSUI",
+            "type": "collapse",
+            "content": "<ul><li>Hindari antidepresan, jika memungkinkan.<li>Pertimbangkan antidepresan dengan dosis efektif terendah jika tidak ada respons terhadap intervensi psikososial.<li>Jika wanita tersebut sedang menyusui, hindari obat antidepresan jangka panjang seperti fluoxetine.<li>Konsultasikan dengan spesialis jika tersedia.</ul>"
+        },
+        {
+            "id": 16,
+            "parentId": 12,
+            "title": "ORANG TUA",
+            "type": "collapse",
+            "content": "<ul><li>Hindari amitriptyline jika memungkinkan.</ul>"
+        },
+        {
+            "id": 17,
+            "parentId": 12,
+            "title": "ORANG DENGAN PENYAKIT KARDIOVASKULAR",
+            "type": "collapse",
+            "content": "<ul><li>JANGAN meresepkan amitriptyline.</ul>"
+        },
+        {
+            "id": 18,
+            "parentId": 12,
+            "title": "ORANG DEWASA DENGAN PIKIRAN ATAU RENCANA Bunuh Diri",
+            "type": "collapse",
+            "content": "<ul><li>SSRI adalah pilihan pertama. Overdosis TCA seperti amitriptyline mungkin berakibat fatal dan oleh karena itu harus dihindari pada kelompok ini<li>Jika ada risiko melukai diri sendiri atau bunuh diri (Buka » SUI), berikan persediaan antidepresan terbatas (misalnya persediaan satu minggu).<li>Mintalah pengasuh orang tersebut untuk menyimpan dan memantau obatobatan dan sering melakukan tindak lanjut untuk mencegah overdosis obat.</ul>"
+        },
+        {
+            "id": 19,
+            "parentId": 13,
+            "title": "AMITRIPTYLINE (antidepresan trisiklik(TCA))",
+            "type": "link",
+            "content": null
+        },
+        {
+            "id": 20,
+            "parentId": 13,
+            "title": "FLUOXETINE (penghambat reuptake serotonin selektif (SSRI)",
+            "type": "link",
+            "content": null
+        },
+        {
+            "id": 21,
+            "parentId": 19,
+            "title": "DOSIS",
+            "type": "collapse",
+            "content": "<ul><li><strong>Mulai</strong> 25 mg sebelum tidur.<li><strong>Tingkatkan</strong> 25-50 mg per minggu menjadi 100-150 mg setiap hari (maksimum 300 mg).Catatan: Dosis efektif minimum pada orang dewasa adalah 75 mg. Sedasi dapat terlihat pada dosis yang lebih rendah.<li><strong>Lansia/Sakit Kesehatan:</strong> Mulai 25 mg sebelum tidur hingga 50-75 mg setiap hari (maksimum 100 mg).<li><strong>Anak-anak/Remaja:</strong> Jangan gunakan.</ul>"
+        },
+        {
+            "id": 22,
+            "parentId": 19,
+            "title": "EFEK SAMPING",
+            "type": "collapse",
+            "content": "<ul><li>Umum: Sedasi, hipotensi ortostatik (risiko jatuh), penglihatan kabur, kesulitan buang air kecil, mual, penambahan berat badan, disfungsi seksual.<li>Serius: Perubahan EKG (misalnya perpanjangan QTc), aritmia jantung, peningkatan risiko kejang.</ul>"
+        },
+        {
+            "id": 23,
+            "parentId": 19,
+            "title": "KONTRAINDIKASI / PERHATIAN",
+            "type": "collapse",
+            "content": "<ul><li>Hindari pada orang dengan <strong>penyakit jantung</strong>, riwayat kejang, hipertiroidisme, retensi urin, atau glaukoma sudut tertutup sempit, dan gangguan bipolar (dapat memicu mania pada orang dengan gangguan bipolar yang tidak diobati).<li><strong>Overdosis dapat menyebabkan kejang, aritmia jantung, hipotensi, koma, atau kematian</strong><li>Tingkat amitriptyline dapat ditingkatkan dengan obat anti malaria termasuk kina.</ul>"
+        },
+        {
+            "id": 24,
+            "parentId": 20,
+            "title": "DOSIS",
+            "type": "collapse",
+            "content": "<ul><li><strong>Mulai</strong> 10 mg setiap hari selama satu minggu kemudian 20 mg setiap hari<li>Jika tidak ada respon dalam 6 minggu, tingkatkan menjadi 40 mg (maksimum 80 mg).<li>Lansia/sakit medis: pilihan yang lebih disukai.Mulai 10 mg setiap hari, lalu tingkatkan menjadi 20 mg (maksimum 40 mg).<li><strong>Remaja</strong> Mulai 10 mg setiap hari. Tingkatkan menjadi 20 mg setiap hari jika tidak ada respons dalam 6 minggu (maksimum 40 mg).</ul>"
+        },
+        {
+        "id": 25,
+            "parentId": 20,
+            "title": "EFEK SAMPING",
+            "type": "collapse",
+            "content": "<ul><li><strong>Umum:</strong> Sedasi, insomnia, sakit kepala, pusing, gangguan pencernaan, perubahan nafsu makan, dan disfungsi seksual.<li><strong>Serius: kelainan perdarahan</strong> pada mereka yang menggunakan aspirin atau obat antiinflamasi nonsteroid lainnya, kadar natrium rendah.</ul>"
+        },
+        {
+            "id": 26,
+            "parentId": 20,
+            "title": "KONTRAINDIKASI / PERHATIAN",
+            "type": "collapse",
+            "content": "<ul><li><strong>Perhatian pada orang dengan riwayat kejang.</strong><li><strong>Interaksi Obat-Obat:</strong> Hindari kombinasi dengan <strong>warfarin</strong> (dapat meningkatkan risiko perdarahan). Dapat meningkatkan kadar TCA, antipsikotik, dan beta-blocker.<li>Perhatian bila dikombinasikan dengan tamoxifen, kodein, dan tramadol (mengurangi efek obat ini).</ul>"
+        },
+        {
+            "id": 27,
+            "parentId": 3,
+            "title": "ANAK/REMAJA",
+            "type": "collapse",
+            "content": "Untuk penanganan depresi pada anak/remaja,kunjungi CMH."
+        },
+        {
+            "id": 28,
+            "parentId": 3,
+            "title": "WANITA YANG HAMIL ATAU MENYUSUI",
+            "type": "collapse",
+            "content": "<ul><li>Ikuti pengobatan untuk depresi (PROTOKOL)<br><ul>1) tetapi HINDARI obat anti depresan jika memungkinkan, terutama pada trimester pertama.</ul><li>Jika tidak ada respon terhadap pengobatan psikologis ment, pertimbangkan untuk menggunakan dengan hati-hati antidepresan dosis terendah yang efektif.<li>Jika menyusui, hindari obat jangka panjang seperti fluoxetine.<li>KONSULTASIKAN DENGAN SPESIALIS, jika tersedia.</ul>"
+        }
+    ]
 }
