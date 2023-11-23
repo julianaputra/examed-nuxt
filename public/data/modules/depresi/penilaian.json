@@ -1,6 +1,5 @@
 {
-    "data": [
-        {
+    "data": [{
             "id": 1,
             "title": "Presentasi Umum Depresi",
             "question": {
@@ -23,9 +22,9 @@
         },
         {
             "id": 2,
-            "title": "Apakah orang tersebut mengalami depresi?",
+            "title": "Apakah Pasien mengalami depresi?",
             "question": {
-                "title": "Apakah orang tersebut pernah mengalami setidaknya satu dari gejala inti depresi berikut selama minimal 2 minggu?",
+                "title": "Apakah Pasien pernah mengalami setidaknya satu dari gejala inti depresi berikut selama minimal 2 minggu?",
                 "type": "text",
                 "content": "<ul><li>Mood depresi yang persisten</li><li>Minat atau kesenangan terhadap aktivitas berkurang secara nyata</li></ul>"
             },
@@ -58,9 +57,9 @@
         },
         {
             "id": 4,
-            "title": "Apakah orang tersebut mengalami depresi?",
+            "title": "Apakah Pasien mengalami depresi?",
             "question": {
-                "title": "Apakah orang tersebut mengalami beberapa gejala tambahan berikut selama minimal 2 minggu:",
+                "title": "Apakah Pasien mengalami beberapa gejala tambahan berikut selama minimal 2 minggu:",
                 "type": "checkbox",
                 "content": [
                     "Tidur terganggu atau terlalu banyak tidur",
@@ -88,9 +87,9 @@
         },
         {
             "id": 5,
-            "title": "Apakah orang tersebut mengalami depresi?",
+            "title": "Apakah Pasien mengalami depresi?",
             "question": {
-                "title": "Apakah orang tersebut mengalami kesulitan besar dalam menjalankan fungsi sehari-hari dalam bidang pribadi, keluarga, sosial, pendidikan, pekerjaan atau bidang lainnya?",
+                "title": "Apakah Pasien mengalami kesulitan besar dalam menjalankan fungsi sehari-hari dalam bidang pribadi, keluarga, sosial, pendidikan, pekerjaan atau bidang lainnya?",
                 "type": "checkbox",
                 "content": null
             },
@@ -195,25 +194,6 @@
             "href": null
         },
         {
-            "id": 10,
-            "title": "Apakah ada kemungkinan penjelasan lain untuk gejalanya?",
-            "question": {
-                "title": "Apakah gejala depresi tetap ada setelah pengobatan?",
-                "type": "text",
-                "content": null
-            },
-            "isResult": false,
-            "isStep": false,
-            "answer": {
-                "type": "true-false",
-                "target": {
-                    "true": 8,
-                    "false": 19
-                }
-            },
-            "href": null
-        },
-        {
             "id": 11,
             "title": "Apakah ada kemungkinan penjelasan lain untuk gejalanya?",
             "question": {
@@ -247,6 +227,114 @@
                 "target": null
             },
             "href": null
+        },
+        {
+            "id": 13,
+            "title": "Hasil Assesment",
+            "question": {
+                "title": "DEPRESI mungkin terjadi",
+                "type": "text",
+                "content": "<ul><li>Lanjutkan ke LANGKAH 10 3 lalu ke PROTOKOL 1</li></ul>"
+            },
+            "isResult": true,
+            "isStep": false,
+            "answer": {
+                "type": "continue",
+                "target": null 
+            },
+            "href": null 
+        },
+        {
+            "id": 14,
+            "title": "Apakah ada kemungkinan penjelasan lain untuk gejalanya?",
+            "question": {
+                "title": "Apakah ada gejala berikut yang muncul?",
+                "type": "checkbox",
+                "content": [
+                    "Pemikiran bunuh diri",
+                    "Keyakinan akan ketidak berhargaan",
+                    "Gejala psikotik",
+                    "Berbicara atau bergerak lebih lambat dari biasanya"
+                ]
+            },
+            "isResult": false,
+            "isStep": false,
+            "answer": {
+                "type": "true-false",
+                "target": {
+                    "true": 16,
+                    "false": 15
+                }
+            },
+            "href": null
+        },
+        {
+            "id": 15,
+            "title": "Apakah ada kemungkinan penjelasan lain untuk gejalanya?",
+            "question": {
+                "title": "Apakah Pasien mempunyai riwayat depresi sebelumnya?",
+                "type": "text",
+                "content": null
+            },
+            "isResult": false,
+            "isStep": false,
+            "answer": {
+                "type": "true-false",
+                "target": {
+                    "true": 16,
+                    "false": 17
+                }
+            },
+            "href": null
+        },
+        {
+            "id": 16,
+            "title": "Apakah ada kemungkinan penjelasan lain untuk gejalanya?",
+            "question": {
+                "title": "DEPRESI mungkin terjadi",
+                "type": "text",
+                "content": null
+            },
+            "isResult": true,
+            "isStep": false,
+            "answer": {
+                "type": "continue",
+                "target": 18
+            },
+            "href": null 
+        },
+        {
+            "id": 17,
+            "title": "Hasil Assesment",
+            "question": {
+                "title": "Jangan mengatasi depresi.",
+                "type": "text",
+                "content": "<ul><li>Kunjungi lainnya</li></ul>"
+            },
+            "isResult": false,
+            "isStep": false,
+            "answer": {
+                "type": "continue",
+                "target": null 
+            },
+            "href": null  
+            
+        },
+        {
+            "id": 18,
+            "title": "Hasil Assesment",
+            "question": {
+                "title": "Menilai kondisi MNS bersamaan berdasarkan master chart mhGAPIG. Pergi ke »MC.",
+                "type": "text",
+                "content": "<ul><li>Orang dengan depresi mempunyai risiko lebih tinggi untuk sebagian besar kondisi MNS prioritas lainnya. Kaji adanya gangguan akibat penggunaan narkoba.</li></ul>"
+            },
+            "isResult": false,
+            "isStep": true,
+            "answer": {
+                "type": "continue",
+                "target": null 
+            },
+            "href": null 
         }
     ]
 }

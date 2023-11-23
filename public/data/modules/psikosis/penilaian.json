@@ -1,0 +1,187 @@
+{
+    "data": [{
+            "id": 1,
+            "title": "PRESENTASI UMUM PSIKOSA",
+            "question": {
+                "title": null,
+                "type": "checkbox",
+                "content": ["Perubahan perilaku yang ditandai, mengabaikan tanggung jawab biasa yang berkaitan dengan pekerjaan, sekolah, aktivitas rumah tangga atau sosial.",
+                    "Agitasi, perilaku agresif, penurunan atau peningkatan aktivitas.",
+                    "Memperbaiki keyakinan salah yang tidak dimiliki oleh orang lain dalam budaya Pasien.",
+                    "Mendengar suara-suara atau melihat sesuatu yang sebenarnya tidak ada.",
+                    "Kurangnya kesadaran bahwa seseorang sedang mengalami masalah kesehatan mental."
+                ]
+            },
+            "isResult": false,
+            "isStep": true,
+            "answer": {
+                "type": "continue",
+                "target": 2
+            },
+            "href": null
+        },
+        {
+            "id": 2,
+            "title": "Apakah ada penjelasan lain untuk gejalanya?",
+            "question": {
+                "title": "EVALUASI KONDISI MEDIS",
+                "type": "text",
+                "content": "<ul>Berdasarkan riwayat, pemeriksaan klinis, atau temuan laboratorium, apakah ada tanda dan gejala yang menunjukkan <strong> delirium </strong> akibat kondisi fisik akut, misalnya infeksi, malariaserebral, dehidrasi, kelainan metabolik (seperti hipoglikemia atau hiponatremia);<li><strong>efek samping pengobatan,</strong> misalnya karena obat antimalaria atau steroid?</li><</ul>"
+            },
+            "isResult": false,
+            "isStep": true,
+            "answer": {
+                "type": "true-false",
+                "target": {
+                    "true": 4,
+                    "false": 3
+                }
+            },
+            "href": null
+        },
+        {
+            "id": 3,
+            "title": "Apakah ada penjelasan lain untuk gejalanya?",
+            "question": {
+                "title": "EVALUASI DEMENTIA, DEPRESI, OBAT/ INTOKSIKASI ATAU PENARIKAN ALKOHOL.",
+                "type": "text",
+                "content": null
+            },
+            "isResult": false,
+            "isStep": false,
+            "answer": {
+                "type": "true-false",
+                "target": {
+                    "true": 6,
+                    "false": 5
+                }
+            },
+            "href": null
+        }, {
+            "id": 4,
+            "title": "Hasil Assesment",
+            "question": {
+                "title": "Kaji dan tangani kondisi fisik akut, dan rujuk ke layanan darurat/spesialis bila diperlukan",
+                "type": "text",
+                "content": "<ul><li>Jika gejala menetap setelah penanganan penyebab akut, lanjutkan ke LANGKAH 2</li><li>Pertimbangkan konsultasi dengan spesialis kesehatan mental untuk menangani kondisi yang terjadi bersamaan</li><li>Kelola kondisi bersamaan.Buka modul yang relevan.</li></ul>"
+            },
+            "isResult": true,
+            "isStep": false,
+            "answer": {
+                "type": "continue",
+                "target": 5
+            },
+            "href": null
+        },
+        {
+            "id": 5,
+            "title": "Apakah Pasien mengalami episode manik akut?",
+            "question": {
+                "title": "Memiliki beberapa gejala berikut yang terjadi secara bersamaan, berlangsung setidaknya selama 1 minggu, dan cukup parah sehingga mengganggu pekerjaan dan aktivitas sosial secara signifikan atau memerlukan rawat inap atau rawat inap:",
+                "type": "checkbox",
+                "content": ["Suasana hati meningkat atau mudah tersinggung",
+                    "Penurunan kebutuhan tidur",
+                    "Peningkatan aktivitas, perasaan peningkatan energi,peningkatan banyak bicara atau bicara cepat",
+                    "Hilangnya hambatan sosial yang normal seperti itu sebagai kecerobohan seksual",
+                    "Perilaku impulsif atau sembrono seperti pengeluaran berlebihan, pengambilan keputusan penting tanpa perencanaan",
+                    "Mudah teralihkan perhatiannya",
+                    "Harga diri yang meningkat secara tidak realistis"
+                ]
+            },
+            "isResult": false,
+            "isStep": true,
+            "answer": {
+                "type": "true-false",
+                "target": {
+                    "true": 8,
+                    "false": 7
+                }
+            },
+            "href": null
+        }, {
+            "id": 6,
+            "title": "Apakah ada penjelasan lain untuk gejalanya?",
+            "question": {
+                "title": "Pertimbangkan konsultasi dengan spesialis kesehatan mental untuk menangani kondisi yang terjadi bersamaan",
+                "type": "text",
+                "content": "<ul></li><li>Kelola kondisi bersamaan.Buka modul yang relevan.</li></ul>"
+            },
+            "isResult": true,
+            "isStep": false,
+            "answer": {
+                "type": "continue",
+                "target": 5
+            },
+            "href": null
+        },
+        {
+            "id": 7,
+            "title": "Apakah Pasien menderita psikosis?",
+            "question": {
+                "title": "Apakah Pasien memiliki setidaknya dua hal berikut",
+                "type": "checkbox",
+                "content": ["Delusi, keyakinan salah yang tidak dimiliki oleh orang lain dalam budaya Pasien",
+                    "Halusinasi, mendengar suara-suara atau melihat sesuatu yang sebenarnya tidak ada ",
+                    "Ucapan dan/atau perilaku yang tidak teratur, misalnya ucapan yang tidak koheren/tidak relevan seperti bergumam atau tertawa pada diri sendiri, penampilan yang aneh, tanda-tanda mengabaikan diri sendiri, atau terlihat tidak terawat"
+                ]
+            },
+            "isResult": false,
+            "isStep": true,
+            "answer": {
+                "type": "true-false",
+                "target": {
+                    "true": 10,
+                    "false": 9
+                }
+            },
+            "href": null
+        },
+        {
+            "id": 8,
+            "title": "Apakah Pasien mengalami episode manik akut?",
+            "question": {
+                "title": "Mengira Episode Manik GANGGUAN BIPOLAR",
+                "type": "text",
+                "content": "<ul><li>Lanjut ke PROTOKOL 1</li></ul>"
+            },
+            "isResult": true,
+            "isStep": false,
+            "answer": {
+                "type": "continue",
+                "target": null
+            },
+            "href": null
+        }, {
+            "id": 9,
+            "title": "Hasil Assesment",
+            "question": {
+                "title": "Pertimbangkan konsultasi dengan spesialis untuk meninjau kemungkinan penyebab psikosis lainnya",
+                "type": "text",
+                "content": null
+            },
+            "isResult": true,
+            "isStep": false,
+            "answer": {
+                "type": "continue",
+                "target": null
+            },
+            "href": null
+        },
+        {
+            "id": 10,
+            "title": "Hasil Assesment",
+            "question": {
+                "title": "Mengira PSIKHOSIS",
+                "type": "text",
+                "content": null
+            },
+            "isResult": true,
+            "isStep": false,
+            "answer": {
+                "type": "continue",
+                "target": null
+            },
+            "href": null
+        }
+    ]
+}

@@ -1,0 +1,270 @@
+{
+    "data": [{
+            "id": 1,
+            "title": "KAJIKAN KERUGIAN DIRI/BUNUH DIRI JIKA PASIEN HADIR DENGAN SALAH SATU:",
+            "question": {
+                "title": null,
+                "type": "checkbox",
+                "content": ["Keputusasaan dan keputusasaan yang ekstrem, pemikiran/rencana/tindakan yang ada saat ini untuk bunuh diri atau riwayatnya, tindakan menyakiti diri sendiri dengan tanda-tanda keracunan/mabuk, pendarahan akibat luka yang dibuat sendiri, kehilangan kesadaran dan/atau kelesuan ekstrem, ATAU",
+                    "Salah satu kondisi MNS prioritas, nyeri kronis, atau tekanan emosional ekstrem"
+                ]
+            },
+            "isResult": false,
+            "isStep": true,
+            "answer": {
+                "type": "continue",
+                "target": 2
+            },
+            "href": null
+        },
+        {
+            "id": 2,
+            "title": "Apakah Pasien pernah melakukan tindakan menyakiti diri sendiri yang serius secara medis?",
+            "question": {
+                "title": "Kaji apakah ada bukti cedera diri dan/atau tanda/gejala yang memerlukan perawatan medis segera:",
+                "type": "checkbox",
+                "content": ["Tanda-tanda keracunan atau keracunan",
+                    "Pendarahan akibat luka yang dibuat sendiri",
+                    "Penurunan kesadaran",
+                    "Kelesuan ekstrim"
+                ]
+            },
+            "isResult": false,
+            "isStep": true,
+            "answer": {
+                "type": "continue",
+                "target": 2
+            },
+            "href": null
+        },
+        
+        {
+            "id": 3,
+            "title": "Hasil Assesment",
+            "question": {
+                "title": "Tanyakan kepada Pasien dan pengasuhnya apakah ada SALAH SATU dari hal berikut:",
+                "type": "checkbox",
+                "content": ["Pikiran atau rencana saat ini untuk menyakiti diri sendiri/bunuh diri",
+                    " Riwayat pemikiran atau rencana melukai diri sendiri dalam sebulan terakhir atau tindakan menyakiti diri sendiri dalam setahun terakhir pada seseorang yang sekarang sangat gelisah, kasar, tertekan atau kurang komunikasi"
+                ]
+            },
+            "isResult": false,
+            "isStep": false,
+            "answer": {
+                "type": "true-false",
+                "target": {
+                    "true": 6,
+                    "false": 5
+                }
+            },
+            "href": null
+        },
+        {
+            "id": 4,
+            "title": "Apakah Pasien pernah melakukan tindakan menyakiti diri sendiri yang serius secara medis?",
+            "question": {
+                "title": "Penatalaksanaan tindakan menyakiti diri sendiri yang serius secara medis diperlukan.",
+                "type": "text",
+                "content": "<ul><li>Lanjut ke PROTOKOL 1</li><li></li>Kembali ke LANGKAH 2  setelah Pasien stabil secara medis.</ul>"
+            },
+            "isResult": true,
+            "isStep": false,
+            "answer": {
+                "type": "continue",
+                "target": 3
+            },
+            "href": null
+        },
+        {
+            "id": 5,
+            "title": "Apakah ada risiko melukai diri sendiri/bunuh diri?",
+            "question": {
+                "title": "Apakah ada riwayat pemikiran atau rencana melukai diri sendiri dalam sebulan terakhir atau tindakan melukai diri sendiri dalam setahun terakhir?",
+                "type": "text",
+                "content": null
+            },
+            "isResult": false,
+            "isStep": false,
+            "answer": {
+                "type": "true-false",
+                "target": {"true":8,
+            "false":7}
+            },
+            "href": null
+        },
+        {
+            "id": 6,
+            "title": "Hasil Assesment",
+            "question": {
+                "title": "RISIKO YANG TERJADI",
+                "type": "text",
+                "content": "<ul>KERUGIAN DIRI/BUNUH DIRI kemungkinan besar terjadi<li>Buka PROTOKOL 2, kelola,lalu lanjutkan ke LANGKAH 3 </li></ul>"
+            },
+            "isResult": false,
+            "isStep": false,
+            "answer": {
+                "type": "continue",
+                "target": null
+            },
+            "href": null
+        },
+        {
+            "id": 7,
+            "title": "Apakah ada risiko melukai diri sendiri/bunuh diri?",
+            "question": {
+                "title": "Risiko melukai diri sendiri/bunuh diri tidak mungkin terjadi.",
+                "type": "text",
+                "content": null
+            },
+            "isResult": true,
+            "isStep": false,
+            "answer": {
+                "type": "continue",
+                "target": 9
+            },
+            "href": null
+        },
+        {
+            "id": 8,
+            "title": "Apakah ada risiko melukai diri sendiri/bunuh diri?",
+            "question": {
+                "title": "Risiko melukai diri sendiri/bunuh diri kemungkinankecil terjadi, namun risiko tersebut mungkin masih ada.",
+                "type": "text",
+                "content": "Buka PROTOKOL 3, kelola,lalu lanjutkan ke LANGKAH 3 "
+            },
+            "isResult": true,
+            "isStep": false,
+            "answer": {
+                "type": "continue",
+                "target": 9
+            },
+            "href": null
+        },
+        {
+            "id": 9,
+            "title": "Apakah Pasien memiliki kondisi MNS yang bersamaan?",
+            "question": {
+                "title": null,
+                "type": "checkbox",
+                "content": [
+                    "Depresi",
+                    "Gangguan akibat penggunaan narkoba",
+                    "Mental anak & remaja dan gangguan perilaku",
+                    "Psikosis",
+                    "Epilepsi"
+                ]
+            },
+            "isResult": false,
+            "isStep": false,
+            "answer": {
+                "type": "true-false",
+                "target": {"true":11,
+            "false":10}
+        },
+        "href": null
+        },
+        {
+            "id": 10,
+            "title": "Apakah Pasien menderita sakit kronis?",
+            "question": {
+                "title": null,
+                "type": "text",
+                "content": null
+            },
+            "isResult": false,
+            "isStep": true,
+            "answer": {
+                "type": "true-false",
+                "target": {"true":13,
+            "false":12}
+        },
+        "href": null
+        },
+        {
+            "id": 11,
+            "title": "Apakah Pasien menderita sakit kronis?",
+            "question": {
+                "title": "Kelola kondisi yang bersamaan.",
+                "type": "text",
+                "content": "Lihat modul yang relevan"
+            },
+            "isResult": true,
+            "isStep": false,
+            "answer": {
+                "type": "continue",
+                "target": null
+            },
+            "href": null
+        },
+        {
+            "id": 12,
+            "title": "Apakah Pasien mempunyai gejala emosional yang cukup parah sehingga memerlukan penatalaksanaan klinis?",
+            "question": {
+                "title": "",
+                "type": "checkbox",
+                "content": ["Kesulitan melakukan pekerjaan biasa, sekolah,kegiatan rumah tangga atau sosial",
+            " Pengobatan sendiri berulang kali untuk emosional kesusahan, atau gejala fisik yang tidak dapat dijelaskan",
+            "Distress yang nyata atau pencarian bantuan yang berulang-ulang"]
+            },
+            "isResult": false,
+            "isStep": false,
+            "answer": {
+                "type": "true-false",
+                "target": {
+                    "true":15,
+                    "false":14
+                }
+            },
+            "href": null
+        },
+        {
+            "id": 13,
+            "title": "Apakah Pasien menderita sakit kronis?",
+            "question": {
+                "title": "Kelola rasa sakit dan obati kondisi medis apa pun yang relevan.",
+                "type": "text",
+                "content": null
+            },
+            "isResult": true,
+            "isStep": false,
+            "answer": {
+                "type": "continue",
+                "target": 12
+            },
+            "href": null
+        },
+        
+        {
+            "id": 14,
+            "title": "Hasil Assesment",
+            "question": {
+                "title": "Lanjut ke SUI 3 (Tindak lanjut)",
+                "type": "text",
+                "content": null
+            },
+            "isResult": true,
+            "isStep": false,
+            "answer": {
+                "type": "continue",
+                "target": null
+            },
+            "href": null
+        },
+        {
+            "id": 15,
+            "title": "Hasil Assesment",
+            "question": {
+                "title": null,
+                "type": "text",
+                "content": "<ul><li>Kelola gejala emosionalnya.</li><li></li>Kunjungi lainnya</ul>"
+            },
+            "isResult": true,
+            "isStep": false,
+            "answer": {
+                "type": "continue",
+                "target": null
+            },
+            "href": null
+        }
+    ]
+}

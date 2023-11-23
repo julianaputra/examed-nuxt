@@ -32,7 +32,7 @@ const diagnoses = ref([
   },
   {
     name: 'Psikosis',
-    to: '/',
+    to: '/psikosis',
     short: 'PSY',
     color: 'purple'
   },
@@ -50,7 +50,7 @@ const diagnoses = ref([
   },
   {
     name: 'Menyakiti Diri Sendiri / Bunuh Diri',
-    to: '/',
+    to: '/suicide',
     short: 'SUI',
     color: 'red'
   },
