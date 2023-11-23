@@ -22,11 +22,11 @@
         },
         {
             "id": 2,
-            "title": "Apakah ada penjelasan lain untuk gejalanya?",
+            "title": "STEP 1: Apakah ada penjelasan lain untuk gejalanya?",
             "question": {
                 "title": "EVALUASI KONDISI MEDIS",
                 "type": "text",
-                "content": "<ul>Berdasarkan riwayat, pemeriksaan klinis, atau temuan laboratorium, apakah ada tanda dan gejala yang menunjukkan <strong> delirium </strong> akibat kondisi fisik akut, misalnya infeksi, malariaserebral, dehidrasi, kelainan metabolik (seperti hipoglikemia atau hiponatremia);<li><strong>efek samping pengobatan,</strong> misalnya karena obat antimalaria atau steroid?</li><</ul>"
+                "content": "<ul>Berdasarkan riwayat, pemeriksaan klinis, atau temuan laboratorium, apakah ada tanda dan gejala yang menunjukkan <strong> delirium </strong> akibat kondisi fisik akut, misalnya infeksi, malariaserebral, dehidrasi, kelainan metabolik (seperti hipoglikemia atau hiponatremia);<li><strong> atau efek samping pengobatan,</strong> misalnya karena obat antimalaria atau steroid?</li></ul>"
             },
             "isResult": false,
             "isStep": true,
@@ -75,7 +75,7 @@
         },
         {
             "id": 5,
-            "title": "Apakah Pasien mengalami episode manik akut?",
+            "title": "STEP 2 :Apakah Pasien mengalami episode manik akut?",
             "question": {
                 "title": "Memiliki beberapa gejala berikut yang terjadi secara bersamaan, berlangsung setidaknya selama 1 minggu, dan cukup parah sehingga mengganggu pekerjaan dan aktivitas sosial secara signifikan atau memerlukan rawat inap atau rawat inap:",
                 "type": "checkbox",
@@ -116,7 +116,7 @@
         },
         {
             "id": 7,
-            "title": "Apakah Pasien menderita psikosis?",
+            "title": "STEP 3: Apakah Pasien menderita psikosis?",
             "question": {
                 "title": "Apakah Pasien memiliki setidaknya dua hal berikut",
                 "type": "checkbox",

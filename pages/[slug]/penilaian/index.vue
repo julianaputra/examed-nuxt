@@ -29,7 +29,10 @@
               ></div>
             </template>
             <template #footer>
-              <div v-if="activeQuestion?.isResult" class="card__buttons">
+              <div
+                v-if="activeQuestion?.answer.target === null"
+                class="card__buttons"
+              >
                 <UiButton @click="finish">Lanjutkan</UiButton>
               </div>
               <div

@@ -22,9 +22,9 @@
         },
         {
             "id": 2,
-            "title": "Apakah Pasien mengalami depresi?",
+            "title": "STEP 1: Apakah pasien mengalami depresi?",
             "question": {
-                "title": "Apakah Pasien pernah mengalami setidaknya satu dari gejala inti depresi berikut selama minimal 2 minggu?",
+                "title": "Apakah pasien pernah mengalami setidaknya satu dari gejala inti depresi berikut selama minimal 2 minggu?",
                 "type": "text",
                 "content": "<ul><li>Mood depresi yang persisten</li><li>Minat atau kesenangan terhadap aktivitas berkurang secara nyata</li></ul>"
             },
@@ -57,9 +57,9 @@
         },
         {
             "id": 4,
-            "title": "Apakah Pasien mengalami depresi?",
+            "title": "Apakah pasien mengalami depresi?",
             "question": {
-                "title": "Apakah Pasien mengalami beberapa gejala tambahan berikut selama minimal 2 minggu:",
+                "title": "Apakah pasien mengalami beberapa gejala tambahan berikut selama minimal 2 minggu:",
                 "type": "checkbox",
                 "content": [
                     "Tidur terganggu atau terlalu banyak tidur",
@@ -87,9 +87,9 @@
         },
         {
             "id": 5,
-            "title": "Apakah Pasien mengalami depresi?",
+            "title": "Apakah pasien mengalami depresi?",
             "question": {
-                "title": "Apakah Pasien mengalami kesulitan besar dalam menjalankan fungsi sehari-hari dalam bidang pribadi, keluarga, sosial, pendidikan, pekerjaan atau bidang lainnya?",
+                "title": "Apakah pasien mengalami kesulitan besar dalam menjalankan fungsi sehari-hari dalam bidang pribadi, keluarga, sosial, pendidikan, pekerjaan atau bidang lainnya?",
                 "type": "checkbox",
                 "content": null
             },
@@ -122,7 +122,7 @@
         },
         {
             "id": 7,
-            "title": "Apakah ada kemungkinan penjelasan lain untuk gejalanya?",
+            "title": "STEP 2: Apakah ada kemungkinan penjelasan lain untuk gejalanya?",
             "question": {
                 "title": "Apakah ini kondisi fisik yang dapat menyerupakan atau memperbesar depresi?",
                 "type": "text",
@@ -272,7 +272,7 @@
             "id": 15,
             "title": "Apakah ada kemungkinan penjelasan lain untuk gejalanya?",
             "question": {
-                "title": "Apakah Pasien mempunyai riwayat depresi sebelumnya?",
+                "title": "Apakah pasien mempunyai riwayat depresi sebelumnya?",
                 "type": "text",
                 "content": null
             },
@@ -322,7 +322,7 @@
         },
         {
             "id": 18,
-            "title": "Hasil Assesment",
+            "title": "STEP 3 Apakah ada kondisi MNS prioritas bersamaan?",
             "question": {
                 "title": "Menilai kondisi MNS bersamaan berdasarkan master chart mhGAPIG. Pergi ke »MC.",
                 "type": "text",

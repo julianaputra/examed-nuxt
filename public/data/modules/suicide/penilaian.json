@@ -19,7 +19,7 @@
         },
         {
             "id": 2,
-            "title": "Apakah Pasien pernah melakukan tindakan menyakiti diri sendiri yang serius secara medis?",
+            "title": "STEP 1 : Apakah Pasien pernah melakukan tindakan menyakiti diri sendiri yang serius secara medis?",
             "question": {
                 "title": "Kaji apakah ada bukti cedera diri dan/atau tanda/gejala yang memerlukan perawatan medis segera:",
                 "type": "checkbox",
@@ -33,7 +33,7 @@
             "isStep": true,
             "answer": {
                 "type": "continue",
-                "target": 2
+                "target": 3
             },
             "href": null
         },
@@ -77,14 +77,14 @@
         },
         {
             "id": 5,
-            "title": "Apakah ada risiko melukai diri sendiri/bunuh diri?",
+            "title": "STEP 2 : Apakah ada risiko melukai diri sendiri/bunuh diri?",
             "question": {
                 "title": "Apakah ada riwayat pemikiran atau rencana melukai diri sendiri dalam sebulan terakhir atau tindakan melukai diri sendiri dalam setahun terakhir?",
                 "type": "text",
                 "content": null
             },
             "isResult": false,
-            "isStep": false,
+            "isStep": true,
             "answer": {
                 "type": "true-false",
                 "target": {"true":8,
@@ -142,7 +142,7 @@
         },
         {
             "id": 9,
-            "title": "Apakah Pasien memiliki kondisi MNS yang bersamaan?",
+            "title": "STEP 3 : Kondisi MNS yang bersamaan?",
             "question": {
                 "title": null,
                 "type": "checkbox",
@@ -155,7 +155,7 @@
                 ]
             },
             "isResult": false,
-            "isStep": false,
+            "isStep": true,
             "answer": {
                 "type": "true-false",
                 "target": {"true":11,
@@ -165,7 +165,7 @@
         },
         {
             "id": 10,
-            "title": "Apakah Pasien menderita sakit kronis?",
+            "title": "STEP 4 : Apakah Pasien menderita sakit kronis?",
             "question": {
                 "title": null,
                 "type": "text",
@@ -198,7 +198,7 @@
         },
         {
             "id": 12,
-            "title": "Apakah Pasien mempunyai gejala emosional yang cukup parah sehingga memerlukan penatalaksanaan klinis?",
+            "title": "STEP 5 : Apakah Pasien mempunyai gejala emosional yang cukup parah sehingga memerlukan penatalaksanaan klinis?",
             "question": {
                 "title": "",
                 "type": "checkbox",
@@ -207,7 +207,7 @@
             "Distress yang nyata atau pencarian bantuan yang berulang-ulang"]
             },
             "isResult": false,
-            "isStep": false,
+            "isStep": true,
             "answer": {
                 "type": "true-false",
                 "target": {
