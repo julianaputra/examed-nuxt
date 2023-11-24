@@ -26,7 +26,7 @@
             "question": {
                 "title": "EVALUASI KONDISI MEDIS",
                 "type": "text",
-                "content": "<ul>Berdasarkan riwayat, pemeriksaan klinis, atau temuan laboratorium, apakah ada tanda dan gejala yang menunjukkan <strong> delirium </strong> akibat kondisi fisik akut, misalnya infeksi, malariaserebral, dehidrasi, kelainan metabolik (seperti hipoglikemia atau hiponatremia);<li><strong> atau efek samping pengobatan,</strong> misalnya karena obat antimalaria atau steroid?</li></ul>"
+                "content": "Berdasarkan riwayat, pemeriksaan klinis, atau temuan laboratorium, apakah ada tanda dan gejala yang menunjukkan <strong>delirium </strong>akibat kondisi fisik akut, misalnya infeksi, malariaserebral, dehidrasi, kelainan metabolik (seperti hipoglikemia atau hiponatremia);<ul></ul><li><strong>atau efek samping pengobatan,</strong> misalnya karena obat antimalaria atau steroid?"
             },
             "isResult": false,
             "isStep": true,
@@ -63,7 +63,7 @@
             "question": {
                 "title": "Kaji dan tangani kondisi fisik akut, dan rujuk ke layanan darurat/spesialis bila diperlukan",
                 "type": "text",
-                "content": "<ul><li>Jika gejala menetap setelah penanganan penyebab akut, lanjutkan ke LANGKAH 2</li><li>Pertimbangkan konsultasi dengan spesialis kesehatan mental untuk menangani kondisi yang terjadi bersamaan</li><li>Kelola kondisi bersamaan.Buka modul yang relevan.</li></ul>"
+                "content": "<p>Jika gejala menetap setelah penanganan penyebab akut, lanjutkan ke LANGKAH 2</p>"
             },
             "isResult": true,
             "isStep": false,
@@ -104,7 +104,7 @@
             "question": {
                 "title": "Pertimbangkan konsultasi dengan spesialis kesehatan mental untuk menangani kondisi yang terjadi bersamaan",
                 "type": "text",
-                "content": "<ul></li><li>Kelola kondisi bersamaan.Buka modul yang relevan.</li></ul>"
+                "content": "<p>Kelola kondisi bersamaan.Buka modul yang relevan.</p>"
             },
             "isResult": true,
             "isStep": false,
@@ -142,7 +142,7 @@
             "question": {
                 "title": "Mengira Episode Manik GANGGUAN BIPOLAR",
                 "type": "text",
-                "content": "<ul><li>Lanjut ke PROTOKOL 1</li></ul>"
+                "content": "<p>Lanjut ke PROTOKOL 1</p>"
             },
             "isResult": true,
             "isStep": false,

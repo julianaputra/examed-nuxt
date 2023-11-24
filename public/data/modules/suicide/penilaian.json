@@ -65,7 +65,7 @@
             "question": {
                 "title": "Penatalaksanaan tindakan menyakiti diri sendiri yang serius secara medis diperlukan.",
                 "type": "text",
-                "content": "<ul><li>Lanjut ke PROTOKOL 1</li><li></li>Kembali ke LANGKAH 2  setelah Pasien stabil secara medis.</ul>"
+                "content": "<ul><li>Lanjut ke PROTOKOL 1</li><li>Kembali ke LANGKAH 2  setelah Pasien stabil secara medis.</li></ul>"
             },
             "isResult": true,
             "isStep": false,
@@ -98,7 +98,7 @@
             "question": {
                 "title": "RISIKO YANG TERJADI",
                 "type": "text",
-                "content": "<ul>KERUGIAN DIRI/BUNUH DIRI kemungkinan besar terjadi<li>Buka PROTOKOL 2, kelola,lalu lanjutkan ke LANGKAH 3 </li></ul>"
+                "content": "KERUGIAN DIRI/BUNUH DIRI kemungkinan besar terjadi<lu><li>Buka PROTOKOL 2, kelola,lalu lanjutkan ke LANGKAH 3 </li></ul>"
             },
             "isResult": false,
             "isStep": false,
@@ -130,7 +130,7 @@
             "question": {
                 "title": "Risiko melukai diri sendiri/bunuh diri kemungkinankecil terjadi, namun risiko tersebut mungkin masih ada.",
                 "type": "text",
-                "content": "Buka PROTOKOL 3, kelola,lalu lanjutkan ke LANGKAH 3 "
+                "content": "<p>Buka PROTOKOL 3, kelola,lalu lanjutkan ke LANGKAH 3 </p>"
             },
             "isResult": true,
             "isStep": false,
@@ -186,7 +186,7 @@
             "question": {
                 "title": "Kelola kondisi yang bersamaan.",
                 "type": "text",
-                "content": "Lihat modul yang relevan"
+                "content": "<p>Lihat modul yang relevan</p>"
             },
             "isResult": true,
             "isStep": false,

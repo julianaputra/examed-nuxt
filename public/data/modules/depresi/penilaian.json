@@ -152,8 +152,8 @@
             "answer": {
                 "type": "true-false",
                 "target": {
-                    "true": 9,
-                    "false": 8
+                    "true": 12,
+                    "false": 11
                 }
             },
             "href": null
@@ -234,7 +234,7 @@
             "question": {
                 "title": "DEPRESI mungkin terjadi",
                 "type": "text",
-                "content": "<ul><li>Lanjutkan ke LANGKAH 10 3 lalu ke PROTOKOL 1</li></ul>"
+                "content": "<p>Lanjutkan ke LANGKAH 10 3 lalu ke PROTOKOL 1</p>"
             },
             "isResult": true,
             "isStep": false,
@@ -309,7 +309,7 @@
             "question": {
                 "title": "Jangan mengatasi depresi.",
                 "type": "text",
-                "content": "<ul><li>Kunjungi lainnya</li></ul>"
+                "content": "<p>Kunjungi lainnya</p>"
             },
             "isResult": false,
             "isStep": false,
@@ -322,11 +322,11 @@
         },
         {
             "id": 18,
-            "title": "STEP 3 Apakah ada kondisi MNS prioritas bersamaan?",
+            "title": "STEP 3 : Apakah ada kondisi MNS prioritas bersamaan?",
             "question": {
                 "title": "Menilai kondisi MNS bersamaan berdasarkan master chart mhGAPIG. Pergi ke »MC.",
                 "type": "text",
-                "content": "<ul><li>Orang dengan depresi mempunyai risiko lebih tinggi untuk sebagian besar kondisi MNS prioritas lainnya. Kaji adanya gangguan akibat penggunaan narkoba.</li></ul>"
+                "content": "<p>Orang dengan depresi mempunyai risiko lebih tinggi untuk sebagian besar kondisi MNS prioritas lainnya. Kaji adanya gangguan akibat penggunaan narkoba.</p>"
             },
             "isResult": false,
             "isStep": true,
