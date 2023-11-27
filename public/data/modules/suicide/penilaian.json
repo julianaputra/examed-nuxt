@@ -32,19 +32,23 @@
             "isResult": false,
             "isStep": true,
             "answer": {
-                "type": "continue",
-                "target": 3
+                "type": "true-false",
+                "target": {
+                    "true":4,
+                    "false":3
+                }
             },
             "href": null
         },
         
         {
             "id": 3,
-            "title": "Hasil Assesment",
+            "title": "STEP 1 : Apakah Pasien pernah melakukan tindakan menyakiti diri sendiri yang serius secara medis?",
             "question": {
                 "title": "Tanyakan kepada Pasien dan pengasuhnya apakah ada SALAH SATU dari hal berikut:",
                 "type": "checkbox",
-                "content": ["Pikiran atau rencana saat ini untuk menyakiti diri sendiri/bunuh diri",
+                "content": 
+                ["Pikiran atau rencana saat ini untuk menyakiti diri sendiri/bunuh diri",
                     " Riwayat pemikiran atau rencana melukai diri sendiri dalam sebulan terakhir atau tindakan menyakiti diri sendiri dalam setahun terakhir pada seseorang yang sekarang sangat gelisah, kasar, tertekan atau kurang komunikasi"
                 ]
             },
@@ -61,7 +65,7 @@
         },
         {
             "id": 4,
-            "title": "Apakah Pasien pernah melakukan tindakan menyakiti diri sendiri yang serius secara medis?",
+            "title": "STEP 1 : Apakah Pasien pernah melakukan tindakan menyakiti diri sendiri yang serius secara medis?",
             "question": {
                 "title": "Penatalaksanaan tindakan menyakiti diri sendiri yang serius secara medis diperlukan.",
                 "type": "text",
@@ -106,11 +110,11 @@
                 "type": "continue",
                 "target": null
             },
-            "href": null
+            "href": 9
         },
         {
             "id": 7,
-            "title": "Apakah ada risiko melukai diri sendiri/bunuh diri?",
+            "title": "STEP 2 : Apakah ada risiko melukai diri sendiri/bunuh diri?",
             "question": {
                 "title": "Risiko melukai diri sendiri/bunuh diri tidak mungkin terjadi.",
                 "type": "text",
@@ -126,7 +130,7 @@
         },
         {
             "id": 8,
-            "title": "Apakah ada risiko melukai diri sendiri/bunuh diri?",
+            "title": "STEP 2 : Apakah ada risiko melukai diri sendiri/bunuh diri?",
             "question": {
                 "title": "Risiko melukai diri sendiri/bunuh diri kemungkinankecil terjadi, namun risiko tersebut mungkin masih ada.",
                 "type": "text",
@@ -182,7 +186,7 @@
         },
         {
             "id": 11,
-            "title": "Apakah Pasien menderita sakit kronis?",
+            "title": "STEP 4 : Apakah Pasien menderita sakit kronis?",
             "question": {
                 "title": "Kelola kondisi yang bersamaan.",
                 "type": "text",
@@ -219,7 +223,7 @@
         },
         {
             "id": 13,
-            "title": "Apakah Pasien menderita sakit kronis?",
+            "title": "STEP 4 : Apakah Pasien menderita sakit kronis?",
             "question": {
                 "title": "Kelola rasa sakit dan obati kondisi medis apa pun yang relevan.",
                 "type": "text",

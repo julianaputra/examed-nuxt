@@ -110,7 +110,7 @@
             "question": {
                 "title": "Pertimbangkan DEPRESI",
                 "type": "text",
-                "content": "<ul><li>Seseorang dengan depresi mungkin memiliki gejala psikotik seperti delusi atau halusinasi. Jika ada, pengobatan untuk depresi perlu disesuaikan. <strong>KONSULTASIKAN DENGAN SPESIAL</strong></li></ul>"
+                "content": "<ul><li>Seseorang dengan depresi mungkin memiliki gejala psikotik seperti delusi atau halusinasi. Jika ada, pengobatan untuk depresi perlu disesuaikan. <strong>KONSULTASIKAN DENGAN SPESIALIS</strong></li></ul>"
             },
             "isResult": true,
             "isStep": false,
@@ -141,7 +141,7 @@
         },
         {
             "id": 8,
-            "title": "Apakah ada kemungkinan penjelasan lain untuk gejalanya?",
+            "title": "STEP 2: Apakah ada kemungkinan penjelasan lain untuk gejalanya?",
             "question": {
                 "title": "Apakah ada sejarah mania?",
                 "type": "text",
@@ -176,7 +176,7 @@
         },
         {
             "id": 10,
-            "title": "Apakah ada kemungkinan penjelasan lain untuk gejalanya?",
+            "title": "STEP 3 : Apakah ada kondisi MNS prioritas bersamaan?",
             "question": {
                 "title": "Apakah gejala depresi tetap ada setelah pengobatan?",
                 "type": "text",
@@ -218,7 +218,7 @@
             "question": {
                 "title": "Episode Depresif dalam Bipolar Gangguan mungkin terjadi",
                 "type": "text",
-                "content": "<ul><li>Orang dengan episode depresi pada gangguan bipolar berisiko mengalami mania. Pengobatannya berbeda dengan depresi. <a href='#'>Protokol 2</a> harus diterapkan.</li></ul>"
+                "content": "<p style='color: red;'><strong>TIPS KLINIS:</strong></p><ul><li>Orang dengan episode depresi pada gangguan bipolar berisiko mengalami mania. Pengobatannya berbeda dengan depresi. <a href='#'>Protokol 2</a> harus diterapkan.</li></ul>"
             },
             "isResult": true,
             "isStep": false,
@@ -240,7 +240,7 @@
             "isStep": false,
             "answer": {
                 "type": "continue",
-                "target": null 
+                "target": 18
             },
             "href": null 
         },
@@ -307,7 +307,7 @@
             "id": 17,
             "title": "Hasil Assesment",
             "question": {
-                "title": "Jangan mengatasi depresi.",
+                "title": "Jangan sampai mengalami depresi.",
                 "type": "text",
                 "content": "<p>Kunjungi lainnya</p>"
             },
@@ -330,6 +330,38 @@
             },
             "isResult": false,
             "isStep": true,
+            "answer": {
+                "type": "continue",
+                "target": null 
+            },
+            "href": null 
+        },
+        {
+            "id": 19    ,
+            "title": "Hasil Assesment",
+            "question": {
+                "title": "Tidak ada pengobatan",
+                "type": "text",
+                "content": null
+            },
+            "isResult": false,
+            "isStep": true,
+            "answer": {
+                "type": "continue",
+                "target": null 
+            },
+            "href": null 
+        },
+        {
+            "id": 20,
+            "title": "Hasil Assesment",
+            "question": {
+                "title": "Lanjut ke PROTOKOL 1",
+                "type": "text",
+                "content": null
+            },
+            "isResult": false,
+            "isStep": false,
             "answer": {
                 "type": "continue",
                 "target": null 
