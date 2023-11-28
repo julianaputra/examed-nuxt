@@ -1,7 +1,10 @@
 <template>
   <nuxt-link
     class="selection-button"
-    :class="{ disabled: props.disabled === true }"
+    :class="{
+      disabled: props.disabled === true,
+      'no-link': props.hasIcon === false
+    }"
     :to="props.to"
   >
     <span class="selection-button__text"> <slot></slot> </span>
@@ -33,6 +36,7 @@ const props = defineProps({
   display: flex;
   align-items: center;
   gap: 60px;
+  min-height: 81px;
   text-decoration: none;
   border-bottom: 1px solid rgba(19, 24, 44, 0.1);
   padding: 12px 0;
@@ -43,6 +47,10 @@ const props = defineProps({
   &.disabled {
     pointer-events: none;
     opacity: 0.3;
+  }
+
+  &.no-link {
+    cursor: default;
   }
 
   &:hover {

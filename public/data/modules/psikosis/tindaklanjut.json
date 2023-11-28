@@ -1,0 +1,119 @@
+{
+    "data":[
+        { 
+            "id": 1,
+            "title": "Step 1: Penilaian Untuk Perbaikan",
+            "question": {
+                "title": "Apakah Pasien membaik?",
+                "type": "text",
+                "content": null
+            },
+            "isResult": false,
+            "isStep": true,
+            "answer": {
+                "type": "true-false",
+                "target": {
+                    "true":3,
+                    "false":2
+                }
+            },
+            "href": null
+        },
+        {
+            "id": 2,
+            "title": "Step 1: Penilaian Untuk Perbaikan",
+            "question": {
+                "title": "Apakah Pasien sedang minum obat?",
+                "type": "text",
+                "content": null
+            },
+            "isResult": false,
+            "isStep": false,
+            "answer": {
+                "type": "true-false",
+                "target": {
+                    "true":5,
+                    "false":4
+                }
+            },
+            "href": null
+        },{
+            "id": 3,
+            "title": "Step 1: Penilaian Untuk Perbaikan",
+            "question": {
+                "title": null,
+                "type": "text",
+                "content": "<ul><li>Lanjutkan dengan rencana perawatan.<li>Kurangi frekuensi tindak lanjut setelah gejala mereda.<li>Tindak lanjut sesuai kebutuhan</ul>"
+            },
+            "isResult": true,
+            "isStep": false,
+            "answer": {
+                "type": "continue",
+                "target": 6
+            },
+            "href": null
+        },{
+            "id": 4,
+            "title": "Step 1: Penilaian Untuk Perbaikan",
+            "question": {
+                "title": null,
+                "type": "text",
+                "content": "<ul><li><strong>MULAI PENGOBATAN ANTIPSIKOTIK </strong>(Buka Tabel 1).<li>Pertahankan frekuensi kontak yang tinggi sampai timbul gejala mulai merespons pengobatan.<li>Libatkan Pasien dan pengasuhnya dalam perubahan dan keputusan rencana perawatan.</ul>"
+            },
+            "isResult": true,
+            "isStep": false,
+            "answer": {
+                "type": "continue",
+                "target": 6
+            },
+            "href": null
+        },
+        {
+            "id": 5,
+            "title": "Step 1: Penilaian Untuk Perbaikan",
+            "question": {
+                "title": null,
+                "type": "text",
+                "content": "<ul><li><strong>Pastikan Pasien berada dalam keadaan normal dosis efektif minimal 4-6 minggu.</strong><li>Pertahankan frekuensi kontak yang tinggi sampai gejala mulai merespons pengobatan.<li>Libatkan Pasien dan pengasuhnya dalam perubahan dan keputusan rencana perawatan.</ul>"
+            },
+            "isResult": true,
+            "isStep": false,
+            "answer": {
+                "type": "continue",
+                "target": 6
+            },
+            "href": null
+        },{
+            "id": 6,
+            "title": "Step 2: Perawatan Rutin Monitor",
+            "question": {
+                "title": null,
+                "type": "text",
+                "content": "<ul><li>Tinjau intervensi psikososial.<li>Jika sedang menjalani pengobatan, tinjau <strong>kepatuhan, efek samping dan dosis </strong><strong style=color:#233b96>(Tabel</strong> 4).Periksa berat badan, tekanan darah, dan glukosa darah.<li>Jika Pasien mulai menggunakan obat lain yang berpotensi menimbulkan obat-obatan interaksi, pertimbangkan untuk meninjau dosis obat.<li>Tanyakan mengenai timbulnya gejala, episode sebelumnya, dan rincian pengobatan sebelumnya atau saat ini.</ul>"
+            },
+            "isResult": true,
+            "isStep": true,
+            "answer": {
+                "type": "continue",
+                "target": 7
+            },
+            "href": null
+        },
+        {
+            "id": 7,
+            "title": " Step 3: Hentikan Pengobatan",
+            "question": {
+                "title": "Lakukan Hal berikut",
+                "type": "text",
+                "content": "<ul><li><strong style=color:#233c99>Orang dengan episode pertama, kambuh, atau gejala psikosis yang memburuk:</strong><ul><li>Pertimbangkan penghentian pengobatan <strong>2 BULAN setelah gejala teratasi.</strong></ul><li><strong style=color:#233c99>Orang dengan gejala psikotik yang berlangsung lebih dari 3 bulan:</strong><ul><li>Pertimbangkan penghentian pengobatan <strong>jika gejala Pasien dalam REmisi PENUH selama beberapa tahun.</strong></ul><li>Diskusikan risiko kekambuhan akibat efek samping pengobatan jangka panjang dengan orang dan keluarga.<li>Jika memungkinkan, konsultasikan dengan spesialis.<li>Kurangi dosis obat secara bertahap dan perlahan. Ketika obat-obatan dihentikan,individu dan anggota keluarga perlu dididik untuk mendeteksi gejala awal kekambuhan. Pemantauan klinis yang ketat dianjurkan.</ul>"
+            },
+            "isResult": true,
+            "isStep": true,
+            "answer": {
+                "type": "continue",
+                "target": null
+            },
+            "href": null
+        }
+    ]
+}

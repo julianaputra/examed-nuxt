@@ -2,7 +2,7 @@
   <main>
     <section class="section">
       <div class="container">
-        <UiBreadcrumbs :breadcrumbs="breadcrumbItem"></UiBreadcrumbs>
+        <UiBreadcrumbs :breadcrumbs="breadcrumbs"></UiBreadcrumbs>
         <h1 class="title section__title">Penilaian</h1>
 
         <Transition mode="out-in">
@@ -69,7 +69,7 @@
 <script setup lang="ts">
 import { storeToRefs } from 'pinia'
 import { usePenilaianStore } from '~/stores/penilaian'
-import type { Question } from '~/types/index'
+import type { Question, Breadcrumb } from '~/types/index'
 
 const {
   setActiveQuestionId,
@@ -91,8 +91,24 @@ onMounted(() => {
 
     const url = `/data/modules/${route.params.slug}/penilaian.json`
     const { data } = await useFetch(url)
-
     const res = data.value as any
+
+    console.log(res)
+
+    breadcrumbs.value = [
+      {
+        title: 'Home',
+        to: '/'
+      },
+      {
+        title: `${route.params.slug}`,
+        to: `/${route.params.slug}`
+      },
+      {
+        title: 'Penilaian',
+        to: ''
+      }
+    ]
 
     setQuestions(res.data)
 
@@ -106,20 +122,7 @@ onMounted(() => {
   })
 })
 
-const breadcrumbItem = ref([
-  {
-    title: 'Home',
-    to: '/'
-  },
-  {
-    title: 'Depresi',
-    to: '/depresi'
-  },
-  {
-    title: 'Penilaian',
-    to: '/depresi/penilaian'
-  }
-])
+const breadcrumbs: Ref<Breadcrumb[]> = ref([])
 
 const setNextQuestion = (id: number) => {
   setActiveQuestionId(id)

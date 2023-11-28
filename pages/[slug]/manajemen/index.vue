@@ -1,7 +1,7 @@
 <template>
   <section class="section">
     <div class="container">
-      <UiBreadcrumbs :breadcrumbs="breadcrumbItem"></UiBreadcrumbs>
+      <UiBreadcrumbs :breadcrumbs="breadcrumbs"></UiBreadcrumbs>
       <h1 class="title section__title">Manajemen</h1>
       <Transition mode="out-in">
         <UiCardAssesment
@@ -14,13 +14,19 @@
               <div v-if="c.type === 'text'" v-html="c.content"></div>
 
               <UiSelectionButton
-                v-if="c.type === 'link'"
+                v-else-if="c.type === 'link'"
                 @click="selectChildren(c.id)"
                 >{{ c.title }}</UiSelectionButton
               >
 
+              <UiSelectionButton
+                v-else-if="c.type === 'heading-only'"
+                :has-icon="false"
+                >{{ c.title }}</UiSelectionButton
+              >
+
               <UiAccordion
-                v-if="c.type === 'collapse'"
+                v-else-if="c.type === 'collapse'"
                 title="accordionParent"
                 :item="c"
               ></UiAccordion>
@@ -36,7 +42,7 @@
 const route = useRoute()
 const router = useRouter()
 const manajemenData = ref([]) as any
-import type { Manajemen } from '~/types/index'
+import type { Manajemen, Breadcrumb } from '~/types/index'
 
 onMounted(() => {
   nextTick(async () => {
@@ -46,23 +52,25 @@ onMounted(() => {
     const res = data.value as any
 
     manajemenData.value = res.data
+
+    breadcrumbs.value = [
+      {
+        title: 'Home',
+        to: '/'
+      },
+      {
+        title: `${route.params.slug}`,
+        to: `/${route.params.slug}`
+      },
+      {
+        title: 'Manajemen',
+        to: ''
+      }
+    ]
   })
 })
 
-const breadcrumbItem = ref([
-  {
-    title: 'Home',
-    to: '/'
-  },
-  {
-    title: 'Depresi',
-    to: '/depresi'
-  },
-  {
-    title: 'Manajemen',
-    to: ''
-  }
-])
+const breadcrumbs: Ref<Breadcrumb[]> = ref([])
 
 const activeParent = ref(route.query.item)
 

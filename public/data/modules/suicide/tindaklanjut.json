@@ -1,0 +1,71 @@
+{
+    "data": [{
+            "id": 1,
+            "title": "Step 1: PENILAIAN UNTUK PERBAIKAN",
+            "question": {
+                "title": "Apakah Pasien membaik?",
+                "type": "text",
+                "content": null
+            },
+            "isResult": false,
+            "isStep": true,
+            "answer": {
+                "type": "true-false",
+                "target": {
+                    "true": 3,
+                    "false": 2
+                }
+            },
+            "href": null
+        },
+        {
+            "id": 2,
+            "title": "Step 1: Penilaian Untuk Perbaikan",
+            "question": {
+                "title": null,
+                "type": "text",
+                "content": "<strong><ul><li>Tingkatkan intensitas atau durasi kontak seperlunya.<li>Rujuk ke spesialis jika diperlukan.</ul></strong>"
+            },
+            "isResult": true,
+            "isStep": false,
+            "answer": {
+                "type": "continue",
+                "target": 4
+            },
+            "href": null
+        },
+
+        {
+            "id": 3,
+            "title": "Step 1: Penilaian Untuk Perbaikan",
+            "question": {
+                "title": null,
+                "type": "text",
+                "content": "<ul><li>Kurangi kontak seiring dengan kemajuan Pasien.<li><strong>Lanjutkan tindak lanjut selama 2 tahun,</strong>selanjutnya kurangi kontak sesuai perbaikan (misalnya setiap 2-4 minggu sekali setelah 2 bulan pertama, dan dua kali pada tahun kedua).</ul>"
+            },
+            "isResult": true,
+            "isStep": false,
+            "answer": {
+                "type": "continue",
+                "target": 4
+            },
+            "href": null
+        },
+        {
+            "id": 4,
+            "title": "Step 2: Secara Rutin Menilai Pikiran dan Rencana Merugikan Diri/Bunuh Dir",
+            "question": {
+                "title": null,
+                "type": "text",
+                "content": "<p><strong>Pada setiap kontak, kaji secara rutin apakah ada pemikiran dan rencana untuk bunuh diri Apakah risiko melukai diri sendiri/bunuh diri sudah dekat? Lihat</strong><strong style=color:#d9451d> SUI 1 (Penilaian).</strong>"
+            },
+            "isResult": false,
+            "isStep": true,
+            "answer": {
+                "type": "continue",
+                "target": null
+            },
+            "href": null
+        }
+    ]
+}

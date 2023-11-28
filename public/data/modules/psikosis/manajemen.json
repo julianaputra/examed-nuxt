@@ -424,7 +424,7 @@
             "id": 67,
             "parentId": 2,
             "title": "Menjamin keselamatan Pasien dan keselamatan orang lain.",
-            "type": "collapse",
+            "type": "heading-only",
             "content": null
         },
         {

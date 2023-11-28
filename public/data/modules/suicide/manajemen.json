@@ -1,0 +1,167 @@
+{
+    "data": [{
+            "id": 1,
+            "parentId": null,
+            "title": "Protokol 1 : Tindakan Menyakiti Diri Sendiri yang Serius Secara Medis",
+            "type": "link",
+            "content": null
+        },
+        {
+            "id": 2,
+            "parentId": null,
+            "title": "Protokol 2 : Risiko Menyakiti Diri Sendiri/Bunuh Diri ",
+            "type": "link",
+            "content": null
+        },
+        {
+            "id": 3,
+            "parentId": null,
+            "title": "Protokol 3 : Risiko Menyakiti Diri Sendiri/Bunuh Diri",
+            "type": "link",
+            "content": null
+        },
+        {
+            "id": 4,
+            "parentId": 1,
+            "title": "Untuk semua kasus: Tempatkan Pasien di a lingkungan yang aman dan mendukung di fasilitas kesehatan.",
+            "type": "link",
+            "content": null
+        },
+        {
+            "id": 5,
+            "parentId": 1,
+            "title": "JANGAN tinggalkan Pasien sendirian.",
+            "type": "link",
+            "content": null
+        },
+        {
+            "id": 6,
+            "parentId": 1,
+            "title": "2.1 Penanganan keracunan pestisida",
+            "type": "collapse",
+            "content": "<ul><li>Jika fasilitas pelayanan kesehatan mempunyai keahlian dan sumber daya yang terbatas, maka obati dengan menggunakan dokumen WHO, “Manajemen Klinis Intoksikasi Pestisida Akut” <a href=who.int/mental_health/publications/9789241596732/en style=color:#ef7e54>(http://www.who.int/mental_health/publications/9789241596732/en).</a><br><strong>Jika tidak, segera pindahkan Pasien ke fasilitas kesehatan yang memiliki sumber daya berikut:</strong><ul><li>Keterampilan dan pengetahuan tentang cara menyadarkan individu dan menilai gambaran klinis keracunan pestisida;<li>Keterampilan dan pengetahuan mengelola jalan napas; khususnya, untuk melakukan intubasi dan mendukung pernapasan hingga ventilator dapat dipasang;<li>Atropin dan sarana untuk pemberian intravena (iv). jika tanda-tanda keracunan kolinergik berkembang;<li>Diazepam dan cara pemberiannya secara intravena jika Pasien mengalami kejang.</ul><li>Pertimbangkan untuk memberikan arang aktif jika Pasien sadar, memberikan persetujuan, dan datang untuk mendapatkan perawatan dalam waktu satu jam setelah keracunan.<li>Muntah paksa tidak dianjurkan.<li>Cairan oral tidak boleh diberikan.</ul>"
+        },
+        {
+            "id": 7,
+            "parentId": 1,
+            "title": "2.2 Merawat orang yang menyakiti diri sendiri",
+            "type": "collapse",
+            "content": "<ul><li>Tempatkan Pasien di lingkungan yang aman dan mendukung di fasilitas kesehatan (jangan tinggalkan mereka sendirian). Jika penderita harus menunggu pengobatan, tawarkan lingkungan yang meminimalkan tekanan; jika memungkinkan, di ruangan terpisah dan tenang dengan pengawasan terusmenerus dan kontak dengan staf atau anggota keluarga yang ditunjuk untuk memastikan keselamatan setiap saat<li>Hapus akses terhadap cara-cara yang dapat melukai diri sendiri.<li>Konsultasikan dengan spesialis kesehatan mental, jika tersedia.<li>Memobilisasi keluarga, teman dan individu lain yang peduli atau sumber daya komunitas yang tersedia untuk memantau dan mendukung Pasien selama periode risiko yang akan terjadi (lihat “Menawarkan dan mengaktifkan dukungan psikososial”. ( 2.3))<li>Perlakukan orang yang pernah menyakiti diri sendiri dengan perhatian, rasa hormat, dan privasi yang sama seperti yang diberikan kepada orang lain, dan peka terhadap tekanan emosional yang terkait dengan tindakan menyakiti diri sendiri.<li>Libatkan pengasuh jika Pasien menginginkan dukungan mereka selama penilaian dan pengobatan; jika memungkinkan, penilaian psikososial harus mencakup wawancara tatap muka antara Pasien dan petugas kesehatan, untuk mengeksplorasi masalah pribadi.<li>Berikan dukungan emosional kepada pengasuh/anggota keluarga jika mereka membutuhkannya. (2.4)<li>Menjamin kesinambungan perawatan.<li>Rawat inap di layanan non-psikiatri rumah sakit umum tidak dianjurkan untuk pencegahan tindakan menyakiti diri sendiri.<br>Namun, jika masuk ke rumah sakit umum (non-psikiatris) diperlukan untuk penanganan konsekuensi medisnya<br>tindakan menyakiti diri sendiri, pantau Pasien dengan cermat untuk mencegah tindakan menyakiti diri sendiri lebih lanjut di rumah sakit.<li><strong>Jika meresepkan obat:</strong><ul><li>Lihat modul mhGAP-IG yang relevan untuk farmakologis intervensi dalam pengelolaan kondisi yang terjadi bersamaan<li>Gunakan obat-obatan yang paling tidak berbahaya, jika terjadi overdosis yang disengaja.<li>Berikan resep dalam bentuk kursus singkat (misalnya satu minggu pada suatu waktu).</ul></ul>"
+        },
+        {
+            "id": 8,
+            "parentId": 1,
+            "title": "2.3 Menawarkan dan mengaktifkan dukungan psikososial",
+            "type": "collapse",
+            "content": "<ul><li><strong>Tawarkan dukungan kepada Pasien</strong><ul><li>Jelajahi alasan dan cara untuk tetap hidup.<li>Fokus pada kekuatan Pasien dengan mendorong mereka untuk membicarakan bagaimana masalah sebelumnya telah diselesaikan.<li>Pertimbangkan terapi pemecahan masalah untuk membantu orang yang melakukan tindakan menyakiti diri sendiri dalam setahun terakhir, jika sumber daya manusia mencukupi tersedia. Pergi ke <strong>Perawatan esensial dan praktikkan ECP</strong></ul><li><strong>Aktifkan dukungan psikososial</strong><ul><li>Memobilisasi keluarga, teman, individu yang peduli dan sumber daya lain yang tersedia untuk memastikan pemantauan ketat terhadap Pasien selama risiko melukai diri sendiri/bunuh diri masih ada.<li>Menasihati Pasien dan pengasuhnya untuk membatasi akses terhadap caracara yang dapat melukai diri sendiri/bunuh diri (misalnya pestisida/zat beracun, obat resep, senjata api, dll.) ketika Pasien memiliki pemikiran atau rencana untuk melukai diri sendiri/bunuh diri.<li>Mengoptimalkan dukungan sosial dari komunitas yang ada sumber daya. Hal ini mencakup sumber daya informal, seperti kerabat, teman, kenalan, kolega dan pemimpin agama, atau sumber daya masyarakat formal, jika tersedia, seperti pusat krisis, dan pusat kesehatan mental setempat.</ul></ul>"
+        },
+        {
+            "id": 9,
+            "parentId": 1,
+            "title": "2.4 Dukungan pengasuh",
+            "type": "collapse",
+            "content": "<ul><li>Beri tahu pengasuh dan anggota keluarga bahwa menanyakan tentang bunuh diri sering kali akan membantu Pasien merasa lega, mengurangi kecemasan, dan lebih baik dipahami.<li>Pengasuh dan anggota keluarga dari orang-orang yang berisiko melukai diri sendiri sering kali mengalami stres berat. Berikan dukungan emosional kepada mereka jika mereka membutuhkannya.<li>Beritahukan kepada pengasuh bahwa meskipun mereka mungkin merasa frustrasi terhadap Pasien, mereka harus menghindari sikap bermusuhan dan kritik keras terhadap orang yang rentan yang berisiko melukai diri sendiri/bunuh diri.</ul>"
+        },
+        {
+            "id": 10,
+            "parentId": 2,
+            "title": "2.5 Psikoedukasi",
+            "type": "collapse",
+            "content": "<strong>Pesan-pesan penting kepada Pasien dan pengasuhnya</strong><ul><li>Jika seseorang mempunyai pikiran untuk menyakiti diri sendiri/bunuh diri, carilah bantuan segera dari anggota keluarga, teman, atau penyedia layanan kesehatan yang tepercaya.<li>Tidak apa-apa membicarakan bunuh diri. Berbicara tentang bunuh diri memang demikian tidak memprovokasi tindakan bunuh diri.<li>Bunuh diri dapat dicegah<li>Mengalami episode menyakiti diri sendiri/bunuh diri merupakan indikator tekanan emosional yang parah. Pasien tidak melihat alternatif atau solusi. Oleh karena itu, penting untuk segera memberikan dukungan kepada Pasien jika terjadi masalah emosional dan pemicu stres.<li>Cara melukai diri sendiri (misalnya pestisida, senjata api, obat-obatan) harus dikeluarkan dari rumah.<li>Jaringan sosial, termasuk keluarga dan orang lain yang relevan, penting untuk penyediaan dukungan sosia</ul>"
+        },
+        {
+            "id": 11,
+            "parentId": 1,
+            "title": "Konsultasikan dengan spesialis kesehatan mental, jika tersedia",
+            "type": "link",
+            "content": null
+        },
+        {
+            "id": 12,
+            "parentId": 1,
+            "title": "Pertahankan kontak rutin dan Tindak Lanjut",
+            "type": "link",
+            "content": null
+        },
+        {
+            "id": 13,
+            "parentId": 2,
+            "title": " Hilangkan cara-cara yang menyakiti diri sendiri/bunuh diri.",
+            "type": "link",
+            "content": null
+        },
+        {
+            "id": 14,
+            "parentId": 2,
+            "title": " Menciptakan lingkungan yang aman dan mendukung; jika memungkinkan, tawarkan ruangan terpisah yang tenang sambil menunggu perawatan.",
+            "type": "link",
+            "content": null
+        }, {
+            "id": 15,
+            "parentId": 2,
+            "title": "JANGAN tinggalkan Pasien sendirian.",
+            "type": "link",
+            "content": null
+        },
+        {
+            "id": 16,
+            "parentId": 2,
+            "title": "Mengawasi dan menugaskan staf atau anggota keluarga yang ditunjuk untuk memastikan keselamatan seseorang setiap saat.",
+            "type": "link",
+            "content": null
+        },
+        {
+            "id": 17,
+            "parentId": 2,
+            "title": "Perhatikan kondisi mental dan tekanan emosional.",
+            "type": "link",
+            "content": null
+        }, {
+            "id": 18,
+            "parentId": 2,
+            "title": "2.3 Menawarkan dan mengaktifkan dukungan psikososial",
+            "type": "collapse",
+            "content": "<ul><li><strong>Tawarkan dukungan kepada Pasien </strong><ul><li>Jelajahi alasan dan cara untuk tetap hidup.<li>Fokus pada kekuatan Pasien dengan mendorong mereka untuk membicarakan bagaimana masalah sebelumnya telah diselesaikan.<li>Pertimbangkan terapi pemecahan masalah untuk membantu orang yang melakukan tindakan menyakiti diri sendiri dalam setahun terakhir, jika sumber daya manusia mencukupi tersedia. Pergi ke <strong>Perawatan esensial dan praktikkan ECP</strong></ul><li><strong>Aktifkan dukungan psikososial</strong><ul><li>Memobilisasi keluarga, teman, individu yang peduli dan sumber daya lain yang tersedia untuk memastikan pemantauan ketat terhadap Pasien selama risiko melukai diri sendiri/bunuh diri masih ada.<li>Menasihati Pasien dan pengasuhnya untuk membatasi akses terhadap caracara yang dapat melukai diri sendiri/bunuh diri (misalnya pestisida/zat beracun, obat resep, senjata api, dll.) ketika Pasien memiliki pemikiran atau rencana untuk melukai diri sendiri/bunuh diri.<li>Mengoptimalkan dukungan sosial dari komunitas yang ada sumber daya. Hal ini mencakup sumber daya informal, seperti kerabat, teman, kenalan, kolega dan pemimpin agama, atau sumber daya masyarakat formal, jika tersedia, seperti pusat krisis, dan pusat kesehatan mental setempat.</ul></ul>"
+        }, {
+            "id": 19,
+            "parentId": 2,
+            "title": "2.2 Merawat orang yang menyakiti diri sendiri",
+            "type": "collapse",
+            "content": "<ul><li>Tempatkan Pasien di lingkungan yang aman dan mendukung di fasilitas kesehatan (jangan tinggalkan mereka sendirian). Jika penderita harus menunggu pengobatan, tawarkan lingkungan yang meminimalkan tekanan; jika memungkinkan, di ruangan terpisah dan tenang dengan pengawasan terusmenerus dan kontak dengan staf atau anggota keluarga yang ditunjuk untuk memastikan keselamatan setiap saat<li>Hapus akses terhadap cara-cara yang dapat melukai diri sendiri.<li>Konsultasikan dengan spesialis kesehatan mental, jika tersedia.<li>Memobilisasi keluarga, teman dan individu lain yang peduli atau sumber daya komunitas yang tersedia untuk memantau dan mendukung Pasien selama periode risiko yang akan terjadi (lihat “Menawarkan dan mengaktifkan dukungan psikososial”. ( 2.3))<li>Perlakukan orang yang pernah menyakiti diri sendiri dengan perhatian, rasa hormat, dan privasi yang sama seperti yang diberikan kepada orang lain, dan peka terhadap tekanan emosional yang terkait dengan tindakan menyakiti diri sendiri.<li>Libatkan pengasuh jika Pasien menginginkan dukungan mereka selama penilaian dan pengobatan; jika memungkinkan, penilaian psikososial harus mencakup wawancara tatap muka antara Pasien dan petugas kesehatan, untuk mengeksplorasi masalah pribadi.<li>Berikan dukungan emosional kepada pengasuh/anggota keluarga jika mereka membutuhkannya. (2.4)<li>Menjamin kesinambungan perawatan.<li>Rawat inap di layanan non-psikiatri rumah sakit umum tidak dianjurkan untuk pencegahan tindakan menyakiti diri sendiri.<br>Namun, jika masuk ke rumah sakit umum (non-psikiatris) diperlukan untuk penanganan konsekuensi medisnya<br>tindakan menyakiti diri sendiri, pantau Pasien dengan cermat untuk mencegah tindakan menyakiti diri sendiri lebih lanjut di rumah sakit.<li><strong>Jika meresepkan obat:</strong><ul><li>Lihat modul mhGAP-IG yang relevan untuk farmakologis intervensi dalam pengelolaan kondisi yang terjadi bersamaan<li>Gunakan obat-obatan yang paling tidak berbahaya, jika terjadi overdosis yang disengaja.<li>Berikan resep dalam bentuk kursus singkat (misalnya satu minggu pada suatu waktu).</ul></ul>"
+        },{
+            "id": 20,
+            "parentId": 2,
+            "title": "Konsultasikan dengan spesialis kesehatan mental, jika tersedia",
+            "type": "link",
+            "content": null
+        },
+        {
+            "id": 21,
+            "parentId": 2,
+            "title": "Pertahankan kontak rutin dan Tindak Lanjut",
+            "type": "link",
+            "content": null
+        },        {
+            "id": 22,
+            "parentId": 3,
+            "title": "2.3 Menawarkan dan mengaktifkan dukungan psikososial",
+            "type": "collapse",
+            "content": "<ul><li><strong>Tawarkan dukungan kepada Pasien </strong><ul><li>Jelajahi alasan dan cara untuk tetap hidup.<li>Fokus pada kekuatan Pasien dengan mendorong mereka untuk membicarakan bagaimana masalah sebelumnya telah diselesaikan.<li>Pertimbangkan terapi pemecahan masalah untuk membantu orang yang melakukan tindakan menyakiti diri sendiri dalam setahun terakhir, jika sumber daya manusia mencukupi tersedia. Pergi ke <strong>Perawatan esensial dan praktikkan ECP</strong></ul><li><strong>Aktifkan dukungan psikososial</strong><ul><li>Memobilisasi keluarga, teman, individu yang peduli dan sumber daya lain yang tersedia untuk memastikan pemantauan ketat terhadap Pasien selama risiko melukai diri sendiri/bunuh diri masih ada.<li>Menasihati Pasien dan pengasuhnya untuk membatasi akses terhadap caracara yang dapat melukai diri sendiri/bunuh diri (misalnya pestisida/zat beracun, obat resep, senjata api, dll.) ketika Pasien memiliki pemikiran atau rencana untuk melukai diri sendiri/bunuh diri.<li>Mengoptimalkan dukungan sosial dari komunitas yang ada sumber daya. Hal ini mencakup sumber daya informal, seperti kerabat, teman, kenalan, kolega dan pemimpin agama, atau sumber daya masyarakat formal, jika tersedia, seperti pusat krisis, dan pusat kesehatan mental setempat.</ul></ul>"
+        },
+        {
+            "id": 23,
+            "parentId": 3,
+            "title": "Konsultasikan dengan spesialis kesehatan mental, jika tersedia",
+            "type": "collapse",
+            "content": null
+        },
+        {
+            "id": 24,
+            "parentId": 3,
+            "title": "Pertahankan kontak rutin dan Tindak Lanjut",
+            "type": "link",
+            "content": null
+        }
+        
+    ]
+}
