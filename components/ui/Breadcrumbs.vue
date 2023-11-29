@@ -38,7 +38,6 @@ const props = defineProps({
   .breadcrumb-item {
     a {
       color: #303178;
-      text-transform: capitalize;
     }
 
     .active {

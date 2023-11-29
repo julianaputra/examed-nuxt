@@ -46,10 +46,15 @@ import type { Manajemen, Breadcrumb } from '~/types/index'
 
 onMounted(() => {
   nextTick(async () => {
+    const urlParent = `/data/modules/${route.params.slug}/index.json`
     const url = `/data/modules/${route.params.slug}/manajemen.json`
-    const { data } = await useFetch(url)
+    const [parentData, data] = await Promise.all([
+      useFetch(urlParent),
+      useFetch(url)
+    ])
 
-    const res = data.value as any
+    const resParent = parentData.data.value as any
+    const res = data.data.value as any
 
     manajemenData.value = res.data
 
@@ -59,7 +64,7 @@ onMounted(() => {
         to: '/'
       },
       {
-        title: `${route.params.slug}`,
+        title: `${resParent.data.title}`,
         to: `/${route.params.slug}`
       },
       {

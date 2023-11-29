@@ -65,6 +65,7 @@ const className = computed(() => {
 
   &__title {
     text-decoration: none;
+    display: inline-block;
   }
 
   &__subtitle {

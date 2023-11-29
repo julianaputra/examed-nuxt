@@ -46,11 +46,8 @@
             "title": "STEP 1 : Apakah Pasien pernah melakukan tindakan menyakiti diri sendiri yang serius secara medis?",
             "question": {
                 "title": "Tanyakan kepada Pasien dan pengasuhnya apakah ada SALAH SATU dari hal berikut:",
-                "type": "checkbox",
-                "content": 
-                ["Pikiran atau rencana saat ini untuk menyakiti diri sendiri/bunuh diri",
-                    " Riwayat pemikiran atau rencana melukai diri sendiri dalam sebulan terakhir atau tindakan menyakiti diri sendiri dalam setahun terakhir pada seseorang yang sekarang sangat gelisah, kasar, tertekan atau kurang komunikasi"
-                ]
+                "type": "text",
+                "content": "<ul><li>Pikiran atau rencana saat ini untuk menyakiti diri sendiri/bunuh diri<li>Riwayat pemikiran atau rencana melukai diri sendiri dalam sebulan terakhir atau tindakan menyakiti diri sendiri dalam setahun terakhir pada seseorang yang sekarang sangat gelisah, kasar, tertekan atau kurang komunikasi</ul><p style=color:#f2852b>TIPS KLINIS<p>Jika secara medis stabil, lakukan penatalaksanaan yang tepat, sesuai kebutuhan"
             },
             "isResult": false,
             "isStep": false,

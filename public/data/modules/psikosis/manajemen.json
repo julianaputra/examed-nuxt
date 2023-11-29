@@ -16,10 +16,10 @@
             "parentId": 1,
             "title": "2.1 Memberikan psikoedukasi kepada Pasien dan pengasuhnya",
             "type": "collapse",
-            "content": "<strong><p>Pesan-pesan penting bagi Pasien dan pengasuhnya:</strong><ul><li>Jelaskan bahwa gejala-gejala tersebut disebabkan oleh kondisi kesehatan mental, bahwa psikosis dan gangguan bipolar dapat diobati, dan Pasien dapat pulih. Memperjelas kesalahpahaman umum tentang psikosis dan gangguan bipola<li>Jangan salahkan Pasien atau keluarganya atau menuduh mereka sebagai penyebab gejalanya.<li>Didik Pasien dan keluarganya bahwa Pasien perlu meminum obat yang diresepkan dan kembali untuk tindak lanjut secara teratur.<li>Jelaskan bahwa gejala yang muncul kembali dan/atau memburuk adalah hal biasa dan penting untuk mengenali gejala ini sejak dini dan mengunjungi fasilitas kesehatan sesegera mungkin.<li>Rencanakan jadwal kerja atau sekolah yang teratur yang <strong>menghindari kurang tidur dan stres</strong> bagi Pasien dan pengasuhnya. Dorong Pasien untuk meminta nasihat mengenai keputusan-keputusan besar terutama yang melibatkan uang atau komitmen-komitmen besar<li>Merekomendasikan <strong>untuk menghindari alkohol, ganja, atau obat-obatan nonresep lainnya,</strong> karena dapat memperburuk gejala psikotik atau bipolar.<li>Anjurkan mereka untuk menjaga pola hidup sehat, misalnya pola makan seimbang, aktivitas fisik, tidur teratur, kebersihan diri yang baik, dan tidak ada pemicu stres. Stres dapat memperburuk gejala psikotik. Catatan: Perubahan gaya hidup harus dilanjutkan selama diperlukan, mungkin tanpa batas waktu. Perubahanperubahan ini harus direncanakan dan dikembangkan demi keberlanjutan.</ul>"
+            "content": "<p><strong>Pesan-pesan penting bagi Pasien dan pengasuhnya:</strong><ul><li>Jelaskan bahwa gejala-gejala tersebut disebabkan oleh kondisi kesehatan mental, bahwa psikosis dan gangguan bipolar dapat diobati, dan Pasien dapat pulih. Memperjelas kesalahpahaman umum tentang psikosis dan gangguan bipola<li>Jangan salahkan Pasien atau keluarganya atau menuduh mereka sebagai penyebab gejalanya.<li>Didik Pasien dan keluarganya bahwa Pasien perlu meminum obat yang diresepkan dan kembali untuk tindak lanjut secara teratur.<li>Jelaskan bahwa gejala yang muncul kembali dan/atau memburuk adalah hal biasa dan penting untuk mengenali gejala ini sejak dini dan mengunjungi fasilitas kesehatan sesegera mungkin.<li>Rencanakan jadwal kerja atau sekolah yang teratur yang <strong>menghindari kurang tidur dan stres</strong> bagi Pasien dan pengasuhnya. Dorong Pasien untuk meminta nasihat mengenai keputusan-keputusan besar terutama yang melibatkan uang atau komitmen-komitmen besar<li>Merekomendasikan <strong>untuk menghindari alkohol, ganja, atau obat-obatan nonresep lainnya,</strong> karena dapat memperburuk gejala psikotik atau bipolar.<li>Anjurkan mereka untuk menjaga pola hidup sehat, misalnya pola makan seimbang, aktivitas fisik, tidur teratur, kebersihan diri yang baik, dan tidak ada pemicu stres. Stres dapat memperburuk gejala psikotik. Catatan: Perubahan gaya hidup harus dilanjutkan selama diperlukan, mungkin tanpa batas waktu. Perubahanperubahan ini harus direncanakan dan dikembangkan demi keberlanjutan.</ul>"
         },{
             "id": 4,
-            "parentId": null,
+            "parentId": 1,
             "title": "2.6 intervensi Farmakologis.",
             "type": "collapse",
             "content": "<ul><li>Berkoordinasi dengan sumber daya kesehatan dan sosial yang tersedia untuk bertemu kebutuhan kesehatan fisik, sosial, dan mental keluarga<li>Identifikasi aktivitas sosial Pasien sebelumnya yang, jika dimulai kembali, berpotensi memberikan dukungan psikologis dan sosial langsung atau tidak langsung, misalnya pertemuan keluarga, jalan-jalan bersama teman, mengunjungi tetangga, aktivitas sosial di tempat kerja, olah raga, dan aktivitas komunitas. Dorong Pasien untuk melanjutkan aktivitas sosial ini dan beri tahu anggota keluarga tentang hal ini.<li>Mendorong orang dan pengasuh untuk meningkatkan sistem dukungan sosial.</ul>"
@@ -193,7 +193,7 @@
             "parentId": 23,
             "title": "Kontradikasi / Perhatian",
             "type": "collapse",
-            "content": "<li><strong>Perhatian pada pasien dengan:</strong> penyakit jantung<li><strong>Interaksi obat-obat:</strong> karbamazepin dapat menurunkan kadar risperidone, sedangkan fluoxetine dapat meningkatkan kadarnya."
+            "content": "<ul><li><strong>Perhatian pada pasien dengan:</strong> penyakit jantung<li><strong>Interaksi obat-obat:</strong> karbamazepin dapat menurunkan kadar risperidone, sedangkan fluoxetine dapat meningkatkan kadarnya.</ul>"
         },{
             "id": 32,
             "parentId": 24,
@@ -323,7 +323,7 @@
             "id": 52,
             "parentId":47,
             "title": "Kontradikasi / Perhatian",
-            "type": "link",
+            "type": "collapse",
             "content": "<ul><li><strong>Kontraindikasi pada pasien dengan:</strong> penyakit jantung atau ginjal parah.<li>Dehidrasi dapat meningkatkan kadar litium<li><strong>Interaksi obat-obat:</strong> obat antiinflamasi nonsteroid (NSAID), penghambat enzim pengubah angiotensin (ACE inhibitor), diuretik thiazide, metronidazol, dan tetrasiklin dapat meningkatkan kadar litium.<li><strong>Toksisitas litium dapat menyebabkan kejang, delirium, koma, dan kematian.</strong></ul>"
         },
         {
@@ -424,7 +424,7 @@
             "id": 67,
             "parentId": 2,
             "title": "Menjamin keselamatan Pasien dan keselamatan orang lain.",
-            "type": "heading-only",
+            "type": "collapse",
             "content": null
         },
         {

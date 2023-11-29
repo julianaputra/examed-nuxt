@@ -5,7 +5,9 @@
     </h2>
 
     <hr v-if="props.border" class="card__hr" />
-    <slot name="content"></slot>
+    <div class="card__body">
+      <slot name="content"></slot>
+    </div>
   </div>
 </template>
 
@@ -36,6 +38,29 @@ const className = computed(() => {
   &__hr {
     margin: 24px 0;
     color: rgba(19, 24, 44, 0.5);
+  }
+
+  &__body {
+    :deep(*) ul,
+    ol {
+      padding-left: 28px;
+
+      li {
+        color: rgba(18, 32, 50, 0.8);
+        font-size: 18px;
+        font-weight: 400;
+      }
+    }
+
+    :deep(*) p {
+      color: rgba(18, 32, 50, 0.8);
+      font-size: 18px;
+      font-weight: 400;
+    }
+
+    :deep(*) a {
+      color: #303178;
+    }
   }
 }
 </style>

@@ -89,11 +89,15 @@ onMounted(() => {
   nextTick(async () => {
     resetQuestions()
 
+    const urlParent = `/data/modules/${route.params.slug}/index.json`
     const url = `/data/modules/${route.params.slug}/penilaian.json`
-    const { data } = await useFetch(url)
-    const res = data.value as any
+    const [parentData, data] = await Promise.all([
+      useFetch(urlParent),
+      useFetch(url)
+    ])
 
-    console.log(res)
+    const resParent = parentData.data.value as any
+    const res = data.data.value as any
 
     breadcrumbs.value = [
       {
@@ -101,7 +105,7 @@ onMounted(() => {
         to: '/'
       },
       {
-        title: `${route.params.slug}`,
+        title: `${resParent.data.title}`,
         to: `/${route.params.slug}`
       },
       {

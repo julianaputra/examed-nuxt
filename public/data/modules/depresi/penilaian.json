@@ -176,7 +176,7 @@
         },
         {
             "id": 10,
-            "title": "STEP 3 : Apakah ada kondisi MNS prioritas bersamaan?",
+            "title": "STEP 3: Apakah ada kondisi MNS prioritas bersamaan?",
             "question": {
                 "title": "Apakah gejala depresi tetap ada setelah pengobatan?",
                 "type": "text",

@@ -23,6 +23,11 @@
 </template>
 
 <script setup lang="ts">
+definePageMeta({
+  title: 'Home | Examed',
+  description: 'This is homepage description'
+})
+
 const diagnoses = ref([
   {
     name: 'Depresi',
@@ -50,7 +55,7 @@ const diagnoses = ref([
   },
   {
     name: 'Menyakiti Diri Sendiri / Bunuh Diri',
-    to: '/suicide',
+    to: '/menyakiti-diri-sendiri-bunuh-diri',
     short: 'SUI',
     color: 'red'
   },

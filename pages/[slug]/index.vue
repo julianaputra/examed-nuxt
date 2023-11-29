@@ -31,7 +31,6 @@
                 <template #content>
                   <div
                     v-if="activeContent?.slug === 'deskripsi'"
-                    class="paragraph"
                     v-html="deskripsi?.content"
                   ></div>
                   <div v-else-if="activeContent?.slug === 'penilaian'">
@@ -78,11 +77,6 @@ import type {
 } from '~/types/index'
 
 const route = useRoute()
-
-definePageMeta({
-  title: 'Home',
-  description: 'This is homepage description'
-})
 
 onMounted(() => {
   nextTick(async () => {

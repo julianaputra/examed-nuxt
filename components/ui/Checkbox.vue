@@ -34,9 +34,8 @@
 /* Create a custom checkbox */
 .checkmark {
   position: absolute;
-  top: 50%;
+  top: 2px;
   left: 0;
-  transform: translateY(-50%);
   height: 24px;
   width: 24px;
   background-color: #fff;
