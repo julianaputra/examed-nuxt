@@ -1,6 +1,6 @@
 {
-    "data": [
-        {
+    "data":[
+        { 
             "id": 1,
             "title": "Step 1: Penilaian Untuk Perbaikan",
             "question": {
@@ -13,13 +13,13 @@
             "answer": {
                 "type": "true-false",
                 "target": {
-                    "true": 3,
-                    "false": 2
+                    "true":3,
+                    "false":2
                 }
             },
             "href": null
         },
-        {
+        { 
             "id": 2,
             "title": "Step 1: Penilaian Untuk Perbaikan",
             "question": {
@@ -32,13 +32,12 @@
             "answer": {
                 "type": "true-false",
                 "target": {
-                    "true": 5,
-                    "false": 4
+                    "true":5,
+                    "false":4
                 }
             },
             "href": null
-        },
-        {
+        },{ 
             "id": 3,
             "title": "Step 1: Penilaian Untuk Perbaikan",
             "question": {
@@ -54,7 +53,7 @@
             },
             "href": null
         },
-        {
+        { 
             "id": 4,
             "title": "Step 1: Penilaian Untuk Perbaikan",
             "question": {
@@ -70,7 +69,7 @@
             },
             "href": null
         },
-        {
+        { 
             "id": 5,
             "title": "Step 1: Penilaian Untuk Perbaikan",
             "question": {
@@ -85,8 +84,7 @@
                 "target": 6
             },
             "href": null
-        },
-        {
+        },{ 
             "id": 6,
             "title": "Step 1: Penilaian Untuk Perbaikan",
             "question": {
@@ -102,7 +100,7 @@
             },
             "href": null
         },
-        {
+        { 
             "id": 7,
             "title": "Step 2: Perawatan Rutin Monitor",
             "question": {
@@ -118,7 +116,7 @@
             },
             "href": null
         },
-        {
+        { 
             "id": 8,
             "title": "Step 3: Hentikan Pengobatan",
             "question": {
@@ -131,13 +129,12 @@
             "answer": {
                 "type": "true-false",
                 "target": {
-                    "true": 10,
-                    "false": 9
+                    "true":10,
+                    "false":9
                 }
             },
             "href": null
-        },
-        {
+        },{ 
             "id": 9,
             "title": "Step 3: Hentikan Pengobatan",
             "question": {
@@ -153,7 +150,7 @@
             },
             "href": null
         },
-        {
+        { 
             "id": 10,
             "title": "Step 3: Hentikan Pengobatan",
             "question": {
@@ -169,5 +166,6 @@
             },
             "href": null
         }
+
     ]
 }

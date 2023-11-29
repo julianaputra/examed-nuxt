@@ -17,7 +17,9 @@
                     :class="{
                       active: activeMenu === menuItem.slug
                     }"
-                    @click="setActiveMenu(menuItem.slug)"
+                    @click="
+                      setActiveMenu(menuItem.slug), setActiveTindakLanjut(null)
+                    "
                     >{{ menuItem.title }}</UiMenuButton
                   >
                 </div>
@@ -36,42 +38,46 @@
                 title-size="small"
               >
                 <template #title>
-                  <div
-                    v-if="activeTindakLanjut"
-                    role="button"
-                    class="d-flex align-items-center"
-                    @click="setActiveTindakLanjut(null)"
-                  >
-                    <div class="me-2">
-                      <Icon
-                        name="basil:arrow-left-solid"
-                        width="32"
-                        height="32"
-                      ></Icon>
+                  <Transition mode="out-in">
+                    <div
+                      v-if="activeTindakLanjut"
+                      role="button"
+                      class="d-flex align-items-center"
+                      @click="setActiveTindakLanjut(null)"
+                    >
+                      <div class="me-2">
+                        <Icon
+                          name="basil:arrow-left-solid"
+                          width="32"
+                          height="32"
+                        ></Icon>
+                      </div>
+                      {{ activeTindakLanjut.title }}
                     </div>
-                    {{ activeTindakLanjut.title }}
-                  </div>
-                  <div v-else>Tindak Lanjut</div>
+                    <div v-else>Tindak Lanjut</div>
+                  </Transition>
                 </template>
                 <template #content>
-                  <div v-if="activeTindakLanjut">
-                    <UiSelectionButton
-                      v-for="item in tindaklanjut"
-                      :key="`menu-link-${item.id}`"
-                      :to="`/${route.params.slug}/tindaklanjut?question=${item.id}`"
-                      >{{ item.title }}</UiSelectionButton
-                    >
-                  </div>
-                  <!-- Header -->
-                  <div v-else>
-                    <UiSelectionButton
-                      v-for="item in tindaklanjutPsikosis"
-                      :key="`menu-link-${item.id}`"
-                      @click="setActiveTindakLanjut(item)"
-                    >
-                      {{ item.title }}
-                    </UiSelectionButton>
-                  </div>
+                  <Transition mode="out-in">
+                    <div v-if="activeTindakLanjut">
+                      <UiSelectionButton
+                        v-for="item in tindaklanjut"
+                        :key="`menu-link-${item.id}`"
+                        :to="`/${route.params.slug}/tindaklanjut?question=${item.id}`"
+                        >{{ item.title }}</UiSelectionButton
+                      >
+                    </div>
+                    <!-- Header -->
+                    <div v-else>
+                      <UiSelectionButton
+                        v-for="item in tindaklanjutPsikosis"
+                        :key="`menu-link-${item.id}`"
+                        @click="setActiveTindakLanjut(item)"
+                      >
+                        {{ item.title }}
+                      </UiSelectionButton>
+                    </div>
+                  </Transition>
                 </template>
               </UiCard>
               <UiCard v-else :key="activeContent?.id" title-size="small">
