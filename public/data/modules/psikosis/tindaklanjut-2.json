@@ -1,0 +1,173 @@
+{
+    "data": [
+        {
+            "id": 1,
+            "title": "Step 1: Penilaian Untuk Perbaikan",
+            "question": {
+                "title": "Apakah Pasien membaik?",
+                "type": "text",
+                "content": null
+            },
+            "isResult": false,
+            "isStep": true,
+            "answer": {
+                "type": "true-false",
+                "target": {
+                    "true": 3,
+                    "false": 2
+                }
+            },
+            "href": null
+        },
+        {
+            "id": 2,
+            "title": "Step 1: Penilaian Untuk Perbaikan",
+            "question": {
+                "title": "Apakah Pasien sedang minum obat?",
+                "type": "text",
+                "content": null
+            },
+            "isResult": false,
+            "isStep": false,
+            "answer": {
+                "type": "true-false",
+                "target": {
+                    "true": 5,
+                    "false": 4
+                }
+            },
+            "href": null
+        },
+        {
+            "id": 3,
+            "title": "Step 1: Penilaian Untuk Perbaikan",
+            "question": {
+                "title": null,
+                "type": "text",
+                "content": "<ul><li>Tindak lanjut sesuai kebutuhan sampai gejala mereda<li>Lanjutkan pengobatan pemeliharaan selama minimal 2 tahun.</ul>"
+            },
+            "isResult": true,
+            "isStep": false,
+            "answer": {
+                "type": "continue",
+                "target": 6
+            },
+            "href": null
+        },
+        {
+            "id": 4,
+            "title": "Step 1: Penilaian Untuk Perbaikan",
+            "question": {
+                "title": null,
+                "type": "text",
+                "content": "<ul><li><strong>Jika perlu, mulai pengobatan.</strong><li>Tinjau intervensi psikososial.<li>Evaluasi masalah medis.</ul>"
+            },
+            "isResult": true,
+            "isStep": false,
+            "answer": {
+                "type": "continue",
+                "target": 6
+            },
+            "href": null
+        },
+        {
+            "id": 5,
+            "title": "Step 1: Penilaian Untuk Perbaikan",
+            "question": {
+                "title": null,
+                "type": "text",
+                "content": "<ul><li><strong>Periksa dosis dan efek samping. Buka <strong style=color:#2751c0>Tabel 1 atau Tabel</strong> 3.</strong><li>Pastikan Pasien telah mengonsumsi obat dengan dosis efektif selama <strong>minimal empat hingga enam minggu.</strong><li>Jika dengan dosis obat yang efektif selama empat sampai enam minggu tidak ada perbaikan, pertimbangkan untuk mengganti obat. Lihat <strong style=color:#2751c0>Tabel </strong>3<li>Jika respons masih buruk, konsultasikan dengan spesialis<li>Tinjau intervensi psikososial.<li>Evaluasi masalah medis.</ul>"
+            },
+            "isResult": true,
+            "isStep": false,
+            "answer": {
+                "type": "continue",
+                "target": 6
+            },
+            "href": null
+        },
+        {
+            "id": 6,
+            "title": "Step 1: Penilaian Untuk Perbaikan",
+            "question": {
+                "title": null,
+                "type": "text",
+                "content": "<ul><li>Tinjau intervensi psikososial.<li>Evaluasi masalah medis.</ul>"
+            },
+            "isResult": true,
+            "isStep": false,
+            "answer": {
+                "type": "continue",
+                "target": 7
+            },
+            "href": null
+        },
+        {
+            "id": 7,
+            "title": "Step 2: Perawatan Rutin Monitor",
+            "question": {
+                "title": null,
+                "type": "text",
+                "content": "<ul><li>Meninjau dan memberikan intervensi psikososial.<li>» Jika sedang menjalani pengobatan, tinjau kepatuhan, <strong>efek samping, dan dosis.</strong> Lihat <strong style=color:#585fa1>Tabel </strong>4<li>Jika Pasien memulai pengobatan lain yang berpotensi menimbulkan efek obat-obatan interaksi, pertimbangkan untuk meninjau dosis obat.</ul>"
+            },
+            "isResult": true,
+            "isStep": true,
+            "answer": {
+                "type": "continue",
+                "target": 8
+            },
+            "href": null
+        },
+        {
+            "id": 8,
+            "title": "Step 3: Hentikan Pengobatan",
+            "question": {
+                "title": "Apakah Pasien sudah mengalami remisi penuh gejala tanpa episode gangguan bipolar setidaknya selama dua tahun?",
+                "type": "text",
+                "content": null
+            },
+            "isResult": false,
+            "isStep": true,
+            "answer": {
+                "type": "true-false",
+                "target": {
+                    "true": 10,
+                    "false": 9
+                }
+            },
+            "href": null
+        },
+        {
+            "id": 9,
+            "title": "Step 3: Hentikan Pengobatan",
+            "question": {
+                "title": null,
+                "type": "text",
+                "content": "<p>Rutin menindaklanjuti dan memantau pengobatan.</p>"
+            },
+            "isResult": true,
+            "isStep": false,
+            "answer": {
+                "type": "continue",
+                "target": null
+            },
+            "href": null
+        },
+        {
+            "id": 10,
+            "title": "Step 3: Hentikan Pengobatan",
+            "question": {
+                "title": "Pertimbangkan penghentian pengobatan",
+                "type": "text",
+                "content": "<ul><li>Diskusikan dengan orang/pengasuh risiko penghentian.<li>Konsultasikan dengan dokter spesialis mengenai keputusan menghentikan pengobatan pemeliharaan setelah 2 tahun.<li>Kurangi secara bertahap selama beberapa minggu atau bulan.</ul>"
+            },
+            "isResult": true,
+            "isStep": false,
+            "answer": {
+                "type": "continue",
+                "target": null
+            },
+            "href": null
+        }
+    ]
+}

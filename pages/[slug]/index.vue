@@ -26,7 +26,55 @@
           </div>
           <div class="col-lg-8 col-xxl-9">
             <Transition mode="out-in">
-              <UiCard :key="activeContent?.id" title-size="small">
+              <!-- Psikosis Tindaklanjut -->
+              <UiCard
+                v-if="
+                  route.params.slug === 'psikosis' &&
+                  activeContent?.slug === 'tindaklanjut'
+                "
+                :key="activeContent?.id"
+                title-size="small"
+              >
+                <template #title>
+                  <div
+                    v-if="activeTindakLanjut"
+                    role="button"
+                    class="d-flex align-items-center"
+                    @click="setActiveTindakLanjut(null)"
+                  >
+                    <div class="me-2">
+                      <Icon
+                        name="basil:arrow-left-solid"
+                        width="32"
+                        height="32"
+                      ></Icon>
+                    </div>
+                    {{ activeTindakLanjut.title }}
+                  </div>
+                  <div v-else>Tindak Lanjut</div>
+                </template>
+                <template #content>
+                  <div v-if="activeTindakLanjut">
+                    <UiSelectionButton
+                      v-for="item in tindaklanjut"
+                      :key="`menu-link-${item.id}`"
+                      :to="`/${route.params.slug}/tindaklanjut?question=${item.id}`"
+                      >{{ item.title }}</UiSelectionButton
+                    >
+                  </div>
+                  <!-- Header -->
+                  <div v-else>
+                    <UiSelectionButton
+                      v-for="item in tindaklanjutPsikosis"
+                      :key="`menu-link-${item.id}`"
+                      @click="setActiveTindakLanjut(item)"
+                    >
+                      {{ item.title }}
+                    </UiSelectionButton>
+                  </div>
+                </template>
+              </UiCard>
+              <UiCard v-else :key="activeContent?.id" title-size="small">
                 <template #title>{{ activeContent?.title }}</template>
                 <template #content>
                   <div
@@ -113,7 +161,10 @@ onMounted(() => {
     getDeskripsi()
     getPenilaian()
     getManajemen()
-    getTindaklanjut()
+
+    if (route.params.slug !== 'psikosis') {
+      getTindaklanjut()
+    }
   })
 })
 
@@ -134,6 +185,19 @@ const activeContent = computed(() => {
 const setActiveMenu = (slug: string) => {
   activeMenu.value = slug
 }
+
+const tindaklanjutPsikosis = ref([
+  {
+    id: 1,
+    title: 'Psikosis'
+  },
+  {
+    id: 2,
+    title: 'Episode manik pada gangguan bipolar'
+  }
+])
+
+const activeTindakLanjut = ref(null)
 
 const deskripsi: Ref<Deskripsi | null> = ref(null)
 const penilaian: Ref<Question[]> = ref([])
@@ -189,6 +253,32 @@ const getTindaklanjut = () => {
 
     tindaklanjut.value = steps as Question[]
   })
+}
+const getTindaklanjut2 = () => {
+  nextTick(async () => {
+    const url = `/data/modules/${route.params.slug}/tindaklanjut-2.json`
+    const { data } = await useFetch(url)
+
+    const res = data.value as any
+
+    const questions = res.data
+
+    const steps = questions.filter((q: Question) => q.isStep)
+
+    tindaklanjut.value = steps as Question[]
+  })
+}
+
+const setActiveTindakLanjut = (val: any) => {
+  if (!val) {
+    tindaklanjut.value = []
+  } else if (Number(val.id) === 1) {
+    getTindaklanjut()
+  } else if (Number(val.id) === 2) {
+    getTindaklanjut2()
+  }
+
+  activeTindakLanjut.value = val
 }
 </script>
 
