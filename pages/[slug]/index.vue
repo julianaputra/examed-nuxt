@@ -17,9 +17,7 @@
                     :class="{
                       active: activeMenu === menuItem.slug
                     }"
-                    @click="
-                      setActiveMenu(menuItem.slug), setActiveTindakLanjut(null)
-                    "
+                    @click="setActiveMenu(menuItem.slug)"
                     >{{ menuItem.title }}</UiMenuButton
                   >
                 </div>
@@ -184,6 +182,10 @@ const activeContent = computed(() => {
 
 const setActiveMenu = (slug: string) => {
   activeMenu.value = slug
+
+  if (slug === 'tindaklanjut' && route.params.slug === 'psikosis') {
+    setActiveTindakLanjut(null)
+  }
 }
 
 const tindaklanjutPsikosis = ref([
@@ -251,7 +253,9 @@ const getTindaklanjut = () => {
 
     const steps = questions.filter((q: Question) => q.isStep)
 
+    console.log('steps', steps)
     tindaklanjut.value = steps as Question[]
+    console.log('tindaklanjut', tindaklanjut.value)
   })
 }
 const getTindaklanjut2 = () => {
