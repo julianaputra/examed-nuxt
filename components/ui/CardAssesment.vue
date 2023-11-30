@@ -116,5 +116,13 @@ const className = computed(() => {
     display: flex;
     gap: 12px;
   }
+
+  @media (max-width: 767px) {
+    padding: 30px;
+
+    &__hr {
+      margin: 24px 0 30px 0;
+    }
+  }
 }
 </style>

@@ -62,5 +62,9 @@ const className = computed(() => {
       color: #303178;
     }
   }
+
+  @media (max-width: 767px) {
+    padding: 30px;
+  }
 }
 </style>

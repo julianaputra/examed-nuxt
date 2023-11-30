@@ -1,24 +1,26 @@
 <template>
   <main>
-    <div class="container default-container">
-      <div class="row gy-4">
-        <div
-          v-for="(diagnose, diagnoseIndex) in diagnoses"
-          :key="diagnoseIndex"
-          class="col-lg-4"
-        >
-          <nuxt-link :to="diagnose.to" class="themeBtnBold">
-            <div class="themeBtnBold__square" :class="diagnose.color">
-              {{ diagnose.short }}
-            </div>
-            <span> {{ diagnose.name }} </span>
-            <div class="themeBtnBold__arrow">
-              <Icon name="CaretdownIcon" width="32" height="32" />
-            </div>
-          </nuxt-link>
+    <section class="banner">
+      <div class="container">
+        <div class="row gy-2 gy-lg-4">
+          <div
+            v-for="(diagnose, diagnoseIndex) in diagnoses"
+            :key="diagnoseIndex"
+            class="col-lg-4"
+          >
+            <nuxt-link :to="diagnose.to" class="themeBtnBold">
+              <div class="themeBtnBold__square" :class="diagnose.color">
+                {{ diagnose.short }}
+              </div>
+              <span> {{ diagnose.name }} </span>
+              <div class="themeBtnBold__arrow">
+                <Icon name="CaretdownIcon" width="32" height="32" />
+              </div>
+            </nuxt-link>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
   </main>
 </template>
 
@@ -69,6 +71,13 @@ const diagnoses = ref([
 </script>
 
 <style lang="scss" scoped>
+.banner {
+  padding: 50px 0;
+
+  @media (max-width: 767px) {
+    padding: 25px 0;
+  }
+}
 .themeBtnBold {
   position: relative;
   display: flex;
