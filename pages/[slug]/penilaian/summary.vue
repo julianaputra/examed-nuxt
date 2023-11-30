@@ -22,7 +22,7 @@
             </nav>
           </div>
           <Transition mode="out-in">
-            <div class="card__body">
+            <div class="card__body" :key="getActiveSummary?.id">
               <div class="row justify-content-center">
                 <div class="col-lg-10 col-xxl-8">
                   <h2 class="heading--secondary">
