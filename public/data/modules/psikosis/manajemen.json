@@ -14,66 +14,67 @@
         },{
             "id": 3,
             "parentId": 1,
+            "title": "Menjamin keselamatan Pasien dan keselamatan orang lain.",
+            "type": "heading-only",
+            "content": null
+        },{
+            "id": 4,
+            "parentId": 1,
+            "title": "Memberikan tindak lanjut rutin",
+            "type": "heading-only",
+            "content": null
+        },{
+            "id": 5,
+            "parentId": 1,
+            "title": "Mendukung rehabilitasi di masyarakat",
+            "type": "heading-only",
+            "content": null
+        },{
+            "id": 6,
+            "parentId": 1,
             "title": "2.1 Memberikan psikoedukasi kepada Pasien dan pengasuhnya",
             "type": "collapse",
             "content": "<p><strong>Pesan-pesan penting bagi Pasien dan pengasuhnya:</strong><ul><li>Jelaskan bahwa gejala-gejala tersebut disebabkan oleh kondisi kesehatan mental, bahwa psikosis dan gangguan bipolar dapat diobati, dan Pasien dapat pulih. Memperjelas kesalahpahaman umum tentang psikosis dan gangguan bipola<li>Jangan salahkan Pasien atau keluarganya atau menuduh mereka sebagai penyebab gejalanya.<li>Didik Pasien dan keluarganya bahwa Pasien perlu meminum obat yang diresepkan dan kembali untuk tindak lanjut secara teratur.<li>Jelaskan bahwa gejala yang muncul kembali dan/atau memburuk adalah hal biasa dan penting untuk mengenali gejala ini sejak dini dan mengunjungi fasilitas kesehatan sesegera mungkin.<li>Rencanakan jadwal kerja atau sekolah yang teratur yang <strong>menghindari kurang tidur dan stres</strong> bagi Pasien dan pengasuhnya. Dorong Pasien untuk meminta nasihat mengenai keputusan-keputusan besar terutama yang melibatkan uang atau komitmen-komitmen besar<li>Merekomendasikan <strong>untuk menghindari alkohol, ganja, atau obat-obatan nonresep lainnya,</strong> karena dapat memperburuk gejala psikotik atau bipolar.<li>Anjurkan mereka untuk menjaga pola hidup sehat, misalnya pola makan seimbang, aktivitas fisik, tidur teratur, kebersihan diri yang baik, dan tidak ada pemicu stres. Stres dapat memperburuk gejala psikotik. Catatan: Perubahan gaya hidup harus dilanjutkan selama diperlukan, mungkin tanpa batas waktu. Perubahanperubahan ini harus direncanakan dan dikembangkan demi keberlanjutan.</ul>"
         },{
-            "id": 4,
-            "parentId": 1,
-            "title": "2.6 intervensi Farmakologis.",
-            "type": "collapse",
-            "content": "<ul><li>Berkoordinasi dengan sumber daya kesehatan dan sosial yang tersedia untuk bertemu kebutuhan kesehatan fisik, sosial, dan mental keluarga<li>Identifikasi aktivitas sosial Pasien sebelumnya yang, jika dimulai kembali, berpotensi memberikan dukungan psikologis dan sosial langsung atau tidak langsung, misalnya pertemuan keluarga, jalan-jalan bersama teman, mengunjungi tetangga, aktivitas sosial di tempat kerja, olah raga, dan aktivitas komunitas. Dorong Pasien untuk melanjutkan aktivitas sosial ini dan beri tahu anggota keluarga tentang hal ini.<li>Mendorong orang dan pengasuh untuk meningkatkan sistem dukungan sosial.</ul>"
-        },{
-            "id": 5,
-            "parentId": 1,
-            "title": "2.3 Meningkatkan fungsi dalam aktivitas sehari-hari. ",
-            "type": "collapse",
-            "content": "<ul><li>Lanjutkan aktivitas sosial, pendidikan, dan pekerjaan secara teratur sebanyak mungkin. Yang terbaik bagi Pasien adalah mempunyai pekerjaan atau mempunyai pekerjaan yang berarti.<li>Memfasilitasi inklusi dalam kegiatan ekonomi, termasuk lapangan kerja yang sesuai dengan budaya dan didukung<li>Menawarkan pelatihan keterampilan hidup dan/atau pelatihan keterampilan sosial untuk meningkatkan keterampilan hidup mandiri bagi penderita psikosis dan bipolar gangguan kesehatan dan untuk keluarga dan/atau pengasuhnya.<li>Memfasilitasi, jika tersedia dan dibutuhkan, kehidupan mandiri dan perumahan yang didukung yang sesuai secara budaya dan kontekstual di masyarakat.</ul>"
-        },{
-            "id": 6,
-            "parentId": 1,
-            "title": "Menjamin keselamatan Pasien dan keselamatan orang lain.",
-            "type": "collapse",
-            "content": null
-        },{
             "id": 7,
-            "parentId": 1,
-            "title": "Memberikan tindak lanjut rutin",
-            "type": "collapse",
-            "content": null
-        },{
-            "id": 8,
-            "parentId": 1,
-            "title": "Mendukung rehabilitasi di masyarakat",
-            "type": "collapse",
-            "content": null
-        },{
-            "id": 9,
             "parentId": 1,
             "title": "2.2 Mengurangi stres dan memperkuat dukungan sosial. ",
             "type": "collapse",
             "content": "<ul><li>Berkoordinasi dengan sumber daya kesehatan dan sosial yang tersedia untuk bertemu kebutuhan kesehatan fisik, sosial, dan mental keluarga.<li>Identifikasi aktivitas sosial Pasien sebelumnya yang, jika dimulai kembali, berpotensi memberikan dukungan psikologis dan sosial langsung atau tidak langsung, misalnya pertemuan keluarga, jalan-jalan bersama teman, mengunjungi tetangga, aktivitas sosial di tempat kerja, olah raga, dan aktivitas komunitas. Dorong Pasien untuk melanjutkan aktivitas sosial ini dan beri tahu anggota keluarga tentang hal ini.<li>Mendorong orang dan pengasuh untuk meningkatkan sistem dukungan sosial.</ul>"
+        },{
+            "id": 8,
+            "parentId": 1,
+            "title": "2.3 Meningkatkan fungsi dalam aktivitas sehari-hari. ",
+            "type": "collapse",
+            "content": "<ul><li>Lanjutkan aktivitas sosial, pendidikan, dan pekerjaan secara teratur sebanyak mungkin. Yang terbaik bagi Pasien adalah mempunyai pekerjaan atau mempunyai pekerjaan yang berarti.<li>Memfasilitasi inklusi dalam kegiatan ekonomi, termasuk lapangan kerja yang sesuai dengan budaya dan didukung<li>Menawarkan pelatihan keterampilan hidup dan/atau pelatihan keterampilan sosial untuk meningkatkan keterampilan hidup mandiri bagi penderita psikosis dan bipolar gangguan kesehatan dan untuk keluarga dan/atau pengasuhnya.<li>Memfasilitasi, jika tersedia dan dibutuhkan, kehidupan mandiri dan perumahan yang didukung yang sesuai secara budaya dan kontekstual di masyarakat.</ul>"
+        },
+        {
+            "id": 9,
+            "parentId": 2,
+            "title": "Menjamin keselamatan Pasien dan keselamatan orang lain.",
+            "type": "heading-only",
+            "content": null
         },
         {
             "id": 10,
-            "parentId": 2,
-            "title": "2.5 Mulailah pengobatan antipsikotik.",
+            "parentId": 1,
+            "title": "2.6 intervensi Farmakologis.",
             "type": "collapse",
-            "content": "<h1>Psikosis</h1><ul><li>Antipsikotik harus secara rutin ditawarkan kepada penderita psikosis.<li>Mulai pengobatan antipsikotik segera. Lihat Tabel 1.<li>Mulailah dengan dosis terendah dan titrasi secara perlahan untuk mengurangi risiko efek samping<li>Terus pantau dosis tersebut sesering mungkin dan sesuai kebutuhan selama 4-6 minggu pertama terapi. Jika tidak ada perbaikan, lihat Tindak Lanjut dan Tabel 4.<li>Pantau berat badan, tekanan darah, gula puasa, kolesterol dan EKG untuk orang yang menggunakan antipsikotik jika memungkinkan (lihat di bawah).</ul><h2 style=color:red>PERINGATAN!</h2><strong>Efek samping yang harus diperhatikan:</strong><ul><li><strong>Efek samping ekstrapiramidal (EPS):</strong> akatisia, akut reaksi distonik, tremor, roda gigi, kekakuan otot, dan tardive dyskinesia. Obati dengan obat antikolinergik bila diindikasikan dan tersedia (lihat Tabel 2).<li><strong>Perubahan metabolik: </strong>pertambahan berat badan, tekanan darah tinggi, peningkatan gula darah dan kolesterol<li><strong>Perubahan EKG (interval QT memanjang):</strong> pantau EKG(jika memungkinkan.)<li><strong>Sindrom neuroleptik maligna (NMS):</strong> jarang terjadi, efek samping. Benzodiazepin harus segera dihentikan secara bertahap kelainan yang berpotensi mengancam jiwa yang ditandai dengan kekakuan otot, suhu tinggi, dan tekanan darah tinggi."
+            "content": "<p><strong>Jika pasien menggunakan antidepresan:</strong><ul><li><strong>HENTIKAN ANTIDEPRESAN</strong><br>untuk mencegah risiko mania lebih lanjut.<li><strong>Mulailah pengobatan dengan litium, valproat, karba mazepin, atau dengan antipsikotik</strong> (lihat <strong style=color:#233b96>Tabel 3</strong>).<ul><li><strong style=color:#233b96>Litium</strong>: pertimbangkan untuk menggunakan litium sebagai pengobatan lini pertama gangguan bipolar hanya jika pemantauan klinis dan laboratorium tersedia, dan resepkan hanya di bawah pengawasan spesialis. Jika pemeriksaan laboratorium tidak tersedia atau tidak memungkinkan, litium harus dihindari dan valproat atau karbamazepin harus dipertimbangkan. Kepatuhan yang tidak menentu atau menghentikan pengobatan litium secara tiba-tiba dapat meningkatkan risiko kekambuhan. Jangan meresepkan litium jika pasokan litium mungkin sering terganggu. Dapatkan fungsi ginjal dan tiroid, hitung darah lengkap, EKG, dan tes kehamilan sebelum memulai pengobatan jika memungkinkan<li><strong style=color:#233b96>Valproate</strong> dan Carbamazepine: Pertimbangkan obat ini jika pemantauan klinis atau laboratorium untuk litium tidak tersedia atau jika spesialis tidak tersedia untuk mengawasi peresepan litium.<li><strong style=color:#233b96>Haloperidol</strong> Haloperidol dan risperidone: pertimbangkan haloperidol dan risperidone hanya jika tidak ada pemantauan klinis atau laboratorium yang tersedia untuk memulai litium atau valproat. Risperidone dapat digunakan sebagai alternatif pengganti haloperidol pada individu dengan mania bipolar jika ketersediaannya terjamin dan biayanya tidak menjadi masalah paksaan.</ul></ul><h2 style=color:red>PERINGATAN</h2><p>Bagi wanita yang sedang hamil atau menyusui, hindari valproate, lithium dan carbamazepine. Penggunaan <strong>haloperidol dosis rendah</strong> dianjurkan dengan hati-hati dan di bawah pengawasan dokter spesialis, jika tersedia.<ul><li><strong>Pertimbangkan benzodiazepin jangka pendek (maksimum 2-4 minggu) untuk gangguan perilaku atau agitasi:</strong><ul><li>Orang dengan mania yang mengalami agitasi dapat memperoleh manfaat dari penggunaan benzodiazepin seperti diazepam dalam jangka pendek (maksimal 2-4 minggu).<li>Benzodiazepin harus segera dihentikan secara bertahap ketika gejala membaik, toleransi dapat berkembang</ul><li>Lanjutkan pengobatan pemeliharaan setidaknya selama 2 tahun setelah episode bipolar terakhir.<li>Litium atau valproat dapat ditawarkan untuk pengobatan pemeliharaan gangguan bipolar. Jika pengobatan dengan salah satu agen ini tidak memungkinkan, haloperidol, klorpromazin, atau karbamazepin dapat digunakan. <strong>Tawarkan perawatan pemeliharaan di rangkaian perawatan primer di bawah bimbingan spesialis pengawasan</strong></ul>"
         },
         {
             "id": 11,
             "parentId": 2,
-            "title": "2.3 Meningkatkan fungsi dalam aktivitas sehari-hari.",
-            "type": "collapse",
-            "content": "<ul><li>Lanjutkan aktivitas sosial, pendidikan, dan pekerjaan secara teratur sebanyak mungkin. Yang terbaik bagi Pasien adalah mempunyai pekerjaan atau mempunyai pekerjaan yang berarti.<li>Memfasilitasi inklusi dalam kegiatan ekonomi, termasuk lapangan kerja yang sesuai dengan budaya dan didukung.<li>Menawarkan pelatihan keterampilan hidup dan/atau pelatihan keterampilan sosial untuk meningkatkan keterampilan hidup mandiri bagi penderita psikosis dan bipolar gangguan kesehatan dan untuk keluarga dan/atau pengasuhnya.<li>Memfasilitasi, jika tersedia dan dibutuhkan, kehidupan mandiri dan perumahan yang didukung yang sesuai secara budaya dan kontekstual di masyarakat.</ul>"
+            "title": "Memberikan tindak lanjut rutin",
+            "type": "heading-only",
+            "content": null
         },
         {
             "id": 12,
             "parentId": 2,
-            "title": "2.2 Mengurangi stres dan memperkuat dukungan sosial.",
-            "type": "collapse",
-            "content": "<ul><li>Berkoordinasi dengan sumber daya kesehatan dan sosial yang tersedia untuk bertemu kebutuhan kesehatan fisik, sosial, dan mental keluarga.<li>Identifikasi aktivitas sosial Pasien sebelumnya yang, jika dimulai kembali, berpotensi memberikan dukungan psikologis dan sosial langsung atau tidak langsung, misalnya pertemuan keluarga, jalan-jalan bersama teman, mengunjungi tetangga, aktivitas sosial di tempat kerja, olah raga, dan aktivitas komunitas. Dorong Pasien untuk melanjutkan aktivitas sosial ini dan beri tahu anggota keluarga tentang hal ini.<li>Mendorong orang dan pengasuh untuk meningkatkan sistem dukungan sosial</ul><h2 style=color:red>TIPS KLINIS</h2><p>Memastikan orang-orang dengan psikosis diperlakukan dengan hormat dan bermartabat. Untuk rincian lebih lanjut, buka »ECP."
+            "title": "Mendukung rehabilitasi di masyarakat",
+            "type": "heading-only",
+            "content": null
         },
         {
             "id": 13,
@@ -110,25 +111,25 @@
         },{
             "id": 18,
             "parentId": 17,
-            "title": "Obat antipsikotik",
+            "title": "Tabel 1: Obat antipsikotik",
             "type": "link",
             "content": null
         },{
             "id": 19,
             "parentId": 17,
-            "title": "Obat antikolinergik",
+            "title": "Tabel 2: Obat antikolinergik",
             "type": "link",
             "content": "<li>untuk pengobatan efek samping ekstrapiramidal (EPS)<li><strong style=color:red>Hindari pada wanita yang sedang hamil atau menyusui jika memungkinkan</strong>"
         },{
             "id": 20,
-            "parentId": 17,
-            "title": "Penstabil suasana hati",
+            "parentId": 70,
+            "title": "Tabel 3: Penstabil suasana hati",
             "type": "link",
             "content": null
         },{
             "id": 21,
             "parentId": 17,
-            "title": "Tinjau kepatuhan, efek samping dan dosis berdasarkan situasi/presentasi klinis",
+            "title": "Tabel 4: Tinjau kepatuhan, efek samping dan dosis berdasarkan situasi/presentasi klinis",
             "type": "link",
             "content": null
         },
@@ -390,57 +391,71 @@
         },
         {
             "id": 62,
+            "parentId": null,
+            "title": "intervensi Farmakologis (Episode Manik).",
+            "type": "link",
+            "content": null
+        },
+        {
+            "id": 63,
             "parentId":null,
-            "title": "Pengelolaan Orang dengan Perilaku Agresif dan/atau Agresif",
+            "title": "Table 5: Pengelolaan Orang dengan Perilaku Agresif dan/atau Agresif",
             "type": "link",
             "content": null
         },{
-            "id": 63,
-            "parentId":62,
+            "id": 64,
+            "parentId":63,
             "title": "Penilaian",
             "type": "collapse",
             "content": "<ul><li>Cobalah untuk berkomunikasi dengan Pasien<li>Evaluasi penyebab mendasar:<ul><li><strong>Periksa Glukosa Darah.</strong> Jika rendah, berikan glukosa.<li><strong>Periksa tanda-tanda vital,</strong> termasuk suhu dan saturasi oksigen. Berikan oksigen jika diperlukan.<li><strong>Singkirkan delirium dan penyebab medis</strong> termasuk keracunan.<li><strong>Singkirkan penggunaan narkoba dan alkohol.</strong>Secara khusus pertimbangkan keracunan stimulan dan/atau <strong>penghentian alkohol/obat penenang. Pergi ke » SUB.</strong><li>Singkirkan agitasi akibat psikosis atau manik episode pada gangguan bipolar. Pergi ke Penilaian,» PSY</ul></ul>"
         },{
-            "id": 64,
-            "parentId":62,
+            "id": 65,
+            "parentId":63,
             "title": "Komunikasi",
             "type": "collapse",
             "content": "<ul><li>Keamanan adalah yang pertama!<li>Tetap tenang dan dorong pasien untuk berbicara<li>Gunakan suara yang tenang dan cobalah mengatasi kekhawatiran tersebut jika memungkinkan.<li>Dengarkan dengan penuh perhatian. Luangkan waktu untuk Pasien.<li>Jangan pernah menertawakan Pasien.<li>Jangan kembali agresif.<li>Cobalah mencari sumber permasalahan dan solusi bagi Pasien.<li>Libatkan pengasuh dan anggota staf lainnya.<li>Singkirkan dari situasi tersebut siapa pun yang mungkin menjadi pemicu agresi.<li>Jika semua kemungkinan telah dilakukan dan Pasien masih agresif, mungkin perlu menggunakan obat-obatan (jika tersedia) untuk mencegah cedera.</ul>"
         },{
-            "id": 65,
-            "parentId":62,
+            "id": 66,
+            "parentId":63,
             "title": "Sedasi dan Penggunaan Obat",
             "type": "collapse",
             "content": "<ul><li>Tenang seperlunya untuk mencegah cedera.<li>Untuk agitasi akibat psikosis atau mania, pertimbangkan penggunaan haloperidol 2 mg po/im setiap jam hingga 5 dosis (maksimum 10 mg). Singkirkan delirium dan penyebab medis Dalam kasus kekerasan ekstrim Jika semua kemungkinan telah dilakukan dan Pasien masih agresif, mungkin perlu menggunakan obat-obatan (jika tersedia) untuk mencegah cedera. Perhatian: haloperidol dosis tinggi dapat menyebabkan reaksi distonik. Gunakan biperiden untuk mengobati reaksi akut.<li>Untuk agitasi akibat menelan zat, seperti penghentian alkohol/obat penenang atau keracunan stimulan,gunakan diazepam 10-20 mg po dan ulangi sesuai kebutuhan. Pergi ke SUB.<p style=color:red>Dalam kasus kekerasan ekstrim<ul><li>Cari bantuan dari polisi atau staf<li>Gunakan haloperidol 5mg im, ulangi dalam 15-30 menit jika diperlukan (maksimum 15 mg)<li>Konsultasikan dengan spesialis</ul><li>jika Pasien tetap gelisah, periksa kembali saturasi oksigen, tanda-tanda vital dan glukosa. Pertimbangkan rasa sakit. Rujuk ke rumah sakit.<li>Setelah agitasi mereda, lihat diagram induk (MC) dan pilih modul yang relevan untuk penilaian.</ul><p style=color:red>Populasi Khusus:<p>Konsultasikan dengan spesialis untuk pengobatan."
         },
         {
-            "id": 66,
+            "id": 67,
             "parentId": 2,
             "title": "2.1 Memberikan psikoedukasi kepada Pasien dan pengasuhnya",
             "type": "collapse",
             "content": "<strong><p>Pesan-pesan penting bagi Pasien dan pengasuhnya:</strong><ul><li>Jelaskan bahwa gejala-gejala tersebut disebabkan oleh kondisi kesehatan mental, bahwa psikosis dan gangguan bipolar dapat diobati, dan Pasien dapat pulih. Memperjelas kesalahpahaman umum tentang psikosis dan gangguan bipola<li>Jangan salahkan Pasien atau keluarganya atau menuduh mereka sebagai penyebab gejalanya.<li>Didik Pasien dan keluarganya bahwa Pasien perlu meminum obat yang diresepkan dan kembali untuk tindak lanjut secara teratur.<li>Jelaskan bahwa gejala yang muncul kembali dan/atau memburuk adalah hal biasa dan penting untuk mengenali gejala ini sejak dini dan mengunjungi fasilitas kesehatan sesegera mungkin.<li>Rencanakan jadwal kerja atau sekolah yang teratur yang <strong>menghindari kurang tidur dan stres</strong> bagi Pasien dan pengasuhnya. Dorong Pasien untuk meminta nasihat mengenai keputusan-keputusan besar terutama yang melibatkan uang atau komitmen-komitmen besar<li>Merekomendasikan <strong>untuk menghindari alkohol, ganja, atau obat-obatan nonresep lainnya,</strong> karena dapat memperburuk gejala psikotik atau bipolar.<li>Anjurkan mereka untuk menjaga pola hidup sehat, misalnya pola makan seimbang, aktivitas fisik, tidur teratur, kebersihan diri yang baik, dan tidak ada pemicu stres. Stres dapat memperburuk gejala psikotik. Catatan: Perubahan gaya hidup harus dilanjutkan selama diperlukan, mungkin tanpa batas waktu. Perubahanperubahan ini harus direncanakan dan dikembangkan demi keberlanjutan.</ul>"
         },
         {
-            "id": 67,
-            "parentId": 2,
-            "title": "Menjamin keselamatan Pasien dan keselamatan orang lain.",
-            "type": "collapse",
-            "content": null
-        },
-        {
             "id": 68,
             "parentId": 2,
-            "title": "Memberikan tindak lanjut rutin",
+            "title": "2.2 Mengurangi stres dan memperkuat dukungan sosial.",
             "type": "collapse",
-            "content": null
-        }
-        ,{
+            "content": "<ul><li>Berkoordinasi dengan sumber daya kesehatan dan sosial yang tersedia untuk bertemu kebutuhan kesehatan fisik, sosial, dan mental keluarga.<li>Identifikasi aktivitas sosial Pasien sebelumnya yang, jika dimulai kembali, berpotensi memberikan dukungan psikologis dan sosial langsung atau tidak langsung, misalnya pertemuan keluarga, jalan-jalan bersama teman, mengunjungi tetangga, aktivitas sosial di tempat kerja, olah raga, dan aktivitas komunitas. Dorong Pasien untuk melanjutkan aktivitas sosial ini dan beri tahu anggota keluarga tentang hal ini.<li>Mendorong orang dan pengasuh untuk meningkatkan sistem dukungan sosial</ul><h2 style=color:red>TIPS KLINIS</h2><p>Memastikan orang-orang dengan psikosis diperlakukan dengan hormat dan bermartabat. Untuk rincian lebih lanjut, buka »ECP."
+        },
+        {
             "id": 69,
             "parentId": 2,
-            "title": "Mendukung rehabilitasi di masyarakat",
+            "title": "2.3 Meningkatkan fungsi dalam aktivitas sehari-hari.",
             "type": "collapse",
-            "content": null
-        }
+            "content": "<ul><li>Lanjutkan aktivitas sosial, pendidikan, dan pekerjaan secara teratur sebanyak mungkin. Yang terbaik bagi Pasien adalah mempunyai pekerjaan atau mempunyai pekerjaan yang berarti.<li>Memfasilitasi inklusi dalam kegiatan ekonomi, termasuk lapangan kerja yang sesuai dengan budaya dan didukung.<li>Menawarkan pelatihan keterampilan hidup dan/atau pelatihan keterampilan sosial untuk meningkatkan keterampilan hidup mandiri bagi penderita psikosis dan bipolar gangguan kesehatan dan untuk keluarga dan/atau pengasuhnya.<li>Memfasilitasi, jika tersedia dan dibutuhkan, kehidupan mandiri dan perumahan yang didukung yang sesuai secara budaya dan kontekstual di masyarakat.</ul>"
+        },
+        {
+            "id": 70,
+            "parentId": 2,
+            "title": "2.5 Mulailah pengobatan antipsikotik.",
+            "type": "collapse",
+            "content": "<h1>Psikosis</h1><ul><li>Antipsikotik harus secara rutin ditawarkan kepada penderita psikosis.<li>Mulai pengobatan antipsikotik segera. Lihat Tabel 1.<li>Mulailah dengan dosis terendah dan titrasi secara perlahan untuk mengurangi risiko efek samping<li>Terus pantau dosis tersebut sesering mungkin dan sesuai kebutuhan selama 4-6 minggu pertama terapi. Jika tidak ada perbaikan, lihat Tindak Lanjut dan Tabel 4.<li>Pantau berat badan, tekanan darah, gula puasa, kolesterol dan EKG untuk orang yang menggunakan antipsikotik jika memungkinkan (lihat di bawah).</ul><h2 style=color:red>PERINGATAN!</h2><strong>Efek samping yang harus diperhatikan:</strong><ul><li><strong>Efek samping ekstrapiramidal (EPS):</strong> akatisia, akut reaksi distonik, tremor, roda gigi, kekakuan otot, dan tardive dyskinesia. Obati dengan obat antikolinergik bila diindikasikan dan tersedia (lihat Tabel 2).<li><strong>Perubahan metabolik: </strong>pertambahan berat badan, tekanan darah tinggi, peningkatan gula darah dan kolesterol<li><strong>Perubahan EKG (interval QT memanjang):</strong> pantau EKG(jika memungkinkan.)<li><strong>Sindrom neuroleptik maligna (NMS):</strong> jarang terjadi, efek samping. Benzodiazepin harus segera dihentikan secara bertahap kelainan yang berpotensi mengancam jiwa yang ditandai dengan kekakuan otot, suhu tinggi, dan tekanan darah tinggi."
+        },
         
+        {
+            "id": 71,
+            "parentId": 62,
+            "title": "2.6 intervensi Farmakologis.",
+            "type": "collapse",
+            "content": "<p><strong>Jika pasien menggunakan antidepresan:</strong><ul><li><strong>HENTIKAN ANTIDEPRESAN</strong><br>untuk mencegah risiko mania lebih lanjut.<li><strong>Mulailah pengobatan dengan litium, valproat, karba mazepin, atau dengan antipsikotik</strong> (lihat <strong style=color:#233b96>Tabel 3</strong>).<ul><li><strong style=color:#233b96>Litium</strong>: pertimbangkan untuk menggunakan litium sebagai pengobatan lini pertama gangguan bipolar hanya jika pemantauan klinis dan laboratorium tersedia, dan resepkan hanya di bawah pengawasan spesialis. Jika pemeriksaan laboratorium tidak tersedia atau tidak memungkinkan, litium harus dihindari dan valproat atau karbamazepin harus dipertimbangkan. Kepatuhan yang tidak menentu atau menghentikan pengobatan litium secara tiba-tiba dapat meningkatkan risiko kekambuhan. Jangan meresepkan litium jika pasokan litium mungkin sering terganggu. Dapatkan fungsi ginjal dan tiroid, hitung darah lengkap, EKG, dan tes kehamilan sebelum memulai pengobatan jika memungkinkan<li><strong style=color:#233b96>Valproate</strong> dan Carbamazepine: Pertimbangkan obat ini jika pemantauan klinis atau laboratorium untuk litium tidak tersedia atau jika spesialis tidak tersedia untuk mengawasi peresepan litium.<li><strong style=color:#233b96>Haloperidol</strong> Haloperidol dan risperidone: pertimbangkan haloperidol dan risperidone hanya jika tidak ada pemantauan klinis atau laboratorium yang tersedia untuk memulai litium atau valproat. Risperidone dapat digunakan sebagai alternatif pengganti haloperidol pada individu dengan mania bipolar jika ketersediaannya terjamin dan biayanya tidak menjadi masalah paksaan.</ul></ul><h2 style=color:red>PERINGATAN</h2><p>Bagi wanita yang sedang hamil atau menyusui, hindari valproate, lithium dan carbamazepine. Penggunaan <strong>haloperidol dosis rendah</strong> dianjurkan dengan hati-hati dan di bawah pengawasan dokter spesialis, jika tersedia.<ul><li><strong>Pertimbangkan benzodiazepin jangka pendek (maksimum 2-4 minggu) untuk gangguan perilaku atau agitasi:</strong><ul><li>Orang dengan mania yang mengalami agitasi dapat memperoleh manfaat dari penggunaan benzodiazepin seperti diazepam dalam jangka pendek (maksimal 2-4 minggu).<li>Benzodiazepin harus segera dihentikan secara bertahap ketika gejala membaik, toleransi dapat berkembang</ul><li>Lanjutkan pengobatan pemeliharaan setidaknya selama 2 tahun setelah episode bipolar terakhir.<li>Litium atau valproat dapat ditawarkan untuk pengobatan pemeliharaan gangguan bipolar. Jika pengobatan dengan salah satu agen ini tidak memungkinkan, haloperidol, klorpromazin, atau karbamazepin dapat digunakan. <strong>Tawarkan perawatan pemeliharaan di rangkaian perawatan primer di bawah bimbingan spesialis pengawasan</strong></ul>"
+        }
     ]
 }

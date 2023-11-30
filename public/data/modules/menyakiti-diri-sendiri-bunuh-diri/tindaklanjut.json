@@ -41,7 +41,7 @@
             "question": {
                 "title": null,
                 "type": "text",
-                "content": "<ul><li>Kurangi kontak seiring dengan kemajuan Pasien.<li><strong>Lanjutkan tindak lanjut selama 2 tahun,</strong>selanjutnya kurangi kontak sesuai perbaikan (misalnya setiap 2-4 minggu sekali setelah 2 bulan pertama, dan dua kali pada tahun kedua).</ul>"
+                "content": "<ul><li>Kurangi kontak seiring dengan kemajuan Pasien   .<li><strong>Lanjutkan tindak lanjut selama 2 tahun,</strong>selanjutnya kurangi kontak sesuai perbaikan (misalnya setiap 2-4 minggu sekali setelah 2 bulan pertama, dan dua kali pada tahun kedua).</ul>"
             },
             "isResult": true,
             "isStep": false,

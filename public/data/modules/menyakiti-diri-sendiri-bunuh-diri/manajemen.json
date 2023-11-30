@@ -152,7 +152,7 @@
             "id": 23,
             "parentId": 3,
             "title": "Konsultasikan dengan spesialis kesehatan mental, jika tersedia",
-            "type": "collapse",
+            "type": "heading-only",
             "content": null
         },
         {

@@ -185,11 +185,8 @@
             "isResult": false,
             "isStep": false,
             "answer": {
-                "type": "true-false",
-                "target": {
-                    "true": 8,
-                    "false": 19
-                }
+                "type": "continue",
+                "target": 19
             },
             "href": null
         },
@@ -345,7 +342,7 @@
                 "content": null
             },
             "isResult": false,
-            "isStep": true,
+            "isStep": false,
             "answer": {
                 "type": "continue",
                 "target": null 
