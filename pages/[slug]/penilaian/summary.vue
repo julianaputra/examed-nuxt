@@ -34,6 +34,7 @@
                       v-for="sumList in resultSummary"
                       :key="sumList.id"
                       :to="sumList?.href"
+                      :has-icon="sumList?.href ? true : false"
                       >{{ sumList.question.title }}</UiSelectionButton
                     >
                   </div>
@@ -41,6 +42,7 @@
                     <UiSelectionButton
                       v-for="sumList in questionSummary"
                       :key="sumList.id"
+                      :has-icon="false"
                       >{{ sumList.question.title }}</UiSelectionButton
                     >
                   </div>
