@@ -125,7 +125,7 @@ const summaries = ref([
   {
     id: 1,
     title: 'Summary Hasil',
-    subtitle: 'Hasil Penilanan'
+    subtitle: 'Hasil Penilaian'
   },
   {
     id: 2,
