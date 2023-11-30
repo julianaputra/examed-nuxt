@@ -97,6 +97,7 @@ const getActiveChildren = computed(() => {
 
 const selectChildren = (target: any) => {
   activeParent.value = target
+  router.push(`/${route.params.slug}/manajemen?item=${target}`)
 }
 
 const back = (target: any) => {
@@ -104,6 +105,7 @@ const back = (target: any) => {
     router.push(`/${route.params.slug}?menu=manajemen`)
   } else {
     activeParent.value = target
+    router.push(`/${route.params.slug}/manajemen?item=${target}`)
   }
 }
 </script>
