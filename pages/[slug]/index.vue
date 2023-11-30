@@ -128,6 +128,7 @@ import type {
   Manajemen
 } from '~/types/index'
 
+const router = useRouter()
 const route = useRoute()
 
 onMounted(() => {
@@ -182,6 +183,7 @@ const activeContent = computed(() => {
 
 const setActiveMenu = (slug: string) => {
   activeMenu.value = slug
+  router.push(`/${route.params.slug}?menu=${slug}`)
 
   if (slug === 'tindaklanjut' && route.params.slug === 'psikosis') {
     setActiveTindakLanjut(null)

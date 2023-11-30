@@ -101,7 +101,7 @@ const selectChildren = (target: any) => {
 
 const back = (target: any) => {
   if (target == null) {
-    router.push(`/${route.params.slug}`)
+    router.push(`/${route.params.slug}?menu=manajemen`)
   } else {
     activeParent.value = target
   }

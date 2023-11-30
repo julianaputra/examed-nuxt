@@ -136,7 +136,7 @@ const back = () => {
     deleteCurrentAnswer()
   } else {
     deleteCurrentAnswer()
-    router.push(`/${route.params.slug}`)
+    router.push(`/${route.params.slug}?menu=tindaklanjut`)
   }
 }
 
