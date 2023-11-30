@@ -2,9 +2,9 @@
   <main>
     <section class="section">
       <div class="container">
-        <UiBreadcrumbs :breadcrumbs="breadcrumbItem"></UiBreadcrumbs>
+        <UiBreadcrumbs :breadcrumbs="breadcrumbs"></UiBreadcrumbs>
         <h1 class="title section__title section__title--no-margin">Summary</h1>
-        <h2 class="subtitle section__subtitle">Modul Depresi</h2>
+        <h2 class="subtitle section__subtitle">Modul {{ title }}</h2>
         <div class="card">
           <div class="card__header">
             <nav class="card__nav">
@@ -63,6 +63,7 @@
 <script setup lang="ts">
 import { storeToRefs } from 'pinia'
 import { usePenilaianStore } from '~/stores/penilaian'
+import type { Breadcrumb } from '~/types/index'
 
 definePageMeta({
   middleware: ['summary-penilaian']
@@ -70,27 +71,41 @@ definePageMeta({
 
 const route = useRoute()
 
+onMounted(() => {
+  nextTick(async () => {
+    const urlParent = `/data/modules/${route.params.slug}/index.json`
+    const parentData = await useFetch(urlParent)
+
+    const resParent = parentData.data.value as any
+
+    title.value = resParent.data.title
+
+    breadcrumbs.value = [
+      {
+        title: 'Home',
+        to: '/'
+      },
+      {
+        title: `${resParent.data.title}`,
+        to: `/${route.params.slug}`
+      },
+      {
+        title: 'Penilaian',
+        to: `/${route.params.slug}/penilaian`
+      },
+      {
+        title: 'Summary',
+        to: ''
+      }
+    ]
+  })
+})
+
 const { resetUserAnswers } = usePenilaianStore()
 const { userAnswers } = storeToRefs(usePenilaianStore())
 
-const breadcrumbItem = ref([
-  {
-    title: 'Home',
-    to: '/'
-  },
-  {
-    title: 'Depresi',
-    to: '/depresi'
-  },
-  {
-    title: 'Penilaian',
-    to: '/depresi/penilaian'
-  },
-  {
-    title: 'Summary',
-    to: '/depresi/penilaian/summary'
-  }
-])
+const title: Ref<string> = ref('')
+const breadcrumbs: Ref<Breadcrumb[]> = ref([])
 
 const activeSummary = ref(1)
 
