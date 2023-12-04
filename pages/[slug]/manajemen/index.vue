@@ -39,10 +39,10 @@
 </template>
 
 <script setup lang="ts">
+import type { Manajemen, Breadcrumb } from '~/types/index'
 const route = useRoute()
 const router = useRouter()
 const manajemenData = ref([]) as any
-import type { Manajemen, Breadcrumb } from '~/types/index'
 
 onMounted(() => {
   nextTick(async () => {

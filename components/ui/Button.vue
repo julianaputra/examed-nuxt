@@ -4,7 +4,7 @@
       <slot></slot>
     </span>
   </nuxt-link>
-  <button v-else :class="className">
+  <button v-else :class="className" @click.prevent="emit('click', $event)">
     <span>
       <slot></slot>
     </span>
@@ -26,7 +26,7 @@ const className = computed(() => {
   return props.variant === 'outline' ? 'themeBtn--outline' : 'themeBtn'
 })
 
-// const emit = defineEmits(['click'])
+const emit = defineEmits(['click'])
 </script>
 
 <style lang="scss" scoped>
