@@ -122,7 +122,7 @@
             "content": "<li>untuk pengobatan efek samping ekstrapiramidal (EPS)<li><strong style=color:red>Hindari pada wanita yang sedang hamil atau menyusui jika memungkinkan</strong>"
         },{
             "id": 20,
-            "parentId": 70,
+            "parentId": 62,
             "title": "Tabel 3: Penstabil suasana hati",
             "type": "link",
             "content": null
@@ -218,21 +218,21 @@
         },
         {
             "id": 36,
-            "parentId": 24,
+            "parentId": 25,
             "title": "Dosis",
             "type": "collapse",
             "content": "<ul><li>Mulai 12,5 mg.<li>Gunakan 12,5-50 mg setiap 2-4 minggu.<li>Rute: saya di daerah gluteal.</ul><h4 style=color:red>Hindari pada wanita yang sedang hamil/menyusui.<br><br>Jangan gunakan pada anak-anak/remaja.</h4>"
         },
         {
             "id": 37,
-            "parentId": 24,
+            "parentId": 25,
             "title": "Efek Samping",
             "type": "collapse",
             "content": "<ul><li><strong>Umum:</strong> sedasi, pusing, penglihatan kabur, mulut kering, retensi urin, sembelit, takikardia.<li><strong>Serius:</strong> hipotensi ortostatik, sinkop, EPS, fotosensitifitas, penambahan berat badan, galaktorea, amenore, disfungsi seksual, priapisme, NMS, agranulositosis, penyakit kuning</ul>"
         },
         {
             "id": 38,
-            "parentId": 24,
+            "parentId": 25,
             "title": "Kontradikasi / Perhatian",
             "type": "collapse",
             "content": "<ul><li>Kontraindikasi: gangguan kesadaran, parkinsonisme.<li>Perhatian pada penderita : penyakit jantung, penyakit ginjal, penyakit liver.<br>(Gunakan dengan hati-hati pada orang dewasa yang lebih tua.)<li>Interaksi obat-obat:<ul><li>Meningkatkan efek obat penurun tekanan darah<li>Dapat menurunkan tekanan darah jika digunakan dengan epinefrin.</ul></ul>"

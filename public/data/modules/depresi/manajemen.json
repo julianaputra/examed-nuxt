@@ -198,7 +198,7 @@
             "id": 29,
             "parentId": 1,
             "title": "Wanita yang Hamil atau Menyusui",
-            "type": "heading-only",
+            "type": "collapse",
             "content": "<p>JANGAN atasi gejalanya dengan pengobatan yang tidak efektif, misalnya suntikan vitamin.</p>"
         } ,{
             "id": 30,
@@ -206,7 +206,20 @@
             "title": "Wanita yang Hamil atau Menyusui",
             "type": "heading-only",
             "content": "<p>Tawarkan tindak lanjut rutin</p>"
+        },
+        {
+            "id": 31,
+            "parentId": null,
+            "title": "JANGAN atasi gejalanya dengan pengobatan yang tidak efektif, misalnya suntikan vitamin.",
+            "type": "heading-only",
+            "content":null
+        } ,
+        {
+            "id": 31,
+            "parentId": null,
+            "title": "Tawarkan tindak lanjut rutin.",
+            "type": "heading-only",
+            "content":null
         }
-
     ]
 }
