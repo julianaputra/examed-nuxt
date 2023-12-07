@@ -67,7 +67,7 @@
             "parentId": 2,
             "title": "",
             "type": "text",
-            "content": "<h4>Depresi pada gangguan bipolar</h4><ul><li>Konsultasikan dengan psikiater di daerah anda.</li><li>Jika tidak ada psikiater di wilayan anda lanjutkan ke PROTOKOL 1 . Namun, JANGAN PERNAH meresepkan antidepresan saja tanpa penstabil suasana hati seperti litium, karbamazepin, atau valproate karena antidepresan dapat menyebabkan mania pada pasien dengan gangguan bipolar (Lihat bagian PSY).</li><li>Jika gejala mania muncul, beritahu pasien tersebut dan pengasuhnya untuk segera menghentikan antidepresan dan kembali untuk mendapatkan bantuan.</li></ul>"
+            "content": "<h4>Depresi pada gangguan bipolar</h4><ul><li>Konsultasikan dengan psikiater di daerah anda.<li>Jika tidak ada psikiater di wilayan anda lanjutkan ke <a href='/depresi/manajemen?item=1'>PROTOKOL 1</a> . Namun, JANGAN PERNAH meresepkan antidepresan saja tanpa penstabil suasana hati seperti litium, karbamazepin, atau valproate karena antidepresan dapat menyebabkan mania pada pasien dengan <a href='/psikosis/manajemen?item=1'>gangguan bipolar (Lihat bagian PSY)</a>.<li>Jika gejala mania muncul, beritahu pasien tersebut dan pengasuhnya untuk segera menghentikan antidepresan dan kembali untuk mendapatkan bantuan.</ul>"
         },
         {
             "id": 11,
@@ -197,29 +197,17 @@
         },{
             "id": 29,
             "parentId": 1,
-            "title": "Wanita yang Hamil atau Menyusui",
-            "type": "collapse",
-            "content": "<p>JANGAN atasi gejalanya dengan pengobatan yang tidak efektif, misalnya suntikan vitamin.</p>"
-        } ,{
-            "id": 30,
-            "parentId": 1,
-            "title": "Wanita yang Hamil atau Menyusui",
+            "title": "Tawarkan tindak lanjut rutin",
             "type": "heading-only",
-            "content": "<p>Tawarkan tindak lanjut rutin</p>"
+            "content": null
         },
         {
-            "id": 31,
-            "parentId": null,
+            "id": 30,
+            "parentId": 1,
             "title": "JANGAN atasi gejalanya dengan pengobatan yang tidak efektif, misalnya suntikan vitamin.",
             "type": "heading-only",
             "content":null
-        } ,
-        {
-            "id": 31,
-            "parentId": null,
-            "title": "Tawarkan tindak lanjut rutin.",
-            "type": "heading-only",
-            "content":null
-        }
+        } 
+        
     ]
 }

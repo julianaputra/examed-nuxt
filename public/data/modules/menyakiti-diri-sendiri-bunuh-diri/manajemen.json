@@ -24,7 +24,7 @@
             "id": 4,
             "parentId": 1,
             "title": "Untuk semua kasus: Tempatkan Pasien di a lingkungan yang aman dan mendukung di fasilitas kesehatan.",
-            "type": "link",
+            "type": "heading-only",
             "content": null
         },
         {
@@ -60,7 +60,7 @@
             "parentId": 1,
             "title": "2.2 Merawat orang yang menyakiti diri sendiri",
             "type": "collapse",
-            "content": "<ul><li>Tempatkan Pasien di lingkungan yang aman dan mendukung di fasilitas kesehatan (jangan tinggalkan mereka sendirian). Jika penderita harus menunggu pengobatan, tawarkan lingkungan yang meminimalkan tekanan; jika memungkinkan, di ruangan terpisah dan tenang dengan pengawasan terusmenerus dan kontak dengan staf atau anggota keluarga yang ditunjuk untuk memastikan keselamatan setiap saat<li>Hapus akses terhadap cara-cara yang dapat melukai diri sendiri.<li>Konsultasikan dengan spesialis kesehatan mental, jika tersedia.<li>Memobilisasi keluarga, teman dan individu lain yang peduli atau sumber daya komunitas yang tersedia untuk memantau dan mendukung Pasien selama periode risiko yang akan terjadi (lihat “Menawarkan dan mengaktifkan dukungan psikososial”. ( 2.3))<li>Perlakukan orang yang pernah menyakiti diri sendiri dengan perhatian, rasa hormat, dan privasi yang sama seperti yang diberikan kepada orang lain, dan peka terhadap tekanan emosional yang terkait dengan tindakan menyakiti diri sendiri.<li>Libatkan pengasuh jika Pasien menginginkan dukungan mereka selama penilaian dan pengobatan; jika memungkinkan, penilaian psikososial harus mencakup wawancara tatap muka antara Pasien dan petugas kesehatan, untuk mengeksplorasi masalah pribadi.<li>Berikan dukungan emosional kepada pengasuh/anggota keluarga jika mereka membutuhkannya. (2.4)<li>Menjamin kesinambungan perawatan.<li>Rawat inap di layanan non-psikiatri rumah sakit umum tidak dianjurkan untuk pencegahan tindakan menyakiti diri sendiri.<br>Namun, jika masuk ke rumah sakit umum (non-psikiatris) diperlukan untuk penanganan konsekuensi medisnya<br>tindakan menyakiti diri sendiri, pantau Pasien dengan cermat untuk mencegah tindakan menyakiti diri sendiri lebih lanjut di rumah sakit.<li><strong>Jika meresepkan obat:</strong><ul><li>Lihat modul mhGAP-IG yang relevan untuk farmakologis intervensi dalam pengelolaan kondisi yang terjadi bersamaan<li>Gunakan obat-obatan yang paling tidak berbahaya, jika terjadi overdosis yang disengaja.<li>Berikan resep dalam bentuk kursus singkat (misalnya satu minggu pada suatu waktu).</ul></ul>"
+            "content": "<ul><li>Tempatkan Pasien di lingkungan yang aman dan mendukung di fasilitas kesehatan (jangan tinggalkan mereka sendirian). Jika penderita harus menunggu pengobatan, tawarkan lingkungan yang meminimalkan tekanan; jika memungkinkan, di ruangan terpisah dan tenang dengan pengawasan terusmenerus dan kontak dengan staf atau anggota keluarga yang ditunjuk untuk memastikan keselamatan setiap saat<li>Hapus akses terhadap cara-cara yang dapat melukai diri sendiri.<li>Konsultasikan dengan spesialis kesehatan mental, jika tersedia.<li>Memobilisasi keluarga, teman dan individu lain yang peduli atau sumber daya komunitas yang tersedia untuk memantau dan mendukung Pasien selama periode risiko yang akan terjadi (lihat “Menawarkan dan mengaktifkan dukungan psikososial”. <strong><a href='/menyakiti-diri-sendiri-bunuh-diri/manajemen?item=1&collapse=10'style=color:#ef8863>( 2.3)</a></strong> )<li>Perlakukan orang yang pernah menyakiti diri sendiri dengan perhatian, rasa hormat, dan privasi yang sama seperti yang diberikan kepada orang lain, dan peka terhadap tekanan emosional yang terkait dengan tindakan menyakiti diri sendiri.<li>Libatkan pengasuh jika Pasien menginginkan dukungan mereka selama penilaian dan pengobatan; jika memungkinkan, penilaian psikososial harus mencakup wawancara tatap muka antara Pasien dan petugas kesehatan, untuk mengeksplorasi masalah pribadi.<li>Berikan dukungan emosional kepada pengasuh/anggota keluarga jika mereka membutuhkannya. <strong><a href='/menyakiti-diri-sendiri-bunuh-diri/manajemen?item=1&collapse=11' style=color:#ef8863>( 2.4)</a></strong><li>Menjamin kesinambungan perawatan.<li>Rawat inap di layanan non-psikiatri rumah sakit umum tidak dianjurkan untuk pencegahan tindakan menyakiti diri sendiri.<br>Namun, jika masuk ke rumah sakit umum (non-psikiatris) diperlukan untuk penanganan konsekuensi medisnya<br>tindakan menyakiti diri sendiri, pantau Pasien dengan cermat untuk mencegah tindakan menyakiti diri sendiri lebih lanjut di rumah sakit.<li><strong>Jika meresepkan obat:</strong><ul><li>Lihat modul mhGAP-IG yang relevan untuk farmakologis intervensi dalam pengelolaan kondisi yang terjadi bersamaan<li>Gunakan obat-obatan yang paling tidak berbahaya, jika terjadi overdosis yang disengaja.<li>Berikan resep dalam bentuk kursus singkat (misalnya satu minggu pada suatu waktu).</ul></ul>"
         },
         {
             "id":10,
@@ -121,7 +121,7 @@
             "id": 18,
             "parentId": 2,
             "title": "Konsultasikan dengan spesialis kesehatan mental, jika tersedia",
-            "type": "link",
+            "type": "heading-only",
             "content": null
         },
         {
@@ -161,6 +161,13 @@
         },
         {
             "id": 24,
+            "parentId": 2,
+            "title": "2.4 Dukungan pengasuh",
+            "type": "collapse",
+            "content": "<ul><li>Beri tahu pengasuh dan anggota keluarga bahwa menanyakan tentang bunuh diri sering kali akan membantu Pasien merasa lega, mengurangi kecemasan, dan lebih baik dipahami.<li>Pengasuh dan anggota keluarga dari orang-orang yang berisiko melukai diri sendiri sering kali mengalami stres berat. Berikan dukungan emosional kepada mereka jika mereka membutuhkannya.<li>Beritahukan kepada pengasuh bahwa meskipun mereka mungkin merasa frustrasi terhadap Pasien, mereka harus menghindari sikap bermusuhan dan kritik keras terhadap orang yang rentan yang berisiko melukai diri sendiri/bunuh diri.</ul>"
+        },
+        {
+            "id": 25,
             "parentId": 2,
             "title": "2.5 Psikoedukasi",
             "type": "collapse",
