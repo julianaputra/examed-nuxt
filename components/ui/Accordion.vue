@@ -46,25 +46,27 @@ const router = useRouter()
 onMounted(() => {
   // const bsCollapse = new $bootstrap.Collapse(`#collapse-${props.item.id}`)
 
-  const accordionButton = document.getElementById(`collapse-${props.item.id}`)
+  setTimeout(() => {
+    const accordionButton = document.getElementById(`collapse-${props.item.id}`)
 
-  accordionButton?.addEventListener('show.bs.collapse', () => {
-    router.push(
-      `/${route.params.slug}/manajemen?item=${route.query.item}&collapse=${props.item.id}`
-    )
-  })
+    accordionButton?.addEventListener('show.bs.collapse', () => {
+      router.push(
+        `/${route.params.slug}/manajemen?item=${route.query.item}&collapse=${props.item.id}`
+      )
+    })
 
-  accordionButton?.addEventListener('hide.bs.collapse', () => {
+    accordionButton?.addEventListener('hide.bs.collapse', () => {
+      if (String(route.query.collapse) === String(props.item.id)) {
+        router.push(`/${route.params.slug}/manajemen?item=${route.query.item}`)
+      }
+    })
+
     if (String(route.query.collapse) === String(props.item.id)) {
-      router.push(`/${route.params.slug}/manajemen?item=${route.query.item}`)
+      const bsCollapse = new $bootstrap.Collapse(`#collapse-${props.item.id}`)
+
+      bsCollapse.show()
     }
-  })
-
-  if (String(route.query.collapse) === String(props.item.id)) {
-    const bsCollapse = new $bootstrap.Collapse(`#collapse-${props.item.id}`)
-
-    bsCollapse.show()
-  }
+  }, 400)
 })
 </script>
 
