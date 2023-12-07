@@ -150,7 +150,10 @@
                 "type": "continue",
                 "target": null
             },
-            "href": null
+            "href": {
+                "path":"/psikosis/manajemen?item=1",
+                "isExternal":false
+            }
         }, {
             "id": 9,
             "title": "Hasil Assesment",
@@ -181,7 +184,10 @@
                 "type": "continue",
                 "target": null
             },
-            "href": null
+            "href": {
+                "path":"/psikosis/manajemen?item=2",
+                "isExternal":false
+            }
         }
     ]
 }

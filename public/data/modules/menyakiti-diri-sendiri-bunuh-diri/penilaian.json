@@ -105,9 +105,11 @@
             "isStep": false,
             "answer": {
                 "type": "continue",
-                "target": null
+                "target": 9
             },
-            "href": 9
+            "href": {
+                "path":"/menyakiti-diri-sendiri-bunuh-diri/manajemen?item=2"
+            }
         },
         {
             "id": 7,
@@ -139,13 +141,16 @@
                 "type": "continue",
                 "target": 9
             },
-            "href": null
+            "href": {
+                "path":"/menyakiti-diri-sendiri-bunuh-diri/manajemen?item=3",
+                "isExternal": false
+            }
         },
         {
             "id": 9,
             "title": "STEP 3 : Kondisi MNS yang bersamaan?",
             "question": {
-                "title": null,
+                "title": " Kondisi MNS yang bersamaan?",
                 "type": "checkbox",
                 "content": [
                     "Depresi",
@@ -168,7 +173,7 @@
             "id": 10,
             "title": "STEP 4 : Apakah Pasien menderita sakit kronis?",
             "question": {
-                "title": null,
+                "title": "Apakah Pasien menderita sakit kronis?",
                 "type": "text",
                 "content": null
             },
@@ -195,13 +200,16 @@
                 "type": "continue",
                 "target": null
             },
-            "href": null
+            "href": {
+                "path": "/menyakiti-diri-sendiri-bunuh-diri/manajemen?item=1",
+                "isExternal":false
+            }
         },
         {
             "id": 12,
             "title": "STEP 5 : Apakah Pasien mempunyai gejala emosional yang cukup parah sehingga memerlukan penatalaksanaan klinis?",
             "question": {
-                "title": "",
+                "title": "Apakah Pasien mempunyai gejala emosional yang cukup parah sehingga memerlukan penatalaksanaan klinis?",
                 "type": "checkbox",
                 "content": ["Kesulitan melakukan pekerjaan biasa, sekolah,kegiatan rumah tangga atau sosial",
             " Pengobatan sendiri berulang kali untuk emosional kesusahan, atau gejala fisik yang tidak dapat dijelaskan",
@@ -265,7 +273,10 @@
                 "type": "continue",
                 "target": null
             },
-            "href": null
+            "href": {
+                "path":"/menyakiti-diri-sendiri-bunuh-diri?menu=penilaian",
+                "isExternal":false
+            }
         }
     ]
 }

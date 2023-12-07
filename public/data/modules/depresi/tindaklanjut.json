@@ -1,6 +1,5 @@
 {
-    "data": [
-        {
+    "data": [{
             "id": 1,
             "title": "Step 1: PENILAIAN UNTUK PERBAIKAN",
             "question": {
@@ -13,8 +12,8 @@
             "answer": {
                 "type": "true-false",
                 "target": {
-                    "true":3,
-                    "false":2
+                    "true": 3,
+                    "false": 2
                 }
             },
             "href": null
@@ -41,7 +40,7 @@
             "question": {
                 "title": null,
                 "type": "text",
-                    "content": "<ul><li>Dorong Pasien untuk melanjutkan pekerjaannya rencana pengelolaan saat ini sampai mereka bebas gejala selama 9-12 bulan.<li><strong>Atur janji tindak lanjut lebih lanjut dalam 1-2 minggu.</strong><li>Kurangi kontak ketika gejala Pasien membaik, misalnya setiap 3 bulan sekali setelah 3 bulan pertama.</ul>Catatan: tindak lanjut harus dilanjutkan sampai Pasien tidak lagi mengalami gejala depresi."
+                "content": "<ul><li>Dorong Pasien untuk melanjutkan pekerjaannya rencana pengelolaan saat ini sampai mereka bebas gejala selama 9-12 bulan.<li><strong>Atur janji tindak lanjut lebih lanjut dalam 1-2 minggu.</strong><li>Kurangi kontak ketika gejala Pasien membaik, misalnya setiap 3 bulan sekali setelah 3 bulan pertama.</ul>Catatan: tindak lanjut harus dilanjutkan sampai Pasien tidak lagi mengalami gejala depresi."
             },
             "isResult": true,
             "isStep": false,
@@ -50,21 +49,21 @@
                 "target": 5
             },
             "href": null
-        },{
+        }, {
             "id": 4,
             "title": "Step 1: PENILAIAN UNTUK PERBAIKAN",
             "question": {
                 "title": "Apakah ada gejala mania?",
                 "type": "text",
-                    "content": null
+                "content": null
             },
             "isResult": false,
             "isStep": false,
             "answer": {
                 "type": "continue",
                 "target": {
-                    "true":6,
-                    "false":5
+                    "true": 6,
+                    "false": 5
                 }
             },
             "href": null
@@ -75,7 +74,7 @@
             "question": {
                 "title": "Di setiap kontak:",
                 "type": "text",
-                    "content": "<ul><li><strong>Memberikan psikoedukasi, mengurangi stres dan memperkuat dukungan sosial, meningkatkan fungsi dalam aktivitas sehari-hari dan kehidupan bermasyarakat, dan meninjau, jika memungkinkan, penggunaan obat antidepresan dan perawatan psikologis.</strong><li><strong>Apakah Pasien mempunyai gejala baru yang mengkhawatirkan?</strong> Tinjau MNS dan kondisi fisik bersamaan.<li><strong>Apakah Pasien adalah wanita dalam usia subur dan sedang mempertimbangkan untuk hamil? Jika iya, KONSULTASIKAN DENGAN SPESIALIS</strong></ul><strong style=color:red>Kaji adanya RISIKO BUNUH DIRI yang akan segera terjadi </strong>(Buka <strong>SUI</strong>)."
+                "content": "<ul><li><strong>Memberikan psikoedukasi, mengurangi stres dan memperkuat dukungan sosial, meningkatkan fungsi dalam aktivitas sehari-hari dan kehidupan bermasyarakat, dan meninjau, jika memungkinkan, penggunaan obat antidepresan dan perawatan psikologis.</strong><li><strong>Apakah Pasien mempunyai gejala baru yang mengkhawatirkan?</strong> Tinjau MNS dan kondisi fisik bersamaan.<li><strong>Apakah Pasien adalah wanita dalam usia subur dan sedang mempertimbangkan untuk hamil? Jika iya, KONSULTASIKAN DENGAN SPESIALIS</strong></ul><strong style=color:red>Kaji adanya RISIKO BUNUH DIRI yang akan segera terjadi </strong>(Buka <strong>SUI</strong>)."
             },
             "isResult": true,
             "isStep": true,
@@ -83,14 +82,53 @@
                 "type": "continue",
                 "target": 7
             },
-            "href": null
-        },{
+            "href": {
+                "path": "/menyakiti-diri-sendiri-bunuh-diri?menu=manajemen",
+                "isExternal": false
+            }
+        }, {
             "id": 6,
             "title": "Step 1: PENILAIAN UNTUK PERBAIKAN",
             "question": {
                 "title": null,
                 "type": "text",
-                    "content": "<ul><li><strong>Hentikan pengobatan antidepresan.</strong><li>Obati mania dan konsultasikan dengan dokter spesialis.Pergi ke PSY.</ul>"
+                "content": "<ul><li><strong>Hentikan pengobatan antidepresan.</strong><li>Obati mania dan konsultasikan dengan dokter spesialis.Pergi ke PSY.</ul>"
+            },
+            "isResult": true,
+            "isStep": false,
+            "answer": {
+                "type": "continue",
+                "target": null
+            },
+            "href": {
+                "path": "/psikosis?menu=manajemen",
+                "isExternal": false
+            }
+        }, {
+            "id": 7,
+            "title": "Step 3: REVISI PENGOBATAN SEPERTI YANG TEPAT",
+            "question": {
+                "title": "Apakah Pasien sudah bebas gejala selama 9-12 bulan?",
+                "type": "text",
+                "content": "<ul><li><strong>Hentikan pengobatan antidepresan.</strong><li>Obati mania dan konsultasikan dengan dokter spesialis.Pergi ke PSY.</ul>"
+            },
+            "isResult": false,
+            "isStep": true,
+            "answer": {
+                "type": "true-false",
+                "target": {
+                    "true": 9,
+                    "false": 8
+                }
+            },
+            "href": null
+        }, {
+            "id": 8,
+            "title": "Step 3: REVISI PENGOBATAN SEPERTI YANG TEPAT",
+            "question": {
+                "title": "Apakah Pasien sudah bebas gejala selama 9-12 bulan?",
+                "type": "text",
+                "content": "<p>Lanjutkan pengobatan sampai Pasien bebas gejala selama 9-12 bulan.</p>"
             },
             "isResult": true,
             "isStep": false,
@@ -99,52 +137,19 @@
                 "target": null
             },
             "href": null
-        },{
-            "id": 7,
+        }, {
+            "id": 9,
             "title": "Step 3: REVISI PENGOBATAN SEPERTI YANG TEPAT",
             "question": {
                 "title": "Apakah Pasien sudah bebas gejala selama 9-12 bulan?",
                 "type": "text",
-                    "content": "<ul><li><strong>Hentikan pengobatan antidepresan.</strong><li>Obati mania dan konsultasikan dengan dokter spesialis.Pergi ke PSY.</ul>"
-            },
-            "isResult": false,
-            "isStep": true,
-            "answer": {
-                "type": "true-false",
-                "target": {
-                    "true":9,
-                    "false": 8
-                }
-            },
-            "href": null
-        },{
-            "id": 8,
-            "title": "Step 3: REVISI PENGOBATAN SEPERTI YANG TEPAT",
-            "question": {
-                "title":"Apakah Pasien sudah bebas gejala selama 9-12 bulan?",
-                "type": "text",
-                    "content": "<p>Lanjutkan pengobatan sampai Pasien bebas gejala selama 9-12 bulan.</p>"
+                "content": "<ul><li>Diskusikan dengan orang yang bersangkutan mengenai risiko dan manfaat penghentian pengobatan.<li>Kurangi dosis obat secara bertahap, minimal 4 minggu. Memantau Pasien untuk kambuhnya gejala.</ul>"
             },
             "isResult": true,
             "isStep": false,
             "answer": {
                 "type": "continue",
-                "target":null
-            },
-            "href": null
-        },{
-            "id": 9,
-            "title": "Step 3: REVISI PENGOBATAN SEPERTI YANG TEPAT",
-            "question": {
-                "title":"Apakah Pasien sudah bebas gejala selama 9-12 bulan?",
-                "type": "text",
-                    "content": "<ul><li>Diskusikan dengan orang yang bersangkutan mengenai risiko dan manfaat penghentian pengobatan.<li>Kurangi dosis obat secara bertahap, minimal 4 minggu. Memantau Pasien untuk kambuhnya gejala.</ul>"
-            },
-            "isResult": true,
-            "isStep": false,
-            "answer": {
-                "type": "continue",
-                "target":null
+                "target": null
             },
             "href": null
         }

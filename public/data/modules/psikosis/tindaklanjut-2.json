@@ -83,7 +83,9 @@
                 "type": "continue",
                 "target": 6
             },
-            "href": null
+            "href": {
+                "path":"/psikosis/manajemen?item=18"
+            }
         },{ 
             "id": 6,
             "title": "Step 1: Penilaian Untuk Perbaikan",
@@ -98,7 +100,10 @@
                 "type": "continue",
                 "target": 7
             },
-            "href": null
+            "href": {
+                "path" :"/psikosis/manajemen?item=21",
+                "isExternal":false
+            }
         },
         { 
             "id": 7,

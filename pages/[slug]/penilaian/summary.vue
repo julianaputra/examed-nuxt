@@ -48,12 +48,6 @@
                   </div>
 
                   <div class="card__button-wrapper">
-                    <UiButton
-                      class="me-1"
-                      @click="$bModal.show('exampleModal')"
-                    >
-                      Default Modal
-                    </UiButton>
                     <UiButton :to="`/${route.params.slug}?menu=penilaian`"
                       >Kembali ke Menu Utama</UiButton
                     >
@@ -64,22 +58,6 @@
           </Transition>
         </div>
       </div>
-      <UiModal id="exampleModal">
-        <template #title>Title</template>
-        <template #body>Body Modal</template>
-        <template #footer>
-          <UiButton
-            type="button"
-            variant="secondary"
-            @click="$bModal.hide('exampleModal')"
-          >
-            Close
-          </UiButton>
-          <UiButton type="button" class="btn btn-primary" to="/">
-            Save changes
-          </UiButton>
-        </template>
-      </UiModal>
     </section>
   </main>
 </template>

@@ -1,8 +1,8 @@
 {
-    "data": [
-        {
+    "data":[
+        { 
             "id": 1,
-            "title": "Step 1: PENILAIAN UNTUK PERBAIKAN",
+            "title": "Step 1: Penilaian Untuk Perbaikan",
             "question": {
                 "title": "Apakah Pasien membaik?",
                 "type": "text",
@@ -21,61 +21,78 @@
         },
         {
             "id": 2,
-            "title": "Step 1: PENILAIAN UNTUK PERBAIKAN",
+            "title": "Step 1: Penilaian Untuk Perbaikan",
             "question": {
-                "title": null,
+                "title": "Apakah Pasien sedang minum obat?",
                 "type": "text",
-                "content": "<ul><li><strong>Jika belum mendapat penanganan psikologis</strong>,pertimbangkan perawatan psikologis.<li><strong>Jika menerima perlakuan psikologis,</strong> evaluasi keterlibatan dalam dan pengalaman perawatan psikologis saat ini.<li><strong>Jika belum menggunakan antidepresan,</strong> pertimbangkan antidepresan.<li><strong>Jika menggunakan antidepresan,</strong> kaji:<ul><li><strong>Apakah Pasien meminum obat sesuai resep?</strong><br>Jika tidak, cari tahu alasannya dan dorong kepatuhannya.<li><strong>Apakah ada efek sampingnya?</strong><p><strong>Jika ya,</strong> evaluasi dan pertimbangkan manfaat pengobatan<p><strong>Jika tidak</strong> ada efek samping antidepresan, tingkatkan dosis <strong style=color:#8d2673>(TABEL 1)</strong>.Tindak lanjut dalam 1-2 minggu.<p><strong style=color:red>PERHATIAN DENGAN PENINGKATAN DOSIS.</strong> TUTUP TINDAK LANJUT DIPERLUKAN KARENA KEMUNGKINAN MENINGKATNYA EFEK SAMPING.</ul></ul>"
-            },
-            "isResult": true,
-            "isStep": false,
-            "answer": {
-                "type": "continue",
-                "target": 4
-            },
-            "href": null
-        },
-        {
-            "id": 3,
-            "title": "Step 1: PENILAIAN UNTUK PERBAIKAN",
-            "question": {
-                "title": null,
-                "type": "text",
-                    "content": "<ul><li>Dorong Pasien untuk melanjutkan pekerjaannya rencana pengelolaan saat ini sampai mereka bebas gejala selama 9-12 bulan.<li><strong>Atur janji tindak lanjut lebih lanjut dalam 1-2 minggu.</strong><li>Kurangi kontak ketika gejala Pasien membaik, misalnya setiap 3 bulan sekali setelah 3 bulan pertama.</ul>Catatan: tindak lanjut harus dilanjutkan sampai Pasien tidak lagi mengalami gejala depresi."
-            },
-            "isResult": true,
-            "isStep": false,
-            "answer": {
-                "type": "continue",
-                "target": 5
-            },
-            "href": null
-        },{
-            "id": 4,
-            "title": "Step 1: PENILAIAN UNTUK PERBAIKAN",
-            "question": {
-                "title": "Apakah ada gejala mania?",
-                "type": "text",
-                    "content": null
+                "content": null
             },
             "isResult": false,
             "isStep": false,
             "answer": {
-                "type": "continue",
+                "type": "true-false",
                 "target": {
-                    "true":6,
-                    "false":5
+                    "true":5,
+                    "false":4
                 }
             },
             "href": null
+        },{
+            "id": 3,
+            "title": "Step 1: Penilaian Untuk Perbaikan",
+            "question": {
+                "title": null,
+                "type": "text",
+                "content": "<ul><li>Lanjutkan dengan rencana perawatan.<li>Kurangi frekuensi tindak lanjut setelah gejala mereda.<li>Tindak lanjut sesuai kebutuhan</ul>"
+            },
+            "isResult": true,
+            "isStep": false,
+            "answer": {
+                "type": "continue",
+                "target": 6
+            },
+            "href": null
+        },{
+            "id": 4,
+            "title": "Step 1: Penilaian Untuk Perbaikan",
+            "question": {
+                "title": null,
+                "type": "text",
+                "content": "<ul><li><strong>MULAI PENGOBATAN ANTIPSIKOTIK </strong>(Buka Tabel 1).<li>Pertahankan frekuensi kontak yang tinggi sampai timbul gejala mulai merespons pengobatan.<li>Libatkan Pasien dan pengasuhnya dalam perubahan dan keputusan rencana perawatan.</ul>"
+            },
+            "isResult": true,
+            "isStep": false,
+            "answer": {
+                "type": "continue",
+                "target": 6
+            },
+            "href": {
+                "path": "/psikosis/manajemen?item=18",
+                "isExternal": false
+            }
         },
         {
             "id": 5,
-            "title": "Step 2: PERAWATAN MONITOR",
+            "title": "Step 1: Penilaian Untuk Perbaikan",
             "question": {
-                "title": "Di setiap kontak:",
+                "title": null,
                 "type": "text",
-                    "content": "<ul><li><strong>Memberikan psikoedukasi, mengurangi stres dan memperkuat dukungan sosial, meningkatkan fungsi dalam aktivitas sehari-hari dan kehidupan bermasyarakat, dan meninjau, jika memungkinkan, penggunaan obat antidepresan dan perawatan psikologis.</strong><li><strong>Apakah Pasien mempunyai gejala baru yang mengkhawatirkan?</strong> Tinjau MNS dan kondisi fisik bersamaan.<li><strong>Apakah Pasien adalah wanita dalam usia subur dan sedang mempertimbangkan untuk hamil? Jika iya, KONSULTASIKAN DENGAN SPESIALIS</strong></ul><strong style=color:red>Kaji adanya RISIKO BUNUH DIRI yang akan segera terjadi </strong>(Buka <strong>SUI</strong>)."
+                "content": "<ul><li><strong>Pastikan Pasien berada dalam keadaan normal dosis efektif minimal 4-6 minggu.</strong><li>Pertahankan frekuensi kontak yang tinggi sampai gejala mulai merespons pengobatan.<li>Libatkan Pasien dan pengasuhnya dalam perubahan dan keputusan rencana perawatan.</ul>"
+            },
+            "isResult": true,
+            "isStep": false,
+            "answer": {
+                "type": "continue",
+                "target": 6
+            },
+            "href": null
+        },{
+            "id": 6,
+            "title": "Step 2: Perawatan Rutin Monitor",
+            "question": {
+                "title": null,
+                "type": "text",
+                "content": "<ul><li>Tinjau intervensi psikososial.<li>Jika sedang menjalani pengobatan, tinjau <strong>kepatuhan, efek samping dan dosis </strong><strong style=color:#233b96>(Tabel</strong> 4).Periksa berat badan, tekanan darah, dan glukosa darah.<li>Jika Pasien mulai menggunakan obat lain yang berpotensi menimbulkan obat-obatan interaksi, pertimbangkan untuk meninjau dosis obat.<li>Tanyakan mengenai timbulnya gejala, episode sebelumnya, dan rincian pengobatan sebelumnya atau saat ini.</ul>"
             },
             "isResult": true,
             "isStep": true,
@@ -83,71 +100,26 @@
                 "type": "continue",
                 "target": 7
             },
-            "href": null
-        },{
-            "id": 6,
-            "title": "Step 1: PENILAIAN UNTUK PERBAIKAN",
+            "href": {
+                "path" :"/psikosis/manajemen?item=21",
+                "isExternal":false
+            }
+        },
+        {
+            "id": 7,
+            "title": " Step 3: Hentikan Pengobatan",
             "question": {
-                "title": null,
+                "title": "Lakukan Hal berikut",
                 "type": "text",
-                    "content": "<ul><li><strong>Hentikan pengobatan antidepresan.</strong><li>Obati mania dan konsultasikan dengan dokter spesialis.Pergi ke PSY.</ul>"
+                "content": "<ul><li><strong style=color:#233c99>Orang dengan episode pertama, kambuh, atau gejala psikosis yang memburuk:</strong><ul><li>Pertimbangkan penghentian pengobatan <strong>2 BULAN setelah gejala teratasi.</strong></ul><li><strong style=color:#233c99>Orang dengan gejala psikotik yang berlangsung lebih dari 3 bulan:</strong><ul><li>Pertimbangkan penghentian pengobatan <strong>jika gejala Pasien dalam REmisi PENUH selama beberapa tahun.</strong></ul><li>Diskusikan risiko kekambuhan akibat efek samping pengobatan jangka panjang dengan orang dan keluarga.<li>Jika memungkinkan, konsultasikan dengan spesialis.<li>Kurangi dosis obat secara bertahap dan perlahan. Ketika obat-obatan dihentikan,individu dan anggota keluarga perlu dididik untuk mendeteksi gejala awal kekambuhan. Pemantauan klinis yang ketat dianjurkan.</ul>"
             },
             "isResult": true,
-            "isStep": false,
+            "isStep": true,
             "answer": {
                 "type": "continue",
                 "target": null
             },
             "href": null
-        },{
-            "id": 7,
-            "title": "Step 3: REVISI PENGOBATAN SEPERTI YANG TEPAT",
-            "question": {
-                "title": "Apakah Pasien sudah bebas gejala selama 9-12 bulan?",
-                "type": "text",
-                    "content": "<ul><li><strong>Hentikan pengobatan antidepresan.</strong><li>Obati mania dan konsultasikan dengan dokter spesialis.Pergi ke PSY.</ul>"
-            },
-            "isResult": false,
-            "isStep": true,
-            "answer": {
-                "type": "true-false",
-                "target": {
-                    "true":9,
-                    "false": 8
-                }
-            },
-            "href": null
-        },{
-            "id": 8,
-            "title": "Step 3: REVISI PENGOBATAN SEPERTI YANG TEPAT",
-            "question": {
-                "title":"Apakah Pasien sudah bebas gejala selama 9-12 bulan?",
-                "type": "text",
-                    "content": "<p>Lanjutkan pengobatan sampai Pasien bebas gejala selama 9-12 bulan.</p>"
-            },
-            "isResult": true,
-            "isStep": false,
-            "answer": {
-                "type": "continue",
-                "target":null
-            },
-            "href": null
-        },{
-            "id": 9,
-            "title": "Step 3: REVISI PENGOBATAN SEPERTI YANG TEPAT",
-            "question": {
-                "title":"Apakah Pasien sudah bebas gejala selama 9-12 bulan?",
-                "type": "text",
-                    "content": "<ul><li>Diskusikan dengan orang yang bersangkutan mengenai risiko dan manfaat penghentian pengobatan.<li>Kurangi dosis obat secara bertahap, minimal 4 minggu. Memantau Pasien untuk kambuhnya gejala.</ul>"
-            },
-            "isResult": true,
-            "isStep": false,
-            "answer": {
-                "type": "continue",
-                "target":null
-            },
-            "href": null
         }
-
     ]
 }

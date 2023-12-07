@@ -65,7 +65,10 @@
                 "type": "continue",
                 "target": null
             },
-            "href": null
+            "href": {
+                "path":"/menyakiti-diri-sendiri-bunuh-diri?menu=penilaian",
+                "isExternal" : false
+            }
         }
     ]
 }

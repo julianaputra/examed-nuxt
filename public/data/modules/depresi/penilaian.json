@@ -223,7 +223,10 @@
                 "type": "continue",
                 "target": null
             },
-            "href": null
+            "href": {
+                "path":"depresi/manajemen?item=2",
+                "isExternal" : false
+            }
         },
         {
             "id": 13,
@@ -239,7 +242,10 @@
                 "type": "continue",
                 "target": 18
             },
-            "href": null 
+            "href": {
+                "path":"depresi/manajemen?item=1",
+                "isExternal" : false
+            }
         },
         {
             "id": 14,
@@ -263,7 +269,10 @@
                     "false": 15
                 }
             },
-            "href": null
+            "href": {
+                "path":"depresi/manajemen?item=1",
+                "isExternal" : false
+            }
         },
         {
             "id": 15,
@@ -298,7 +307,10 @@
                 "type": "continue",
                 "target": 18
             },
-            "href": null 
+            "href": {
+                "path":"/depresi/manajemen?item=1",
+                "isExternal": false
+            }
         },
         {
             "id": 17,
@@ -363,7 +375,10 @@
                 "type": "continue",
                 "target": null 
             },
-            "href": null 
+            "href": {
+                "path":"depresi/manajemen?item=1",
+                "isExternal" : false
+            }
         }
     ]
 }
