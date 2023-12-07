@@ -22,7 +22,7 @@
             </nav>
           </div>
           <Transition mode="out-in">
-            <div class="card__body">
+            <div class="card__body" :key="getActiveSummary?.id">
               <div class="row justify-content-center">
                 <div class="col-lg-10 col-xxl-8">
                   <h2 class="heading--secondary">
@@ -34,6 +34,7 @@
                       v-for="sumList in resultSummary"
                       :key="sumList.id"
                       :to="sumList?.href"
+                      :has-icon="sumList?.href ? true : false"
                     >
                       <div v-html="sumList.question.content"></div>
                     </UiSelectionButton>
@@ -42,6 +43,7 @@
                     <UiSelectionButton
                       v-for="sumList in questionSummary"
                       :key="sumList.id"
+                      :has-icon="false"
                       >{{ sumList.question.title }}</UiSelectionButton
                     >
                   </div>
