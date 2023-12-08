@@ -1,7 +1,7 @@
 {
     "data": [{
             "id": 1,
-            "title": "KAJIKAN KERUGIAN DIRI/BUNUH DIRI JIKA PASIEN HADIR DENGAN SALAH SATU:",
+            "title": "Kajian Kerugian Diri/Bunuh Diri Jika Pasien Hadir Dengan Salah Satu:",
             "question": {
                 "title": null,
                 "type": "checkbox",
@@ -111,7 +111,8 @@
                 "target": 9
             },
             "href": {
-                "path":"/menyakiti-diri-sendiri-bunuh-diri/manajemen?item=2"
+                "path":"/menyakiti-diri-sendiri-bunuh-diri/manajemen?item=2",
+                "isExternal": false
             }
         },
         {

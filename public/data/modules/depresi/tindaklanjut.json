@@ -1,7 +1,7 @@
 {
     "data": [{
             "id": 1,
-            "title": "Step 1: PENILAIAN UNTUK PERBAIKAN",
+            "title": "STEP 1: Penilaian Untuk Perbaikan",
             "question": {
                 "title": "Apakah Pasien membaik?",
                 "type": "text",
@@ -20,7 +20,7 @@
         },
         {
             "id": 2,
-            "title": "Step 1: PENILAIAN UNTUK PERBAIKAN",
+            "title": "STEP 1: Penilaian Untuk Perbaikan",
             "question": {
                 "title": null,
                 "type": "text",
@@ -39,7 +39,7 @@
         },
         {
             "id": 3,
-            "title": "Step 1: PENILAIAN UNTUK PERBAIKAN",
+            "title": "STEP 1: Penilaian Untuk Perbaikan",
             "question": {
                 "title": null,
                 "type": "text",
@@ -54,7 +54,7 @@
             "href": null
         }, {
             "id": 4,
-            "title": "Step 1: PENILAIAN UNTUK PERBAIKAN",
+            "title": "STEP 1: Penilaian Untuk Perbaikan",
             "question": {
                 "title": "Apakah ada gejala mania?",
                 "type": "text",
@@ -73,7 +73,7 @@
         },
         {
             "id": 5,
-            "title": "Step 2: PERAWATAN MONITOR",
+            "title": "STEP 2: Perawatan Monitor",
             "question": {
                 "title": "Di setiap kontak:",
                 "type": "text",
@@ -91,7 +91,7 @@
             }
         }, {
             "id": 6,
-            "title": "Step 1: PENILAIAN UNTUK PERBAIKAN",
+            "title": "STEP 1: Penilaian Untuk Perbaikan",
             "question": {
                 "title": null,
                 "type": "text",
@@ -109,7 +109,7 @@
             }
         }, {
             "id": 7,
-            "title": "Step 3: REVISI PENGOBATAN SEPERTI YANG TEPAT",
+            "title": "STEP 3: Revisi Pengobatan Seperti Yang Tepat",
             "question": {
                 "title": "Apakah Pasien sudah bebas gejala selama 9-12 bulan?",
                 "type": "text",
@@ -127,7 +127,7 @@
             "href": null
         }, {
             "id": 8,
-            "title": "Step 3: REVISI PENGOBATAN SEPERTI YANG TEPAT",
+            "title": "STEP 3: Revisi Pengobatan Seperti Yang Tepat",
             "question": {
                 "title": "Apakah Pasien sudah bebas gejala selama 9-12 bulan?",
                 "type": "text",
@@ -142,7 +142,7 @@
             "href": null
         }, {
             "id": 9,
-            "title": "Step 3: REVISI PENGOBATAN SEPERTI YANG TEPAT",
+            "title": "STEP 3: Revisi Pengobatan Seperti Yang Tepat",
             "question": {
                 "title": "Apakah Pasien sudah bebas gejala selama 9-12 bulan?",
                 "type": "text",

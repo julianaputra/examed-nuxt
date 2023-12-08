@@ -2,7 +2,7 @@
     "data":[
         { 
             "id": 1,
-            "title": "Step 1: Penilaian Untuk Perbaikan",
+            "title": "STEP 1: Penilaian Untuk Perbaikan",
             "question": {
                 "title": "Apakah Pasien membaik?",
                 "type": "text",
@@ -21,7 +21,7 @@
         },
         { 
             "id": 2,
-            "title": "Step 1: Penilaian Untuk Perbaikan",
+            "title": "STEP 1: Penilaian Untuk Perbaikan",
             "question": {
                 "title": "Apakah Pasien sedang minum obat?",
                 "type": "text",
@@ -39,7 +39,7 @@
             "href": null
         },{ 
             "id": 3,
-            "title": "Step 1: Penilaian Untuk Perbaikan",
+            "title": "STEP 1: Penilaian Untuk Perbaikan",
             "question": {
                 "title": null,
                 "type": "text",
@@ -55,7 +55,7 @@
         },
         { 
             "id": 4,
-            "title": "Step 1: Penilaian Untuk Perbaikan",
+            "title": "STEP 1: Penilaian Untuk Perbaikan",
             "question": {
                 "title": null,
                 "type": "text",
@@ -71,7 +71,7 @@
         },
         { 
             "id": 5,
-            "title": "Step 1: Penilaian Untuk Perbaikan",
+            "title": "STEP 1: Penilaian Untuk Perbaikan",
             "question": {
                 "title": null,
                 "type": "text",
@@ -88,7 +88,7 @@
             }
         },{ 
             "id": 6,
-            "title": "Step 1: Penilaian Untuk Perbaikan",
+            "title": "STEP 1: Penilaian Untuk Perbaikan",
             "question": {
                 "title": null,
                 "type": "text",
@@ -107,7 +107,7 @@
         },
         { 
             "id": 7,
-            "title": "Step 2: Perawatan Rutin Monitor",
+            "title": "STEP 2: Perawatan Rutin Monitor",
             "question": {
                 "title": null,
                 "type": "text",
@@ -123,7 +123,7 @@
         },
         { 
             "id": 8,
-            "title": "Step 3: Hentikan Pengobatan",
+            "title": "STEP 3: Hentikan Pengobatan",
             "question": {
                 "title": "Apakah Pasien sudah mengalami remisi penuh gejala tanpa episode gangguan bipolar setidaknya selama dua tahun?",
                 "type": "text",
@@ -141,7 +141,7 @@
             "href": null
         },{ 
             "id": 9,
-            "title": "Step 3: Hentikan Pengobatan",
+            "title": "STEP 3: Hentikan Pengobatan",
             "question": {
                 "title": null,
                 "type": "text",
@@ -157,7 +157,7 @@
         },
         { 
             "id": 10,
-            "title": "Step 3: Hentikan Pengobatan",
+            "title": "STEP 3: Hentikan Pengobatan",
             "question": {
                 "title": "Pertimbangkan penghentian pengobatan",
                 "type": "text",

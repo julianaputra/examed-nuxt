@@ -2,7 +2,7 @@
     "data":[
         { 
             "id": 1,
-            "title": "Step 1: Penilaian Untuk Perbaikan",
+            "title": "STEP 1: Penilaian Untuk Perbaikan",
             "question": {
                 "title": "Apakah Pasien membaik?",
                 "type": "text",
@@ -21,7 +21,7 @@
         },
         {
             "id": 2,
-            "title": "Step 1: Penilaian Untuk Perbaikan",
+            "title": "STEP 1: Penilaian Untuk Perbaikan",
             "question": {
                 "title": "Apakah Pasien sedang minum obat?",
                 "type": "text",
@@ -39,7 +39,7 @@
             "href": null
         },{
             "id": 3,
-            "title": "Step 1: Penilaian Untuk Perbaikan",
+            "title": "STEP 1: Penilaian Untuk Perbaikan",
             "question": {
                 "title": null,
                 "type": "text",
@@ -54,7 +54,7 @@
             "href": null
         },{
             "id": 4,
-            "title": "Step 1: Penilaian Untuk Perbaikan",
+            "title": "STEP 1: Penilaian Untuk Perbaikan",
             "question": {
                 "title": null,
                 "type": "text",
@@ -73,7 +73,7 @@
         },
         {
             "id": 5,
-            "title": "Step 1: Penilaian Untuk Perbaikan",
+            "title": "STEP 1: Penilaian Untuk Perbaikan",
             "question": {
                 "title": null,
                 "type": "text",
@@ -88,7 +88,7 @@
             "href": null
         },{
             "id": 6,
-            "title": "Step 2: Perawatan Rutin Monitor",
+            "title": "STEP 2: Perawatan Rutin Monitor",
             "question": {
                 "title": null,
                 "type": "text",
