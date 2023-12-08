@@ -61,7 +61,11 @@
                       <UiSelectionButton
                         v-for="item in tindaklanjut"
                         :key="`menu-link-${item.id}`"
-                        :to="`/${route.params.slug}/tindaklanjut?question=${item.id}`"
+                        :to="
+                          activeTindakLanjut === 1
+                            ? `/${route.params.slug}/tindaklanjut?question=${item.id}`
+                            : `/${route.params.slug}/tindaklanjut?type=2&question=${item.id}`
+                        "
                         >{{ item.title }}</UiSelectionButton
                       >
                     </div>
@@ -255,9 +259,7 @@ const getTindaklanjut = () => {
 
     const steps = questions.filter((q: Question) => q.isStep)
 
-    console.log('steps', steps)
     tindaklanjut.value = steps as Question[]
-    console.log('tindaklanjut', tindaklanjut.value)
   })
 }
 const getTindaklanjut2 = () => {

@@ -90,7 +90,11 @@ onMounted(() => {
     resetQuestions()
 
     const urlParent = `/data/modules/${route.params.slug}/index.json`
-    const url = `/data/modules/${route.params.slug}/tindaklanjut.json`
+    let url = `/data/modules/${route.params.slug}/tindaklanjut.json`
+    if (Number(route.query.type) === 2) {
+      url = `/data/modules/${route.params.slug}/tindaklanjut-2.json`
+    }
+
     const [parentData, data] = await Promise.all([
       useFetch(urlParent),
       useFetch(url)
