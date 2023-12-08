@@ -30,12 +30,12 @@
                   </h2>
                   <hr class="card__hr--bottom" />
                   <div v-if="activeSummary === 1">
-                    <UiSelectionButton
+                    <UiSummaryButton
                       v-for="sumList in resultSummary"
                       :key="sumList.id"
                       :to="sumList?.href"
                       :has-icon="sumList?.href ? true : false"
-                      >{{ sumList.question.title }}</UiSelectionButton
+                      >{{ sumList.question.title }}</UiSummaryButton
                     >
                   </div>
                   <div v-else-if="activeSummary === 2">
