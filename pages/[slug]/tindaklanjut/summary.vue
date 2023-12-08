@@ -4,7 +4,7 @@
       <div class="container">
         <UiBreadcrumbs :breadcrumbs="breadcrumbs"></UiBreadcrumbs>
         <h1 class="title section__title section__title--no-margin">Summary</h1>
-        <h2 class="subtitle section__subtitle">Modul Depresi</h2>
+        <h2 class="subtitle section__subtitle">Modul {{ title }}</h2>
         <div class="card">
           <div class="card__header">
             <nav class="card__nav">
