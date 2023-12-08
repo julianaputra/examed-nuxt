@@ -74,7 +74,10 @@
                 "type": "continue",
                 "target": 3
             },
-            "href": null
+            "href": {
+                "path":"/menyakiti-diri-sendiri-bunuh-diri/manajemen?item=2",
+                "isExternal": false
+            }
         },
         {
             "id": 5,
@@ -99,9 +102,9 @@
             "question": {
                 "title": "RISIKO YANG TERJADI",
                 "type": "text",
-                "content": "KERUGIAN DIRI/BUNUH DIRI kemungkinan besar terjadi<lu><li>Buka PROTOKOL 2, kelola,lalu lanjutkan ke LANGKAH 3 </li></ul>"
+                "content": "<p>KERUGIAN DIRI/BUNUH DIRI kemungkinan besar terjadi</p><lu><li>Buka PROTOKOL 2, kelola,lalu lanjutkan ke LANGKAH 3 </li></ul>"
             },
-            "isResult": false,
+            "isResult": true,
             "isStep": false,
             "answer": {
                 "type": "continue",
@@ -242,14 +245,13 @@
             },
             "href": null
         },
-        
         {
             "id": 14,
             "title": "Hasil Assesment",
             "question": {
-                "title": "Lanjut ke SUI 3 (Tindak lanjut)",
+                "title": "Kelola gejala emosionalnya.",
                 "type": "text",
-                "content": null
+                "content": "<p>Kunjungi lainnya</p>"
             },
             "isResult": true,
             "isStep": false,
@@ -263,9 +265,9 @@
             "id": 15,
             "title": "Hasil Assesment",
             "question": {
-                "title": null,
+                "title": "Lanjut ke SUI 3 (Tindak lanjut)",
                 "type": "text",
-                "content": "<ul><li>Kelola gejala emosionalnya.</li><li></li>Kunjungi lainnya</ul>"
+                "content": null
             },
             "isResult": true,
             "isStep": false,

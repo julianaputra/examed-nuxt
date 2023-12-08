@@ -185,8 +185,11 @@
             "isResult": false,
             "isStep": false,
             "answer": {
-                "type": "continue",
-                "target": 19
+                "type": "true-false",
+                "target": {
+                    "true":8,
+                    "false":19
+                }
             },
             "href": null
         },
@@ -224,7 +227,7 @@
                 "target": null
             },
             "href": {
-                "path":"depresi/manajemen?item=2",
+                "path":"/depresi/manajemen?item=2",
                 "isExternal" : false
             }
         },
@@ -243,7 +246,7 @@
                 "target": 18
             },
             "href": {
-                "path":"depresi/manajemen?item=1",
+                "path":"/depresi/manajemen?item=1",
                 "isExternal" : false
             }
         },
@@ -270,7 +273,7 @@
                 }
             },
             "href": {
-                "path":"depresi/manajemen?item=1",
+                "path":"/depresi/manajemen?item=1",
                 "isExternal" : false
             }
         },
@@ -320,7 +323,7 @@
                 "type": "text",
                 "content": "<p>Kunjungi lainnya</p>"
             },
-            "isResult": false,
+            "isResult": true,
             "isStep": false,
             "answer": {
                 "type": "continue",
@@ -341,7 +344,7 @@
             "isStep": true,
             "answer": {
                 "type": "continue",
-                "target": null 
+                "target": 20
             },
             "href": null 
         },
@@ -353,7 +356,7 @@
                 "type": "text",
                 "content": null
             },
-            "isResult": false,
+            "isResult": true,
             "isStep": false,
             "answer": {
                 "type": "continue",
@@ -369,14 +372,14 @@
                 "type": "text",
                 "content": null
             },
-            "isResult": false,
+            "isResult": true,
             "isStep": false,
             "answer": {
                 "type": "continue",
                 "target": null 
             },
             "href": {
-                "path":"depresi/manajemen?item=1",
+                "path":"/depresi/manajemen?item=1",
                 "isExternal" : false
             }
         }

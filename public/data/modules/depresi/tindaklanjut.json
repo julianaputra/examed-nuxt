@@ -32,7 +32,10 @@
                 "type": "continue",
                 "target": 4
             },
-            "href": null
+            "href": {
+                "path":"/depresi/manajemen?item=13",
+                "isExternal":false
+            }
         },
         {
             "id": 3,
@@ -60,7 +63,7 @@
             "isResult": false,
             "isStep": false,
             "answer": {
-                "type": "continue",
+                "type": "true-false",
                 "target": {
                     "true": 6,
                     "false": 5
