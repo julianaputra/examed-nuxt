@@ -48,7 +48,7 @@
         {
             "id": 8,
             "parentId": 1,
-            "title": "2.6 intervensi Farmakologis.",
+            "title": "2.6 Intervensi Farmakologis.",
             "type": "collapse",
             "content": "<p><strong>Jika pasien menggunakan antidepresan:</strong><ul><li><strong>HENTIKAN ANTIDEPRESAN</strong><br>untuk mencegah risiko mania lebih lanjut.<li><strong>Mulailah pengobatan dengan litium, valproat, karba mazepin, atau dengan antipsikotik</strong> (lihat <strong style=color:#233b96>Tabel 3</strong>).<ul><li><strong style=color:#233b96>Litium</strong>: pertimbangkan untuk menggunakan litium sebagai pengobatan lini pertama gangguan bipolar hanya jika pemantauan klinis dan laboratorium tersedia, dan resepkan hanya di bawah pengawasan spesialis. Jika pemeriksaan laboratorium tidak tersedia atau tidak memungkinkan, litium harus dihindari dan valproat atau karbamazepin harus dipertimbangkan. Kepatuhan yang tidak menentu atau menghentikan pengobatan litium secara tiba-tiba dapat meningkatkan risiko kekambuhan. Jangan meresepkan litium jika pasokan litium mungkin sering terganggu. Dapatkan fungsi ginjal dan tiroid, hitung darah lengkap, EKG, dan tes kehamilan sebelum memulai pengobatan jika memungkinkan<li><strong style=color:#233b96>Valproate</strong> dan Carbamazepine: Pertimbangkan obat ini jika pemantauan klinis atau laboratorium untuk litium tidak tersedia atau jika spesialis tidak tersedia untuk mengawasi peresepan litium.<li><strong style=color:#233b96>Haloperidol</strong> Haloperidol dan risperidone: pertimbangkan haloperidol dan risperidone hanya jika tidak ada pemantauan klinis atau laboratorium yang tersedia untuk memulai litium atau valproat. Risperidone dapat digunakan sebagai alternatif pengganti haloperidol pada individu dengan mania bipolar jika ketersediaannya terjamin dan biayanya tidak menjadi masalah paksaan.</ul></ul><h2 style=color:red>PERINGATAN</h2><p>Bagi wanita yang sedang hamil atau menyusui, hindari valproate, lithium dan carbamazepine. Penggunaan <strong>haloperidol dosis rendah</strong> dianjurkan dengan hati-hati dan di bawah pengawasan dokter spesialis, jika tersedia.<ul><li><strong>Pertimbangkan benzodiazepin jangka pendek (maksimum 2-4 minggu) untuk gangguan perilaku atau agitasi:</strong><ul><li>Orang dengan mania yang mengalami agitasi dapat memperoleh manfaat dari penggunaan benzodiazepin seperti diazepam dalam jangka pendek (maksimal 2-4 minggu).<li>Benzodiazepin harus segera dihentikan secara bertahap ketika gejala membaik, toleransi dapat berkembang</ul><li>Lanjutkan pengobatan pemeliharaan setidaknya selama 2 tahun setelah episode bipolar terakhir.<li>Litium atau valproat dapat ditawarkan untuk pengobatan pemeliharaan gangguan bipolar. Jika pengobatan dengan salah satu agen ini tidak memungkinkan, haloperidol, klorpromazin, atau karbamazepin dapat digunakan. <strong>Tawarkan perawatan pemeliharaan di rangkaian perawatan primer di bawah bimbingan spesialis pengawasan</strong></ul>"
         },
@@ -91,7 +91,7 @@
             "parentId": 13,
             "title": "Wanita yang Hamil atau Menyusui",
             "type": "collapse",
-            "content": "<ul><li><strong>Berhubungan dengan spesialis kesehatan ibu untuk mengatur perawatan.</strong><li><strong>Pertimbangkan konsultasi dengan spesialis kesehatan mental jika tersedia.</strong><li>Menjelaskan risiko akibat buruk bagi ibu dan bayinya, termasuk kebidanan komplikasi dan kekambuhan psikotik, terutama jika pengobatan dihentikan<li><strong>Pertimbangkan intervensi farmakologis</strong> bila sesuai dan tersedia. Lihat di bawah.</ul><h2>Intervensi Farmakologis</h2><hr><h3 style=color:#23409f>PSIKHOSIS</h3><ul><li>Pada wanita dengan psikosis yang sedang merencanakan kehamilan atau sedang hamil atau menyusui, haloperidol oral dosis rendah, atau klorpromazin dapat dipertimbangkan.<li>Antikolinergik <strong>TIDAK</strong> boleh diresepkan untuk wanita yang sedang hamil karena efek samping ekstrapira midal dari obat antipsikotik, kecuali dalam kasus penggunaan akut dan jangka pendek.<li>Depot antipsikotik sebaiknya tidak rutin diresepkan untuk wanita dengan gangguan psikotik yang sedang merencanakan kehamilan, hamil, atau menyusui karena informasi mengenai keamanannya pada populasi ini relatif sedikit.</ul><h3 style=color:#23409f>EPISODE MANIK DALAM GANGGUAN BIPOLAR</h3><ul><li><strong>HINDARI VALPROATE, LITHIUM dan CARBAMAZEPINE</strong> selama kehamilan dan menyusui karena risiko cacat lahir.<li>Pertimbangkan haloperidol dosis rendah dengan hati-hati dan berkonsultasi dengan spesialis, jika tersedia.<li>Pertimbangkan risiko dan manfaat pengobatan pada wanita usia subur.<li>Jika seorang wanita hamil mengalami mania akut saat menggunakan penstabil suasana hati, pertimbangkan untuk beralih ke haloperidol dosis rendah."
+            "content": "<ul><li><strong>Berhubungan dengan spesialis kesehatan ibu untuk mengatur perawatan.</strong><li><strong>Pertimbangkan konsultasi dengan spesialis kesehatan mental jika tersedia.</strong><li>Menjelaskan risiko akibat buruk bagi ibu dan bayinya, termasuk kebidanan komplikasi dan kekambuhan psikotik, terutama jika pengobatan dihentikan<li><strong>Pertimbangkan Intervensi farmakologis</strong> bila sesuai dan tersedia. Lihat di bawah.</ul><h2>Intervensi Farmakologis</h2><hr><h3 style=color:#23409f>PSIKHOSIS</h3><ul><li>Pada wanita dengan psikosis yang sedang merencanakan kehamilan atau sedang hamil atau menyusui, haloperidol oral dosis rendah, atau klorpromazin dapat dipertimbangkan.<li>Antikolinergik <strong>TIDAK</strong> boleh diresepkan untuk wanita yang sedang hamil karena efek samping ekstrapira midal dari obat antipsikotik, kecuali dalam kasus penggunaan akut dan jangka pendek.<li>Depot antipsikotik sebaiknya tidak rutin diresepkan untuk wanita dengan gangguan psikotik yang sedang merencanakan kehamilan, hamil, atau menyusui karena informasi mengenai keamanannya pada populasi ini relatif sedikit.</ul><h3 style=color:#23409f>EPISODE MANIK DALAM GANGGUAN BIPOLAR</h3><ul><li><strong>HINDARI VALPROATE, LITHIUM dan CARBAMAZEPINE</strong> selama kehamilan dan menyusui karena risiko cacat lahir.<li>Pertimbangkan haloperidol dosis rendah dengan hati-hati dan berkonsultasi dengan spesialis, jika tersedia.<li>Pertimbangkan risiko dan manfaat pengobatan pada wanita usia subur.<li>Jika seorang wanita hamil mengalami mania akut saat menggunakan penstabil suasana hati, pertimbangkan untuk beralih ke haloperidol dosis rendah."
         }, {
             "id": 15,
             "parentId": 13,
@@ -109,7 +109,7 @@
         {
             "id": 17,
             "parentId": null,
-            "title": "intervensi Farmakologis (Psikosis).",
+            "title": "Intervensi Farmakologis (Psikosis).",
             "type": "link",
             "content": null
         }, {
@@ -257,13 +257,13 @@
             "parentId": 39,
             "title": "Dosis",
             "type": "collapse",
-            "content": "<ul><li><strong>Mulai</strong> 1 mg dua kali sehari.<li><strong>Tingkatkan</strong> menjadi 3-12 mg setiap hari<li><strong>Rute:</strong> po atau intravena (iv).</ul>"
+            "content": "<ul><li><strong>Mulai</strong> 1 mg dua kali sehari.<li><strong>Tingkatkan</strong> menjadi 3-12 mg setiap hari<li><strong>Rute:</strong> po atau intravena (iv).</ul><h2 style=color:red>Hindari pada wanita yang sedang hamil atau menyusui jika memungkinkan.</h2>"
         }, {
             "id": 42,
             "parentId": 39,
             "title": "Efek Samping",
             "type": "collapse",
-            "content": "<ul><li><strong>Umum:</strong> sedasi, kebingungan dan gangguan memori (terutama pada orang dewasa yang lebih tua), takikardia, mulut kering, retensi urin dan sembelit.<li><strong>Jarang,</strong> glaukoma sudut tertutup, miastenia gravis, dan obstruksi gastrointestinal.</ul>"
+            "content": "<ul><li><strong>Umum:</strong> sedasi, kebingungan dan gangguan memori (terutama pada orang dewasa yang lebih tua), takikardia, mulut kering, retensi urin dan sembelit.<li><strong>Jarang,</strong> glaukoma sudut tertutup, miastenia gravis, dan obstruksi gastrointestinal, untuk pengobatan efek samping ekstrapiramidal (EPS)</ul>"
         }, {
             "id": 43,
             "parentId": 39,
@@ -275,13 +275,13 @@
             "parentId": 40,
             "title": "Dosis",
             "type": "collapse",
-            "content": "<ul><li><strong>Mulai</strong> 1 mg dua kali sehari.<li><strong>Tingkatkan</strong> menjadi 3-12 mg setiap hari<li><strong>Rute:</strong> po atau intravena (iv).</ul>"
+            "content": "<ul><li><strong>Mulai</strong> 1 mg dua kali sehari.<li><strong>Tingkatkan</strong> menjadi 3-12 mg setiap hari<li><strong>Rute:</strong> po atau intravena (iv).</ul><h2 style=color:red>Hindari pada wanita yang sedang hamil atau menyusui jika memungkinkan.</h2>"
         }, {
             "id": 45,
             "parentId": 40,
             "title": "Efek Samping",
             "type": "collapse",
-            "content": "<ul><li><strong>Umum:</strong> sedasi, kebingungan dan gangguan memori (terutama pada orang dewasa yang lebih tua), takikardia, mulut kering, retensi urin dan sembelit.<li><strong>Jarang,</strong> glaukoma sudut tertutup, miastenia gravis, dan obstruksi gastrointestinal.</ul>"
+            "content": "<ul><li><strong>Umum:</strong> sedasi, kebingungan dan gangguan memori (terutama pada orang dewasa yang lebih tua), takikardia, mulut kering, retensi urin dan sembelit.<li><strong>Jarang,</strong> glaukoma sudut tertutup, miastenia gravis, dan obstruksi gastrointestinal, untuk pengobatan efek samping ekstrapiramidal (EPS)</ul>"
         }, {
             "id": 46,
             "parentId": 40,
@@ -315,7 +315,7 @@
             "parentId": 47,
             "title": "Dosis",
             "type": "collapse",
-            "content": "<ul><li><strong>Mulai</strong> 300 mg setiap hari. <strong>Tingkatkan</strong> secara bertahap setiap 7 hari sampai target kadar dalam darah tercapai (maksimum 600-1200 mg setiap hari). Pantau setiap 2-3 bulan.<li><strong>Rute:</strong> po<li><strong>Target kadar darah:</strong> 0,6-1,0 mEq/liter</li><ul><li><strong>Pada episode manik akut:</strong> 0.8-1.0 mEq/liter<li><strong>Untuk perawatan pemeliharaan:</strong> 0,6-0,8 mEq/liter</ul></ul>Diperlukan waktu 6 bulan untuk menjalani pengobatan untuk menentukan efektivitas penuh pengobatan pemeliharaan."
+            "content": "<ul><li><strong>Mulai</strong> 300 mg setiap hari. <strong>Tingkatkan</strong> secara bertahap setiap 7 hari sampai target kadar dalam darah tercapai (maksimum 600-1200 mg setiap hari). Pantau setiap 2-3 bulan.<li><strong>Rute:</strong> po<li><strong>Target kadar darah:</strong> 0,6-1,0 mEq/liter</li><ul><li><strong>Pada episode manik akut:</strong> 0.8-1.0 mEq/liter<li><strong>Untuk perawatan pemeliharaan:</strong> 0,6-0,8 mEq/liter</ul></ul>Diperlukan waktu 6 bulan untuk menjalani pengobatan untuk menentukan efektivitas penuh pengobatan pemeliharaan.<h2 style=color:red>Hindari pada wanita yang sedang hamil atau menyusui jika memungkinkan.</h2>"
         },
         {
             "id": 51,
@@ -329,14 +329,14 @@
             "parentId": 47,
             "title": "Kontradikasi / Perhatian",
             "type": "collapse",
-            "content": "<ul><li><strong>Kontraindikasi pada pasien dengan:</strong> penyakit jantung atau ginjal parah.<li>Dehidrasi dapat meningkatkan kadar litium<li><strong>Interaksi obat-obat:</strong> obat antiinflamasi nonsteroid (NSAID), penghambat enzim pengubah angiotensin (ACE inhibitor), diuretik thiazide, metronidazol, dan tetrasiklin dapat meningkatkan kadar litium.<li><strong>Toksisitas litium dapat menyebabkan kejang, delirium, koma, dan kematian.</strong></ul>"
+            "content": "<ul><li><strong>Kontraindikasi pada pasien dengan:</strong> penyakit jantung atau ginjal parah.<li>Dehidrasi dapat meningkatkan kadar litium<li><strong>Interaksi obat-obat:</strong> obat antiinflamasi nonsteroid (NSAID), penghambat enzim pengubah angiotensin (ACE inhibitor), diuretik thiazide, metronidazol, dan tetrasiklin dapat meningkatkan kadar litium.<li><strong>Toksisitas litium dapat menyebabkan kejang, delirium, koma, dan kematian.</strong></ul><h2 style='color: red;'>Gunakan hanya jika pemantauan klinis dan laboratorium tersedia.</h2>"
         },
         {
             "id": 53,
             "parentId": 48,
             "title": "Dosis",
             "type": "collapse",
-            "content": "<ul><li><strong>Mulai</strong> 500 mg setiap hari.<li><strong>Tingkatkan secara perlahan</strong> hingga 1000-2000 mg setiap hari (maksimum 60 mg/kg/hari).</li><strong>Rute:</strong> po</ul><h3 style=color:#1d2d83>Pilihan yang lebih disukai pada orang yang hidup dengan HIV/AIDS karena interaksi obat-obat</h3>"
+            "content": "<ul><li><strong>Mulai</strong> 500 mg setiap hari.<li><strong>Tingkatkan secara perlahan</strong> hingga 1000-2000 mg setiap hari (maksimum 60 mg/kg/hari).</li><strong>Rute:</strong> po</ul><h3 style=color:#1d2d83>Pilihan yang lebih disukai pada orang yang hidup dengan HIV/AIDS karena interaksi obat-obat</h3><h2 style=color:red>Hindari pada wanita yang sedang hamil atau menyusui jika memungkinkan.</h2>"
         },
         {
             "id": 54,
@@ -357,7 +357,7 @@
             "parentId": 49,
             "title": "Dosis",
             "type": "collapse",
-            "content": "<ul><li><strong>Mulai</strong> 200 mg setiap hari.<li><strong>Tingkatkan</strong> 200 mg setiap minggu menjadi 400-600 mg setiap hari dalam dua dosis terbagi (maksimum 1200 mg setiap hari).<li><strong>Rute:</strong> po<li><strong>Catatan:</strong> Dosis mungkin perlu disesuaikan setelah 2 minggu karena induksi metabolismenya sendir</ul>"
+            "content": "<ul><li><strong>Mulai</strong> 200 mg setiap hari.<li><strong>Tingkatkan</strong> 200 mg setiap minggu menjadi 400-600 mg setiap hari dalam dua dosis terbagi (maksimum 1200 mg setiap hari).<li><strong>Rute:</strong> po<li><strong>Catatan:</strong> Dosis mungkin perlu disesuaikan setelah 2 minggu karena induksi metabolismenya sendir</ul><h2 style=color:red>Hindari pada wanita yang sedang hamil atau menyusui jika memungkinkan.</h2>"
         },
         {
             "id": 57,
@@ -378,7 +378,7 @@
             "parentId": 21,
             "title": "Pasien tidak mentoleransi obat antipsikotik, yaitu Pasien mengalami gejala ekstrapiramidal (EPS) atau gejala lain.efek samping yang serius",
             "type": "collapse",
-            "content": "<ul><li>Kurangi dosis obat antipsikotik.<li>Jika efek samping terus berlanjut, pertimbangkan untuk beralih ke obat antipsikotik lain.<li>Pertimbangkan untuk menambahkan obat antikolinergik untuk penggunaan jangka pendek untuk mengobati EPS jika strategi ini gagal atau jika gejalanya parah (lihat Tabel 2).</ul>"
+            "content": "<ul><li>Kurangi dosis obat antipsikotik.<li>Jika efek samping terus berlanjut, pertimbangkan untuk beralih ke obat antipsikotik lain.<li>Pertimbangkan untuk menambahkan obat antikolinergik untuk penggunaan jangka pendek untuk mengobati EPS jika strategi ini gagal atau jika gejalanya parah <a href='/psikosis/manajemen?item=19'>(lihat Tabel 2)</a>.</ul>"
         },
         {
             "id": 60,
@@ -391,12 +391,12 @@
             "parentId": 21,
             "title": "Respon pengobatan tidak memadai (yaitu gejala tetap ada atau memburuk). kepatuhan terhadap pengobatan",
             "type": "collapse",
-            "content": "<ul><li>Pastikan Pasien menerima dosis obat yang efektif. Jika dosisnya rendah, tingkatkan secara bertahap hingga dosis efektif terendah untuk dikurangi<li>Tanyakan tentang penggunaan alkohol atau narkoba dan ambil tindakan untuk menguranginya. Buka <strong>»SUB.</strong><li>Tanyakan tentang peristiwa stres yang baru-baru ini terjadi yang mungkin menyebabkan memburuknya kondisi klinis dan ambil tindakan untuk mengurangi stres.<li>Tinjau gejala untuk menyingkirkan kondisi MNS fisik dan/atau prioritas lainnya. Buka <strong>» PSY 1</strong>, lihat LANGKAH 1<li>Pertimbangkan risperidone sebagai alternatif pengganti haloperidol atau klorpromazin, jika biaya dan ketersediaan tidak menjadi kendala.<li>Jika Pasien tidak merespons terhadap dosis dan durasi yang memadai lebih dari satu obat antipsikotik, dengan menggunakan satu obat pada satu waktu, maka pengobatan kombinasi antipsikotik dapat dipertimbangkan; sebaiknya di bawah pengawasan seorang spesialis, dengan pemantauan klinis yang ketat.<li>Pertimbangkan untuk berkonsultasi dengan dokter spesialis mengenai penggunaan clozapine pada mereka yang tidak memberikan respons terhadap obat antipsikotik lain dengan dosis dan jangka waktu yang memadai. Clozapine hanya boleh digunakan di bawah pengawasan dokter spesialis dan hanya jika tersedia pemantauan laboratorium rutin, karena risiko agranulositosis yang mengancam jiwa.</ul>"
+            "content": "<ul><li>Pastikan Pasien menerima dosis obat yang efektif. Jika dosisnya rendah, tingkatkan secara bertahap hingga dosis efektif terendah untuk dikurangi<li>Tanyakan tentang penggunaan alkohol atau narkoba dan ambil tindakan untuk menguranginya. Buka <strong>»SUB.</strong><li>Tanyakan tentang peristiwa stres yang baru-baru ini terjadi yang mungkin menyebabkan memburuknya kondisi klinis dan ambil tindakan untuk mengurangi stres.<li>Tinjau gejala untuk menyingkirkan kondisi MNS fisik dan/atau prioritas lainnya. Buka <strong>» <a href='/psikosis?menu=penilaian'>PSY 1</a></strong>, lihat LANGKAH 1<li>Pertimbangkan risperidone sebagai alternatif pengganti haloperidol atau klorpromazin, jika biaya dan ketersediaan tidak menjadi kendala.<li>Jika Pasien tidak merespons terhadap dosis dan durasi yang memadai lebih dari satu obat antipsikotik, dengan menggunakan satu obat pada satu waktu, maka pengobatan kombinasi antipsikotik dapat dipertimbangkan; sebaiknya di bawah pengawasan seorang spesialis, dengan pemantauan klinis yang ketat.<li>Pertimbangkan untuk berkonsultasi dengan dokter spesialis mengenai penggunaan clozapine pada mereka yang tidak memberikan respons terhadap obat antipsikotik lain dengan dosis dan jangka waktu yang memadai. Clozapine hanya boleh digunakan di bawah pengawasan dokter spesialis dan hanya jika tersedia pemantauan laboratorium rutin, karena risiko agranulositosis yang mengancam jiwa.</ul>"
         },
         {
             "id": 62,
             "parentId": null,
-            "title": "intervensi Farmakologis (Episode Manik).",
+            "title": "Intervensi Farmakologis (Episode Manik).",
             "type": "link",
             "content": null
         },
@@ -456,7 +456,7 @@
         {
             "id": 71,
             "parentId": 62,
-            "title": "2.6 intervensi Farmakologis.",
+            "title": "2.6 Intervensi Farmakologis.",
             "type": "collapse",
             "content": "<p><strong>Jika pasien menggunakan antidepresan:</strong><ul><li><strong>HENTIKAN ANTIDEPRESAN</strong><br>untuk mencegah risiko mania lebih lanjut.<li><strong>Mulailah pengobatan dengan litium, valproat, karba mazepin, atau dengan antipsikotik</strong> (lihat <strong style=color:#233b96><a href='/psikosis/manajemen?item=20'>Tabel 3</a></strong>).<ul><li><strong style=color:#233b96>Litium</strong>: pertimbangkan untuk menggunakan litium sebagai pengobatan lini pertama gangguan bipolar hanya jika pemantauan klinis dan laboratorium tersedia, dan resepkan hanya di bawah pengawasan spesialis. Jika pemeriksaan laboratorium tidak tersedia atau tidak memungkinkan, litium harus dihindari dan valproat atau karbamazepin harus dipertimbangkan. Kepatuhan yang tidak menentu atau menghentikan pengobatan litium secara tiba-tiba dapat meningkatkan risiko kekambuhan. Jangan meresepkan litium jika pasokan litium mungkin sering terganggu. Dapatkan fungsi ginjal dan tiroid, hitung darah lengkap, EKG, dan tes kehamilan sebelum memulai pengobatan jika memungkinkan<li><strong style=color:#233b96>Valproate</strong> dan Carbamazepine: Pertimbangkan obat ini jika pemantauan klinis atau laboratorium untuk litium tidak tersedia atau jika spesialis tidak tersedia untuk mengawasi peresepan litium.<li><strong style=color:#233b96>Haloperidol</strong> Haloperidol dan risperidone: pertimbangkan haloperidol dan risperidone hanya jika tidak ada pemantauan klinis atau laboratorium yang tersedia untuk memulai litium atau valproat. Risperidone dapat digunakan sebagai alternatif pengganti haloperidol pada individu dengan mania bipolar jika ketersediaannya terjamin dan biayanya tidak menjadi masalah paksaan.</ul></ul><h2 style=color:red>PERINGATAN</h2><p>Bagi wanita yang sedang hamil atau menyusui, hindari valproate, lithium dan carbamazepine. Penggunaan <strong>haloperidol dosis rendah</strong> dianjurkan dengan hati-hati dan di bawah pengawasan dokter spesialis, jika tersedia.<ul><li><strong>Pertimbangkan benzodiazepin jangka pendek (maksimum 2-4 minggu) untuk gangguan perilaku atau agitasi:</strong><ul><li>Orang dengan mania yang mengalami agitasi dapat memperoleh manfaat dari penggunaan benzodiazepin seperti diazepam dalam jangka pendek (maksimal 2-4 minggu).<li>Benzodiazepin harus segera dihentikan secara bertahap ketika gejala membaik, toleransi dapat berkembang</ul><li>Lanjutkan pengobatan pemeliharaan setidaknya selama 2 tahun setelah episode bipolar terakhir.<li>Litium atau valproat dapat ditawarkan untuk pengobatan pemeliharaan gangguan bipolar. Jika pengobatan dengan salah satu agen ini tidak memungkinkan, haloperidol, klorpromazin, atau karbamazepin dapat digunakan. <strong>Tawarkan perawatan pemeliharaan di rangkaian perawatan primer di bawah bimbingan spesialis pengawasan</strong></ul>"
         },
@@ -494,7 +494,7 @@
             "parentId": 72,
             "title": "2.4 Nasihat umum untuk pengasuh",
             "type": "collapse",
-            "content": "<ul><li>Jangan mencoba meyakinkan orang tersebut bahwa keyakinannya atau pengalaman itu salah atau tidak nyata. Cobalah untuk bersikap netral dan suportif, bahkan ketika orang tersebut menunjukkan perilaku yang tidak biasa.<li>Hindari mengungkapkan kritik atau permusuhan yang terus-menerus atau keras terhadap penderita psikosis.<li>Berikan orang tersebut kebebasan bergerak. Hindari menahan orang tersebut, sembari memastikan bahwa keamanan dasar mereka dan orang lain terpenuhi.<li>Secara umum, lebih baik bagi orang tersebut untuk tinggal bersama keluarga atau anggota masyarakat dalam lingkungan yang mendukung di luar lingkungan rumah sakit. Rawat inap jangka panjang harus dihindari.</ul>"
+            "content": "<ul><li>Jangan mencoba meyakinkan Pasien bahwa keyakinannya atau pengalaman itu salah atau tidak nyata. Cobalah untuk bersikap netral dan suportif, bahkan ketika Pasien menunjukkan perilaku yang tidak biasa.<li>Hindari mengungkapkan kritik atau permusuhan yang terus-menerus atau keras terhadap penderita psikosis.<li>Berikan Pasien kebebasan bergerak. Hindari menahan Pasien, sembari memastikan bahwa keamanan dasar mereka dan orang lain terpenuhi.<li>Secara umum, lebih baik bagi Pasien untuk tinggal bersama keluarga atau anggota masyarakat dalam lingkungan yang mendukung di luar lingkungan rumah sakit. Rawat inap jangka panjang harus dihindari.</ul>"
         }
     ]
 }

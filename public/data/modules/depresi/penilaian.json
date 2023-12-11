@@ -57,7 +57,7 @@
         },
         {
             "id": 4,
-            "title": "Apakah pasien mengalami depresi?",
+            "title": "STEP 1: Apakah pasien mengalami depresi?",
             "question": {
                 "title": "Apakah pasien mengalami beberapa gejala tambahan berikut selama minimal 2 minggu:",
                 "type": "checkbox",
@@ -87,7 +87,7 @@
         },
         {
             "id": 5,
-            "title": "Apakah pasien mengalami depresi?",
+            "title": "STEP 1: Apakah pasien mengalami depresi?",
             "question": {
                 "title": "Apakah pasien mengalami kesulitan besar dalam menjalankan fungsi sehari-hari dalam bidang pribadi, keluarga, sosial, pendidikan, pekerjaan atau bidang lainnya?",
                 "type": "checkbox",
@@ -176,7 +176,7 @@
         },
         {
             "id": 10,
-            "title": "STEP 3: Apakah ada kondisi MNS prioritas bersamaan?",
+            "title": "STEP 2: Apakah ada kemungkinan penjelasan lain untuk gejalanya?",
             "question": {
                 "title": "Apakah gejala depresi tetap ada setelah pengobatan?",
                 "type": "text",
@@ -195,7 +195,7 @@
         },
         {
             "id": 11,
-            "title": "Apakah ada kemungkinan penjelasan lain untuk gejalanya?",
+            "title": "STEP 2: Apakah ada kemungkinan penjelasan lain untuk gejalanya?",
             "question": {
                 "title": "Apakah ada kerugian besar (misal bereavement) dalam 6 bulan terakhir?",
                 "type": "text",
@@ -252,7 +252,7 @@
         },
         {
             "id": 14,
-            "title": "Apakah ada kemungkinan penjelasan lain untuk gejalanya?",
+            "title": "STEP 2: Apakah ada kemungkinan penjelasan lain untuk gejalanya?",
             "question": {
                 "title": "Apakah ada gejala berikut yang muncul?",
                 "type": "checkbox",
@@ -279,7 +279,7 @@
         },
         {
             "id": 15,
-            "title": "Apakah ada kemungkinan penjelasan lain untuk gejalanya?",
+            "title": "STEP 2: Apakah ada kemungkinan penjelasan lain untuk gejalanya?",
             "question": {
                 "title": "Apakah pasien mempunyai riwayat depresi sebelumnya?",
                 "type": "text",
@@ -298,7 +298,7 @@
         },
         {
             "id": 16,
-            "title": "Apakah ada kemungkinan penjelasan lain untuk gejalanya?",
+            "title": "STEP 2: Apakah ada kemungkinan penjelasan lain untuk gejalanya?",
             "question": {
                 "title": "DEPRESI mungkin terjadi",
                 "type": "text",
