@@ -100,10 +100,7 @@
                 "type": "continue",
                 "target": 7
             },
-            "href": {
-                "path" :"/psikosis/manajemen?item=21",
-                "isExternal":false
-            }
+            "href": null
         },
         { 
             "id": 7,
@@ -111,7 +108,7 @@
             "question": {
                 "title": null,
                 "type": "text",
-                "content": "<ul><li>Meninjau dan memberikan intervensi psikososial.<li>» Jika sedang menjalani pengobatan, tinjau kepatuhan, <strong>efek samping, dan dosis.</strong> Lihat <strong style=color:#585fa1>Tabel </strong>4<li>Jika Pasien memulai pengobatan lain yang berpotensi menimbulkan efek obat-obatan interaksi, pertimbangkan untuk meninjau dosis obat.</ul>"
+                "content": "<ul><li>Meninjau dan memberikan intervensi psikososial.<li>Jika sedang menjalani pengobatan, tinjau kepatuhan, <strong>efek samping, dan dosis.</strong> Lihat <strong style=color:#585fa1>Tabel </strong>4<li>Jika Pasien memulai pengobatan lain yang berpotensi menimbulkan efek obat-obatan interaksi, pertimbangkan untuk meninjau dosis obat.</ul>"
             },
             "isResult": true,
             "isStep": true,
@@ -119,7 +116,10 @@
                 "type": "continue",
                 "target": 8
             },
-            "href": null
+            "href": {
+                "path" :"/psikosis/manajemen?item=21",
+                "isExternal":false
+            }
         },
         { 
             "id": 8,
