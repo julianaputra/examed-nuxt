@@ -1,0 +1,156 @@
+{
+    "data": [{
+            "id": 1,
+            "title": "APAKAH PASIEN MENGALAMI GEJALA BERIKUT INI?",
+            "question": {
+                "title": null,
+                "type": "text",
+                "content": "<ul><li>Merasa khawatir/cemas berlebihan<li>Memikirkan hal yang belum terjadi secara berlebihan (rencana dan solusi untuk setiap kemungkinan ygbelum tentu muncul)<li>Mudah tersinggung, gelisah, gugup, dan tersudut<li>Ragu-ragu, takut, dan sulit mengambil keputusan<li>Merasa takut mati</ul>"
+            },
+            "isResult": false,
+            "isStep": true,
+            "answer": {
+                "type": "true-false",
+                "target": {
+                    "true":3,
+                    "false":2
+                }
+            },
+            "href": null
+        },
+        {
+            "id": 2,
+            "title": "APAKAH PASIEN MENGALAMI GEJALA BERIKUT INI?",
+            "question": {
+                "title": null,
+                "type": "text",
+                "content": "<p>Bukan gangguan cemas Periksa alur skrining lainnya"
+            },
+            "isResult": false,
+            "isStep": true,
+            "answer": {
+                "type": "continue",
+                "target": null
+            },
+            "href": null
+        },
+        {
+            "id": 3,
+            "title": "Apakah ada gejala fisik berikut ini?",
+            "question": {
+                "title": null,
+                "type": "text",
+                "content": "<ul><li>sering mengalami keringat berlebihan,<li>sakit kepala, sakit perut, Mual, maag atau diare berulang<li>Gemetar, jantung berdebar,<li>nyeri otot, mulut kering,<li>gangguan tidur,<li>selalu merasa lelah,<li>buang air kecil lebih sering</ul>"
+            },
+            "isResult": false,
+            "isStep": true,
+            "answer": {
+                "type": "true-false",
+                "target": {
+                    "true":5,
+                    "false":4
+                }
+            },
+            "href": null
+        },
+        {
+            "id": 4,
+            "title": "Apakah ada gejala fisik berikut ini?",
+            "question": {
+                "title": null,
+                "type": "text",
+                "content": "<ul><li>Apakah keluhan cemas/khawatir?berlebihan dirasakan terus menerus selama 2 minggu terakhir?<li>Apakah keluhan khawatir dirasakan sampai mengganggu aktivitas sehari-hari?<li>Tidak ada masalah kesehatan fisik yang mendasari keluhannya?</ul>"
+            },
+            "isResult": false,
+            "isStep": true,
+            "answer": {
+                "type": "continue",
+                "target": 7
+            },
+            "href": null
+        },
+        {
+            "id": 5,
+            "title": "Apakah ada gejala fisik berikut ini?",
+            "question": {
+                "title": null,
+                "type": "text",
+                "content": "<ul><li>Telusuri adanya penyakit fisik lain<li>Apakah keluhan khawatir dirasakan sampai mengganggu aktivitas sehari-hari?"
+            },
+            "isResult": false,
+            "isStep": true,
+            "answer": {
+                "type": "true-false",
+                "target": {
+                    "true":6,
+                    "false":4
+                }
+            },
+            "href": null
+        },
+        {
+            "id": 6,
+            "title": "Apakah ada gejala fisik berikut ini?",
+            "question": {
+                "title": null,
+                "type": "text",
+                "content": "<p>Terapi sesuai keluhan fisik</p>"
+            },
+            "isResult": false,
+            "isStep": true,
+            "answer": {
+                "type": "continue",
+                "target": null
+            },
+            "href": null
+        },{
+            "id": 7,
+            "title": "Apakah juga merasakan gejala berikut?",
+            "question": {
+                "title": null,
+                "type": "text",
+                "content": "<ul><li>Merasa gelisah, perasaan tersudut, sering merasa ketegangan otot<li>Merasa lelah & ada gangguan tidur (sulit memulai tidur/terbangun malam hari)<li>Mudah tersinggung<li>Sulit berkonsentrasi</ul>"
+            },
+            "isResult": false,
+            "isStep": true,
+            "answer": {
+                "type": "true-false",
+                "target": {
+                    "true":8,
+                    "false":9
+                }
+            },
+            "href": null
+        },{
+            "id": 8,
+            "title": "Apakah juga merasakan gejala berikut?",
+            "question": {
+                "title": null,
+                "type": "text",
+                "content": "<p>Kemungkinan besar Gangguan Cemas Lanjut ke Protokol Terapi"
+            },
+            "isResult": false,
+            "isStep": true,
+            "answer": {
+                "type": "continue",
+                "target": null
+            },
+            "href": null
+        },{
+            "id": 9,
+            "title": "Apakah juga merasakan gejala berikut?",
+            "question": {
+                "title": null,
+                "type": "text",
+                "content": "<p>Bukan Gangguan Cemas, periksa gejala gangguan mental YANG MIRIP gangguan cemas"
+            },
+            "isResult": false,
+            "isStep": true,
+            "answer": {
+                "type": "continue",
+                "target": null
+            },
+            "href": null
+        }
+]
+}

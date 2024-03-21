@@ -62,9 +62,9 @@ const diagnoses = ref([
     color: 'red'
   },
   {
-    name: 'Keluhan Kesehatan Mental Penting Lainnya',
-    to: '/',
-    short: 'OTH',
+    name: 'Gangguan Cemas',
+    to: '/gangguan-cemas',
+    short: 'AND',
     color: 'blue'
   }
 ])

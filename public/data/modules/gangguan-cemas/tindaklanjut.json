@@ -1,0 +1,107 @@
+{
+    "data":[
+        { 
+            "id": 1,
+            "title": "APAKAH PASIEN  MASIH MERASAKAN KELUHAN KECEMASAN SEBELUMNYA?",
+            "question": {
+                "title": null,
+                "type": "text",
+                "content": null
+            },
+            "isResult": false,
+            "isStep": true,
+            "answer": {
+                "type": "true-false",
+                "target": {
+                    "true":3,
+                    "false":2
+                }
+            },
+            "href": null
+        },
+        { 
+            "id": 2,
+            "title": "APAKAH PASIEN MASIH MERASAKAN KELUHAN KECEMASAN SEBELUMNYA?",
+            "question": {
+                "title": null,
+                "type": "text",
+                "content": "<ul><li>KONSELING DAN LANJUTKAN PENGOBATAN HINGGA KELUHAN BENAR- BENAR HILANG<li>PANTAU ADA TIDAKNYA KELUHAN FISIK ATAU EFEK SAMPING OBAT</ul>"
+            },
+            "isResult": false,
+            "isStep": true,
+            "answer": {
+                "type": "continue",
+                "target": null
+            },
+            "href": null
+        },
+        { 
+            "id": 3,
+            "title": "APAKAH PASIEN MASIH MERASAKAN KELUHAN KECEMASAN SEBELUMNYA?",
+            "question": {
+                "title": "",
+                "type": "text",
+                "content": "<ul><li>Fobia terhadap sesuatu/kondisi.<li>Serangan atau gangguan panik.<li>Gangguan stres pasca trauma (PTSD).<li>Gangguan obsesif-kompulsif (OCD).<li>Meningkatnya risiko depresi.<li>Munculnya pikiran bunuh diri atau bunuh diri.<li>Penyalahgunaan zat-zat tertentu.</ul>"
+                    
+            },
+            "isResult": false,
+            "isStep": true,
+            "answer": {
+                "type": "true-false",
+                "target": {
+                    "true":5,
+                    "false":4
+                }
+            },
+            "href": null
+        },
+        { 
+            "id": 4,
+            "title": "APAKAH PASIEN MASIH MERASAKAN KELUHAN KECEMASAN SEBELUMNYA?",
+            "question": {
+                "title": "Telusuri permasalahan berikut:",
+                "type": "text",
+                "content": "<ul><li>Apakah dosis obat yang diberikan sesuai?<li>Bagaimana Kepatuhan minum obat dan kendalanya?<li>Apakah ada kebutuhan terapi lain (CBT, Psikoedukasi, Relaksasi/meditasi)<li>bagaimana Dukungan sosial pasien (Keluarga, teman, lainnya)?<li>Bagaimana Kebutuhan mengikutsertakan pasien dalam kelompok dukungan sosial (jika ada)?<li>Waspadai adanya gejala depresi/pikiran bunuh diri</ul>"
+            },
+            "isResult": false,
+            "isStep": true,
+            "answer": {
+                "type": "continue",
+                "target": 6
+            },
+            "href": null
+        },
+        { 
+            "id": 5,
+            "title": "APAKAH PASIEN MASIH MERASAKAN KELUHAN KECEMASAN SEBELUMNYA?",
+            "question": {
+                "title": "Apakah Pasien membaik?",
+                "type": "text",
+                "content": "<ul><li>KONSELING PASIEN DAN KELUARGANYA<li>RUJUK KE RUMAH SAKIT/PSIKIATER</ul>"
+            },
+            "isResult": false,
+            "isStep": true,
+            "answer": {
+                "type": "continue",
+                "target": null
+            },
+            "href": null
+        },
+        { 
+            "id": 6,
+            "title": "APAKAH PASIEN MASIH MERASAKAN KELUHAN KECEMASAN SEBELUMNYA?",
+            "question": {
+                "title": "Apakah Pasien membaik?",
+                "type": "text",
+                "content": "<ul><li>Sesuiakan dosis terapi atau perlu tambahan obat lainnya<li>Konseling keluarga pasien untuk mendapatkan dukungan terhadap terapi pasien (menjaga kepatuhan pengobatan dll)<li>Sarankan pasien melakukan aktivitas hoby/sosial lain<li>Rujuk ke Rumah sakit/psikiater/pusat rehabilitasi yang sesuai</ul>"
+            },
+            "isResult": false,
+            "isStep": true,
+            "answer": {
+                "type": "continue",
+                "target": null
+            },
+            "href": null
+        }
+    ]
+}

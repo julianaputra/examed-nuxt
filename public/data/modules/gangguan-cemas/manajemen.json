@@ -1,0 +1,41 @@
+{
+    "data": [{
+            "id": 1,
+            "parentId": null,
+            "title": "Terapi Farmakologis",
+            "type": "link",
+            "content": null
+        },{
+            "id": 2,
+            "parentId": null,
+            "title": "Terapi Non-Farmakologis",
+            "type": "link",
+            "content": null
+        },
+        {
+            "id": 3,
+            "parentId": 1,
+            "title": "Aprazolam",
+            "type": "collapse",
+            "content": "<ul><li>Dewasa: Dosis 0,5 mg, 3 kali sehari, dapat ditingkatkan sampai dosis 1 mg per hari, tiap 3–4 hari hingga maksimal 10 mg per hari berdasarkan respons dan kondisi pasien. Lama pengobatan tidak boleh lebih dari 12 minggu.<li>Lansia: 0,25 mg, 2–3 kali sehari. Jika diperlukan, dosis dapat ditingkatkan secara bertahap berdasarkan kondisi dan respons tubuh pasien.<li>Efek samping:</ul>"
+        },{
+            "id": 4,
+            "parentId": 1,
+            "title": "Clobazam",
+            "type": "collapse",
+            "content": "<ul><li>Dewasa: 20–30 mg per hari, dikonsumsi sebagai dosis tunggal sebelum tidur atau dibagi menjadi beberapa kali jadwal konsumsi. Dosis dapat ditingkatkan sampai 60 mg per hari. Durasi pengobatan maksimal adalah 4 minggu. Setelah itu efektivitas clobazam harus dievaluasi.<li>Lansia: 10–20 mg per hari.</ul>"
+        },{
+            "id": 5,
+            "parentId": 1,
+            "title": "Efek Samping golongan benzodiazepin:",
+            "type": "collapse",
+            "content": "<p>pasien mengantuk, pusing, air liur menetes, konstipasi, kelelahan, demam, batuk. lemas, gangguan nafsu seksual."
+        },{
+            "id": 6,
+            "parentId": 2,
+            "title": null,
+            "type": "text",
+            "content": "<ul><li>Konseling pasien dan keluarganya mengenai penyebab/pencetus gangguan cemas pasien, kemudian berusaha mencarikan alternatif solusinya<li>Menyarankan pasien mengikuti latihan meditasi dan relaksasi<li>Menyarankan perbaikan gaya hidup seperti kebiasaan tidur, pola makan, olah raga, aktivitas hobi dan penghentian penggunaan zat (alkohol, rokok, NAPZA)<li>Menyarankan pasien mengikuti komunitas yang sesuai dengan minat pasien (jika tersedia)<li>Bagi pasien lansia disarankan mengikuti aktivitas sosial berkaitan dengan upacara adat/keagamaan atau ikut perkumpulan sekeha gamelan/ darma santi jika kondisi fisik masih memungkinkan dan pasien memiliki minat dibidang itu<li>Kolaborasikan dengan pelayanan lansia/ Posyandu lansia<li>Rujuk ke psikiater/rumah sakit jika pasien memerlukan terapi yang lebih kompleks</ul>"
+        }   
+    ]
+}
