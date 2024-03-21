@@ -1,11 +1,11 @@
 @use 'sass:math';
 @use 'sass:map';
-@use '_variable.scss' as *;
-@use '_function.scss' as *;
+@use '_variable.scss' as var;
+@use '_function.scss' as func;
 
 // |‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾| //
-// | tmdrMIX v.1.2.1                         | //
-// | last update : 28 / 06 / 2023            | //
+// | tmdrMIX v.1.3.0                         | //
+// | last update : 19 / 03 / 2024            | //
 // |_________________________________________| //
 
 // transform with fallback
@@ -36,28 +36,22 @@
 }
 
 // make ratio classes
-@mixin imageRatio(
-    $imageWidth,
-    $imageHeight,
-    $maxWidth: false,
-    $objectFit: cover,
-    $className: 'image'
-) {
+@mixin imageRatio($imageWidth, $imageHeight, $maxWidth: false, $objectFit: cover, $className : 'image') {
     &__#{$className}-container {
         position: relative;
         width: 100%;
-        @if ($maxWidth) {
+        @if ( $maxWidth ) {
             display: inline-block;
-            @if ($maxWidth == true) {
-                max-width: #{$imageWidth}px;
+            @if ( $maxWidth == true ) {
+                @include vwUnit(max-width, $imageWidth);
             } @else {
-                max-width: #{$maxWidth}px;
+                @include vwUnit(max-width, $maxWidth);
             }
         } @else {
             display: block;
         }
         &:before {
-            content: '';
+            content: "";
             display: block;
             padding-top: math.div($imageHeight, $imageWidth) * 100%;
         }
@@ -69,64 +63,131 @@
 }
 
 // text elypsis mixin
-@mixin elypsis($font-size: 16, $lines-to-show: 1, $line-height: 1.4) {
-    display: block; /* Fallback for non-webkit */
+@mixin elypsis($fontName, $lines-to-show: 1, $line-height : 1.4) {
+
+    display: block; // Fallback for non-webkit
     display: -webkit-box;
-    height: #{$font-size * $line-height * $lines-to-show}px; /* Fallback for non-webkit */
-    font-size: #{$font-size}px;
-    line-height: $line-height;
-    -webkit-line-clamp: $lines-to-show;
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
-}
+    
+    @each $breakpoint, $value in map.get(var.$fontSizes,$fontName) {
+        @if ( $breakpoint == 'default' ) {
+            $font-size : map.get(var.$f1ontSizes, $fontName, default, font-size);
+            @if ( map.get(var.$fontSizes, $fontName, default, line-height) ) {
+                $line-height: map.get(var.$fontSizes, $fontName, default, line-height);
+            };
+
+            height: #{$font-size*$line-height*$lines-to-show}px; // Fallback for non-webkit
+            font-size: #{$font-size}px;
+            line-height: $line-height;
+            -webkit-line-clamp: $lines-to-show;
+        }
+        @else {
+            @media screen and (max-width: #{$breakpoint}px ) {
+                $font-size : map.get(var.$fontSizes, $fontName, $breakpoint, font-size);
+                @if ( map.get(var.$fontSizes, $fontName, $breakpoint, line-height) ) {
+                    $line-height: map.get(var.$fontSizes, $fontName, $breakpoint, line-height);
+                };
+    
+                height: #{$font-size*$line-height*$lines-to-show}px; // Fallback for non-webkit
+                font-size: #{$font-size}px;
+                line-height: $line-height;
+                -webkit-line-clamp: $lines-to-show;
+            }
+        }
+    }
+};
 
 // element state mixin
 @mixin fullState {
-    &:hover,
-    &:active,
-    &:focus,
-    &:active:hover,
-    &:active:focus {
+    &:hover, &:active, &:focus, &:active:hover, &:active:focus {
         @content;
     }
 }
 
+// mixin used inside fontSize, to help print propertuy from map
+@mixin printProperty($property, $value, $breakpoint) {
+    @if ($property == 'font-size') {
+        font-size: func.unit($value, $breakpoint);
+    }
+    @else {
+        #{$property} : #{$value};
+    }
+}
+
 // responsive Font Size
-@mixin fontSize($fontName, $fontSize, $useRem: true) {
-    @each $breakpoint, $value in map.get($fontSizes, $fontName, $fontSize) {
-        @if ($breakpoint == 'default') {
-            @each $property,
-                $value in map.get($fontSizes, $fontName, $fontSize, default)
-            {
-                @if ($useRem == true and $property == 'font-size') {
-                    font-size: remSize($value);
-                } @else if ($useRem == false and $property == 'font-size') {
-                    font-size: #{$value}px;
-                } @else {
-                    #{$property}: #{$value};
-                }
+@mixin typo($fontName) {
+
+    @each $breakpoint in var.$desktopBreakpoints {
+        @if ( $breakpoint == 1920 ) {
+            @each $property, $value in map.get(var.$fontSizes, $fontName, desktop) {
+                @include printProperty($property, $value, $breakpoint);
             }
-        } @else {
-            @media screen and (max-width: #{$breakpoint}px ) {
-                @each $property,
-                    $value
-                        in map.get(
-                            $fontSizes,
-                            $fontName,
-                            $fontSize,
-                            $breakpoint
-                        )
-                {
-                    @if ($useRem == true and $property == 'font-size') {
-                        font-size: remSize($value);
-                    } @else if ($useRem == false and $property == 'font-size') {
-                        font-size: #{$value}px;
-                    } @else {
-                        #{$property}: #{$value};
-                    }
+        }
+        @else {
+            @media screen and (max-width: #{$breakpoint}px) {
+                $mapData: null;
+                @if ( map.get(var.$fontSizes, $fontName, $breakpoint) ) {
+                    $mapData: map.get(var.$fontSizes, $fontName, $breakpoint)
+                }
+                @else {
+                    $mapData: map.get(var.$fontSizes, $fontName, desktop)
+                }
+                @each $property, $value in $mapData {
+                    @include printProperty($property, $value, $breakpoint);
                 }
             }
         }
     }
+
+    @each $breakpoint in var.$mobileBreakpoints {
+        @media screen and (max-width: #{$breakpoint}px) {
+            $mapData: null;
+            @if ( map.get(var.$fontSizes, $fontName, $breakpoint) ) {
+                $mapData: map.get(var.$fontSizes, $fontName, $breakpoint)
+            }
+            @else {
+                $mapData: map.get(var.$fontSizes, $fontName, mobile)
+            }
+            @each $property, $value in $mapData {
+                @include printProperty($property, $value, $breakpoint);
+            }
+        }
+    }
+}
+
+// responsive VW unit
+@mixin vwDesktop($property, $value) {
+    
+    @each $breakpoint in var.$desktopBreakpoints {
+        @if ( $breakpoint == 1920 ) {
+            #{$property}: func.unit($value, $breakpoint);
+        }
+        @else {
+            @media screen and (max-width: #{$breakpoint}px) {
+                #{$property}: func.unit($value, $breakpoint);
+            }
+        }
+    }
+
+}
+@mixin vwMobile($property, $value) {
+
+    @each $breakpoint in var.$mobileBreakpoints {
+        @media screen and (max-width: #{$breakpoint}px) {
+            #{$property}: func.unit($value, $breakpoint);
+        }
+    }
+
+}
+@mixin vwUnit($property, $valueD, $valueM: null) {
+
+    @if ( $valueM == null ) {
+        $valueM: $valueD;
+    }
+
+    @include vwDesktop($property, $valueD);
+    @include vwMobile($property, $valueM);
+
 }

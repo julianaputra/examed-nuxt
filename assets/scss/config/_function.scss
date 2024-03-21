@@ -1,16 +1,16 @@
 @use 'sass:map';
 @use 'sass:math';
 @use 'sass:color';
-@use '_variable.scss' as *;
+@use '_variable.scss' as var;
 
 // |‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾| //
-// | tmdrFunc v.1.1.1                        | //
-// | last update : 28 / 06 / 2023            | //
+// | tmdrFunc v.1.2.0                        | //
+// | last update : 19 / 03 / 2024            | //
 // |_________________________________________| //
 
 // get color from color map
 @function color($colorName, $colorValue: default) {
-    @return map.get($color, $colorName, $colorValue);
+    @return map.get(var.$color, $colorName, $colorValue);
 }
 
 // modified known color
@@ -21,4 +21,22 @@
 // convert target in px to rem (16)
 @function remSize($number) {
     @return #{math.div($number, 16)}rem;
+}
+
+// convert target in px to vw
+@function vwSize($number, $breakpoints) {
+    @return #{math.div($number, $breakpoints) * 100}vw;
+}
+
+// theme unit functions
+@function unit( $value, $breakpoint ) {
+    @if( var.$themeUnit == 'vw' ) {
+        @return vwSize( $value, $breakpoint );
+    }
+    @else if ( var.$themeUnit == 'rem' ) {
+        @return remSize( $value );
+    }
+    @else if ( var.$themeUnit == 'px' ) {
+        @return #{$value}px;
+    }
 }

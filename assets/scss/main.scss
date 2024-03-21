@@ -18,7 +18,12 @@
 
 body {
   font-family: 'Rubik', sans-serif;
+  @include typo(body);
   background-color: #f6f7fe;
+}
+
+a, button {
+    transition: all .3s ease;
 }
 
 .section {
