@@ -70,7 +70,7 @@ const pageData = ref({
   @include imageRatio(670, 859, true);
 
   &__info-container {
-    padding: vwSize(100, 1920) vwSize(80, 1920);
+    padding: unit(100, 1920) unit(80, 1920);
 
     @media screen and (max-width: 1199px) {
       padding: 0;

@@ -4,12 +4,13 @@
     <HomeModule />
     <HomeServices />
     <HomeAbout />
+    <HomeTesti />
   </main>
 </template>
 
 <script setup lang="ts">
 definePageMeta({
-  title: 'Home | Examed',
+  title: 'Home',
   description: 'This is homepage description'
 })
 </script>

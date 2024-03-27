@@ -46,7 +46,10 @@ $fontSizes: (
         767: (
             font-size: 36,
         ),
-        480: (
+        320: (
+            font-size: 30
+        ),
+        mobile: (
             font-size: 36,
         )
     ),
@@ -117,7 +120,7 @@ $fontSizes: (
             font-size: 14,
         )
     ),
-    body-sunderline: (
+    body-s-underline: (
         desktop: (
             font-size: 16,
             text-decoration: underline

@@ -7,6 +7,10 @@
 @use 'utils/_transitions.scss';
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap');
 
+:root {
+    @include fontVar();
+}
+
 .ratio-item {
   @extend %ratioItem;
 }
@@ -18,6 +22,7 @@
 
 body {
   font-family: 'Rubik', sans-serif;
+  color: #122032;
   @include typo(body);
   background-color: #f6f7fe;
 }
@@ -82,3 +87,98 @@ a, button {
     color: rgba(18, 32, 50, 0.8);
   }
 }
+
+
+.themeBtnBold {
+    position: relative;
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    @include vwUnit(padding, 16);
+    color: #fff;
+    @include typo(body);
+    text-align: center;
+    text-decoration: none;
+    line-height: 1.2;
+    background: linear-gradient(136deg, #42429a 0%, #1a1a4a 97.56%);
+    border: 1px solid #303178;
+    border-radius: 12px;
+    overflow: hidden;
+    cursor: pointer;
+  
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(152deg, #5355c4 -147.46%, #131336 98.25%);
+      border-radius: 12px;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+  
+    &:hover {
+      &::before {
+        opacity: 1;
+      }
+  
+      .themeBtnBold__arrow {
+        left: 4px;
+      }
+    }
+  
+    span {
+      position: relative;
+      flex: 1 1 100%;
+      text-align: left;
+    }
+  
+    &__square {
+      flex-shrink: 0;
+      position: relative;
+      @include vwUnit(padding, 4);
+      border-radius: 12px;
+      @include vwUnit(font-size, 20);
+      font-weight: 600;
+      background-color: #000;
+      @include vwUnit(width, 60);
+      @include vwUnit(height, 60);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  
+      &.pink {
+        background: linear-gradient(137deg, #e1a8c4 -10%, #c75c91 92.67%);
+      }
+  
+      &.purple {
+        background: linear-gradient(315deg, #686cc7 5.83%, #b1b3e2 106.24%);
+      }
+  
+      &.green {
+        background: linear-gradient(318deg, #72c66e 4.72%, #b8e2b6 108.38%);
+      }
+  
+      &.lime {
+        background: linear-gradient(135deg, #d6f075 -3.77%, #8eb012 91.65%);
+      }
+  
+      &.red {
+        background: linear-gradient(138deg, #f2b6b5 -4.46%, #e35e5d 92.56%);
+      }
+  
+      &.blue {
+        background: linear-gradient(136deg, #7c7dcb 0%, #303178 97.56%);
+      }
+    }
+  
+    &__arrow {
+      flex-shrink: 0;
+      color: #fff;
+      position: relative;
+      left: 0;
+      transition: 0.3s;
+    }
+  }

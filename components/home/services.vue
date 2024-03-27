@@ -21,7 +21,7 @@
                 <h3 class="service-card__title">
                   {{ service.title }}
                 </h3>
-                <p>Lihat Detail</p>
+                <p class="service-card__text">Lihat Detail</p>
               </div>
               <div class="service-card__icon-container">
                 <Icon name="basil:caret-right-solid" width="32" height="32" />
@@ -84,14 +84,33 @@ const pageData = ref({
     }
   }
 
+  @media (max-width: 991px) {
+    display: flex;
+    align-items: center;
+  }
+
   @include imageRatio(80, 80, true);
 
   &__image-container {
-    @include vwUnit(margin-bottom, 30);
+    @include vwDesktop(margin-bottom, 30);
+
+    @media (max-width: 991px) {
+      margin-bottom: 0;
+    }
+
+    @media (max-width: 320px) {
+      max-width: unit(60, 320);
+    }
   }
 
   &__body {
     display: flex;
+    @include vwMobile(padding-left, 15);
+
+    @media (max-width: 991px) {
+      flex: 1 0;
+      padding-left: unit(15, 991);
+    }
   }
 
   &__text-container {
@@ -100,6 +119,10 @@ const pageData = ref({
 
   &__title {
     @include typo(card-title-1);
+  }
+
+  &__text {
+    margin-bottom: 0;
   }
 
   &__icon-container {

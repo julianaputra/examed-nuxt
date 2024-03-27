@@ -1,12 +1,47 @@
 <template>
   <section class="module">
     <div class="container">
-      <h2 class="module__title">Pilihan Module</h2>
-      <div class="row gy-2 gy-lg-4">
-        <div
+      <div class="row">
+        <div class="col-12 col-lg-9 col-xl-10">
+          <h2 class="module__title">Pilihan Module</h2>
+        </div>
+        <div class="col-12 col-lg-3 col-xl-2">
+          <HomeSwiperNavigation
+            :prev-class="'moduke-swiper__prev'"
+            :next-class="'moduke-swiper__next'"
+            :pagination-class="'moduke-swiper__pagination'"
+          />
+        </div>
+      </div>
+      <Swiper
+        id="module-swiper"
+        class="module-swiper"
+        :modules="[SwiperNavigation, SwiperPagination]"
+        :loop="true"
+        :slides-per-view="1"
+        :space-between="30"
+        :pagination="{
+          el: '.moduke-swiper__pagination'
+        }"
+        :navigation="{
+          prevEl: '.moduke-swiper__prev',
+          nextEl: '.moduke-swiper__next'
+        }"
+        :breakpoints="{
+          '767': {
+            loop: false,
+            slidesPerView: 2,
+            slidesPerGroup: 2
+          },
+          '1200': {
+            slidesPerView: 4,
+            slidesPerGroup: 4
+          }
+        }"
+      >
+        <SwiperSlide
           v-for="(diagnose, diagnoseIndex) in diagnoses"
           :key="diagnoseIndex"
-          class="col-lg-4"
         >
           <nuxt-link :to="diagnose.to" class="themeBtnBold">
             <div class="themeBtnBold__square" :class="diagnose.color">
@@ -17,8 +52,8 @@
               <Icon name="CaretdownIcon" width="32" height="32" />
             </div>
           </nuxt-link>
-        </div>
-      </div>
+        </SwiperSlide>
+      </Swiper>
     </div>
   </section>
 </template>
@@ -68,102 +103,15 @@ const diagnoses = ref([
 .module {
   @include vwUnit(padding-top, 50);
   @include vwUnit(padding-bottom, 50);
+  overflow: hidden;
 
   &__title {
     @include vwUnit(margin-bottom, 30);
     @include typo(heading-1);
   }
 }
-.themeBtnBold {
-  position: relative;
-  display: flex;
-  gap: 16px;
-  align-items: center;
-  text-align: center;
-  @include vwUnit(padding, 16);
-  border-radius: 12px;
-  border: 1px solid #303178;
-  background: linear-gradient(136deg, #42429a 0%, #1a1a4a 97.56%);
-  color: #fff;
-  @include typo(body);
-  text-decoration: none;
-  line-height: 1.2;
-  overflow: hidden;
 
-  &::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(152deg, #5355c4 -147.46%, #131336 98.25%);
-    border-radius: 12px;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-  }
-
-  &:hover {
-    &::before {
-      opacity: 1;
-    }
-
-    .themeBtnBold__arrow {
-      left: 4px;
-    }
-  }
-
-  span {
-    position: relative;
-    flex: 1 1 100%;
-    text-align: left;
-  }
-
-  &__square {
-    flex-shrink: 0;
-    position: relative;
-    @include vwUnit(padding, 4);
-    border-radius: 12px;
-    @include vwUnit(font-size, 20);
-    font-weight: 600;
-    background-color: #000;
-    @include vwUnit(width, 60);
-    @include vwUnit(height, 60);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    &.pink {
-      background: linear-gradient(137deg, #e1a8c4 -10%, #c75c91 92.67%);
-    }
-
-    &.purple {
-      background: linear-gradient(315deg, #686cc7 5.83%, #b1b3e2 106.24%);
-    }
-
-    &.green {
-      background: linear-gradient(318deg, #72c66e 4.72%, #b8e2b6 108.38%);
-    }
-
-    &.lime {
-      background: linear-gradient(135deg, #d6f075 -3.77%, #8eb012 91.65%);
-    }
-
-    &.red {
-      background: linear-gradient(138deg, #f2b6b5 -4.46%, #e35e5d 92.56%);
-    }
-
-    &.blue {
-      background: linear-gradient(136deg, #7c7dcb 0%, #303178 97.56%);
-    }
-  }
-
-  &__arrow {
-    flex-shrink: 0;
-    color: #fff;
-    position: relative;
-    left: 0;
-    transition: 0.3s;
-  }
+::v-deep .module-swiper {
+  overflow: visible;
 }
 </style>
