@@ -1,4 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+import { defineNuxtModule } from 'nuxt'
+
 export default defineNuxtConfig({
   devtools: { enabled: true },
   css: ['@/assets/scss/main.scss'],
@@ -20,7 +22,8 @@ export default defineNuxtConfig({
     '@nuxt/image',
     '@pinia/nuxt',
     '@nuxtjs/i18n',
-    '@vee-validate/nuxt'
+    '@vee-validate/nuxt',
+    'nuxt-swiper'
   ],
   veeValidate: {
     autoImports: true,

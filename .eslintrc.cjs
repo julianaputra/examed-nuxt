@@ -13,5 +13,7 @@ module.exports = {
   plugins: [],
   rules: {
     'vue/multi-word-component-names': 'off'
+    // 'vue/script-indent': ['error', 4, { baseIndent: 1 }],
+    // indent: ['error', 4]
   }
 }

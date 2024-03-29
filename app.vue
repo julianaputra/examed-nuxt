@@ -9,7 +9,7 @@ const route = useRoute()
 useHead({
   title: route.meta.title as string,
   titleTemplate: (titleChunk) => {
-    return titleChunk ? `${titleChunk} | Site Title` : 'Site Title'
+    return titleChunk ? `${titleChunk} | Examed` : 'Examed'
   }
 })
 </script>
