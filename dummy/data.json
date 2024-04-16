@@ -1,98 +1,98 @@
 {
-  "data": [
-    {
-      "id": 1,
-      "title": "Deskripsi",
-      "icon": "DescIcon",
-      "content": {
-        "type": "text",
-        "text": "<p> Pasien dengan depresi mengalami berbagai gejala termasuk suasana hati tertekan yang terus-menerus atau kehilangan minat dan kesenangan selama minimal 2 minggu. Pasien dengan depresi seperti yang dijelaskan dalam modul ini mempunyai kesulitan besar dalam menjalankan fungsi sehari-hari dalam bidang pribadi, keluarga, sosial, pendidikan, pekerjaan atau bidang lainnya.Banyak penderita depresi juga menderita gejala kecemasan dan gejala somatik yang tidak dapat dijelaskan secara medis. </p><p> Depresi umumnya terjadi bersamaan dengan kondisi MNS lainnya serta kondisi fisik. Penatalaksanaan gejala yang tidak sepenuhnya memenuhi kriteria depresi dibahas dalam modul Keluhan Kesehatan Mental Signifikan Lainnya. Pergi ke » <b>LAINNYA.</b> </p>"
-      }
-    },
-    {
-      "id": 2,
-      "title": "Penilaian",
-      "icon": "FollowupIcon",
-      "content": {
-        "type": "link",
-        "links": [
-          {
-            "title": "Presentasi Umum Depresi",
-            "to": "/depresi/penilaian",
-            "disabled": false
-          },
-          {
-            "title": "STEP 1 : Menilai depresi",
-            "to": "/depresi/penilaian",
-            "disabled": false
-          },
-          {
-            "title": "STEP 2 : Apakah ada kemungkinan pasien mengalami gangguan mentai selain depresi",
-            "to": "/depresi/penilaian",
-            "disabled": false
-          },
-          {
-            "title": "STEP 3: Menilai kondisi MNS yang terjadi bersamaan",
-            "to": "/depresi/penilaian",
-            "disabled": true
-          }
-        ]
-      }
-    },
-    {
-      "id": 3,
-      "title": "Manajemen",
-      "icon": "ManagementIcon",
-      "content": {
-        "type": "link",
-        "links": [
-          {
-            "title": "Manajemen Protokol 1 (Depresi)",
-            "to": "/depresi/manajemen",
-            "disabled": false
-          },
-          {
-            "title": "Manajemen Protokol 2 (Depresi pada gangguan bipolar)",
-            "to": "/depresi/manajemen",
-            "disabled": false
-          },
-          {
-            "title": "Populasi Khusus",
-            "to": "/depresi/manajemen",
-            "disabled": false
-          },
-          {
-            "title": "Menggali aspek diagnosis holistik",
-            "to": "/depresi/manajemen",
-            "disabled": false
-          }
-        ]
-      }
-    },
-    {
-      "id": 4,
-      "title": "Tindak Lanjut",
-      "icon": "ReportIcon",
-      "content": {
-        "type": "link",
-        "links": [
-          {
-            "title": "Nilai perbaikan kondisi pasien",
-            "to": "/",
-            "disabled": false
-          },
-          {
-            "title": "Pantau pengobatan pasien",
-            "to": "/",
-            "disabled": false
-          },
-          {
-            "title": "Sesuaikan pengobatan bila diperlukan",
-            "to": "/",
-            "disabled": false
-          }
-        ]
-      }
-    }
-  ]
+    "data": [
+        {
+            "id": 1,
+            "title": "Deskripsi",
+            "icon": "DescIcon",
+            "content": {
+                "type": "text",
+                "text": "<p> Pasien dengan depresi mengalami berbagai gejala termasuk suasana hati tertekan yang terus-menerus atau kehilangan minat dan kesenangan selama minimal 2 minggu. Pasien dengan depresi seperti yang dijelaskan dalam modul ini mempunyai kesulitan besar dalam menjalankan fungsi sehari-hari dalam bidang pribadi, keluarga, sosial, pendidikan, pekerjaan atau bidang lainnya.Banyak penderita depresi juga menderita gejala kecemasan dan gejala somatik yang tidak dapat dijelaskan secara medis. </p><p> Depresi umumnya terjadi bersamaan dengan kondisi MNS lainnya serta kondisi fisik. Penatalaksanaan gejala yang tidak sepenuhnya memenuhi kriteria depresi dibahas dalam modul Keluhan Kesehatan Mental Signifikan Lainnya. Pergi ke » <b>LAINNYA.</b> </p>"
+            }
+        },
+        {
+            "id": 2,
+            "title": "Penilaian",
+            "icon": "FollowupIcon",
+            "content": {
+                "type": "link",
+                "links": [
+                    {
+                        "title": "Presentasi Umum Depresi",
+                        "to": "/depresi/penilaian",
+                        "disabled": false
+                    },
+                    {
+                        "title": "STEP 1 : Menilai depresi",
+                        "to": "/depresi/penilaian",
+                        "disabled": false
+                    },
+                    {
+                        "title": "STEP 2 : Apakah ada kemungkinan pasien mengalami gangguan mentai selain depresi",
+                        "to": "/depresi/penilaian",
+                        "disabled": false
+                    },
+                    {
+                        "title": "STEP 3: Menilai kondisi MNS yang terjadi bersamaan",
+                        "to": "/depresi/penilaian",
+                        "disabled": true
+                    }
+                ]
+            }
+        },
+        {
+            "id": 3,
+            "title": "Manajemen",
+            "icon": "ManagementIcon",
+            "content": {
+                "type": "link",
+                "links": [
+                    {
+                        "title": "Manajemen Protokol 1 (Depresi)",
+                        "to": "/depresi/manajemen",
+                        "disabled": false
+                    },
+                    {
+                        "title": "Manajemen Protokol 2 (Depresi pada gangguan bipolar)",
+                        "to": "/depresi/manajemen",
+                        "disabled": false
+                    },
+                    {
+                        "title": "Populasi Khusus",
+                        "to": "/depresi/manajemen",
+                        "disabled": false
+                    },
+                    {
+                        "title": "Menggali aspek diagnosis holistik",
+                        "to": "/depresi/manajemen",
+                        "disabled": false
+                    }
+                ]
+            }
+        },
+        {
+            "id": 4,
+            "title": "Tindak Lanjut",
+            "icon": "ReportIcon",
+            "content": {
+                "type": "link",
+                "links": [
+                    {
+                        "title": "Nilai perbaikan kondisi pasien",
+                        "to": "/",
+                        "disabled": false
+                    },
+                    {
+                        "title": "Pantau pengobatan pasien",
+                        "to": "/",
+                        "disabled": false
+                    },
+                    {
+                        "title": "Sesuaikan pengobatan bila diperlukan",
+                        "to": "/",
+                        "disabled": false
+                    }
+                ]
+            }
+        }
+    ]
 }

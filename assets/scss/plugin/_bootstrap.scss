@@ -63,7 +63,10 @@ $custom-container-max-width: (
 );
 
 // Merge the maps
-$container-max-widths: map-merge($container-max-widths, $custom-container-max-width);
+$container-max-widths: map-merge(
+    $container-max-widths,
+    $custom-container-max-width
+);
 
 // Optional
 @import 'bootstrap/scss/type';
@@ -84,9 +87,9 @@ $container-max-widths: map-merge($container-max-widths, $custom-container-max-wi
 // @import "bootstrap/scss/tables";
 // @import "bootstrap/scss/button-group";
 // @import 'bootstrap/scss/card';
-@import "bootstrap/scss/breadcrumb";
+@import 'bootstrap/scss/breadcrumb';
 // @import "bootstrap/scss/accordion";
-// @import "bootstrap/scss/pagination";
+@import 'bootstrap/scss/pagination';
 // @import "bootstrap/scss/badge";
 // @import "bootstrap/scss/alert";
 // @import "bootstrap/scss/progress";

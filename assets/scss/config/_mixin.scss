@@ -1,11 +1,12 @@
 @use 'sass:math';
 @use 'sass:map';
+@use 'sass:list';
 @use '_variable.scss' as var;
 @use '_function.scss' as func;
 
 // |‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾| //
-// | tmdrMIX v.2.0.2                         | //
-// | last update : 25 / 03 / 2024            | //
+// | tmdrMIX v.2.0.4                         | //
+// | last update : 03 / 04 / 2024            | //
 // |_________________________________________| //
 
 // transform with fallback
@@ -36,13 +37,19 @@
 }
 
 // make ratio classes
-@mixin imageRatio($imageWidth, $imageHeight, $maxWidth: false, $objectFit: cover, $className : 'image') {
+@mixin imageRatio(
+    $imageWidth,
+    $imageHeight,
+    $maxWidth: false,
+    $objectFit: cover,
+    $className: 'image'
+) {
     &__#{$className}-container {
         position: relative;
         width: 100%;
-        @if ( $maxWidth ) {
+        @if ($maxWidth) {
             display: inline-block;
-            @if ( $maxWidth == true ) {
+            @if ($maxWidth == true) {
                 @include vwUnit(max-width, $imageWidth);
             } @else {
                 @include vwUnit(max-width, $maxWidth);
@@ -51,7 +58,7 @@
             display: block;
         }
         &:before {
-            content: "";
+            content: '';
             display: block;
             padding-top: math.div($imageHeight, $imageWidth) * 100%;
         }
@@ -64,134 +71,228 @@
 
 // element state mixin
 @mixin fullState {
-    &:hover, &:active, &:focus, &:active:hover, &:active:focus {
+    &:hover,
+    &:active,
+    &:focus,
+    &:active:hover,
+    &:active:focus {
         @content;
     }
 }
 
-// mixin used inside fontSize, to help print propertuy from map
-@mixin printProperty($property, $value, $breakpoint) {
-    @if ($property != 'font-size') {
-        #{$property} : #{$value};
+// responsive Font Size
+
+// -- responsice font size component -- start
+@mixin printOtherProp($fontName, $breakpoint) {
+    @each $property, $value in map.get(var.$fontSizes, $fontName, $breakpoint) {
+        @if ($property != font-size) {
+            #{$property}: $value;
+        }
     }
 }
 
-@mixin elypsisProperty($fontName, $fontSize, $line-to-show, $line-height, $breakpoint) {
-    
-    height: func.unit( $fontSize * $line-height * $line-to-show, $breakpoint );
-    font-size: var(--tdfs-#{$fontName});
+@mixin elypsisDefaultProp {
+    display: block; // Fallback for non-webkit
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+@mixin elypsisProperty(
+    $fontName,
+    $fontSize,
+    $line-to-show,
+    $line-height,
+    $breakpoint
+) {
+    $breakpointValue: null;
+    @if ($breakpoint == desktop) {
+        $breakpointValue: 1920;
+    }
+    height: func.unit(
+        $fontSize * $line-height * $line-to-show,
+        $breakpointValue
+    );
     line-height: $line-height;
     -webkit-line-clamp: $line-to-show;
 
-    @each $property, $value in map.get(var.$fontSizes, $fontName, desktop) {
-        @if ( $property != 'font-size' and $property != 'line-height' ) {
-            @include printProperty($property, $value, $breakpoint);
+    @each $property,
+        $value in map.get(var.$fontSizes, $fontName, $breakpointValue)
+    {
+        @if ($property != 'font-size' and $property != 'line-height') {
+            @if ($property != font-size) {
+                #{$property}: $value;
+            }
         }
     }
-    
 }
 
-// responsive Font Size
-@mixin typo($fontName, $elypsis: false, $line-to-show: 1, $line-height: 1.6) {
+@mixin elypsisResProp(
+    $elypsis,
+    $fontName,
+    $line-height,
+    $line-to-show,
+    $breakpoint
+) {
+    $elypFS: null;
+    $elypLH: null;
 
-    @if ( $elypsis == true ) {
-        display: block; // Fallback for non-webkit
-        display: -webkit-box;
-        -webkit-box-orient: vertical;
-        overflow: hidden;
-        text-overflow: ellipsis;
-
-        $elypFontSize: null;
-        $elypLineHeight: null;
-
-        @each $breakpoint in var.$desktopBreakpoints {
-            @if ( $breakpoint == 1920 ) {
-
-                $elypFontSize: map.get(var.$fontSizes, $fontName, desktop, font-size);
-
-                @if ( map.get(var.$fontSizes, $fontName, desktop, line-height) ) {
-                    $elypLineHeight: map.get(var.$fontSizes, $fontName, desktop, line-height);
-                }
-                @else {
-                    $elypLineHeight: $line-height;
-                }
-
-                @include elypsisProperty($fontName, $elypFontSize, $line-to-show, $elypLineHeight, $breakpoint);
-
-            }
-            @else {
-                @media screen and (max-width: #{$breakpoint}px) {
-                    $mapData: null;
-                    @if ( map.get(var.$fontSizes, $fontName, $breakpoint) ) {
-                        $mapData: map.get(var.$fontSizes, $fontName, $breakpoint)
-                    }
-                    @else {
-                        $mapData: map.get(var.$fontSizes, $fontName, desktop)
-                    }
-
-                    $fontSize: map.get($mapData, font-size);
-
-                    height: func.unit( $fontSize * $line-to-show * $elypLineHeight, $breakpoint );
-                }
+    @if ($elypsis == true) {
+        // get font-size
+        @if (map.get(var.$fontSizes, $fontName, $breakpoint, font-size)) {
+            $elypFS: map.get(var.$fontSizes, $fontName, $breakpoint, font-size);
+        } @else {
+            @if ($breakpoint > list.nth(var.$mobileBreakpoints, 1)) {
+                $elypFS: map.get(var.$fontSizes, $fontName, desktop, font-size);
+            } @else {
+                $elypFS: map.get(var.$fontSizes, $fontName, mobile, font-size);
             }
         }
 
-        @each $breakpoint in var.$mobileBreakpoints {
-            @media screen and (max-width: #{$breakpoint}px) {
-                $mapData: null;
-                @if ( map.get(var.$fontSizes, $fontName, $breakpoint) ) {
-                    $mapData: map.get(var.$fontSizes, $fontName, $breakpoint)
-                }
-                @else {
-                    $mapData: map.get(var.$fontSizes, $fontName, mobile)
-                }
-
-                $fontSize: map.get($mapData, font-size);
-
-                height: func.unit( $fontSize * $line-to-show * $elypLineHeight, $breakpoint );
+        // get line-heigt
+        @if (map.get(var.$fontSizes, $fontName, $breakpoint, line-height)) {
+            $elypLH: map.get(
+                var.$fontSizes,
+                $fontName,
+                $breakpoint,
+                line-height
+            );
+        } @else if
+            (
+                map.get(var.$fontSizes, $fontName, $breakpoint, line-height) ==
+                    null
+            )
+        {
+            @if (
+                $breakpoint <=
+                    list.nth(var.$mobileBreakpoints, 1) and
+                    map.get(var.$fontSizes, $fontName, mobile, line-height)
+            ) {
+                $elypLH: map.get(
+                    var.$fontSizes,
+                    $fontName,
+                    mobile,
+                    line-height
+                );
+            } @else if
+                (map.get(var.$fontSizes, $fontName, desktop, line-height))
+            {
+                $elypLH: map.get(
+                    var.$fontSizes,
+                    $fontName,
+                    desktop,
+                    line-height
+                );
+            } @else {
+                $elypLH: $line-height;
             }
         }
 
+        // @debug $elypFS;
+        // @debug $elypLH;
+        // @debug $line-to-show;
+        // @debug $elypFS * $elypLH * $line-to-show;
+
+        height: func.unit($elypFS * $elypLH * $line-to-show, $breakpoint);
     }
-    @else {
+}
+// -- responsice font size component -- end
 
-        @each $breakpoint in var.$desktopBreakpoints {
-            @if ( $breakpoint == 1920 ) {
-                
-                font-size: var(--tdfs-#{$fontName});
-                @each $property, $value in map.get(var.$fontSizes, $fontName, desktop) {
-                    @include printProperty($property, $value, $breakpoint);
+@mixin typo($fontName, $elypsis: false, $line-to-show: 1, $line-height: 1.6) {
+    font-size: var(--tdfs-#{$fontName});
+
+    @each $breakpoint in var.$desktopBreakpoints {
+        @if ($breakpoint == 1920) {
+            $breakpointMap: desktop;
+
+            @if ($elypsis == true) {
+                @include elypsisDefaultProp;
+
+                $elypFS: map.get(var.$fontSizes, $fontName, desktop, font-size);
+                $elypLH: null;
+
+                @if (map.get(var.$fontSizes, $fontName, desktop, line-height)) {
+                    $elypLH: map.get(
+                        var.$fontSizes,
+                        $fontName,
+                        desktop,
+                        line-height
+                    );
+                } @else {
+                    $elypLH: $line-height;
                 }
+
+                @include elypsisProperty(
+                    $fontName,
+                    $elypFS,
+                    $line-to-show,
+                    $elypLH,
+                    $breakpointMap
+                );
+            } @else {
+                @include printOtherProp($fontName, desktop);
             }
-            @else {
-                @media screen and (max-width: #{$breakpoint}px) {
-                    $mapData: null;
-                    @if ( map.get(var.$fontSizes, $fontName, $breakpoint) ) {
-                        $mapData: map.get(var.$fontSizes, $fontName, $breakpoint)
-                    }
-                    @else {
-                        $mapData: map.get(var.$fontSizes, $fontName, desktop)
-                    }
-                    
-                    @each $property, $value in $mapData {
-                        @include printProperty($property, $value, $breakpoint);
-                    }
+        } @else {
+            @media (max-width: #{$breakpoint}px) {
+                @include elypsisResProp(
+                    $elypsis,
+                    $fontName,
+                    $line-height,
+                    $line-to-show,
+                    $breakpoint
+                );
+
+                @if (map.get(var.$fontSizes, $fontName, $breakpoint)) {
+                    @include printOtherProp($fontName, $breakpoint);
                 }
             }
         }
-    
-        @each $breakpoint in var.$mobileBreakpoints {
-            @media screen and (max-width: #{$breakpoint}px) {
-                $mapData: null;
-                @if ( map.get(var.$fontSizes, $fontName, $breakpoint) ) {
-                    $mapData: map.get(var.$fontSizes, $fontName, $breakpoint)
+    }
+
+    @each $breakpoint in var.$mobileBreakpoints {
+        @media (max-width: #{$breakpoint}px) {
+            @if ($breakpoint == list.nth(var.$mobileBreakpoints, 1)) {
+                @include elypsisResProp(
+                    $elypsis,
+                    $fontName,
+                    $line-height,
+                    $line-to-show,
+                    $breakpoint
+                );
+
+                @each $property,
+                    $value in map.get(var.$fontSizes, $fontName, mobile)
+                {
+                    @if ($property != font-size) {
+                        @if (
+                            map.get(
+                                var.$fontSizes,
+                                $fontName,
+                                $breakpoint,
+                                $property
+                            )
+                        ) {
+                            $value: map.get(
+                                var.$fontSizes,
+                                $fontName,
+                                $breakpoint,
+                                $property
+                            );
+                        }
+                        #{$property}: $value;
+                    }
                 }
-                @else {
-                    $mapData: map.get(var.$fontSizes, $fontName, mobile)
-                }
-                @each $property, $value in $mapData {
-                    @include printProperty($property, $value, $breakpoint);
-                }
+            } @else {
+                @include elypsisResProp(
+                    $elypsis,
+                    $fontName,
+                    $line-height,
+                    $line-to-show,
+                    $breakpoint
+                );
+
+                @include printOtherProp($fontName, $breakpoint);
             }
         }
     }
@@ -200,22 +301,33 @@
 // print font-size as root variable
 @mixin fontVar() {
     @each $breakpoint in var.$desktopBreakpoints {
-        @if ( $breakpoint == 1920 ) {
+        @if ($breakpoint == 1920) {
             @each $fontName, $value in var.$fontSizes {
-                --tdfs-#{$fontName}: #{ func.unit( map.get($value, desktop, font-size), 1920) };
+                --tdfs-#{$fontName}: #{func.unit(
+                        map.get($value, desktop, font-size),
+                        1920
+                    )};
             }
-        }
-        @else {
+        } @else {
             @media (max-width: #{$breakpoint}px) {
                 $breakValue: null;
                 @each $fontName, $value in var.$fontSizes {
-                    @if ( map.get( var.$fontSizes, $fontName, $breakpoint ) ) {
+                    @if (
+                        map.get(
+                            var.$fontSizes,
+                            $fontName,
+                            $breakpoint,
+                            font-size
+                        )
+                    ) {
                         $breakValue: $breakpoint;
-                    }
-                    @else {
+                    } @else {
                         $breakValue: desktop;
                     }
-                    --tdfs-#{$fontName}: #{ func.unit( map.get($value, $breakValue, font-size), $breakpoint) };
+                    --tdfs-#{$fontName}: #{func.unit(
+                            map.get($value, $breakValue, font-size),
+                            $breakpoint
+                        )};
                 }
             }
         }
@@ -224,13 +336,17 @@
         @media (max-width: #{$breakpoint}px) {
             $breakValue: null;
             @each $fontName, $value in var.$fontSizes {
-                @if ( map.get( var.$fontSizes, $fontName, $breakpoint ) ) {
+                @if (
+                    map.get(var.$fontSizes, $fontName, $breakpoint, font-size)
+                ) {
                     $breakValue: $breakpoint;
-                }
-                @else {
+                } @else {
                     $breakValue: mobile;
                 }
-                --tdfs-#{$fontName}: #{ func.unit( map.get($value, $breakValue, font-size), $breakpoint) };
+                --tdfs-#{$fontName}: #{func.unit(
+                        map.get($value, $breakValue, font-size),
+                        $breakpoint
+                    )};
             }
         }
     }
@@ -238,35 +354,28 @@
 
 // responsive VW unit
 @mixin vwDesktop($property, $value) {
-    
     @each $breakpoint in var.$desktopBreakpoints {
-        @if ( $breakpoint == 1920 ) {
+        @if ($breakpoint == 1920) {
             #{$property}: func.unit($value, $breakpoint);
-        }
-        @else {
+        } @else {
             @media screen and (max-width: #{$breakpoint}px) {
                 #{$property}: func.unit($value, $breakpoint);
             }
         }
     }
-
 }
 @mixin vwMobile($property, $value) {
-
     @each $breakpoint in var.$mobileBreakpoints {
         @media screen and (max-width: #{$breakpoint}px) {
             #{$property}: func.unit($value, $breakpoint);
         }
     }
-
 }
 @mixin vwUnit($property, $valueD, $valueM: null) {
-
-    @if ( $valueM == null ) {
+    @if ($valueM == null) {
         $valueM: $valueD;
     }
 
     @include vwDesktop($property, $valueD);
     @include vwMobile($property, $valueM);
-
 }

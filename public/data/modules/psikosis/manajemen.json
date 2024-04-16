@@ -1,17 +1,20 @@
 {
-    "data": [{
+    "data": [
+        {
             "id": 1,
             "parentId": null,
             "title": "Manajemen Protokol 1 (Episode Manik pada Gangguan Bipolar)",
             "type": "link",
             "content": null
-        }, {
+        },
+        {
             "id": 2,
             "parentId": null,
             "title": "Manajemen Protokol 2 (Psikosis)",
             "type": "link",
             "content": null
-        }, {
+        },
+        {
             "id": 3,
             "parentId": 1,
             "title": "Menjamin keselamatan Pasien dan keselamatan orang lain.",
@@ -38,7 +41,8 @@
             "title": "2.2 Mengurangi stres dan memperkuat dukungan sosial. ",
             "type": "collapse",
             "content": "<ul><li>Berkoordinasi dengan sumber daya kesehatan dan sosial yang tersedia untuk bertemu kebutuhan kesehatan fisik, sosial, dan mental keluarga.<li>Identifikasi aktivitas sosial Pasien sebelumnya yang, jika dimulai kembali, berpotensi memberikan dukungan psikologis dan sosial langsung atau tidak langsung, misalnya pertemuan keluarga, jalan-jalan bersama teman, mengunjungi tetangga, aktivitas sosial di tempat kerja, olah raga, dan aktivitas komunitas. Dorong Pasien untuk melanjutkan aktivitas sosial ini dan beri tahu anggota keluarga tentang hal ini.<li>Mendorong orang dan pengasuh untuk meningkatkan sistem dukungan sosial.</ul>"
-        }, {
+        },
+        {
             "id": 7,
             "parentId": 1,
             "title": "2.3 Meningkatkan fungsi dalam aktivitas sehari-hari. ",
@@ -86,13 +90,15 @@
             "title": "Populasi Khusus",
             "type": "link",
             "content": null
-        }, {
+        },
+        {
             "id": 14,
             "parentId": 13,
             "title": "Wanita yang Hamil atau Menyusui",
             "type": "collapse",
             "content": "<ul><li><strong>Berhubungan dengan spesialis kesehatan ibu untuk mengatur perawatan.</strong><li><strong>Pertimbangkan konsultasi dengan spesialis kesehatan mental jika tersedia.</strong><li>Menjelaskan risiko akibat buruk bagi ibu dan bayinya, termasuk kebidanan komplikasi dan kekambuhan psikotik, terutama jika pengobatan dihentikan<li><strong>Pertimbangkan Intervensi farmakologis</strong> bila sesuai dan tersedia. Lihat di bawah.</ul><h2>Intervensi Farmakologis</h2><hr><h3 style=color:#23409f>PSIKHOSIS</h3><ul><li>Pada wanita dengan psikosis yang sedang merencanakan kehamilan atau sedang hamil atau menyusui, haloperidol oral dosis rendah, atau klorpromazin dapat dipertimbangkan.<li>Antikolinergik <strong>TIDAK</strong> boleh diresepkan untuk wanita yang sedang hamil karena efek samping ekstrapira midal dari obat antipsikotik, kecuali dalam kasus penggunaan akut dan jangka pendek.<li>Depot antipsikotik sebaiknya tidak rutin diresepkan untuk wanita dengan gangguan psikotik yang sedang merencanakan kehamilan, hamil, atau menyusui karena informasi mengenai keamanannya pada populasi ini relatif sedikit.</ul><h3 style=color:#23409f>EPISODE MANIK DALAM GANGGUAN BIPOLAR</h3><ul><li><strong>HINDARI VALPROATE, LITHIUM dan CARBAMAZEPINE</strong> selama kehamilan dan menyusui karena risiko cacat lahir.<li>Pertimbangkan haloperidol dosis rendah dengan hati-hati dan berkonsultasi dengan spesialis, jika tersedia.<li>Pertimbangkan risiko dan manfaat pengobatan pada wanita usia subur.<li>Jika seorang wanita hamil mengalami mania akut saat menggunakan penstabil suasana hati, pertimbangkan untuk beralih ke haloperidol dosis rendah."
-        }, {
+        },
+        {
             "id": 15,
             "parentId": 13,
             "title": "Remaja",
@@ -112,25 +118,29 @@
             "title": "Intervensi Farmakologis (Psikosis).",
             "type": "link",
             "content": null
-        }, {
+        },
+        {
             "id": 18,
             "parentId": 17,
             "title": "Tabel 1: Obat antipsikotik",
             "type": "link",
             "content": null
-        }, {
+        },
+        {
             "id": 19,
             "parentId": 17,
             "title": "Tabel 2: Obat antikolinergik",
             "type": "link",
             "content": "<li>untuk pengobatan efek samping ekstrapiramidal (EPS)<li><strong style=color:red>Hindari pada wanita yang sedang hamil atau menyusui jika memungkinkan</strong>"
-        }, {
+        },
+        {
             "id": 20,
             "parentId": 62,
             "title": "Tabel 3: Penstabil suasana hati",
             "type": "link",
             "content": null
-        }, {
+        },
+        {
             "id": 21,
             "parentId": 17,
             "title": "Tabel 4: Tinjau kepatuhan, efek samping dan dosis berdasarkan situasi/presentasi klinis",
@@ -143,19 +153,22 @@
             "title": "HALOPERIDOL",
             "type": "link",
             "content": null
-        }, {
+        },
+        {
             "id": 23,
             "parentId": 18,
             "title": "RISPERIDON",
             "type": "link",
             "content": null
-        }, {
+        },
+        {
             "id": 24,
             "parentId": 18,
             "title": "CHLORPROMAZINE",
             "type": "link",
             "content": null
-        }, {
+        },
+        {
             "id": 25,
             "parentId": 18,
             "title": "FLUPHENAZINE / aksi jangka panjang",
@@ -168,19 +181,22 @@
             "title": "Dosis",
             "type": "collapse",
             "content": "<ul><li><strong>Mulai</strong> 1,5-3 mg setiap hari.<li><strong>Tingkatkan sesuai kebutuhan</strong> (maksimum 20 mg setiap hari)<li><strong>Rute:</strong> oral (po) atau intramuskular (im).</ul>"
-        }, {
+        },
+        {
             "id": 27,
             "parentId": 22,
             "title": "Efek Samping",
             "type": "collapse",
             "content": "<ul><li><strong>Umum:</strong> sedasi, pusing, penglihatan kabur, mulut kering, retensi urin, sembelit.<li><strong>Serius:</strong> hipotensi ortostatik, efek samping ekstrapiramidal (EPS), perubahan EKG (interval QT berkepanjangan), penambahan berat badan, galaktorea, amenore, Sindrom neuroleptik maligna (NMS).</ul>"
-        }, {
+        },
+        {
             "id": 28,
             "parentId": 22,
             "title": "Kontradikasi / Perhatian",
             "type": "collapse",
             "content": "<p><strong>Perhatian pada pasien dengan:</strong> penyakit ginjal, penyakit hati, penyakit jantung, sindrom QT panjang atau sedang mengonsumsi obat pemanjangan QT.<br>Pantau EKG jika memungkinkan."
-        }, {
+        },
+        {
             "id": 29,
             "parentId": 23,
             "title": "Dosis",
@@ -193,13 +209,15 @@
             "title": "Efek Samping",
             "type": "collapse",
             "content": "<ul><li><strong>Umum:</strong> sedasi, pusing, takikardia.<li><strong>Serius:</strong> hipotensi ortostatik, efek metabolik (peningkatan lipid, resistensi insulin, penambahan berat badan), EPS, peningkatan prolaktin, disfungsi seksual, NMS.</ul>"
-        }, {
+        },
+        {
             "id": 31,
             "parentId": 23,
             "title": "Kontradikasi / Perhatian",
             "type": "collapse",
             "content": "<ul><li><strong>Perhatian pada pasien dengan:</strong> penyakit jantung<li><strong>Interaksi obat-obat:</strong> karbamazepin dapat menurunkan kadar risperidone, sedangkan fluoxetine dapat meningkatkan kadarnya.</ul>"
-        }, {
+        },
+        {
             "id": 32,
             "parentId": 24,
             "title": "Dosis",
@@ -240,49 +258,57 @@
             "title": "Kontradikasi / Perhatian",
             "type": "collapse",
             "content": "<ul><li>Kontraindikasi: gangguan kesadaran, parkinsonisme.<li>Perhatian pada penderita : penyakit jantung, penyakit ginjal, penyakit liver.<br>(Gunakan dengan hati-hati pada orang dewasa yang lebih tua.)<li>Interaksi obat-obat:<ul><li>Meningkatkan efek obat penurun tekanan darah<li>Dapat menurunkan tekanan darah jika digunakan dengan epinefrin.</ul></ul>"
-        }, {
+        },
+        {
             "id": 39,
             "parentId": 19,
             "title": "BIPERIDEN",
             "type": "link",
             "content": null
-        }, {
+        },
+        {
             "id": 40,
             "parentId": 19,
             "title": "TRIHEKSIFENIDIL (Benzhexol)",
             "type": "link",
             "content": null
-        }, {
+        },
+        {
             "id": 41,
             "parentId": 39,
             "title": "Dosis",
             "type": "collapse",
             "content": "<ul><li><strong>Mulai</strong> 1 mg dua kali sehari.<li><strong>Tingkatkan</strong> menjadi 3-12 mg setiap hari<li><strong>Rute:</strong> po atau intravena (iv).</ul><h5 style=color:red>Hindari pada wanita yang sedang hamil atau menyusui jika memungkinkan.</h5>"
-        }, {
+        },
+        {
             "id": 42,
             "parentId": 39,
             "title": "Efek Samping",
             "type": "collapse",
             "content": "<ul><li><strong>Umum:</strong> sedasi, kebingungan dan gangguan memori (terutama pada orang dewasa yang lebih tua), takikardia, mulut kering, retensi urin dan sembelit.<li><strong>Jarang,</strong> glaukoma sudut tertutup, miastenia gravis, dan obstruksi gastrointestinal, untuk pengobatan efek samping ekstrapiramidal (EPS)</ul>"
-        }, {
+        },
+        {
             "id": 43,
             "parentId": 39,
             "title": "Kontradikasi / Perhatian",
             "type": "collapse",
             "content": "<ul><li><strong>Perhatian pada pasien dengan:</strong> penyakit jantung, hati, atau ginjal<li><strong>Interaksi obat-obat:</strong> Hati-hati bila dikombinasikan dengan obat antikolinergik lainnya.</ul>"
-        }, {
+        },
+        {
             "id": 44,
             "parentId": 40,
             "title": "Dosis",
             "type": "collapse",
             "content": "<ul><li><strong>Mulai</strong> 1 mg dua kali sehari.<li><strong>Tingkatkan</strong> menjadi 3-12 mg setiap hari<li><strong>Rute:</strong> po atau intravena (iv).</ul><h5 style=color:red>Hindari pada wanita yang sedang hamil atau menyusui jika memungkinkan.</h5>"
-        }, {
+        },
+        {
             "id": 45,
             "parentId": 40,
             "title": "Efek Samping",
             "type": "collapse",
             "content": "<ul><li><strong>Umum:</strong> sedasi, kebingungan dan gangguan memori (terutama pada orang dewasa yang lebih tua), takikardia, mulut kering, retensi urin dan sembelit.<li><strong>Jarang,</strong> glaukoma sudut tertutup, miastenia gravis, dan obstruksi gastrointestinal, untuk pengobatan efek samping ekstrapiramidal (EPS)</ul>"
-        }, {
+        },
+        {
             "id": 46,
             "parentId": 40,
             "title": "Kontradikasi / Perhatian",
@@ -386,7 +412,8 @@
             "title": "Kepatuhan terhadap pengobatan adalah tidak memuaskan",
             "type": "collapse",
             "content": "<ul><li>Diskusikan alasan ketidakpatuhan dengan Pasien dan pengasuhnya.<li>Dan memberikan informasi mengenai pentingnya pengobatan<li>Pertimbangkan pengobatan antipsikotik depot/suntikan jangka panjang sebagai pilihan setelah membahas kemungkinan efek samping dari sediaan oral versus depot.</ul>"
-        }, {
+        },
+        {
             "id": 61,
             "parentId": 21,
             "title": "Respon pengobatan tidak memadai (yaitu gejala tetap ada atau memburuk). kepatuhan terhadap pengobatan",
@@ -406,19 +433,22 @@
             "title": "Tabel 5: Pengelolaan Orang dengan Perilaku Agresif dan/atau Agresif",
             "type": "link",
             "content": null
-        }, {
+        },
+        {
             "id": 64,
             "parentId": 63,
             "title": "Penilaian",
             "type": "collapse",
             "content": "<ul><li>Cobalah untuk berkomunikasi dengan Pasien<li>Evaluasi penyebab mendasar:<ul><li><strong>Periksa Glukosa Darah.</strong> Jika rendah, berikan glukosa.<li><strong>Periksa tanda-tanda vital,</strong> termasuk suhu dan saturasi oksigen. Berikan oksigen jika diperlukan.<li><strong>Singkirkan delirium dan penyebab medis</strong> termasuk keracunan.<li><strong>Singkirkan penggunaan narkoba dan alkohol.</strong>Secara khusus pertimbangkan keracunan stimulan dan/atau <strong>penghentian alkohol/obat penenang. Pergi ke » SUB.</strong><li>Singkirkan agitasi akibat psikosis atau manik episode pada gangguan bipolar. Pergi ke <a href='/psikosis?menu=penilaian' style='color: #233A97;'><strong>Penilaian » PSY 1</strong></a></ul></ul>"
-        }, {
+        },
+        {
             "id": 65,
             "parentId": 63,
             "title": "Komunikasi",
             "type": "collapse",
             "content": "<ul><li>Keamanan adalah yang pertama!<li>Tetap tenang dan dorong pasien untuk berbicara<li>Gunakan suara yang tenang dan cobalah mengatasi kekhawatiran tersebut jika memungkinkan.<li>Dengarkan dengan penuh perhatian. Luangkan waktu untuk Pasien.<li>Jangan pernah menertawakan Pasien.<li>Jangan kembali agresif.<li>Cobalah mencari sumber permasalahan dan solusi bagi Pasien.<li>Libatkan pengasuh dan anggota staf lainnya.<li>Singkirkan dari situasi tersebut siapa pun yang mungkin menjadi pemicu agresi.<li>Jika semua kemungkinan telah dilakukan dan Pasien masih agresif, mungkin perlu menggunakan obat-obatan (jika tersedia) untuk mencegah cedera.</ul>"
-        }, {
+        },
+        {
             "id": 66,
             "parentId": 63,
             "title": "Sedasi dan Penggunaan Obat",

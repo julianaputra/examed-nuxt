@@ -1,5 +1,6 @@
 {
-    "data": [{
+    "data": [
+        {
             "id": 1,
             "parentId": null,
             "title": "Manajemen Protokol 1 (Depresi)",
@@ -168,7 +169,7 @@
             "content": "<ul><li><strong>Mulai</strong> 10 mg setiap hari selama satu minggu kemudian 20 mg setiap hari<li>Jika tidak ada respon dalam 6 minggu, tingkatkan menjadi 40 mg (maksimum 80 mg).<li>Lansia/sakit medis: pilihan yang lebih disukai.Mulai 10 mg setiap hari, lalu tingkatkan menjadi 20 mg (maksimum 40 mg).<li><strong>Remaja</strong> Mulai 10 mg setiap hari. Tingkatkan menjadi 20 mg setiap hari jika tidak ada respons dalam 6 minggu (maksimum 40 mg).</ul>"
         },
         {
-        "id": 25,
+            "id": 25,
             "parentId": 20,
             "title": "Efek Samping",
             "type": "collapse",
@@ -194,20 +195,20 @@
             "title": "Wanita yang Hamil atau Menyusui",
             "type": "collapse",
             "content": "<ul><li>Ikuti pengobatan untuk depresi <a href='/depresi/manajemen?item=1'  style='color: #881B6A;'>(PROTOKOL 1)</a> tetapi HINDARI obat anti depresan jika memungkinkan, terutama pada trimester pertama.<li>Jika tidak ada respon terhadap pengobatan psikologis ment, pertimbangkan untuk menggunakan dengan hati-hati antidepresan dosis terendah yang efektif.<li>Jika menyusui, hindari obat jangka panjang seperti fluoxetine.<li>KONSULTASIKAN DENGAN SPESIALIS, jika tersedia.</ul>"
-        },{
+        },
+        {
             "id": 29,
             "parentId": 1,
             "title": "Tawarkan tindak lanjut rutin",
             "type": "collapse",
-            "content":  "<p><a href='/depresi?menu=tindaklanjut' style='color: #881B6A;'><strong>klik untuk menuju ke tindak lanjut</strong></a></p>"
+            "content": "<p><a href='/depresi?menu=tindaklanjut' style='color: #881B6A;'><strong>klik untuk menuju ke tindak lanjut</strong></a></p>"
         },
         {
             "id": 30,
             "parentId": 1,
             "title": "JANGAN atasi gejalanya dengan pengobatan yang tidak efektif, misalnya suntikan vitamin.",
             "type": "heading-only",
-            "content":null
-        } 
-        
+            "content": null
+        }
     ]
 }

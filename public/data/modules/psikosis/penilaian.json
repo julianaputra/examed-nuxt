@@ -1,11 +1,13 @@
 {
-    "data": [{
+    "data": [
+        {
             "id": 1,
             "title": "Presentasi Umum Psikosa",
             "question": {
                 "title": null,
                 "type": "checkbox",
-                "content": ["Perubahan perilaku yang ditandai, mengabaikan tanggung jawab biasa yang berkaitan dengan pekerjaan, sekolah, aktivitas rumah tangga atau sosial.",
+                "content": [
+                    "Perubahan perilaku yang ditandai, mengabaikan tanggung jawab biasa yang berkaitan dengan pekerjaan, sekolah, aktivitas rumah tangga atau sosial.",
                     "Agitasi, perilaku agresif, penurunan atau peningkatan aktivitas.",
                     "Memperbaiki keyakinan salah yang tidak dimiliki oleh orang lain dalam budaya Pasien.",
                     "Mendengar suara-suara atau melihat sesuatu yang sebenarnya tidak ada.",
@@ -57,7 +59,8 @@
                 }
             },
             "href": null
-        }, {
+        },
+        {
             "id": 4,
             "title": "Hasil Assesment",
             "question": {
@@ -79,7 +82,8 @@
             "question": {
                 "title": "Memiliki beberapa gejala berikut yang terjadi secara bersamaan, berlangsung setidaknya selama 1 minggu, dan cukup parah sehingga mengganggu pekerjaan dan aktivitas sosial secara signifikan atau memerlukan rawat inap atau rawat inap:",
                 "type": "checkbox",
-                "content": ["Suasana hati meningkat atau mudah tersinggung",
+                "content": [
+                    "Suasana hati meningkat atau mudah tersinggung",
                     "Penurunan kebutuhan tidur",
                     "Peningkatan aktivitas, perasaan peningkatan energi,peningkatan banyak bicara atau bicara cepat",
                     "Hilangnya hambatan sosial yang normal seperti itu sebagai kecerobohan seksual",
@@ -98,7 +102,8 @@
                 }
             },
             "href": null
-        }, {
+        },
+        {
             "id": 6,
             "title": "Apakah ada penjelasan lain untuk gejalanya?",
             "question": {
@@ -120,7 +125,8 @@
             "question": {
                 "title": "Apakah Pasien memiliki setidaknya dua hal berikut",
                 "type": "checkbox",
-                "content": ["Delusi, keyakinan salah yang tidak dimiliki oleh orang lain dalam budaya Pasien",
+                "content": [
+                    "Delusi, keyakinan salah yang tidak dimiliki oleh orang lain dalam budaya Pasien",
                     "Halusinasi, mendengar suara-suara atau melihat sesuatu yang sebenarnya tidak ada ",
                     "Ucapan dan/atau perilaku yang tidak teratur, misalnya ucapan yang tidak koheren/tidak relevan seperti bergumam atau tertawa pada diri sendiri, penampilan yang aneh, tanda-tanda mengabaikan diri sendiri, atau terlihat tidak terawat"
                 ]
@@ -151,10 +157,11 @@
                 "target": null
             },
             "href": {
-                "path":"/psikosis/manajemen?item=1",
-                "isExternal":false
+                "path": "/psikosis/manajemen?item=1",
+                "isExternal": false
             }
-        }, {
+        },
+        {
             "id": 9,
             "title": "Hasil Assesment",
             "question": {
@@ -185,8 +192,8 @@
                 "target": null
             },
             "href": {
-                "path":"/psikosis/manajemen?item=2",
-                "isExternal":false
+                "path": "/psikosis/manajemen?item=2",
+                "isExternal": false
             }
         }
     ]

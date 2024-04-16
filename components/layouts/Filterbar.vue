@@ -1,0 +1,110 @@
+<template>
+    <div class="filter-bar">
+        <div class="row">
+            <div class="col-12 col-lg-2">
+                <div class="filter-bar__item-container">
+                    <select v-model="daerahValue" class="form-select">
+                        <option value="all">Semua Daerah</option>
+                        <option
+                            v-for="(daerah, daerahIndex) in daerahData"
+                            :key="daerahIndex"
+                            :value="daerah"
+                        >
+                            {{ daerah }}
+                        </option>
+                    </select>
+                </div>
+            </div>
+            <div v-if="props.rsuFilter" class="col-12 col-lg-2">
+                <div class="filter-bar__item-container">
+                    <select class="form-select">
+                        <option class="d-none">Pilih Tempat Praktek</option>
+                        <option>RSU Manuaba</option>
+                        <option>Bali Royal Hospital</option>
+                        <option>Balimed Hospital</option>
+                        <option>RSU Sanglah</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-12 col-lg-4 ms-auto">
+                <div class="filter-bar__item-container">
+                    <form class="row">
+                        <div class="col">
+                            <div class="input-group">
+                                <div class="input-group-text">
+                                    <Icon
+                                        name="ic:baseline-search"
+                                        class="filter-bar__search-icon"
+                                    />
+                                </div>
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    placeholder="Cari nama rumah sakit"
+                                />
+                            </div>
+                        </div>
+                        <div class="col-auto">
+                            <UiButton>Search</UiButton>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>
+
+<script setup lang="ts">
+import { Form, Field, ErrorMessage } from 'vee-validate'
+
+const props = defineProps({
+    rsuFilter: {
+        type: Boolean,
+        default: false
+    },
+    daerahData: {
+        type: Array,
+        default: () => []
+    }
+})
+
+const daerahValue = defineModel('daerahValue')
+</script>
+
+<style lang="scss" scoped>
+.filter-bar {
+    @include vwUnit(margin-top, 40);
+    @include vwUnit(margin-bottom, 15);
+    @include vwUnit(padding-top, 25);
+    @include vwUnit(padding-right, 30);
+    @include vwUnit(padding-bottom, 25);
+    @include vwUnit(padding-left, 30);
+    background-color: #ffffff;
+    border: 1px solid rgba(233, 233, 233, 1);
+    border-radius: 8px;
+
+    .form-control,
+    .form-select {
+        @include vwUnit(padding-top, 15);
+        @include vwUnit(padding-right, 15);
+        @include vwUnit(padding-bottom, 15);
+        @include vwUnit(padding-left, 15);
+    }
+
+    .input-group-text {
+        padding: 0;
+        @include vwUnit(padding-right, 10);
+        @include vwUnit(padding-left, 10);
+        background-color: transparent;
+        border-right: 0;
+    }
+
+    .input-group .form-control {
+        border-left: 0;
+    }
+
+    &__search-icon {
+        @include vwUnit(font-size, 24);
+    }
+}
+</style>

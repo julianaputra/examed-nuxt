@@ -1,5 +1,6 @@
 {
-    "data": [{
+    "data": [
+        {
             "id": 1,
             "title": "STEP 1: Penilaian Untuk Perbaikan",
             "question": {
@@ -33,8 +34,8 @@
                 "target": 4
             },
             "href": {
-                "path":"/depresi/manajemen?item=13",
-                "isExternal":false
+                "path": "/depresi/manajemen?item=13",
+                "isExternal": false
             }
         },
         {
@@ -52,7 +53,8 @@
                 "target": 5
             },
             "href": null
-        }, {
+        },
+        {
             "id": 4,
             "title": "STEP 1: Penilaian Untuk Perbaikan",
             "question": {
@@ -89,7 +91,8 @@
                 "path": "/menyakiti-diri-sendiri-bunuh-diri?menu=manajemen",
                 "isExternal": false
             }
-        }, {
+        },
+        {
             "id": 6,
             "title": "STEP 1: Penilaian Untuk Perbaikan",
             "question": {
@@ -107,7 +110,8 @@
                 "path": "/psikosis?menu=manajemen",
                 "isExternal": false
             }
-        }, {
+        },
+        {
             "id": 7,
             "title": "STEP 3: Revisi Pengobatan Seperti Yang Tepat",
             "question": {
@@ -125,7 +129,8 @@
                 }
             },
             "href": null
-        }, {
+        },
+        {
             "id": 8,
             "title": "STEP 3: Revisi Pengobatan Seperti Yang Tepat",
             "question": {
@@ -140,7 +145,8 @@
                 "target": null
             },
             "href": null
-        }, {
+        },
+        {
             "id": 9,
             "title": "STEP 3: Revisi Pengobatan Seperti Yang Tepat",
             "question": {
@@ -156,6 +162,5 @@
             },
             "href": null
         }
-
     ]
 }

@@ -1,8 +1,8 @@
 export default {
-  home: 'Beranda',
-  content: 'Ini adalah konten {value}',
+    home: 'Beranda',
+    content: 'Ini adalah konten {value}',
 
-  name: 'Nama',
-  address: 'Alamat',
-  submit: 'Kirim'
+    name: 'Nama',
+    address: 'Alamat',
+    submit: 'Kirim'
 }
