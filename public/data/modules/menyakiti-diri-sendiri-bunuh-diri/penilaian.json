@@ -1,11 +1,13 @@
 {
-    "data": [{
+    "data": [
+        {
             "id": 1,
             "title": "Kajian Kerugian Diri/Bunuh Diri Jika Pasien Hadir Dengan Salah Satu:",
             "question": {
                 "title": null,
                 "type": "checkbox",
-                "content": ["Keputusasaan dan keputusasaan yang ekstrem, pemikiran/rencana/tindakan yang ada saat ini untuk bunuh diri atau riwayatnya, tindakan menyakiti diri sendiri dengan tanda-tanda keracunan/mabuk, pendarahan akibat luka yang dibuat sendiri, kehilangan kesadaran dan/atau kelesuan ekstrem, ATAU",
+                "content": [
+                    "Keputusasaan dan keputusasaan yang ekstrem, pemikiran/rencana/tindakan yang ada saat ini untuk bunuh diri atau riwayatnya, tindakan menyakiti diri sendiri dengan tanda-tanda keracunan/mabuk, pendarahan akibat luka yang dibuat sendiri, kehilangan kesadaran dan/atau kelesuan ekstrem, ATAU",
                     "Salah satu kondisi MNS prioritas, nyeri kronis, atau tekanan emosional ekstrem"
                 ]
             },
@@ -23,7 +25,8 @@
             "question": {
                 "title": "Kaji apakah ada bukti cedera diri dan/atau tanda/gejala yang memerlukan perawatan medis segera:",
                 "type": "checkbox",
-                "content": ["Tanda-tanda keracunan atau keracunan",
+                "content": [
+                    "Tanda-tanda keracunan atau keracunan",
                     "Pendarahan akibat luka yang dibuat sendiri",
                     "Penurunan kesadaran",
                     "Kelesuan ekstrim"
@@ -34,13 +37,13 @@
             "answer": {
                 "type": "true-false",
                 "target": {
-                    "true":4,
-                    "false":3
+                    "true": 4,
+                    "false": 3
                 }
             },
             "href": null
         },
-        
+
         {
             "id": 3,
             "title": "STEP 1 : Apakah Pasien pernah melakukan tindakan menyakiti diri sendiri yang serius secara medis?",
@@ -75,7 +78,7 @@
                 "target": 3
             },
             "href": {
-                "path":"/menyakiti-diri-sendiri-bunuh-diri/manajemen?item=2",
+                "path": "/menyakiti-diri-sendiri-bunuh-diri/manajemen?item=2",
                 "isExternal": false
             }
         },
@@ -91,8 +94,7 @@
             "isStep": true,
             "answer": {
                 "type": "true-false",
-                "target": {"true":8,
-            "false":7}
+                "target": { "true": 8, "false": 7 }
             },
             "href": null
         },
@@ -111,7 +113,7 @@
                 "target": 9
             },
             "href": {
-                "path":"/menyakiti-diri-sendiri-bunuh-diri/manajemen?item=2",
+                "path": "/menyakiti-diri-sendiri-bunuh-diri/manajemen?item=2",
                 "isExternal": false
             }
         },
@@ -146,7 +148,7 @@
                 "target": 9
             },
             "href": {
-                "path":"/menyakiti-diri-sendiri-bunuh-diri/manajemen?item=3",
+                "path": "/menyakiti-diri-sendiri-bunuh-diri/manajemen?item=3",
                 "isExternal": false
             }
         },
@@ -168,10 +170,9 @@
             "isStep": true,
             "answer": {
                 "type": "true-false",
-                "target": {"true":11,
-            "false":10}
-        },
-        "href": null
+                "target": { "true": 11, "false": 10 }
+            },
+            "href": null
         },
         {
             "id": 10,
@@ -185,10 +186,9 @@
             "isStep": true,
             "answer": {
                 "type": "true-false",
-                "target": {"true":13,
-            "false":12}
-        },
-        "href": null
+                "target": { "true": 13, "false": 12 }
+            },
+            "href": null
         },
         {
             "id": 11,
@@ -206,7 +206,7 @@
             },
             "href": {
                 "path": "/menyakiti-diri-sendiri-bunuh-diri/manajemen?item=1",
-                "isExternal":false
+                "isExternal": false
             }
         },
         {
@@ -215,17 +215,19 @@
             "question": {
                 "title": "Apakah Pasien mempunyai gejala emosional yang cukup parah sehingga memerlukan penatalaksanaan klinis?",
                 "type": "checkbox",
-                "content": ["Kesulitan melakukan pekerjaan biasa, sekolah,kegiatan rumah tangga atau sosial",
-            " Pengobatan sendiri berulang kali untuk emosional kesusahan, atau gejala fisik yang tidak dapat dijelaskan",
-            "Distress yang nyata atau pencarian bantuan yang berulang-ulang"]
+                "content": [
+                    "Kesulitan melakukan pekerjaan biasa, sekolah,kegiatan rumah tangga atau sosial",
+                    " Pengobatan sendiri berulang kali untuk emosional kesusahan, atau gejala fisik yang tidak dapat dijelaskan",
+                    "Distress yang nyata atau pencarian bantuan yang berulang-ulang"
+                ]
             },
             "isResult": false,
             "isStep": true,
             "answer": {
                 "type": "true-false",
                 "target": {
-                    "true":15,
-                    "false":14
+                    "true": 15,
+                    "false": 14
                 }
             },
             "href": null
@@ -277,8 +279,8 @@
                 "target": null
             },
             "href": {
-                "path":"/menyakiti-diri-sendiri-bunuh-diri?menu=penilaian",
-                "isExternal":false
+                "path": "/menyakiti-diri-sendiri-bunuh-diri?menu=penilaian",
+                "isExternal": false
             }
         }
     ]

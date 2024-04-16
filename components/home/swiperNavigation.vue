@@ -1,29 +1,32 @@
 <template>
-  <div class="swiper-custom-nav">
-    <div class="swiper-custom-nav__button" :class="prevClass">
-      <Icon name="basil:arrow-left-outline" />
+    <div class="swiper-custom-nav">
+        <div class="swiper-custom-nav__button" :class="prevClass">
+            <Icon name="basil:arrow-left-outline" />
+        </div>
+        <div
+            class="swiper-custom-nav__pagination"
+            :class="paginationClass"
+        ></div>
+        <div class="swiper-custom-nav__button" :class="nextClass">
+            <Icon name="basil:arrow-right-outline" />
+        </div>
     </div>
-    <div class="swiper-custom-nav__pagination" :class="paginationClass"></div>
-    <div class="swiper-custom-nav__button" :class="nextClass">
-      <Icon name="basil:arrow-right-outline" />
-    </div>
-  </div>
 </template>
 
 <script setup lang="ts">
 const props = defineProps({
-  prevClass: {
-    type: String,
-    default: ''
-  },
-  nextClass: {
-    type: String,
-    default: ''
-  },
-  paginationClass: {
-    type: String,
-    default: ''
-  }
+    prevClass: {
+        type: String,
+        default: ''
+    },
+    nextClass: {
+        type: String,
+        default: ''
+    },
+    paginationClass: {
+        type: String,
+        default: ''
+    }
 })
 // const emit = defineEmits({
 //   prevAction: null,
@@ -37,43 +40,43 @@ const props = defineProps({
 
 <style lang="scss" scoped>
 .swiper-custom-nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  @include vwUnit(gap, 10);
-  @include vwUnit(margin-bottom, 30, 15);
-
-  &__button {
-    flex: 0 0 auto;
     display: flex;
     align-items: center;
-    justify-content: center;
-    @include vwUnit(width, 56);
-    @include vwUnit(height, 56);
-    @include vwUnit(font-size, 32);
-    border: 1px solid #303178;
-    border-radius: 100px;
-    cursor: pointer;
-  }
+    justify-content: space-between;
+    @include vwUnit(gap, 10);
+    @include vwUnit(margin-bottom, 30, 15);
 
-  &__pagination {
-    width: auto;
-    text-align: center;
-  }
+    &__button {
+        flex: 0 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @include vwUnit(width, 56);
+        @include vwUnit(height, 56);
+        @include vwUnit(font-size, 32);
+        border: 1px solid #303178;
+        border-radius: 100px;
+        cursor: pointer;
+    }
+
+    &__pagination {
+        width: auto;
+        text-align: center;
+    }
 }
 
 ::v-deep .swiper-button-disabled {
-  opacity: 0.3;
+    opacity: 0.3;
 }
 
 ::v-deep .swiper-pagination-bullet {
-  @include vwUnit(width, 21);
-  height: 2px;
-  background-color: #d9d9d9;
-  @include transition(all 0.3s ease);
+    @include vwUnit(width, 21);
+    height: 2px;
+    background-color: #d9d9d9;
+    @include transition(all 0.3s ease);
 }
 
 ::v-deep .swiper-pagination-bullet-active {
-  background-color: #303178;
+    background-color: #303178;
 }
 </style>

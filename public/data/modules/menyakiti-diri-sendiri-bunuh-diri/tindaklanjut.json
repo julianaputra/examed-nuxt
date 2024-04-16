@@ -1,5 +1,6 @@
 {
-    "data": [{
+    "data": [
+        {
             "id": 1,
             "title": "STEP 1: Penilaian Untuk Perbaikan",
             "question": {
@@ -66,8 +67,8 @@
                 "target": null
             },
             "href": {
-                "path":"/menyakiti-diri-sendiri-bunuh-diri?menu=penilaian",
-                "isExternal" : false
+                "path": "/menyakiti-diri-sendiri-bunuh-diri?menu=penilaian",
+                "isExternal": false
             }
         }
     ]

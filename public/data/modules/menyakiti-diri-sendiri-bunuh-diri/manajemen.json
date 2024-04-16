@@ -1,5 +1,6 @@
 {
-    "data": [{
+    "data": [
+        {
             "id": 1,
             "parentId": null,
             "title": "Protokol 1 : Tindakan Menyakiti Diri Sendiri yang Serius Secara Medis",
@@ -89,7 +90,8 @@
             "title": " Menciptakan lingkungan yang aman dan mendukung; jika memungkinkan, tawarkan ruangan terpisah yang tenang sambil menunggu perawatan.",
             "type": "heading-only",
             "content": null
-        }, {
+        },
+        {
             "id": 14,
             "parentId": 2,
             "title": "JANGAN tinggalkan Pasien sendirian.",
@@ -173,6 +175,5 @@
             "type": "collapse",
             "content": "<p><a href='/menyakiti-diri-sendiri-bunuh-diri?menu=tindaklanjut' style='color:#d9451d'>klik untuk menuju ke tindak lanjut</a></p>"
         }
-
     ]
 }

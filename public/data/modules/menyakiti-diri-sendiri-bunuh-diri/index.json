@@ -1,31 +1,31 @@
 {
-  "data": {
-    "title": "Menyakiti Diri Sendiri / Bunuh Diri",
-    "menu": [
-      {
-        "id": 1,
-        "slug": "deskripsi",
-        "title": "Deskripsi",
-        "icon": "DescIcon"
-      },
-      {
-        "id": 2,
-        "slug": "penilaian",
-        "title": "Penilaian",
-        "icon": "FollowupIcon"
-      },
-      {
-        "id": 3,
-        "slug": "manajemen",
-        "title": "Manajemen",
-        "icon": "ManagementIcon"
-      },
-      {
-        "id": 4,
-        "slug": "tindaklanjut",
-        "title": "Tindak Lanjut",
-        "icon": "ReportIcon"
-      }
-    ]
-  }
+    "data": {
+        "title": "Menyakiti Diri Sendiri / Bunuh Diri",
+        "menu": [
+            {
+                "id": 1,
+                "slug": "deskripsi",
+                "title": "Deskripsi",
+                "icon": "DescIcon"
+            },
+            {
+                "id": 2,
+                "slug": "penilaian",
+                "title": "Penilaian",
+                "icon": "FollowupIcon"
+            },
+            {
+                "id": 3,
+                "slug": "manajemen",
+                "title": "Manajemen",
+                "icon": "ManagementIcon"
+            },
+            {
+                "id": 4,
+                "slug": "tindaklanjut",
+                "title": "Tindak Lanjut",
+                "icon": "ReportIcon"
+            }
+        ]
+    }
 }

@@ -27,7 +27,8 @@
     padding-right: 15px;
 }
 
-@each $short, $mediaWidth in (sm,576px), (md,768px), (lg,992px), (xl,1200px) {
+@each $short, $mediaWidth in (sm, 576px), (md, 768px), (lg, 992px), (xl, 1200px)
+{
     @media (min-width: #{$mediaWidth}) {
         .col-#{$short}-20 {
             flex: 0 0 20%;
@@ -45,7 +46,7 @@
 $shimmer-background: #ddd !default;
 $shimmer-size: 25px !default;
 $shimmer-duration: 1s !default;
-$shimmer-color: rgba(255,255,255,.6) !default;
+$shimmer-color: rgba(255, 255, 255, 0.6) !default;
 
 .effect {
     position: relative;
@@ -56,7 +57,7 @@ $shimmer-color: rgba(255,255,255,.6) !default;
     &--shimmer {
         @extend .effect;
         &:before {
-            content: "";
+            content: '';
             position: absolute;
             z-index: 25;
             top: 0;
@@ -66,7 +67,7 @@ $shimmer-color: rgba(255,255,255,.6) !default;
             background-color: $shimmer-background;
         }
         &:after {
-            content: "";
+            content: '';
             position: absolute;
             z-index: 25;
             top: -25%;
@@ -119,7 +120,7 @@ $ripple-color-dark: rgba(0, 0, 0, 0.1) !default;
     width: 1px;
     height: 1px;
     background-color: $ripple-color-light;
-    transition: all 0.4s cubic-bezier(0.4, 0.0, 0.2, 1);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     border-radius: 50%;
     pointer-events: none;
 }
@@ -143,7 +144,7 @@ $spacingMap: (
     t: top,
     r: right,
     b: bottom,
-    l: left,
+    l: left
 );
 
 $spacingStart: 0;
@@ -163,7 +164,7 @@ $i: $spacingStart;
             $i: $i + $spacingIncrement;
         }
     }
-    @if ( $short == x ) {
+    @if ($short == x) {
         @while $i <= $spacingTarget {
             .m#{$short}-#{$i}px {
                 margin-right: #{$i}px;
@@ -175,8 +176,8 @@ $i: $spacingStart;
             }
             $i: $i + $spacingIncrement;
         }
-    } 
-    @if ( $short == y ) {
+    }
+    @if ($short == y) {
         @while $i <= $spacingTarget {
             .m#{$short}-#{$i}px {
                 margin-top: #{$i}px;
@@ -197,7 +198,7 @@ $i: $spacingStart;
             padding-#{$direction}: #{$i}px;
         }
         $i: $i + $spacingIncrement;
-    } 
+    }
 }
 
 //=======================================================//

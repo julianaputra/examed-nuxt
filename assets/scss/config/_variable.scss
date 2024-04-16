@@ -3,20 +3,13 @@
 
 $themeUnit: 'vw';
 
-$desktopBreakpoints: (
-    1920,
-    1199
-);
+$desktopBreakpoints: (1920, 1199);
 
-$mobileBreakpoints: (
-    767,
-    480,
-    320
-);
+$mobileBreakpoints: (767, 480, 320);
 
 $color: (
     red: (
-        default: #ff00ff,
+        default: #ff00ff
     ),
     green: (
         default: green
@@ -44,80 +37,81 @@ $fontSizes: (
             font-size: 48
         ),
         767: (
-            font-size: 36,
+            font-size: 36
         ),
         320: (
             font-size: 30
         ),
         mobile: (
-            font-size: 36,
+            font-size: 36
         )
     ),
     heading-1: (
         desktop: (
-            font-size: 40,
+            font-size: 40
         ),
         mobile: (
-            font-size: 30,
+            font-size: 30
         )
     ),
     heading-2: (
         desktop: (
-            font-size: 32,
+            font-size: 32
         ),
         mobile: (
-            font-size: 28,
+            font-size: 28
         )
     ),
     heading-3: (
         desktop: (
-            font-size: 24,
+            font-size: 24
         ),
         mobile: (
-            font-size: 18,
+            font-size: 18
         )
     ),
     card-title-1: (
         desktop: (
             font-size: 24,
+            line-height: math.div(26.4, 24)
         ),
         1199: (
-            font-size: 20,
+            font-size: 20
         ),
         mobile: (
-            font-size: 18,
+            font-size: 18
         )
     ),
     title-1: (
         desktop: (
-            font-size: 20,
+            font-size: 20
         ),
         mobile: (
-            font-size: 18,
+            font-size: 18
         )
     ),
     body-medium: (
         desktop: (
-            font-size: 18,
+            font-size: 18
         ),
         mobile: (
-            font-size: 18,
+            font-size: 18
         )
     ),
     body: (
         desktop: (
-            font-size: 18,
+            font-size: 18
         ),
         mobile: (
-            font-size: 16,
+            font-size: 16
         )
     ),
     body-s: (
         desktop: (
-            font-size: 16,
+            font-size: 16
         ),
         mobile: (
-            font-size: 14,
+            font-size: 14
         )
     ),
     body-s-underline: (
@@ -126,35 +120,35 @@ $fontSizes: (
             text-decoration: underline
         ),
         mobile: (
-            font-size: 14,
+            font-size: 14
         )
     ),
     body-s-medium: (
         desktop: (
             font-size: 16,
-            font-weight: 500,
+            font-weight: 500
         ),
         mobile: (
-            font-size: 14,
+            font-size: 14
         )
     ),
     caption-1: (
         desktop: (
-            font-size: 18,
+            font-size: 18
         ),
         1199: (
             font-size: 16
         ),
         mobile: (
-            font-size: 14,
-        ),
+            font-size: 14
+        )
     ),
     caption-2: (
         desktop: (
-            font-size: 14,
+            font-size: 14
         ),
         mobile: (
-            font-size: 12,
-        ),
-    ),
+            font-size: 12
+        )
+    )
 );

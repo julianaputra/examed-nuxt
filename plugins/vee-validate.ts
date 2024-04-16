@@ -6,13 +6,13 @@ import id from '@vee-validate/i18n/dist/locale/id.json'
 // Define the rule globally
 
 export default defineNuxtPlugin(() => {
-  configure({
-    generateMessage: localize({
-      en,
-      id
-    }),
-    validateOnBlur: false
-  })
+    configure({
+        generateMessage: localize({
+            en,
+            id
+        }),
+        validateOnBlur: false
+    })
 
-  defineRule('required', required)
+    defineRule('required', required)
 })

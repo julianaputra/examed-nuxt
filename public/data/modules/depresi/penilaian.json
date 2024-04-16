@@ -1,5 +1,6 @@
 {
-    "data": [{
+    "data": [
+        {
             "id": 1,
             "title": "Presentasi Umum Depresi",
             "question": {
@@ -187,8 +188,8 @@
             "answer": {
                 "type": "true-false",
                 "target": {
-                    "true":8,
-                    "false":19
+                    "true": 8,
+                    "false": 19
                 }
             },
             "href": null
@@ -227,8 +228,8 @@
                 "target": null
             },
             "href": {
-                "path":"/depresi/manajemen?item=2",
-                "isExternal" : false
+                "path": "/depresi/manajemen?item=2",
+                "isExternal": false
             }
         },
         {
@@ -246,8 +247,8 @@
                 "target": 18
             },
             "href": {
-                "path":"/depresi/manajemen?item=1",
-                "isExternal" : false
+                "path": "/depresi/manajemen?item=1",
+                "isExternal": false
             }
         },
         {
@@ -273,8 +274,8 @@
                 }
             },
             "href": {
-                "path":"/depresi/manajemen?item=1",
-                "isExternal" : false
+                "path": "/depresi/manajemen?item=1",
+                "isExternal": false
             }
         },
         {
@@ -311,7 +312,7 @@
                 "target": 18
             },
             "href": {
-                "path":"/depresi/manajemen?item=1",
+                "path": "/depresi/manajemen?item=1",
                 "isExternal": false
             }
         },
@@ -327,10 +328,9 @@
             "isStep": false,
             "answer": {
                 "type": "continue",
-                "target": null 
+                "target": null
             },
-            "href": null  
-            
+            "href": null
         },
         {
             "id": 18,
@@ -346,10 +346,10 @@
                 "type": "continue",
                 "target": 20
             },
-            "href": null 
+            "href": null
         },
         {
-            "id": 19    ,
+            "id": 19,
             "title": "Hasil Assesment",
             "question": {
                 "title": "Tidak ada pengobatan",
@@ -360,9 +360,9 @@
             "isStep": false,
             "answer": {
                 "type": "continue",
-                "target": null 
+                "target": null
             },
-            "href": null 
+            "href": null
         },
         {
             "id": 20,
@@ -376,11 +376,11 @@
             "isStep": false,
             "answer": {
                 "type": "continue",
-                "target": null 
+                "target": null
             },
             "href": {
-                "path":"/depresi/manajemen?item=1",
-                "isExternal" : false
+                "path": "/depresi/manajemen?item=1",
+                "isExternal": false
             }
         }
     ]

@@ -14,7 +14,7 @@
 }
 
 // modified known color
-@function colorMod( $color, $lightValue ) {
+@function colorMod($color, $lightValue) {
     @return color.scale($color, $lightness: $lightValue);
 }
 
@@ -29,14 +29,12 @@
 }
 
 // theme unit functions
-@function unit( $value, $breakpoint ) {
-    @if( var.$themeUnit == 'vw' ) {
-        @return vwSize( $value, $breakpoint );
-    }
-    @else if ( var.$themeUnit == 'rem' ) {
-        @return remSize( $value );
-    }
-    @else if ( var.$themeUnit == 'px' ) {
+@function unit($value, $breakpoint) {
+    @if (var.$themeUnit == 'vw') {
+        @return vwSize($value, $breakpoint);
+    } @else if (var.$themeUnit == 'rem') {
+        @return remSize($value);
+    } @else if (var.$themeUnit == 'px') {
         @return #{$value}px;
     }
 }

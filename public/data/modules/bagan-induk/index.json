@@ -1,0 +1,44 @@
+{
+    "data": {
+        "title": "Bagan Induk",
+        "menu": [
+            {
+                "slug": "deskripsi",
+                "title": "Deskripsi"
+            },
+            {
+                "slug": "prinsip-umum",
+                "title": "Prinsip Umum",
+                "sub": [
+                    {
+                        "slug": "keterampilan",
+                        "title": "Gunakan Keterampilan Komunikasi yang Efektif"
+                    },
+                    {
+                        "slug": "meningkatkan",
+                        "title": "Meningkatkan Rasa Hormat dan Martabat"
+                    }
+                ]
+            },
+            {
+                "slug": "penting",
+                "title": "Pentingnya Praktik Klinis Kesehatan Mental",
+                "sub": [
+                    {
+                        "slug": "menilai",
+                        "title": "Menilai Kesehatan Fisik"
+                    },
+                    {
+                        "slug": "melakukan",
+                        "title": "Melakukan Penilaian MNS"
+                    },
+                    {
+                        "slug": "kelola",
+                        "title": "Kelola Kondisi MNS"
+                    }
+                ]
+            }
+        ],
+        "konten": "<div id='deskripsi'><h2>Deskripsi</h2><p>Modul ini menguraikan prinsip-prinsip perawatan penting bagi semua orang yang mencari layanan kesehatan, termasuk mereka yang memiliki kondisi MNS, dan pengasuhnya. Bagian pertama dari modul ini mencakup prinsip-prinsip umum perawatan klinis dan bertujuan untuk meningkatkan penghormatan terhadap privasi orang yang mencari perawatan untuk kondisi MNS, membina hubungan baik antara penyedia layanan kesehatan, pengguna layanan dan perawat mereka, dan memastikan perawatan diberikan. dengan cara yang tidak menghakimi, tidak menstigmatisasi, dan mendukung. Bagian kedua mencakup hal-hal penting dari praktik klinis kesehatan mental dan bertujuan untuk memberikan gambaran umum kepada penyedia layanan kesehatan tentang penilaian dan pengelolaan kondisi MNS di rangkaian non-spesialisasi.</p><h3>Prinsip Umum</h3><ul><li>Gunakan keterampilan komunikasi yang efektif</li><li>Meningkatkan rasa hormat dan martabat</li></ul><h3>Pentingnya Praktik Klinis Kesehatan Mental</h3><ul><li>Menilai kesehatan fisik</li><li>Melakukan penilaian MNS</li><li>Kelola kondisi MNS</li></ul></div><div id='prinsip-umum'><h2>Prinsip Umum</h2><div id='keterampilan'><h3>I. Gunakan Keterampilan Komunikasi yang Efektif</h3><p>Penggunaan keterampilan komunikasi yang efektif memungkinkan penyedia layanan kesehatan memberikan layanan berkualitas baik kepada orang dewasa, remaja, dan anak-anak dengan kondisi mental, neurologis, dan penggunaan narkoba (MNS). Pertimbangkan keterampilan dan tip komunikasi inti berikut ini</p><h4>Tips Komunikasi #1 : Ciptakan lingkungan yang memfasilitasi komunikasi terbuka</h4><ul><li>Temui orang tersebut di ruang pribadi, jika memungkinkan.</li><li>Bersikaplah ramah dan lakukan perkenalan dengan cara yang sesuai dengan budaya.</li><li>Pertahankan kontak mata dan gunakan bahasa tubuh dan ekspresi wajah yang memfasilitasi kepercayaan.</li><li>Jelaskan bahwa informasi yang dibahas selama kunjungan akan dijaga kerahasiaannya dan tidak akan dibagikan tanpa izin sebelumnya.</li><li>Jika ada pengasuh, sarankan untuk berbicara dengan orang tersebut sendirian (kecuali anak kecil) dan dapatkan persetujuannya berbagi informasi klinis.</li><li>Saat mewawancarai seorang remaja putri, pertimbangkan untuk menghadirkan anggota staf atau pengasuh perempuan lainnya.</li></ul><h4>Tips Komunikasi #2 : Libatkan orang tersebut</h4><ul><li>Libatkan orang tersebut (dan dengan persetujuan mereka, pengasuh dan keluarga mereka) dalam semua aspek penilaian dan manajemen sebanyak mungkin. Ini termasuk anak-anak, remaja dan orang dewasa yang lebih tua.</li></ul><h4>Tips Komunikasi #3 : Mulailah dengan mendengarkan</h4><ul><li>Dengarkan secara aktif. Bersikaplah empati dan sensitif</li><li>Biarkan orang tersebut berbicara tanpa interupsi.</li><li>Jika riwayatnya tidak jelas, bersabarlah dan minta klarifikasi.</li><li>Untuk anak-anak, gunakanlah bahasa yang dapat mereka pahami. Misalnya bertanya tentang minatnya (mainan, teman, sekolah, dll).</li><li>Bagi remaja, sampaikan bahwa Anda memahami perasaannya dan situasi.</li></ul><h4>Tips Komunikasi #4 : Bersikaplah ramah, hormat, dan tidak menghakimi setiap saat</h4><ul><li>Selalu bersikap hormat</li><li>Jangan menilai orang dari perilaku dan penampilannya.</li><li>Tetap tenang dan sabar.</li></ul><h4>Tips Komunikasi #5 : Gunakan keterampilan komunikasi verbal yang baik</h4><ul><li>Gunakan bahasa yang sederhana. Jelas dan ringkas</li><li>Gunakan pertanyaan terbuka, rangkum dan klarifikasi pernyataan</li><li>Ringkaslah dan ulangi poin-poin penting.</li><li>Izinkan orang tersebut untuk mengajukan pertanyaan tentang informasi yang diberikan.</li></ul><h4>Tips Komunikasi #6 : Tanggapi dengan kepekaan ketika orang mengungkapkan pengalaman sulit (misalnya penyerangan seksual, kekerasan, atau tindakan menyakiti diri sendiri</h4><ul><li>Tunjukkan kepekaan ekstra dengan topik yang sulit.</li><li>Ingatkan orang tersebut bahwa apa yang mereka katakan kepada Anda akan tetap ada rahasia.</li><li>Akui bahwa mungkin sulit bagi orang tersebut untuk mengungkapkan informasi tersebut.</li></ul></div></div>"
+    }
+}

@@ -1,6 +1,6 @@
 {
-    "data":[
-        { 
+    "data": [
+        {
             "id": 1,
             "title": "STEP 1: Penilaian Untuk Perbaikan",
             "question": {
@@ -13,8 +13,8 @@
             "answer": {
                 "type": "true-false",
                 "target": {
-                    "true":3,
-                    "false":2
+                    "true": 3,
+                    "false": 2
                 }
             },
             "href": null
@@ -32,12 +32,13 @@
             "answer": {
                 "type": "true-false",
                 "target": {
-                    "true":5,
-                    "false":4
+                    "true": 5,
+                    "false": 4
                 }
             },
             "href": null
-        },{
+        },
+        {
             "id": 3,
             "title": "STEP 1: Penilaian Untuk Perbaikan",
             "question": {
@@ -52,7 +53,8 @@
                 "target": 6
             },
             "href": null
-        },{
+        },
+        {
             "id": 4,
             "title": "STEP 1: Penilaian Untuk Perbaikan",
             "question": {
@@ -86,7 +88,8 @@
                 "target": 6
             },
             "href": null
-        },{
+        },
+        {
             "id": 6,
             "title": "STEP 2: Perawatan Rutin Monitor",
             "question": {
@@ -101,8 +104,8 @@
                 "target": 7
             },
             "href": {
-                "path" :"/psikosis/manajemen?item=21",
-                "isExternal":false
+                "path": "/psikosis/manajemen?item=21",
+                "isExternal": false
             }
         },
         {
