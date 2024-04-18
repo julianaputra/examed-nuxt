@@ -3,7 +3,7 @@
         <div class="row align-items-center">
             <div class="col-12 col-lg-6">
                 <p class="page-bar__info">
-                    Menampilkan <b>{{ biggestIndexNumber }}</b> dari
+                    Terdapat
                     <b>{{ totalRows }}</b> data rumah sakit
                 </p>
             </div>

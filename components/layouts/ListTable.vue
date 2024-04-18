@@ -13,7 +13,7 @@
                 </tr>
             </thead>
             <tbody>
-                <tr v-for="(item, itemIndex) in showItems" :key="itemIndex">
+                <tr v-for="(item, index) in displayRecords" :key="index">
                     <td>{{ item.no }}</td>
                     <td>{{ item.kode }}</td>
                     <td class="list-table__name">{{ item.nama }}</td>
@@ -40,20 +40,28 @@ const props = defineProps({
     header: {
         type: Array,
         default: () => []
+    },
+    rsList: {
+        type: Array,
+        default: () => []
+    },
+    displayRecords: {
+        type: Array,
+        default: () => []
     }
 })
 
-const items = defineModel('items')
+// const items = defineModel('items')
 
-const currentLocation = defineModel('currentLocation')
+// const currentLocation = defineModel('currentLocation')
 
-const showItems = computed(() => {
-    return items.value[currentLocation.value - 1]
-})
+// const showItems = computed(() => {
+//     return items.value[currentLocation.value - 1]
+// })
 
-function itemNumber(index: Number) {
-    return +index + 1
-}
+// function itemNumber(index: Number) {
+//     return +index + 1
+// }
 </script>
 
 <style lang="scss" scoped>

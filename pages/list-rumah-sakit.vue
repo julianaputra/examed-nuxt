@@ -7,19 +7,24 @@
                 <LayoutsFilterbar
                     v-model:daerah-value="daerahFilter"
                     :daerah-data="daerahData"
+                    @search="searchRumahSakit"
                 />
-
                 <LayoutsListTable
                     v-model:items="pageData.itemList"
                     v-model:currentLocation="pageData.currentPage"
                     :header="pageData.tableHeader"
+                    :rs-list="rsList"
+                    :display-records="displayRecords"
                 />
 
                 <LayoutsPaginationBarVue2
-                    v-model="pageData.currentPage"
+                    v-model="currentPage"
                     :biggest-index-number="pageData.biggestIndexNumber"
                     :total-rows="pageData.totalItem"
-                    :per-page="pageData.itemPerPage"
+                    :per-page="perPage"
+                    :new-total-page="totalPage"
+                    :display-records="displayRecords.length"
+                    :result-list="resultList"
                 />
             </div>
         </div>
@@ -49,14 +54,65 @@ const pageData = ref({
     tableData: [],
     totalPage: 1,
     totalItem: 1,
-    itemPerPage: 5,
-    currentPage: 1,
+    // itemPerPage: 5,
+    // currentPage: 1,
     itemList: [],
     biggestIndexNumber: 1
 })
 
 const daerahData = ref([])
 const daerahFilter = ref('all')
+// new variable
+const rsList: any = ref([])
+const resultList: any = ref(null)
+const currentPage: any = ref(1)
+const perPage: any = ref(5)
+const searchQuery: Ref<string> = ref('')
+
+watch(daerahFilter, () => {
+    currentPage.value = 1
+})
+watch(searchQuery, () => {
+    currentPage.value = 1
+})
+
+const displayRecords = computed(() => {
+    if (!rsList.value) {
+        return []
+    }
+    let result: any = rsList.value
+    if (daerahFilter.value !== 'all') {
+        result = result.filter((item: any) =>
+            item.daerah.toLowerCase().includes(daerahFilter.value.toLowerCase())
+        )
+        resultList.value = result.length
+    } else {
+        result = rsList.value
+    }
+
+    if (searchQuery.value !== '') {
+        result = result.filter((item: any) =>
+            item.nama.toLowerCase().includes(searchQuery.value.toLowerCase())
+        )
+        resultList.value = result.length
+    }
+    pageData.value.totalItem = result.length
+    // pagination
+    const startIndex = perPage.value * (currentPage.value - 1)
+    const endIndex = startIndex + perPage.value
+    result = result.slice(startIndex, endIndex)
+    return result
+})
+
+const totalPage = computed(() => {
+    const totalPage = Math.ceil(rsList.value.length / perPage.value)
+    // if (currentPage.value > 1 && currentPage.value > totalPage) {
+    return totalPage
+    // }
+})
+const searchRumahSakit = (keyword: any) => {
+    searchQuery.value = keyword
+}
 
 onMounted(() => {
     nextTick(async () => {
@@ -66,6 +122,8 @@ onMounted(() => {
         const res = data.data.value as any
 
         pageData.value.tableData = res.data
+        rsList.value = res.data
+        resultList.value = pageData.value.tableData.length
 
         pageData.value.totalItem = pageData.value.tableData.length
 
@@ -82,11 +140,11 @@ onMounted(() => {
         for (
             let i = 0;
             i < pageData.value.tableData.length;
-            i += pageData.value.itemPerPage
+            i += perPage.value
         ) {
             const itemGroup = pageData.value.tableData.slice(
                 i,
-                i + pageData.value.itemPerPage
+                i + perPage.value
             )
             pageData.value.itemList.push(itemGroup)
         }
@@ -109,54 +167,54 @@ onMounted(() => {
 })
 
 watch(
-    () => pageData.value.currentPage,
+    () => currentPage.value,
     (updatedValue) => {
         setBiggestIndexNumber()
     }
 )
 
-watch(daerahFilter, (value) => {
-    pageData.value.itemList = []
-    pageData.value.currentPage = 1
-    if (value == 'all') {
-        pageData.value.totalItem = pageData.value.tableData.length
+// watch(daerahFilter, (value) => {
+//     pageData.value.itemList = []
+//     currentPage.value = 1
+//     if (value == 'all') {
+//         pageData.value.totalItem = pageData.value.tableData.length
 
-        for (
-            let i = 0;
-            i < pageData.value.tableData.length;
-            i += pageData.value.itemPerPage
-        ) {
-            const itemGroup = pageData.value.tableData.slice(
-                i,
-                i + pageData.value.itemPerPage
-            )
-            pageData.value.itemList.push(itemGroup)
-        }
-    } else {
-        const newItemList = pageData.value.tableData.filter(
-            (item) => item.daerah == value
-        )
+//         for (
+//             let i = 0;
+//             i < pageData.value.tableData.length;
+//             i += pageData.value.itemPerPage
+//         ) {
+//             const itemGroup = pageData.value.tableData.slice(
+//                 i,
+//                 i + pageData.value.itemPerPage
+//             )
+//             pageData.value.itemList.push(itemGroup)
+//         }
+//     } else {
+//         const newItemList = pageData.value.tableData.filter(
+//             (item) => item.daerah == value
+//         )
 
-        pageData.value.totalItem = newItemList.length
+//         pageData.value.totalItem = newItemList.length
 
-        for (
-            let i = 0;
-            i < newItemList.length;
-            i += pageData.value.itemPerPage
-        ) {
-            const itemGroup = newItemList.slice(
-                i,
-                i + pageData.value.itemPerPage
-            )
-            pageData.value.itemList.push(itemGroup)
-        }
-    }
-})
+//         for (
+//             let i = 0;
+//             i < newItemList.length;
+//             i += pageData.value.itemPerPage
+//         ) {
+//             const itemGroup = newItemList.slice(
+//                 i,
+//                 i + pageData.value.itemPerPage
+//             )
+//             pageData.value.itemList.push(itemGroup)
+//         }
+//     }
+// })
 
 function setBiggestIndexNumber() {
     pageData.value.biggestIndexNumber =
-        pageData.value.itemList[pageData.value.currentPage - 1][
-            pageData.value.itemList[pageData.value.currentPage - 1].length - 1
+        pageData.value.itemList[currentPage.value - 1][
+            pageData.value.itemList[currentPage.value - 1].length - 1
         ].no
 }
 

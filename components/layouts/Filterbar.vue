@@ -38,13 +38,14 @@
                                     />
                                 </div>
                                 <input
+                                    v-model.trim="keyword"
                                     type="text"
                                     class="form-control"
                                     placeholder="Cari nama rumah sakit"
                                 />
                             </div>
                         </div>
-                        <div class="col-auto">
+                        <div class="col-auto" @click="searchRumahSakit">
                             <UiButton>Search</UiButton>
                         </div>
                     </form>
@@ -67,8 +68,15 @@ const props = defineProps({
         default: () => []
     }
 })
+const emit = defineEmits(['search'])
 
 const daerahValue = defineModel('daerahValue')
+
+const keyword: any = ref('')
+
+const searchRumahSakit = () => {
+    emit('search', keyword.value)
+}
 </script>
 
 <style lang="scss" scoped>
