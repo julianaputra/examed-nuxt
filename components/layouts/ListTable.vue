@@ -9,10 +9,11 @@
                     >
                         {{ header }}
                     </th>
-                    <th>Action</th>
+                    <th v-if="!$props.psikiater">Action</th>
                 </tr>
             </thead>
-            <tbody>
+            <!-- Table in list rumah sakit page -->
+            <tbody v-if="!$props.psikiater">
                 <tr v-for="(item, index) in displayRecords" :key="index">
                     <td>{{ item.no }}</td>
                     <td>{{ item.kode }}</td>
@@ -29,6 +30,19 @@
                             Google Maps
                         </a>
                     </td>
+                </tr>
+            </tbody>
+            <!-- table in psikiater page -->
+            <tbody v-if="$props.psikiater">
+                <tr v-for="(item, index) in displayRecords" :key="index">
+                    <td>{{ index + 1 }}</td>
+                    <td>{{ item.namaDokter }}</td>
+                    <td class="list-table__name">{{ item.nama }}</td>
+                    <td class="list-table__typo">
+                        {{ item.daerah }}
+                    </td>
+                    <td>{{ item.alamat }}</td>
+                    <td class="list-table__location">{{ item.telepon }}</td>
                 </tr>
             </tbody>
         </table>
@@ -48,6 +62,10 @@ const props = defineProps({
     displayRecords: {
         type: Array,
         default: () => []
+    },
+    psikiater: {
+        type: Boolean,
+        default: false
     }
 })
 

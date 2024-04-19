@@ -4,7 +4,7 @@
             <div class="col-12 col-lg-2">
                 <div class="filter-bar__item-container">
                     <select v-model="daerahValue" class="form-select">
-                        <option value="all">Semua Daerah</option>
+                        <option value="all">{{ titleSort }}</option>
                         <option
                             v-for="(daerah, daerahIndex) in daerahData"
                             :key="daerahIndex"
@@ -15,14 +15,19 @@
                     </select>
                 </div>
             </div>
-            <div v-if="props.rsuFilter" class="col-12 col-lg-2">
+            <div v-if="props.rsuFilter" class="col-12 col-lg-3">
                 <div class="filter-bar__item-container">
-                    <select class="form-select">
-                        <option class="d-none">Pilih Tempat Praktek</option>
-                        <option>RSU Manuaba</option>
-                        <option>Bali Royal Hospital</option>
-                        <option>Balimed Hospital</option>
-                        <option>RSU Sanglah</option>
+                    <select v-model="praktekValue" class="form-select">
+                        <option value="all" class="">
+                            Pilih Tempat Praktek
+                        </option>
+                        <option
+                            v-for="(praktek, index) in $props.praktekList"
+                            :key="index"
+                            :value="praktek"
+                        >
+                            {{ praktek }}
+                        </option>
                     </select>
                 </div>
             </div>
@@ -66,11 +71,20 @@ const props = defineProps({
     daerahData: {
         type: Array,
         default: () => []
+    },
+    praktekList: {
+        type: Array,
+        default: () => []
+    },
+    titleSort: {
+        type: String,
+        default: ''
     }
 })
 const emit = defineEmits(['search'])
 
 const daerahValue = defineModel('daerahValue')
+const praktekValue = defineModel('praktekValue')
 
 const keyword: any = ref('')
 
