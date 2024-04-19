@@ -1,7 +1,7 @@
 <template>
     <div class="filter-bar">
         <div class="row">
-            <div class="col-12 col-lg-2">
+            <div class="col-12 col-lg-3 col-xl-2">
                 <div class="filter-bar__item-container">
                     <select v-model="daerahValue" class="form-select">
                         <option value="all">{{ titleSort }}</option>
@@ -31,7 +31,7 @@
                     </select>
                 </div>
             </div>
-            <div class="col-12 col-lg-4 ms-auto">
+            <div class="col-12 col-lg-6 col-xl-4 ms-auto">
                 <div class="filter-bar__item-container">
                     <form class="row">
                         <div class="col">
@@ -107,10 +107,20 @@ const searchRumahSakit = () => {
 
     .form-control,
     .form-select {
+        @include vwUnit(margin-top, 7.5);
+        @include vwUnit(margin-bottom, 7.5);
         @include vwUnit(padding-top, 15);
         @include vwUnit(padding-right, 15);
         @include vwUnit(padding-bottom, 15);
         @include vwUnit(padding-left, 15);
+    }
+
+    .input-group {
+        @include vwUnit(margin-top, 7.5);
+        @include vwUnit(margin-bottom, 7.5);
+        .form-control {
+            margin: 0;
+        }
     }
 
     .input-group-text {
@@ -128,5 +138,10 @@ const searchRumahSakit = () => {
     &__search-icon {
         @include vwUnit(font-size, 24);
     }
+}
+
+::v-deep .themeBtn {
+    @include vwUnit(margin-top, 7.5);
+    @include vwUnit(margin-bottom, 7.5);
 }
 </style>

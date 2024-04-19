@@ -1,14 +1,14 @@
 <template>
     <div class="page-bar">
         <div class="row align-items-center">
-            <div class="col-12 col-lg-6">
-                <p class="page-bar__info">
+            <div class="col-12 col-md-6">
+                <p class="page-bar__info text-center text-md-start">
                     Terdapat
                     <b>{{ totalRows }}</b> data rumah sakit
                 </p>
             </div>
-            <div class="col-12 col-lg-6">
-                <nav aria-label="Page navigation example">
+            <div class="col-12 col-md-6">
+                <nav aria-label="Page navigation example bg-primary">
                     <ul class="pagination">
                         <li
                             class="page-item"
@@ -228,6 +228,10 @@ export default {
     .pagination {
         justify-content: end;
         margin: 0;
+        @include vwMobile(margin-top, 5);
+        @media screen and (max-width: 767px) {
+            justify-content: center;
+        }
     }
 
     .page-item {
