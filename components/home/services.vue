@@ -12,22 +12,17 @@
                     <nuxt-link
                         :to="service.slug"
                         class="other-services__card service-card"
-                        @mouseover="activeIcon(service.id)"
-                        @mouseleave="deActiveIcon"
                     >
                         <div class="service-card__image-container">
                             <img
-                                v-if="idHoverIcon == service.id"
-                                :src="service.iconActive"
-                                :alt="`${service.title} icon`"
-                                class="ratio-item"
-                            />
-
-                            <img
-                                v-else
                                 :src="service.icon"
                                 :alt="`${service.title} icon`"
                                 class="ratio-item"
+                            />
+                            <img
+                                :src="service.iconActive"
+                                :alt="`${service.title} icon`"
+                                class="ratio-item ratio-item__active"
                             />
                         </div>
                         <div class="service-card__body">
@@ -85,15 +80,6 @@ const pageData = ref({
         }
     ]
 })
-
-const idHoverIcon = ref(null)
-
-const activeIcon = (id: any) => {
-    idHoverIcon.value = id
-}
-const deActiveIcon = () => {
-    idHoverIcon.value = null
-}
 </script>
 
 <style lang="scss" scoped>
@@ -170,23 +156,18 @@ const deActiveIcon = () => {
     &__icon-container {
         transition: all 0.3s ease;
     }
-    & img {
-        animation-name: fadeIn;
-        animation-duration: 0.8s;
-        transition: all 0.3s ease;
-    }
+}
+.ratio-item__active {
+    opacity: 0;
+    transition: opacity 0.5s ease;
 }
 
 .service-card:hover {
     background-color: #e9f0fc;
-}
 
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-    100% {
+    .ratio-item__active {
         opacity: 1;
+        display: block;
     }
 }
 </style>
