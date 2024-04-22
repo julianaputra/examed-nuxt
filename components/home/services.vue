@@ -12,9 +12,19 @@
                     <nuxt-link
                         :to="service.slug"
                         class="other-services__card service-card"
+                        @mouseover="activeIcon(service.id)"
+                        @mouseleave="deActiveIcon"
                     >
                         <div class="service-card__image-container">
                             <img
+                                v-if="idHoverIcon == service.id"
+                                :src="service.iconActive"
+                                :alt="`${service.title} icon`"
+                                class="ratio-item"
+                            />
+
+                            <img
+                                v-else
                                 :src="service.icon"
                                 :alt="`${service.title} icon`"
                                 class="ratio-item"
@@ -53,22 +63,37 @@ const pageData = ref({
     title: 'Layanan Lainnya',
     services: [
         {
+            id: 1,
             title: 'Bagan Induk',
             slug: '/layanan/bagan-induk',
-            icon: '/images/home-other-service__bagan.svg'
+            icon: '/images/home-other-service__bagan.svg',
+            iconActive: '/images/home-other-service__bagan-hover.svg'
         },
         {
+            id: 2,
             title: 'Perawatan & Praktek Penting',
             slug: '/layanan/perawatan-praktek-penting',
-            icon: '/images/home-other-service__layanan.svg'
+            icon: '/images/home-other-service__layanan.svg',
+            iconActive: '/images/home-other-service__layanan-hover.svg'
         },
         {
+            id: 3,
             title: 'Manajemen Kedokteran Keluarga',
             slug: '/layanan/manajemen-kedokteran-keluarga',
-            icon: '/images/home-other-service__manajemen.svg'
+            icon: '/images/home-other-service__manajemen.svg',
+            iconActive: '/images/home-other-service__manajemen-hover.svg'
         }
     ]
 })
+
+const idHoverIcon = ref(null)
+
+const activeIcon = (id: any) => {
+    idHoverIcon.value = id
+}
+const deActiveIcon = () => {
+    idHoverIcon.value = null
+}
 </script>
 
 <style lang="scss" scoped>
@@ -144,6 +169,24 @@ const pageData = ref({
 
     &__icon-container {
         transition: all 0.3s ease;
+    }
+    & img {
+        animation-name: fadeIn;
+        animation-duration: 0.8s;
+        transition: all 0.3s ease;
+    }
+}
+
+.service-card:hover {
+    background-color: #e9f0fc;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
     }
 }
 </style>
