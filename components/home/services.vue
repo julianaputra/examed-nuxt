@@ -22,7 +22,7 @@
                             <img
                                 :src="service.iconActive"
                                 :alt="`${service.title} icon`"
-                                class="ratio-item ratio-item__active"
+                                class="ratio-item ratio-item--active"
                             />
                         </div>
                         <div class="service-card__body">
@@ -157,15 +157,17 @@ const pageData = ref({
         transition: all 0.3s ease;
     }
 }
-.ratio-item__active {
-    opacity: 0;
-    transition: opacity 0.5s ease;
+.ratio-item {
+    &--active {
+        opacity: 0;
+        transition: opacity 0.5s ease;
+    }
 }
 
 .service-card:hover {
     background-color: #e9f0fc;
 
-    .ratio-item__active {
+    .ratio-item--active {
         opacity: 1;
         display: block;
     }
