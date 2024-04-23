@@ -2,20 +2,14 @@
     <div class="page-bar">
         <div class="row align-items-center">
             <div class="col-12 col-md-6">
-                <p
-                    v-if="totalRows > 0"
-                    class="page-bar__info text-center text-md-start"
-                >
+                <p class="page-bar__info text-center text-md-start">
                     Terdapat
                     <b>{{ totalRows }}</b> data rumah sakit
-                </p>
-                <p v-else class="page-bar__info text-center text-md-start">
-                    Tidak ada data rumah sakit !
                 </p>
             </div>
             <div class="col-12 col-md-6">
                 <nav aria-label="Page navigation example bg-primary">
-                    <ul v-if="totalRows > 0" class="pagination">
+                    <ul class="pagination">
                         <li
                             class="page-item"
                             :class="{

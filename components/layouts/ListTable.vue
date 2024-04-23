@@ -14,6 +14,15 @@
             </thead>
             <!-- Table in list rumah sakit page -->
             <tbody v-if="!$props.psikiater">
+                <tr>
+                    <td
+                        v-if="!$props.displayRecords.length"
+                        class="text-center"
+                        colspan="7"
+                    >
+                        Tidak ada data rumah sakit !
+                    </td>
+                </tr>
                 <tr v-for="(item, index) in displayRecords" :key="index">
                     <td data-title="No">{{ item.no }}</td>
                     <td data-title="Kode Rs">{{ item.kode }}</td>
@@ -40,6 +49,15 @@
             </tbody>
             <!-- table in psikiater page -->
             <tbody v-if="$props.psikiater">
+                <tr>
+                    <td
+                        v-if="!$props.displayRecords.length"
+                        class="text-center"
+                        colspan="6"
+                    >
+                        Tidak ada data rumah sakit !
+                    </td>
+                </tr>
                 <tr v-for="(item, index) in displayRecords" :key="index">
                     <td data-title="No">{{ index + 1 }}</td>
                     <td data-title="Nama Psikiater">{{ item.namaDokter }}</td>
