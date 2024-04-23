@@ -6,8 +6,11 @@
                 <h1 class="listRUmah__title">{{ pageData.title }}</h1>
                 <LayoutsFilterbar
                     v-model:daerah-value="daerahFilter"
+                    v-model:praktek-value="praktekFilter"
                     :daerah-data="daerahData"
-                    title-sort="Semua Daerah"
+                    :rsu-filter="true"
+                    :praktek-list="praktekList"
+                    title-sort="Pilih Daerah"
                     @search="searchRumahSakit"
                 />
                 <LayoutsListTable
@@ -16,6 +19,7 @@
                     :header="pageData.tableHeader"
                     :rs-list="rsList"
                     :display-records="displayRecords"
+                    :psikiater="true"
                 />
 
                 <LayoutsPaginationBarVue2
@@ -43,20 +47,18 @@ definePageMeta({
 })
 
 const pageData = ref({
-    title: 'List Rumah Sakit',
+    title: 'List Psikiater',
     tableHeader: [
         'No.',
-        'Kode RS',
-        'Nama Rumah Sakit',
-        'Jenis RS',
-        'Kelas RS',
-        'Daerah'
+        'Nama Psikiater',
+        'Tempat Praktek',
+        'Kabupaten/kota',
+        'Alamat',
+        'No. Tlpn'
     ],
     tableData: [],
     totalPage: 1,
     totalItem: 1,
-    // itemPerPage: 5,
-    // currentPage: 1,
     itemList: [],
     biggestIndexNumber: 1
 })
@@ -65,10 +67,12 @@ const daerahData = ref([])
 const daerahFilter = ref('all')
 // new variable
 const rsList: any = ref([])
+const praktekList: any = ref([])
 const resultList: any = ref(null)
 const currentPage: any = ref(1)
 const perPage: any = ref(5)
 const searchQuery: Ref<string> = ref('')
+const praktekFilter = ref('all')
 
 watch(daerahFilter, () => {
     currentPage.value = 1
@@ -89,6 +93,13 @@ const displayRecords = computed(() => {
         resultList.value = result.length
     } else {
         result = rsList.value
+    }
+    // sort by Tempat praktek
+    if (praktekFilter.value !== 'all') {
+        result = result.filter((item: any) =>
+            item.nama.toLowerCase().includes(praktekFilter.value.toLowerCase())
+        )
+        resultList.value = result.length
     }
 
     if (searchQuery.value !== '') {
@@ -117,7 +128,7 @@ const searchRumahSakit = (keyword: any) => {
 
 onMounted(() => {
     nextTick(async () => {
-        const url = `/data/modules/list-rumah-sakit.json`
+        const url = `/data/modules/list-psikiater.json`
         const data = await useFetch(url)
 
         const res = data.data.value as any
@@ -135,6 +146,9 @@ onMounted(() => {
 
             if (!daerahData.value.includes(item.daerah)) {
                 daerahData.value.push(item.daerah)
+            }
+            if (!praktekList.value.includes(item.nama)) {
+                praktekList.value.push(item.nama)
             }
         })
 
@@ -160,7 +174,7 @@ onMounted(() => {
                 to: '/'
             },
             {
-                title: 'List Rumah Sakit',
+                title: 'List Psikiater',
                 to: ''
             }
         ]
@@ -173,44 +187,6 @@ watch(
         setBiggestIndexNumber()
     }
 )
-
-// watch(daerahFilter, (value) => {
-//     pageData.value.itemList = []
-//     currentPage.value = 1
-//     if (value == 'all') {
-//         pageData.value.totalItem = pageData.value.tableData.length
-
-//         for (
-//             let i = 0;
-//             i < pageData.value.tableData.length;
-//             i += pageData.value.itemPerPage
-//         ) {
-//             const itemGroup = pageData.value.tableData.slice(
-//                 i,
-//                 i + pageData.value.itemPerPage
-//             )
-//             pageData.value.itemList.push(itemGroup)
-//         }
-//     } else {
-//         const newItemList = pageData.value.tableData.filter(
-//             (item) => item.daerah == value
-//         )
-
-//         pageData.value.totalItem = newItemList.length
-
-//         for (
-//             let i = 0;
-//             i < newItemList.length;
-//             i += pageData.value.itemPerPage
-//         ) {
-//             const itemGroup = newItemList.slice(
-//                 i,
-//                 i + pageData.value.itemPerPage
-//             )
-//             pageData.value.itemList.push(itemGroup)
-//         }
-//     }
-// })
 
 function setBiggestIndexNumber() {
     pageData.value.biggestIndexNumber =

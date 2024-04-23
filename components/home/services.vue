@@ -19,6 +19,11 @@
                                 :alt="`${service.title} icon`"
                                 class="ratio-item"
                             />
+                            <img
+                                :src="service.iconActive"
+                                :alt="`${service.title} icon`"
+                                class="ratio-item ratio-item--active"
+                            />
                         </div>
                         <div class="service-card__body">
                             <div class="service-card__text-container">
@@ -53,19 +58,25 @@ const pageData = ref({
     title: 'Layanan Lainnya',
     services: [
         {
+            id: 1,
             title: 'Bagan Induk',
             slug: '/layanan/bagan-induk',
-            icon: '/images/home-other-service__bagan.svg'
+            icon: '/images/home-other-service__bagan.svg',
+            iconActive: '/images/home-other-service__bagan-hover.svg'
         },
         {
+            id: 2,
             title: 'Perawatan & Praktek Penting',
             slug: '/layanan/perawatan-praktek-penting',
-            icon: '/images/home-other-service__layanan.svg'
+            icon: '/images/home-other-service__layanan.svg',
+            iconActive: '/images/home-other-service__layanan-hover.svg'
         },
         {
+            id: 3,
             title: 'Manajemen Kedokteran Keluarga',
             slug: '/layanan/manajemen-kedokteran-keluarga',
-            icon: '/images/home-other-service__manajemen.svg'
+            icon: '/images/home-other-service__manajemen.svg',
+            iconActive: '/images/home-other-service__manajemen-hover.svg'
         }
     ]
 })
@@ -95,6 +106,12 @@ const pageData = ref({
     @include fullState {
         color: colorMod(#122032, +20%);
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.07);
+        background-color: #e9f0fc;
+
+        .ratio-item--active {
+            opacity: 1;
+            display: block;
+        }
 
         .service-card__icon-container {
             @include transform(translateX(8px));
@@ -144,6 +161,12 @@ const pageData = ref({
 
     &__icon-container {
         transition: all 0.3s ease;
+    }
+}
+.ratio-item {
+    &--active {
+        opacity: 0;
+        transition: opacity 0.5s ease;
     }
 }
 </style>

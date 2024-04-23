@@ -113,8 +113,9 @@ onMounted(() => {
         ]
 
         setTimeout(() => {
-            const contentWithID = document.querySelectorAll('.inputed-text div')
             window.addEventListener('scroll', (e) => {
+                const contentWithID =
+                    document.querySelectorAll('.inputed-text div')
                 contentWithID.forEach((e) => {
                     if (window.scrollY >= e.offsetTop - 50) {
                         activeSection.value = e.attributes.id.value

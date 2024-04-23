@@ -1,10 +1,10 @@
 <template>
     <div class="filter-bar">
         <div class="row">
-            <div class="col-12 col-lg-2">
+            <div class="col-12 col-lg-3 col-xl-2">
                 <div class="filter-bar__item-container">
                     <select v-model="daerahValue" class="form-select">
-                        <option value="all">Semua Daerah</option>
+                        <option value="all">{{ titleSort }}</option>
                         <option
                             v-for="(daerah, daerahIndex) in daerahData"
                             :key="daerahIndex"
@@ -15,18 +15,23 @@
                     </select>
                 </div>
             </div>
-            <div v-if="props.rsuFilter" class="col-12 col-lg-2">
+            <div v-if="props.rsuFilter" class="col-12 col-lg-3">
                 <div class="filter-bar__item-container">
-                    <select class="form-select">
-                        <option class="d-none">Pilih Tempat Praktek</option>
-                        <option>RSU Manuaba</option>
-                        <option>Bali Royal Hospital</option>
-                        <option>Balimed Hospital</option>
-                        <option>RSU Sanglah</option>
+                    <select v-model="praktekValue" class="form-select">
+                        <option value="all" class="">
+                            Pilih Tempat Praktek
+                        </option>
+                        <option
+                            v-for="(praktek, index) in $props.praktekList"
+                            :key="index"
+                            :value="praktek"
+                        >
+                            {{ praktek }}
+                        </option>
                     </select>
                 </div>
             </div>
-            <div class="col-12 col-lg-4 ms-auto">
+            <div class="col-12 col-lg-6 col-xl-4 ms-auto">
                 <div class="filter-bar__item-container">
                     <form class="row">
                         <div class="col">
@@ -38,13 +43,14 @@
                                     />
                                 </div>
                                 <input
+                                    v-model.trim="keyword"
                                     type="text"
                                     class="form-control"
                                     placeholder="Cari nama rumah sakit"
                                 />
                             </div>
                         </div>
-                        <div class="col-auto">
+                        <div class="col-auto" @click="searchRumahSakit">
                             <UiButton>Search</UiButton>
                         </div>
                     </form>
@@ -65,10 +71,26 @@ const props = defineProps({
     daerahData: {
         type: Array,
         default: () => []
+    },
+    praktekList: {
+        type: Array,
+        default: () => []
+    },
+    titleSort: {
+        type: String,
+        default: ''
     }
 })
+const emit = defineEmits(['search'])
 
 const daerahValue = defineModel('daerahValue')
+const praktekValue = defineModel('praktekValue')
+
+const keyword: any = ref('')
+
+const searchRumahSakit = () => {
+    emit('search', keyword.value)
+}
 </script>
 
 <style lang="scss" scoped>
@@ -85,10 +107,20 @@ const daerahValue = defineModel('daerahValue')
 
     .form-control,
     .form-select {
+        @include vwUnit(margin-top, 7.5);
+        @include vwUnit(margin-bottom, 7.5);
         @include vwUnit(padding-top, 15);
         @include vwUnit(padding-right, 15);
         @include vwUnit(padding-bottom, 15);
         @include vwUnit(padding-left, 15);
+    }
+
+    .input-group {
+        @include vwUnit(margin-top, 7.5);
+        @include vwUnit(margin-bottom, 7.5);
+        .form-control {
+            margin: 0;
+        }
     }
 
     .input-group-text {
@@ -106,5 +138,10 @@ const daerahValue = defineModel('daerahValue')
     &__search-icon {
         @include vwUnit(font-size, 24);
     }
+}
+
+::v-deep .themeBtn {
+    @include vwUnit(margin-top, 7.5);
+    @include vwUnit(margin-bottom, 7.5);
 }
 </style>

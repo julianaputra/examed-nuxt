@@ -1,0 +1,100 @@
+{
+    "data": [
+        {
+            "kode": 1104031,
+            "namaDokter": "Dr. Tjokorda Bagus Jaya Laksmana , Sp.KJ",
+            "nama": "RSU Manuaba",
+            "alamat": "Jalan HOS. Cokroaminoto No. 28, Denpasar Utara",
+            "telepon": "(0361) 426393",
+            "daerah": "Gianyar"
+        },
+        {
+            "kode": 1104032,
+            "namaDokter": "dr. I Dewa Gede Basudewa, Sp.KJ",
+            "nama": "RSU Manuaba",
+            "alamat": "Jalan HOS. Cokroaminoto No. 28, Denpasar Utara",
+            "telepon": "(0361) 426393",
+            "daerah": "Buleleng"
+        },
+        {
+            "kode": 1104033,
+            "namaDokter": "Prof. Dr. dr. Luh Ketut Suryani, Sp. KJ",
+            "nama": "RSU Denpasar",
+            "alamat": "Jalan HOS. Cokroaminoto No. 28, Denpasar Utara",
+            "telepon": "(0361) 426393",
+            "daerah": "Denpasar"
+        },
+        {
+            "kode": 1104034,
+            "namaDokter": "dr. Ida Ayu Kusuma Wardani, Sp. KJ (K), MARS.",
+            "nama": "Bali Royal Hospital",
+            "alamat": "Jl. Tantular No. 6 Renon, Denpasar",
+            "telepon": "(0361) 247499, 222588",
+            "daerah": "Tabanan"
+        },
+        {
+            "kode": 1104035,
+            "namaDokter": "dr. Putu Asih Primatanti, Sp. KJ",
+            "nama": "Bali Royal Hospital",
+            "alamat": "Jalan HOS. Cokroaminoto No. 28, Denpasar Utara",
+            "telepon": "(0361) 426393",
+            "daerah": "Badung"
+        },
+        {
+            "kode": 1104036,
+            "namaDokter": "dr. A.A. Ayu Srikandhyawati Karang, Sp. KFR",
+            "nama": "Balimed Hospital",
+            "alamat": "Jl. Mahendradatta No. 57X, Padang Sambian, Kec. Denpasar Bar., Kota Denpasar",
+            "telepon": "081 148 4748",
+            "daerah": "Bangli"
+        },
+        {
+            "kode": 1104037,
+            "namaDokter": "dr. I Putu Belly Sutrisna, Sp. KJ, M. Biomed, CHt, CI.",
+            "nama": "Balimed Hospital",
+            "alamat": "Jalan HOS. Cokroaminoto No. 28, Denpasar Utara",
+            "telepon": "(0361) 426393",
+            "daerah": "Karangasem"
+        },
+        {
+            "kode": 1104038,
+            "namaDokter": "dr. Ni Putu Ayu Werdhiatmi, Sp. KJ, M. Biomed",
+            "nama": "RSU Bhakti Rahayu Denpasar",
+            "alamat": "Jalan HOS. Cokroaminoto No. 28, Denpasar Utara",
+            "telepon": "(0361) 430270",
+            "daerah": "Klungkung"
+        },
+        {
+            "kode": 1104039,
+            "namaDokter": "dr. Sahat Hamonangan Hariandja, Sp.KJ",
+            "nama": "RSU Bhakti Rahayu Denpasar",
+            "alamat": "Jalan HOS. Cokroaminoto No. 28, Denpasar Utara",
+            "telepon": "(0361) 426393",
+            "daerah": "Gianyar"
+        },
+        {
+            "kode": 11040310,
+            "namaDokter": "dr. Bagus Surya Kusumadewa, Sp. KJ",
+            "nama": "RSU Bhakti Rahayu Denpasar",
+            "alamat": "Jalan HOS. Cokroaminoto No. 28, Denpasar Utara",
+            "telepon": "(0361) 426393",
+            "daerah": "Gianyar"
+        },
+        {
+            "kode": 11040311,
+            "namaDokter": "dr. Rano Gautama, Sp. KJ",
+            "nama": "RSU Bhakti Rahayu Denpasar",
+            "alamat": "Jalan HOS. Cokroaminoto No. 28, Denpasar Utara",
+            "telepon": "(0361) 426393",
+            "daerah": "Gianyar"
+        },
+        {
+            "kode": 11040312,
+            "namaDokter": "dr. Sandri Alkatiri, Sp. KJ",
+            "nama": "RSU Bhakti Rahayu Denpasar",
+            "alamat": "Jalan HOS. Cokroaminoto No. 28, Denpasar Utara",
+            "telepon": "(0361) 426393",
+            "daerah": "Gianyar"
+        }
+    ]
+}

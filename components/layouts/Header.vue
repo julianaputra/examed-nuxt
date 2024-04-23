@@ -41,6 +41,13 @@
                             </li>
                             <li class="nav-item">
                                 <nuxt-link
+                                    to="/list-psikiater"
+                                    class="custom-navbar__nav-link"
+                                    >List Psikiater</nuxt-link
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <nuxt-link
                                     to="/tentang-kami"
                                     class="custom-navbar__nav-link"
                                     >Tentang Kami</nuxt-link
