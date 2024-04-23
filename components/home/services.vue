@@ -106,6 +106,12 @@ const pageData = ref({
     @include fullState {
         color: colorMod(#122032, +20%);
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.07);
+        background-color: #e9f0fc;
+
+        .ratio-item--active {
+            opacity: 1;
+            display: block;
+        }
 
         .service-card__icon-container {
             @include transform(translateX(8px));
@@ -161,15 +167,6 @@ const pageData = ref({
     &--active {
         opacity: 0;
         transition: opacity 0.5s ease;
-    }
-}
-
-.service-card:hover {
-    background-color: #e9f0fc;
-
-    .ratio-item--active {
-        opacity: 1;
-        display: block;
     }
 }
 </style>
