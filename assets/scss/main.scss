@@ -199,6 +199,9 @@ button {
         @include vwUnit(margin-bottom, 24);
         @include typo(heading-3);
     }
+    .title{
+        @include typo(title-1);
+    }
     p {
         @include vwUnit(margin-bottom, 24);
     }
@@ -208,4 +211,8 @@ button {
     li {
         @include vwUnit(margin-bottom, 12);
     }
+    &__note{
+        @include typo(heading-3);
+    }
 }
+

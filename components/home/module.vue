@@ -92,12 +92,6 @@ const diagnoses = ref([
         to: '/menyakiti-diri-sendiri-bunuh-diri',
         short: 'SUI',
         color: 'red'
-    },
-    {
-        name: 'Keluhan Kesehatan Mental Penting Lainnya',
-        to: '/',
-        short: 'OTH',
-        color: 'blue'
     }
 ])
 </script>
