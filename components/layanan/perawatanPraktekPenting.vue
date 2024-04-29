@@ -1310,12 +1310,11 @@ ol {
     }
 }
 
-.wrap-deskripsi {
-    padding-top: 0;
-}
+// .wrap-deskripsi {
+//     padding-top: 0;
+// }
 
 .prinsip-umum {
-    padding-top: 0;
     &__gunakan-keterampilan {
         padding-top: 0;
     }
@@ -1347,7 +1346,7 @@ ol {
     padding-top: 0;
 }
 .pentingnya-praktik {
-    padding-top: 0;
+    // padding-top: 0;
     margin-top: 24px;
     &__mengambil-sejarah {
         border-radius: 8px;
