@@ -32,6 +32,239 @@
                     </div>
                     <div class="offcanvas-body">
                         <ul class="navbar-nav custom-navbar__navbar-nav">
+                            <li class="nav-item dropdown">
+                                <nuxt-link
+                                    class="custom-navbar__nav-link custom-navbar__menu-dropdown"
+                                    role="button"
+                                    data-bs-toggle="dropdown"
+                                    aria-expanded="false"
+                                    >List Modul
+                                    <img
+                                        src="/images/ic-dropdown-bottom.svg"
+                                        alt="Dropdown-arrow"
+                                    />
+                                </nuxt-link>
+
+                                <ul
+                                    class="dropdown-menu custom-navbar__wrap-dropdown-modul"
+                                >
+                                    <div class="row gy-1">
+                                        <div class="col-12 col-lg-6">
+                                            <div>
+                                                <li
+                                                    class="custom-navbar__list-dropdown w-100"
+                                                >
+                                                    <NuxtLink
+                                                        to="/depresi"
+                                                        class="dropdown-item"
+                                                        ><span>Depresi</span>
+                                                    </NuxtLink>
+                                                    <img
+                                                        src="/images/ic-arrow-right.svg"
+                                                        alt=""
+                                                        class="nav-item__arrow"
+                                                    />
+                                                </li>
+                                                <li>
+                                                    <hr
+                                                        class="dropdown-divider"
+                                                    />
+                                                </li>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-lg-6">
+                                            <div>
+                                                <li
+                                                    class="custom-navbar__list-dropdown w-100"
+                                                >
+                                                    <NuxtLink
+                                                        to="/psikosis"
+                                                        class="dropdown-item"
+                                                        ><span>Psikosis</span>
+                                                    </NuxtLink>
+                                                    <img
+                                                        src="/images/ic-arrow-right.svg"
+                                                        alt=""
+                                                        class="nav-item__arrow"
+                                                    />
+                                                </li>
+                                                <li>
+                                                    <hr
+                                                        class="dropdown-divider"
+                                                    />
+                                                </li>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-lg-6">
+                                            <div>
+                                                <li
+                                                    class="custom-navbar__list-dropdown w-100"
+                                                >
+                                                    <NuxtLink
+                                                        to="/layanan/perawatan-praktek-penting"
+                                                        class="dropdown-item"
+                                                        ><span>Demensia </span>
+                                                    </NuxtLink>
+                                                    <img
+                                                        src="/images/ic-arrow-right.svg"
+                                                        alt=""
+                                                        class="nav-item__arrow"
+                                                    />
+                                                </li>
+                                                <li>
+                                                    <hr
+                                                        class="dropdown-divider"
+                                                    />
+                                                </li>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-lg-6">
+                                            <div>
+                                                <li
+                                                    class="custom-navbar__list-dropdown w-100"
+                                                >
+                                                    <NuxtLink
+                                                        to="/layanan/perawatan-praktek-penting"
+                                                        class="dropdown-item"
+                                                        ><span
+                                                            >Gangguan Mental &
+                                                            Perilaku Anak &
+                                                            Remaja</span
+                                                        >
+                                                    </NuxtLink>
+                                                    <img
+                                                        src="/images/ic-arrow-right.svg"
+                                                        alt=""
+                                                        class="nav-item__arrow"
+                                                    />
+                                                </li>
+                                                <li>
+                                                    <hr
+                                                        class="dropdown-divider"
+                                                    />
+                                                </li>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-lg-6">
+                                            <div>
+                                                <li
+                                                    class="custom-navbar__list-dropdown w-100"
+                                                >
+                                                    <NuxtLink
+                                                        to="/menyakiti-diri-sendiri-bunuh-diri"
+                                                        class="dropdown-item"
+                                                        ><span
+                                                            >Menyakiti Diri
+                                                            Sendiri / Bunuh
+                                                            Diri</span
+                                                        >
+                                                    </NuxtLink>
+                                                    <img
+                                                        src="/images/ic-arrow-right.svg"
+                                                        alt=""
+                                                        class="nav-item__arrow"
+                                                    />
+                                                </li>
+                                                <li class="d-lg-none">
+                                                    <hr
+                                                        class="dropdown-divider"
+                                                    />
+                                                </li>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-lg-6">
+                                            <div>
+                                                <li
+                                                    class="custom-navbar__list-dropdown w-100"
+                                                >
+                                                    <NuxtLink
+                                                        to="/layanan/perawatan-praktek-penting"
+                                                        class="dropdown-item"
+                                                        ><span
+                                                            >Keluhan Kesehatan
+                                                            Mental Penting
+                                                            Lainnya</span
+                                                        >
+                                                    </NuxtLink>
+                                                    <img
+                                                        src="/images/ic-arrow-right.svg"
+                                                        alt=""
+                                                        class="nav-item__arrow"
+                                                    />
+                                                </li>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <nuxt-link
+                                    class="custom-navbar__nav-link custom-navbar__menu-dropdown"
+                                    role="button"
+                                    data-bs-toggle="dropdown"
+                                    aria-expanded="false"
+                                    >Layanan Lainnya
+                                    <img
+                                        src="/images/ic-dropdown-bottom.svg"
+                                        alt="Dropdown-arrow"
+                                    />
+                                </nuxt-link>
+
+                                <ul
+                                    class="dropdown-menu custom-navbar__wrap-dropdown"
+                                >
+                                    <li
+                                        class="custom-navbar__list-dropdown w-100"
+                                    >
+                                        <NuxtLink
+                                            to="/layanan/bagan-induk"
+                                            class="dropdown-item"
+                                            ><span>Bagan Induk</span>
+                                        </NuxtLink>
+                                        <img
+                                            src="/images/ic-arrow-right.svg"
+                                            alt=""
+                                            class="nav-item__arrow"
+                                        />
+                                    </li>
+                                    <li><hr class="dropdown-divider" /></li>
+                                    <li
+                                        class="custom-navbar__list-dropdown w-100"
+                                    >
+                                        <NuxtLink
+                                            to="/layanan/perawatan-praktek-penting"
+                                            class="dropdown-item"
+                                            ><span
+                                                >Perawatan & Praktek
+                                                Penting</span
+                                            >
+                                        </NuxtLink>
+                                        <img
+                                            src="/images/ic-arrow-right.svg"
+                                            alt=""
+                                            class="nav-item__arrow"
+                                        />
+                                    </li>
+                                    <li><hr class="dropdown-divider" /></li>
+                                    <li
+                                        class="custom-navbar__list-dropdown w-100"
+                                    >
+                                        <NuxtLink
+                                            to="/layanan/manajemen-kedokteran-keluarga"
+                                            class="dropdown-item"
+                                            ><span
+                                                >Manajemen Kedokteran
+                                                Keluarga</span
+                                            ></NuxtLink
+                                        >
+                                        <img
+                                            src="/images/ic-arrow-right.svg"
+                                            alt=""
+                                            class="nav-item__arrow"
+                                        />
+                                    </li>
+                                </ul>
+                            </li>
                             <li class="nav-item">
                                 <nuxt-link
                                     to="/list-rumah-sakit"
@@ -107,5 +340,83 @@
             background-color: #e9f0fc;
         }
     }
+    &__arrow-dropdown {
+        transition: all;
+        transition-duration: 0.5s;
+    }
+    &__nav-link:hover {
+        .custom-navbar__arrow-dropdown {
+            rotate: -180deg;
+            transition: all;
+            transition-duration: 0.5s;
+        }
+    }
+    &__wrap-dropdown {
+        width: 280px;
+        padding: 30px;
+        span {
+            display: block;
+            white-space: normal;
+        }
+        @media screen and (max-width: 991px) {
+            width: 100%;
+            padding: 15px;
+        }
+    }
+    &__wrap-dropdown-modul {
+        width: 530px;
+        @media screen and (max-width: 991px) {
+            width: 100%;
+            padding: 15px;
+        }
+        padding: 30px;
+        span {
+            display: block;
+            white-space: normal;
+            //     word-wrap: break-word;
+            //     overflow-wrap: break-word;
+        }
+    }
+    &__menu-dropdown {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 6px;
+        cursor: pointer;
+    }
+
+    &__list-dropdown {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+        cursor: pointer;
+    }
+    &__list-dropdown {
+        height: 40px;
+        .nav-item__arrow {
+            opacity: 0;
+            transition: all 0.5s ease;
+            transform: translateX(-10px);
+        }
+    }
+    &__list-dropdown:hover {
+        .nav-item__arrow {
+            opacity: 1;
+            transform: translateX(0px);
+        }
+    }
+    .dropdown-item {
+        padding: 8px 0px;
+    }
+    hr {
+        margin: 14px 0px;
+        @media screen and (max-width: 768px) {
+            margin: 14px 0px;
+        }
+    }
+}
+.dropdown-item:hover {
+    background-color: transparent;
 }
 </style>
