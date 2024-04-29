@@ -1315,9 +1315,6 @@ ol {
 // }
 
 .prinsip-umum {
-    &__gunakan-keterampilan {
-        padding-top: 0;
-    }
     &__column {
         height: 100%;
         padding: 24px;
