@@ -316,17 +316,23 @@
 
     &__logo-container {
         @include vwMobile(max-width, 175);
+        @media screen and (max-width: 1204px) {
+            max-width: 150px;
+        }
     }
 
     &__navbar-nav {
         margin-left: auto;
         gap: 8px;
+        @media screen and (max-width: 1999px) {
+            gap: 4px;
+        }
     }
 
     &__nav-link {
         display: block;
         padding: 8px 12px;
-        @include typo(nav-link);
+        @include typo(nav-item);
         font-weight: 400;
         color: #122032;
         text-decoration: none;
@@ -357,6 +363,7 @@
         span {
             display: block;
             white-space: normal;
+            @include typo(body-s);
         }
         @media screen and (max-width: 991px) {
             width: 100%;
@@ -373,6 +380,7 @@
         span {
             display: block;
             white-space: normal;
+            @include typo(body-s);
             //     word-wrap: break-word;
             //     overflow-wrap: break-word;
         }
@@ -394,6 +402,9 @@
     }
     &__list-dropdown {
         height: 40px;
+        @media screen and (max-width: 768px) {
+            height: 20px;
+        }
         .nav-item__arrow {
             opacity: 0;
             transition: all 0.5s ease;
