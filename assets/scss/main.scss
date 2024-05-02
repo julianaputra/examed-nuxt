@@ -10,7 +10,7 @@
 :root {
     @include fontVar();
 }
-
+$danger-color: #b5222a;
 .ratio-item {
     @extend %ratioItem;
 }
@@ -32,6 +32,12 @@ button {
     transition: all 0.3s ease;
 }
 
+.text-red{
+    color: $danger-color !important;
+}
+.font-500{
+    font-weight: 500 !important;
+}
 .section {
     padding: 100px 0;
 

@@ -57,7 +57,10 @@
                                                     <NuxtLink
                                                         to="/depresi"
                                                         class="dropdown-item"
-                                                        ><span>Depresi</span>
+                                                        ><span
+                                                            class="custom-navbar__dropdown-sub-title"
+                                                            >Depresi</span
+                                                        >
                                                     </NuxtLink>
                                                     <img
                                                         src="/images/ic-arrow-right.svg"
@@ -67,7 +70,7 @@
                                                 </li>
                                                 <li>
                                                     <hr
-                                                        class="dropdown-divider"
+                                                        class="dropdown-divider custom-navbar__line-dropdown"
                                                     />
                                                 </li>
                                             </div>
@@ -80,7 +83,10 @@
                                                     <NuxtLink
                                                         to="/psikosis"
                                                         class="dropdown-item"
-                                                        ><span>Psikosis</span>
+                                                        ><span
+                                                            class="custom-navbar__dropdown-sub-title"
+                                                            >Psikosis</span
+                                                        >
                                                     </NuxtLink>
                                                     <img
                                                         src="/images/ic-arrow-right.svg"
@@ -90,30 +96,7 @@
                                                 </li>
                                                 <li>
                                                     <hr
-                                                        class="dropdown-divider"
-                                                    />
-                                                </li>
-                                            </div>
-                                        </div>
-                                        <div class="col-12 col-lg-6">
-                                            <div>
-                                                <li
-                                                    class="custom-navbar__list-dropdown w-100"
-                                                >
-                                                    <NuxtLink
-                                                        to="/layanan/perawatan-praktek-penting"
-                                                        class="dropdown-item"
-                                                        ><span>Demensia </span>
-                                                    </NuxtLink>
-                                                    <img
-                                                        src="/images/ic-arrow-right.svg"
-                                                        alt=""
-                                                        class="nav-item__arrow"
-                                                    />
-                                                </li>
-                                                <li>
-                                                    <hr
-                                                        class="dropdown-divider"
+                                                        class="dropdown-divider custom-navbar__line-dropdown"
                                                     />
                                                 </li>
                                             </div>
@@ -127,6 +110,33 @@
                                                         to="/layanan/perawatan-praktek-penting"
                                                         class="dropdown-item"
                                                         ><span
+                                                            class="custom-navbar__dropdown-sub-title"
+                                                            >Demensia
+                                                        </span>
+                                                    </NuxtLink>
+                                                    <img
+                                                        src="/images/ic-arrow-right.svg"
+                                                        alt=""
+                                                        class="nav-item__arrow"
+                                                    />
+                                                </li>
+                                                <li>
+                                                    <hr
+                                                        class="dropdown-divider custom-navbar__line-dropdown"
+                                                    />
+                                                </li>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-lg-6">
+                                            <div>
+                                                <li
+                                                    class="custom-navbar__list-dropdown w-100"
+                                                >
+                                                    <NuxtLink
+                                                        to="/layanan/perawatan-praktek-penting"
+                                                        class="dropdown-item"
+                                                        ><span
+                                                            class="custom-navbar__dropdown-sub-title"
                                                             >Gangguan Mental &
                                                             Perilaku Anak &
                                                             Remaja</span
@@ -140,7 +150,7 @@
                                                 </li>
                                                 <li>
                                                     <hr
-                                                        class="dropdown-divider"
+                                                        class="dropdown-divider custom-navbar__line-dropdown"
                                                     />
                                                 </li>
                                             </div>
@@ -154,6 +164,7 @@
                                                         to="/menyakiti-diri-sendiri-bunuh-diri"
                                                         class="dropdown-item"
                                                         ><span
+                                                            class="custom-navbar__dropdown-sub-title"
                                                             >Menyakiti Diri
                                                             Sendiri / Bunuh
                                                             Diri</span
@@ -167,7 +178,7 @@
                                                 </li>
                                                 <li class="d-lg-none">
                                                     <hr
-                                                        class="dropdown-divider"
+                                                        class="dropdown-divider custom-navbar__line-dropdown"
                                                     />
                                                 </li>
                                             </div>
@@ -181,6 +192,7 @@
                                                         to="/layanan/perawatan-praktek-penting"
                                                         class="dropdown-item"
                                                         ><span
+                                                            class="custom-navbar__dropdown-sub-title"
                                                             >Keluhan Kesehatan
                                                             Mental Penting
                                                             Lainnya</span
@@ -219,7 +231,10 @@
                                         <NuxtLink
                                             to="/layanan/bagan-induk"
                                             class="dropdown-item"
-                                            ><span>Bagan Induk</span>
+                                            ><span
+                                                class="custom-navbar__dropdown-sub-title"
+                                                >Bagan Induk</span
+                                            >
                                         </NuxtLink>
                                         <img
                                             src="/images/ic-arrow-right.svg"
@@ -227,7 +242,11 @@
                                             class="nav-item__arrow"
                                         />
                                     </li>
-                                    <li><hr class="dropdown-divider" /></li>
+                                    <li>
+                                        <hr
+                                            class="dropdown-divider custom-navbar__line-dropdown"
+                                        />
+                                    </li>
                                     <li
                                         class="custom-navbar__list-dropdown w-100"
                                     >
@@ -235,6 +254,7 @@
                                             to="/layanan/perawatan-praktek-penting"
                                             class="dropdown-item"
                                             ><span
+                                                class="custom-navbar__dropdown-sub-title"
                                                 >Perawatan & Praktek
                                                 Penting</span
                                             >
@@ -245,7 +265,11 @@
                                             class="nav-item__arrow"
                                         />
                                     </li>
-                                    <li><hr class="dropdown-divider" /></li>
+                                    <li>
+                                        <hr
+                                            class="dropdown-divider custom-navbar__line-dropdown"
+                                        />
+                                    </li>
                                     <li
                                         class="custom-navbar__list-dropdown w-100"
                                     >
@@ -253,6 +277,7 @@
                                             to="/layanan/manajemen-kedokteran-keluarga"
                                             class="dropdown-item"
                                             ><span
+                                                class="custom-navbar__dropdown-sub-title"
                                                 >Manajemen Kedokteran
                                                 Keluarga</span
                                             ></NuxtLink
@@ -316,7 +341,7 @@
 
     &__logo-container {
         @include vwMobile(max-width, 175);
-        @media screen and (max-width: 1204px) {
+        @media screen and (max-width: 1199px) {
             max-width: 150px;
         }
     }
@@ -324,7 +349,7 @@
     &__navbar-nav {
         margin-left: auto;
         gap: 8px;
-        @media screen and (max-width: 1999px) {
+        @media screen and (max-width: 1199px) {
             gap: 4px;
         }
     }
@@ -360,29 +385,49 @@
     &__wrap-dropdown {
         width: 280px;
         padding: 30px;
-        span {
-            display: block;
-            white-space: normal;
-            @include typo(body-s);
-        }
+        left: 50%;
+        transform: translate(-50%, 0px);
+
         @media screen and (max-width: 991px) {
             width: 100%;
-            padding: 15px;
+            padding: 0px 25px;
+            border: none;
+            box-shadow: none;
+            left: auto;
+            transform: unset;
+        }
+        @media screen and (max-width: 767px) {
+            padding: 15px 25px;
         }
     }
+    &__dropdown-sub-title {
+        // background-color: yellow;
+        display: block;
+        white-space: normal;
+        @include typo(body-s);
+    }
+
     &__wrap-dropdown-modul {
         width: 530px;
+        left: 50%;
+        transform: translate(-50%, 0px);
+        padding: 30px;
+
         @media screen and (max-width: 991px) {
             width: 100%;
-            padding: 15px;
+            padding: 0px 25px;
+            border: none;
+            box-shadow: none;
+            left: auto;
+            transform: unset;
         }
-        padding: 30px;
-        span {
-            display: block;
-            white-space: normal;
-            @include typo(body-s);
-            //     word-wrap: break-word;
-            //     overflow-wrap: break-word;
+        @media screen and (max-width: 767px) {
+            padding: 15px 25px;
+        }
+    }
+    &__line-dropdown {
+        @media screen and (max-width: 991px) {
+            opacity: 0;
         }
     }
     &__menu-dropdown {
@@ -399,35 +444,58 @@
         align-items: center;
         gap: 10px;
         cursor: pointer;
-    }
-    &__list-dropdown {
         height: 40px;
-        @media screen and (max-width: 768px) {
-            height: 20px;
+        @media screen and (max-width: 767px) {
+            height: 15px;
         }
         .nav-item__arrow {
             opacity: 0;
             transition: all 0.5s ease;
             transform: translateX(-10px);
+            @media screen and (max-width: 991px) {
+                display: none;
+            }
+        }
+        &:hover {
+            .nav-item__arrow {
+                opacity: 1;
+                transform: translateX(0px);
+            }
         }
     }
-    &__list-dropdown:hover {
-        .nav-item__arrow {
-            opacity: 1;
-            transform: translateX(0px);
-        }
-    }
+
     .dropdown-item {
         padding: 8px 0px;
+        &:hover {
+            background-color: transparent;
+        }
+        @media screen and (max-width: 991px) {
+            &:hover {
+                padding: 8px 8px;
+                color: #303178;
+                background-color: #e9f0fc;
+                border-radius: 5px;
+            }
+        }
     }
     hr {
         margin: 14px 0px;
-        @media screen and (max-width: 768px) {
-            margin: 14px 0px;
+        @media screen and (max-width: 991px) {
+            margin: 0px 0px;
+        }
+        @media screen and (max-width: 767px) {
+            margin: 10px 0px;
         }
     }
 }
-.dropdown-item:hover {
-    background-color: transparent;
-}
+// .dropdown-item:hover {
+//     background-color: transparent;
+//     @media screen and (max-width: 991px) {
+//         &:hover {
+//             color: #303178;
+//             background-color: #e9f0fc;
+//             border-radius: 5px;
+//         }
+//     }
+// }
 </style>

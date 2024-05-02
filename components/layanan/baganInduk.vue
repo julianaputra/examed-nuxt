@@ -7,7 +7,7 @@
                 <div class="inputed-text">
                     <div id="sekilasMns" class="sekilas-mns">
                         <h2>Sekilas tentang ketentuan MNS prioritas</h2>
-                        <ol>
+                        <ol class="sekilas-mns__list">
                             <li>
                                 Presentasi ini menunjukkan perlunya penilaian
                             </li>
@@ -22,7 +22,7 @@
                             </li>
                             <li>
                                 untuk presentasi darurat silahkan klik link ini
-                                <a href="" class="sekilas-mns__darurat"
+                                <a href="" class="text-red font-500"
                                     >Presentasi Darurat.</a
                                 >
                             </li>
@@ -189,7 +189,7 @@
                     <div id="presentasiMns" class="presentasi-mns">
                         <h3>
                             Presentasi Kondisi
-                            <span class="presentasi-mns__darurat">DARURAT</span>
+                            <span class="text-red">DARURAT</span>
                             MNS Prioritas
                         </h3>
                         <div class="table-responsive">
@@ -197,29 +197,27 @@
                                 <thead class="">
                                     <tr>
                                         <th
-                                            class="text-danger list-table__darurat"
+                                            class="list-table__darurat text-red"
                                         >
                                             Presentasi Darurat
                                         </th>
                                         <th
-                                            class="text-danger list-table__kondisi"
+                                            class="list-table__kondisi text-red"
                                         >
                                             Kondisi yang perlu Diperhatikan
                                         </th>
-                                        <th
-                                            class="text-danger list-table__modul"
-                                        >
+                                        <th class="list-table__modul text-red">
                                             Modul Terkait
                                         </th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr class="border-bottom">
+                                    <tr>
                                         <td
                                             data-title="Presentasi Darurat"
-                                            class="list-table__name"
+                                            class="list-table__name mb-0"
                                         >
-                                            <ul>
+                                            <ul class="mb-0">
                                                 <li>
                                                     <p>
                                                         Tindakan menyakiti diri
@@ -233,8 +231,8 @@
                                                         ekstrem
                                                     </p>
                                                 </li>
-                                                <li>
-                                                    <p>
+                                                <li class="mb-0">
+                                                    <p class="mb-0">
                                                         Pikiran, rencana, atau
                                                         tindakan menyakiti diri
                                                         sendiri atau bunuh diri
@@ -269,27 +267,16 @@
                                                 </li>
                                             </ul>
                                         </td>
-                                        <td class="table__underline">SUI</td>
+                                        <td class="table__underline">
+                                            <NuxtLink to="#sui">SUI</NuxtLink>
+                                        </td>
                                     </tr>
-                                    <tr>
+                                    <tr class="secondary-list">
                                         <td
                                             data-title="Modul Terkait"
                                             class="list-table__name"
                                         >
                                             <ul>
-                                                <li>
-                                                    <p>
-                                                        Tindakan menyakiti diri
-                                                        sendiri dengan
-                                                        tanda-tanda keracunan
-                                                        atau mabuk, pendarahan
-                                                        akibat luka yang
-                                                        dilakukan sendiri,
-                                                        kehilangan kesadaran
-                                                        dan/atau kelesuan
-                                                        ekstrem
-                                                    </p>
-                                                </li>
                                                 <li>
                                                     <p>
                                                         Perilaku gelisah
@@ -300,12 +287,16 @@
                                         </td>
                                         <td><span>-</span></td>
                                         <td>
-                                            <span class="table__underline"
-                                                >DEM,</span
+                                            <NuxtLink
+                                                to="#demensia"
+                                                class="table__underline"
+                                                >DEM,</NuxtLink
                                             >
                                             &nbsp;
-                                            <span class="table__underline"
-                                                >PSY</span
+                                            <NuxtLink
+                                                to="#psikosis"
+                                                class="table__underline"
+                                                >PSY</NuxtLink
                                             >
                                         </td>
                                     </tr>
@@ -322,13 +313,9 @@
 <script lang="ts" setup></script>
 
 <style scoped lang="scss">
-$danger-color: #b5222a;
+$primary-color: #303178;
 .sekilas-mns {
     padding-top: 0;
-    ol &__darurat {
-        color: $danger-color;
-        font-weight: 500;
-    }
 }
 
 .gangguan-cmh {
@@ -337,6 +324,8 @@ $danger-color: #b5222a;
     }
 }
 .table {
+    margin-bottom: 0px;
+    width: 100%;
     %cellSpacing {
         $space-y: 15;
         $space-x: 15;
@@ -346,26 +335,29 @@ $danger-color: #b5222a;
         @include vwUnit(padding-left, $space-x);
     }
 
-    width: 100%;
     th {
         @extend %cellSpacing;
         @include vwUnit(padding-top, 10);
         @include vwUnit(padding-bottom, 10);
         border-bottom: 2px solid #d50303;
-    }
-    th:nth-child(1) {
-        @media screen and (max-width: 576px) {
-            min-width: 220px;
+        &:nth-child(1) {
+            width: 40%;
+            @media screen and (max-width: 767px) {
+                min-width: 220px;
+            }
         }
-    }
-    th:nth-child(2) {
-        @media screen and (max-width: 576px) {
-            min-width: 220px;
+        &:nth-child(2) {
+            width: 40%;
+
+            @media screen and (max-width: 767px) {
+                min-width: 220px;
+            }
         }
-    }
-    th:nth-child(3) {
-        @media screen and (max-width: 576px) {
-            min-width: 120px;
+        &:nth-child(3) {
+            width: auto;
+            @media screen and (max-width: 767px) {
+                min-width: 120px;
+            }
         }
     }
     td {
@@ -381,23 +373,11 @@ $danger-color: #b5222a;
         text-decoration: underline;
     }
 }
-.list-table {
-    &__darurat {
-        width: 40%;
-    }
-    &__kondisi {
-        width: 40%;
-    }
-    &__modul {
-        width: 20%;
-    }
+
+.secondary-list {
+    border: 0px none transparent;
 }
-.border-bottom {
-    border: #0000;
-}
-.presentasi-mns {
-    &__darurat {
-        color: $danger-color;
-    }
+td {
+    vertical-align: middle;
 }
 </style>

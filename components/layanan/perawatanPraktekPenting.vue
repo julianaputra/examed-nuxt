@@ -211,7 +211,7 @@
                                         <h3 class="prinsip-umum__title-lakukan">
                                             LAKUKAN
                                         </h3>
-                                        <ul>
+                                        <ul class="mb-0">
                                             <li>
                                                 Perlakukan orang dengan kondisi
                                                 MNS dengan hormat dan
@@ -242,7 +242,7 @@
                                                 kehidupan mandiri dalam
                                                 masyarakat.
                                             </li>
-                                            <li>
+                                            <li class="mb-0">
                                                 Memberikan orang-orang dengan
                                                 kondisi MNS akses ke opsi
                                                 pengambilan keputusan yang
@@ -260,7 +260,7 @@
                                         >
                                             JANGAN LAKUKAN
                                         </h3>
-                                        <ul>
+                                        <ul class="mb-0">
                                             <li>
                                                 Jangan mendiskriminasi penderita
                                                 MNS kondisi.
@@ -274,6 +274,11 @@
                                                 Jangan mengambil keputusan
                                                 untuk, atas nama, atau sebagai
                                                 ganti orang dengan kondisi MNS
+                                            </li>
+                                            <li class="mb-0">
+                                                Jangan menggunakan bahasa yang
+                                                terlalu teknis dalam menjelaskan
+                                                usulan pengobatan.
                                             </li>
                                         </ul>
                                     </div>
@@ -385,7 +390,7 @@
                                     </ul>
                                 </li>
                             </ul>
-                            <h4 class="pentingnya-praktik__tips">
+                            <h4 class="pentingnya-praktik__tips title text-red">
                                 TIPS KLINIS:
                             </h4>
                             <p>
@@ -420,30 +425,136 @@
                                 >
                                     MENGAMBIL SEJARAH
                                 </h3>
-                                <ol>
+                                <!-- Without OL -->
+                                <!-- <div class="mengambil-sejarah__list"> -->
+                                <div>
+                                    <p>
+                                        Gejala atau alasan utama orang tersebut
+                                        mencari perawatan.
+                                    </p>
+                                    <h4 class="list-title">
+                                        1. Menyampaikan Keluhan
+                                    </h4>
+                                    <ul>
+                                        <li>
+                                            Tanyakan kapan, mengapa, dan
+                                            bagaimana hal itu dimulai.
+                                        </li>
+                                        <li>
+                                            Pada tahap ini, penting untuk
+                                            mengumpulkan informasi sebanyak
+                                            mungkin tentang gejala orang
+                                            tersebut dan situasinya.
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div>
+                                    <h4 class="list-title">
+                                        2. Sejarah MNS yang lalu
+                                    </h4>
+                                    <ul class="mengambil-sejarah__sub-list">
+                                        <li>
+                                            Tanyakan tentang masalah serupa di
+                                            masa lalu, rawat inap psikiatris
+                                            atau pengobatan yang diresepkan
+                                            untuk kondisi MNS, dan upaya bunuh
+                                            diri di masa lalu.
+                                        </li>
+                                        <li>
+                                            Jelajahi penggunaan tembakau,
+                                            alkohol, dan narkoba.
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h4 class="list-title">
+                                        3. Riwayat Kesehatan Umum
+                                    </h4>
+                                    <ul class="mengambil-sejarah__sub-list">
+                                        <li>
+                                            Tanyakan tentang masalah kesehatan
+                                            fisik dan pengobatan
+                                        </li>
+                                        <li>
+                                            Dapatkan daftar obat-obatan terkini.
+                                        </li>
+                                        <li>
+                                            Tanyakan tentang alergi terhadap
+                                            obat-obatan.
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h4 class="list-title">
+                                        4. Riwayat Keluarga Kondisi MNS
+                                    </h4>
+                                    <ul class="mengambil-sejarah__sub-list">
+                                        <li>
+                                            Jelajahi kemungkinan riwayat
+                                            keluarga dengan kondisi MNS dan
+                                            tanyakan apakah ada yang memiliki
+                                            gejala serupa atau pernah menerima
+                                            pengobatan untuk kondisi MNS.
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h4 class="list-title">
+                                        5. Riwayat Kesehatan Umum
+                                    </h4>
+                                    <ul class="mengambil-sejarah__sub-list">
+                                        <li>
+                                            tentang penyebab stres saat ini,
+                                            metode penanggulangannya, dan
+                                            dukungan sosial.
+                                        </li>
+                                        <li>
+                                            Tanyakan tentang fungsi
+                                            sosio-pekerjaan saat ini (bagaimana
+                                            orang tersebut berfungsi di rumah,
+                                            di tempat kerja, dan dalam
+                                            hubungan).
+                                        </li>
+                                        <li>
+                                            Dapatkan informasi dasar termasuk
+                                            tempat tinggal orang tersebut,
+                                            tingkat pendidikan, riwayat
+                                            pekerjaan/pekerjaan, status
+                                            perkawinan dan jumlah/usia anak,
+                                            pendapatan, dan struktur/kondisi
+                                            kehidupan rumah tangga.
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- </div> -->
+                                <!-- End without Ol -->
+
+                                <!-- <ol class="mengambil-sejarah__list">
                                     <li class="list-title">
                                         Menyampaikan Keluhan
                                         <p>
                                             Gejala atau alasan utama orang
                                             tersebut mencari perawatan.
                                         </p>
-                                        <ul>
-                                            <li>
-                                                Tanyakan kapan, mengapa, dan
-                                                bagaimana hal itu dimulai.
-                                            </li>
-                                            <li>
-                                                Pada tahap ini, penting untuk
-                                                mengumpulkan informasi sebanyak
-                                                mungkin tentang gejala orang
-                                                tersebut dan situasinya.
-                                            </li>
-                                        </ul>
                                     </li>
+
+                                    <ul class="mengambil-sejarah__sub-list">
+                                        <li>
+                                            Tanyakan kapan, mengapa, dan
+                                            bagaimana hal itu dimulai.
+                                        </li>
+                                        <li>
+                                            Pada tahap ini, penting untuk
+                                            mengumpulkan informasi sebanyak
+                                            mungkin tentang gejala orang
+                                            tersebut dan situasinya.
+                                        </li>
+                                    </ul>
 
                                     <li class="list-title">
                                         Sejarah MNS yang lalu
-                                        <ul>
+                                        <ul class="mengambil-sejarah__sub-list">
                                             <li>
                                                 Tanyakan tentang masalah serupa
                                                 di masa lalu, rawat inap
@@ -458,7 +569,69 @@
                                             </li>
                                         </ul>
                                     </li>
-                                </ol>
+                                    <li class="list-title">
+                                        Riwayat Kesehatan Umum
+                                        <ul class="mengambil-sejarah__sub-list">
+                                            <li>
+                                                Tanyakan tentang masalah
+                                                kesehatan fisik dan pengobatan
+                                            </li>
+                                            <li>
+                                                Dapatkan daftar obat-obatan
+                                                terkini.
+                                            </li>
+                                            <li>
+                                                Tanyakan tentang alergi terhadap
+                                                obat-obatan.
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="list-title">
+                                        Riwayat Keluarga Kondisi MNS
+                                        <ul class="mengambil-sejarah__sub-list">
+                                            <li>
+                                                Jelajahi kemungkinan riwayat
+                                                keluarga dengan kondisi MNS dan
+                                                tanyakan apakah ada yang
+                                                memiliki gejala serupa atau
+                                                pernah menerima pengobatan untuk
+                                                kondisi MNS.
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="list-title">
+                                        Riwayat Psikososial Tanyakan
+                                        <ul class="mengambil-sejarah__sub-list">
+                                            <li>
+                                                tentang penyebab stres saat ini,
+                                                metode penanggulangannya, dan
+                                                dukungan sosial.
+                                            </li>
+                                            <li>
+                                                Tanyakan tentang fungsi
+                                                sosio-pekerjaan saat ini
+                                                (bagaimana orang tersebut
+                                                berfungsi di rumah, di tempat
+                                                kerja, dan dalam hubungan).
+                                            </li>
+                                            <li>
+                                                Dapatkan informasi dasar
+                                                termasuk tempat tinggal orang
+                                                tersebut, tingkat pendidikan,
+                                                riwayat pekerjaan/pekerjaan,
+                                                status perkawinan dan
+                                                jumlah/usia anak, pendapatan,
+                                                dan struktur/kondisi kehidupan
+                                                rumah tangga.
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ol> -->
+                                <p class="mb-0">
+                                    Untuk anak-anak dan remaja, tanyakan apakah
+                                    mereka mempunyai pengasuh, dan sifat serta
+                                    kualitas hubungan di antara mereka.
+                                </p>
                             </div>
                             <div class="pentingnya-praktik__arrow">
                                 <img
@@ -482,14 +655,16 @@
                                 />
                             </div>
 
-                            <div class="pentingnya-praktik__wrap-border">
+                            <div
+                                class="pentingnya-praktik__wrap-border kondisi-mns"
+                            >
                                 <h3 class="pentingnya-praktik__title">
                                     PENILAIAN KONDISI MNS
                                 </h3>
-                                <ol>
+                                <ol class="kondisi-mns__list">
                                     <li class="list-title">
                                         Pemeriksaan fisik
-                                        <ul>
+                                        <ul class="kondisi-mns__sub-list">
                                             <li>
                                                 Melakukan pemeriksaan fisik yang
                                                 ditargetkan dipandu oleh
@@ -501,7 +676,7 @@
 
                                     <li class="list-title">
                                         Pemeriksaan Status Mental (MSE)*
-                                        <ul>
+                                        <ul class="kondisi-mns__sub-list">
                                             <li>
                                                 Tanyakan dan amati Penampilan
                                                 dan Perilaku, Suasana Hati dan
@@ -515,7 +690,7 @@
                                     </li>
                                     <li class="list-title">
                                         Perbedaan diagnosa
-                                        <ul>
+                                        <ul class="kondisi-mns__sub-list">
                                             <li>
                                                 Pertimbangkan diagnosis banding
                                                 dan singkirkan kondisi yang
@@ -525,7 +700,7 @@
                                     </li>
                                     <li class="list-title">
                                         Tes Laboratorium Dasar
-                                        <ul>
+                                        <ul class="kondisi-mns__sub-list">
                                             <li>
                                                 Minta tes laboratorium bila
                                                 diindikasikan dan memungkinkan,
@@ -536,7 +711,7 @@
                                     </li>
                                     <li class="list-title">
                                         Identifikasi Kondisi MNS
-                                        <ul>
+                                        <ul class="kondisi-mns__sub-list">
                                             <li>
                                                 Identifikasi kondisi MNS
                                                 menggunakan modul yang sesuai.
@@ -554,13 +729,18 @@
                                     </li>
                                 </ol>
 
-                                <h4 class="pentingnya-praktik__tips">
+                                <h4
+                                    class="pentingnya-praktik__tips title text-red"
+                                >
                                     TIPS KLINIS:
                                 </h4>
                                 <span>
                                     Jika dicurigai adanya gangguan MNS, selalu
                                     lakukan penilaian terhadap tindakan
-                                    menyakiti diri sendiri/bunuh diri ( SUI )
+                                    menyakiti diri sendiri/bunuh diri
+                                    <NuxtLink to="/layanan/bagan-induk#sui"
+                                        >( SUI )</NuxtLink
+                                    >
                                 </span>
                             </div>
                             <br />
@@ -612,20 +792,22 @@
                                     waktu ke waktu melibatkan langkah-langkah
                                     berikut
                                 </p>
-                                <ol>
+                                <ol class="langkah-manajemen__list mb-0">
                                     <li class="langkah-manajemen__list-title">
                                         Kembangkan rencana perawatan bekerja
                                         sama dengan orang tersebut dan
                                         perawatnya.
                                     </li>
-                                    <h4 class="pentingnya-praktik__tips">
+                                    <h4
+                                        class="pentingnya-praktik__tips title text-red"
+                                    >
                                         TIPS KLINIS:
                                     </h4>
                                     <p class="fw-bold">
                                         Rencana pengobatan tertulis harus
                                         mencakup:
                                     </p>
-                                    <ul>
+                                    <ul class="langkah-manajemen__sub-list">
                                         <li>
                                             Intervensi farmakologis (jika ada)
                                         </li>
@@ -666,618 +848,589 @@
                                         sosial (termasuk perumahan) dan sektor
                                         terkait lainnya.
                                     </li>
-                                    <li class="langkah-manajemen__list-title">
+                                    <li
+                                        class="langkah-manajemen__list-title mb-0"
+                                    >
                                         Ubah rencana pengobatan untuk populasi
                                         khusus.
                                     </li>
                                 </ol>
                             </div>
-                            <ol class="list-title">
-                                <li>
-                                    <h4 class="list-title__sub-title">
-                                        Perencanaan Perawatan
-                                    </h4>
-                                    <ul>
-                                        <li>
-                                            Diskusikan dan tentukan tujuan
-                                            pengobatan yang menghormati kemauan
-                                            dan preferensi perawatan.
-                                        </li>
-                                        <li>
-                                            Libatkan pengasuh setelah mendapat
-                                            persetujuan orang tersebut.
-                                        </li>
-                                        <li>
-                                            Dorong pemantauan mandiri terhadap
-                                            gejala dan jelaskan kapan harus
-                                            segera mencari perawatan.
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <h4>Intervensi Psikososial</h4>
-                                    <ol type="A">
-                                        <li>
-                                            Psikoedukasi
-                                            <p>
-                                                Memberikan informasi tentang
-                                                kondisi MNS kepada orang,
-                                                termasuk:
-                                            </p>
-                                            <ul>
-                                                <li>
-                                                    Bagaimana kondisinya dan
-                                                    jalannya yang diharapkan dan
-                                                    hasil
-                                                </li>
-                                                <li>
-                                                    Perawatan yang tersedia
-                                                    untuk kondisi dan kondisinya
-                                                    keuntungan yang diharapkan
-                                                </li>
-                                                <li>Durasi pengobatan.</li>
-                                                <li>
-                                                    Pentingnya kepatuhan
-                                                    terhadap pengobatan,
-                                                    termasuk apa yang dapat
-                                                    dilakukan orang tersebut
-                                                    (misalnya minum obat atau
-                                                    melakukan intervensi
-                                                    psikologis yang relevan
-                                                    seperti latihan relaksasi)
-                                                    dan apa yang dapat dilakukan
-                                                    oleh perawat untuk membantu
-                                                    orang tersebut mematuhi
-                                                    pengobatan.
-                                                </li>
-                                                <li>
-                                                    Potensi efek samping (jangka
-                                                    pendek dan panjang) dari
-                                                    obat apa pun yang diresepkan
-                                                    oleh orang tersebut (dan
-                                                    pengasuhnya) perlu memantau.
-                                                </li>
-                                                <li>
-                                                    Potensi keterlibatan pekerja
-                                                    sosial, manajer kasus,
-                                                    petugas kesehatan masyarakat
-                                                    atau anggota terpercaya
-                                                    lainnya di masyarakat
-                                                </li>
-                                                <li>
-                                                    Lihat bagian manajemen dari
-                                                    modul yang relevan untuk
-                                                    informasi spesifik tentang
-                                                    gangguan MNS.
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li>
-                                            Mengurangi stres dan memperkuat
-                                            dukungan sosial
-                                            <p>
-                                                Mengatasi stres psikososial saat
-                                                ini:
-                                            </p>
-                                            <ul>
-                                                <li>
-                                                    Identifikasi dan diskusikan
-                                                    isu-isu psikososial relevan
-                                                    yang memberikan tekanan pada
-                                                    seseorang dan/atau berdampak
-                                                    pada kehidupan mereka
-                                                    termasuk, namun tidak
-                                                    terbatas pada, masalah
-                                                    keluarga dan hubungan,
-                                                    masalah
-                                                    pekerjaan/pekerjaan/mata
-                                                    pencaharian, perumahan,
-                                                    keuangan, akses terhadap
-                                                    keamanan dan layanan dasar,
-                                                    stigma , diskriminasi, dll.
-                                                </li>
-                                                <li>
-                                                    Bantu orang tersebut untuk
-                                                    mengelola stres dengan
-                                                    mendiskusikan metode seperti
-                                                    teknik pemecahan masalah.
-                                                </li>
-                                                <li>
-                                                    Menilai dan menangani setiap
-                                                    situasi penganiayaan,
-                                                    pelecehan (misalnya
-                                                    kekerasan dalam rumah
-                                                    tangga) dan penelantaran
-                                                    (misalnya terhadap anak-anak
-                                                    atau orang lanjut
-                                                    usia).Diskusikan dengan
-                                                    orang tersebut kemungkinan
-                                                    rujukan ke lembaga
-                                                    perlindungan terpercaya atau
-                                                    jaringan perlindungan
-                                                    informal. Hubungi sumber
-                                                    daya hukum dan komunitas,
-                                                    jika diperlukan.
-                                                </li>
-                                                <li>
-                                                    Identifikasi anggota
-                                                    keluarga yang suportif dan
-                                                    libatkan mereka sebanyak
-                                                    mungkin dan sesuai.
-                                                </li>
-                                                <li>
-                                                    Perkuat dukungan sosial dan
-                                                    coba aktifkan kembali
-                                                    jaringan sosial orang
-                                                    tersebut.
-                                                </li>
-                                                <li>
-                                                    Identifikasi aktivitas
-                                                    sosial sebelumnya yang, jika
-                                                    dimulai kembali, berpotensi
-                                                    memberikan dukungan
-                                                    psikososial langsung atau
-                                                    tidak langsung (misalnya
-                                                    pertemuan keluarga,
-                                                    mengunjungi tetangga,
-                                                    aktivitas komunitas,
-                                                    aktivitas keagamaan, dll.).
-                                                </li>
-                                                <li>
-                                                    Ajarkan manajemen stres
-                                                    seperti teknik relaksasi.
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li>
-                                            Meningkatkan fungsi dalam aktivitas
-                                            sehari-hari
+                            <div class="list-title">
+                                <h4
+                                    class="list-title__sub-title child-mns__title"
+                                >
+                                    1. Perencanaan Perawatan
+                                </h4>
 
-                                            <ul>
-                                                <li>
-                                                    Berikan dukungan kepada
-                                                    orang tersebut untuk
-                                                    melanjutkan aktivitas
-                                                    sosial, pendidikan, dan
-                                                    pekerjaan rutinnya sebanyak
-                                                    mungkin.
-                                                </li>
-                                                <li>
-                                                    Memfasilitasi inklusi dalam
-                                                    kegiatan ekonomi.
-                                                </li>
-                                                <li>
-                                                    Tawarkan pelatihan
-                                                    keterampilan hidup, dan/atau
-                                                    pelatihan keterampilan
-                                                    sosial jika diperlukan.
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li>
-                                            Perawatan Psikologis
-                                            <p>
-                                                Perawatan psikologis adalah
-                                                intervensi yang biasanya
-                                                memerlukan waktu khusus yang
-                                                besar dan cenderung diberikan
-                                                oleh spesialis yang terlatih
-                                                untuk menyediakannya. Meskipun
-                                                demikian, hal ini dapat
-                                                disampaikan secara efektif oleh
-                                                pekerja non-spesialisasi yang
-                                                terlatih dan diawasi dan melalui
-                                                bantuan mandiri yang dipandu
-                                                (misalnya dengan menggunakan
-                                                program kesehatan mental
-                                                elektronik atau buku bantuan
-                                                mandiri)
-                                            </p>
-                                            <p>
-                                                ntervensi yang tercantum di
-                                                bawah ini dijelaskan secara
-                                                singkat dalam daftar istilah.
-                                            </p>
-                                        </li>
-                                        <table class="table">
-                                            <thead>
-                                                <tr>
-                                                    <th class="table__title">
-                                                        Contoh Intervensi
-                                                    </th>
-                                                    <th class="table__title">
-                                                        Direkomendasikan untuk
-                                                    </th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>Aktivasi Perilaku</td>
-                                                    <td>DEP</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Pelatihan Relaksasi</td>
-                                                    <td>DEP</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        Perawatan Pemecahan
-                                                        Masalah
-                                                    </td>
-                                                    <td>DEP</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        Terapi Perilaku Kognitif
-                                                        (CBT)
-                                                    </td>
+                                <ul>
+                                    <li>
+                                        Diskusikan dan tentukan tujuan
+                                        pengobatan yang menghormati kemauan dan
+                                        preferensi perawatan.
+                                    </li>
+                                    <li>
+                                        Libatkan pengasuh setelah mendapat
+                                        persetujuan orang tersebut.
+                                    </li>
+                                    <li>
+                                        Dorong pemantauan mandiri terhadap
+                                        gejala dan jelaskan kapan harus segera
+                                        mencari perawatan.
+                                    </li>
+                                </ul>
 
-                                                    <td>DEP, CMH, PSY</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        Terapi Manajemen
-                                                        Kontingensi
-                                                    </td>
-                                                    <td>SUB</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        Konseling atau Terapi
-                                                        Keluarga
-                                                    </td>
-                                                    <td>PSY</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        Terapi Interpersonal
-                                                        (IPT)
-                                                    </td>
-                                                    <td>DEP</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        Pelatihan Keterampilan
-                                                        Orang Tua
-                                                    </td>
-                                                    <td>CMH</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </ol>
-                                </li>
-                                <li>
-                                    <h4>Interverensi Farmakologis</h4>
-                                    <ul>
-                                        <li>
-                                            Ikuti pedoman psikofarmakologi pada
-                                            setiap modul.
-                                        </li>
-                                        <li>
-                                            Gunakan intervensi farmakologis bila
-                                            tersedia dan bila diindikasikan
-                                            dalam algoritma penatalaksanaan dan
-                                            tabel yang disediakan.
-                                        </li>
-                                        <li>
-                                            Dalam memilih obat esensial yang
-                                            tepat, pertimbangkan profil efek
-                                            samping obat (jangka pendek dan
-                                            panjang), kemanjuran pengobatan
-                                            sebelumnya, interaksi obat-obat atau
-                                            interaksi obat-penyakit.
-                                        </li>
-                                        <li>
-                                            Konsultasikan dengan Formularium
-                                            Nasional atau Formularium WHO bila
-                                            diperlukan.
-                                        </li>
-                                        <li>
-                                            Mendidik orang tersebut tentang
-                                            risiko dan manfaat pengobatan,
-                                            potensi efek samping, durasi
-                                            pengobatan, dan pentingnya
-                                            kepatuhan.
-                                        </li>
-                                        <li>
-                                            Berhati-hatilah saat memberikan obat
-                                            kepada kelompok khusus seperti orang
-                                            lanjut usia, penderita penyakit
-                                            kronis, wanita hamil atau menyusui,
-                                            dan anak-anak/remaja. Konsultasikan
-                                            dengan spesialis bila diperlukan.
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <h4>
-                                        Rujukan ke dokter spesialis/rumah sakit
-                                        jika diperlukan
+                                <div class="psikososial">
+                                    <h4 class="child-mns__title">
+                                        2. Intervensi Psikososial
                                     </h4>
-                                    <p>
-                                        Tetap waspada terhadap situasi yang
-                                        mungkin memerlukan rujukan ke
-                                        spesialis/rumah sakit, misalnya, tidak
-                                        merespons pengobatan, efek samping
-                                        serius dengan intervensi farmakologis,
-                                        kondisi fisik dan/atau MNS penyerta,
-                                        risiko melukai diri sendiri/bunuh diri.
+                                    <h4 class="child-mns__desc font-500">
+                                        A. Psikoedukasi
+                                    </h4>
+                                    <p class="font-500 mb-0 child-mns__desc">
+                                        Memberikan informasi tentang kondisi MNS
+                                        kepada orang, termasuk:
                                     </p>
-                                </li>
-                                <li>
-                                    <h4>Tindak lanjut</h4>
-                                    <ul>
+                                    <ul class="psikososial__sub-list">
                                         <li>
-                                            Rencanakan kunjungan tindak lanjut
-                                            setelah penilaian awal.
+                                            Bagaimana kondisinya dan jalannya
+                                            yang diharapkan dan hasil
                                         </li>
                                         <li>
-                                            Setelah setiap kunjungan, jadwalkan
-                                            janji tindak lanjut dan dorong
-                                            kehadiran. Jadwalkan janji temu pada
-                                            waktu yang nyaman bagi kedua belah
-                                            pihak.
+                                            Perawatan yang tersedia untuk
+                                            kondisi dan kondisinya keuntungan
+                                            yang diharapkan
+                                        </li>
+                                        <li>Durasi pengobatan.</li>
+                                        <li>
+                                            Pentingnya kepatuhan terhadap
+                                            pengobatan, termasuk apa yang dapat
+                                            dilakukan orang tersebut (misalnya
+                                            minum obat atau melakukan intervensi
+                                            psikologis yang relevan seperti
+                                            latihan relaksasi) dan apa yang
+                                            dapat dilakukan oleh perawat untuk
+                                            membantu orang tersebut mematuhi
+                                            pengobatan.
                                         </li>
                                         <li>
-                                            Jadwalkan kunjungan tindak lanjut
-                                            awal lebih sering sampai gejala
-                                            mulai merespons pengobatan. Begitu
-                                            gejala mulai membaik, jadwalkan
-                                            janji temu yang lebih jarang namun
-                                            teratur.
+                                            Potensi efek samping (jangka pendek
+                                            dan panjang) dari obat apa pun yang
+                                            diresepkan oleh orang tersebut (dan
+                                            pengasuhnya) perlu memantau.
                                         </li>
-                                        <li class="fw-bold">
-                                            Pada setiap pertemuan tindak lanjut,
-                                            nilailah:
-                                            <ul>
-                                                <li>
-                                                    Respon terhadap pengobatan,
-                                                    efek samping pengobatan, dan
-                                                    kepatuhan terhadap
-                                                    pengobatan dan intervensi
-                                                    psikososial.
-                                                </li>
-                                                <li>
-                                                    Status kesehatan umum
-                                                    (pastikan untuk memantau
-                                                    status kesehatan fisik
-                                                    secara teratur).
-                                                </li>
-                                                <li>
-                                                    Perawatan diri (misalnya
-                                                    pola makan, kebersihan,
-                                                    pakaian) dan berfungsi
-                                                    lingkungan orang itu
-                                                    sendiri.
-                                                </li>
-                                                <li>
-                                                    Masalah psikososial dan/atau
-                                                    perubahan kondisi kehidupan
-                                                    yang dapat mempengaruhi
-                                                    manajemen.
-                                                </li>
-                                                <li>
-                                                    Pemahaman dan harapan orang
-                                                    tersebut dan pengasuhnya
-                                                    terhadap pengobatan.
-                                                    Perbaiki kesalahpahaman apa
-                                                    pun.
-                                                </li>
-                                            </ul>
+                                        <li>
+                                            Potensi keterlibatan pekerja sosial,
+                                            manajer kasus, petugas kesehatan
+                                            masyarakat atau anggota terpercaya
+                                            lainnya di masyarakat
                                         </li>
-                                        <li class="fw-bold">
-                                            Selama seluruh periode tindak
-                                            lanjut:
-                                            <ul>
-                                                <li>
-                                                    Akui semua kemajuan menuju
-                                                    tujuan pengobatan dan
-                                                    perkuat kepatuhan.
-                                                </li>
-                                                <li>
-                                                    Pertahankan kontak teratur
-                                                    dengan orang tersebut (dan
-                                                    pengasuhnya, bila perlu).
-                                                    Jika tersedia, tugaskan
-                                                    seorang pekerja komunitas
-                                                    atau orang terpercaya
-                                                    lainnya di komunitas untuk
-                                                    mendukung orang tersebut
-                                                    (misalnya anggota keluarga).
-                                                </li>
-                                                <li>
-                                                    Jelaskan bahwa orang
-                                                    tersebut dapat kembali ke
-                                                    klinik kapan saja waktu di
-                                                    antara kunjungan tindak
-                                                    lanjut jika diperlukan
-                                                    (misalnya untuk efek samping
-                                                    obat, dll).
-                                                </li>
-                                                <li>
-                                                    Miliki rencana tindakan
-                                                    ketika orang tersebut tidak
-                                                    melakukannya muncul untuk
-                                                    janji temu.
-                                                </li>
-                                                <li>
-                                                    Gunakan sumber daya keluarga
-                                                    dan komunitas untuk
-                                                    menghubungi orang-orang yang
-                                                    belum kembali untuk tindak
-                                                    lanjut rutin
-                                                </li>
-                                                <li>
-                                                    Konsultasikan dengan
-                                                    spesialis jika orang
-                                                    tersebut tidak membaik atau
-                                                    memburuk
-                                                </li>
-                                                <li>
-                                                    Dokumentasikan aspek-aspek
-                                                    kunci interaksi dengan orang
-                                                    tersebut dan keluarga dalam
-                                                    catatan kasus.
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li class="fw-bold">
+                                        <li>
                                             Lihat bagian manajemen dari modul
-                                            yang relevan untuk informasi tindak
-                                            lanjut spesifik gangguan.
+                                            yang relevan untuk informasi
+                                            spesifik tentang gangguan MNS.
                                         </li>
                                     </ul>
-                                </li>
-                                <li>
-                                    <h4>Melibatkan Pengasuh</h4>
-                                    <ul>
-                                        <li>
-                                            Bila perlu, dan dengan persetujuan
-                                            orang yang bersangkutan, libatkan
-                                            pengasuh atau anggota keluarga dalam
-                                            perawatan orang tersebut
-                                        </li>
-                                        <li>
-                                            Akui bahwa merawat orang dengan
-                                            kondisi MNS bisa menjadi tantangan.
-                                        </li>
-                                        <li>
-                                            Jelaskan kepada pengasuh pentingnya
-                                            menghormati martabat dan hak-hak
-                                            orang dengan kondisi MNS
-                                        </li>
-                                        <li>
-                                            Identifikasi dampak psikososial pada
-                                            pengasuh.
-                                        </li>
-                                        <li>
-                                            Kaji kebutuhan pengasuh untuk
-                                            memastikan dukungan dan sumber daya
-                                            yang diperlukan untuk kehidupan
-                                            keluarga, pekerjaan, kegiatan
-                                            sosial,Dan kesehatan.
-                                        </li>
-                                        <li>
-                                            Dorong keterlibatan dalam kelompok
-                                            swadaya dan dukungan keluarga, jika
-                                            tersedia.
-                                        </li>
-                                        <li>
-                                            Dengan persetujuan orang tersebut,
-                                            terus berikan informasi kepada
-                                            pengasuh tentang status kesehatan
-                                            orang tersebut, termasuk masalah
-                                            yang berkaitan dengan penilaian,
-                                            pengobatan, tindak lanjut, dan
-                                            potensi apa pun. efek samping.
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <h4>Keterkaitan dengan sektor lain</h4>
-                                    <p>
-                                        Untuk memastikan layanan yang
-                                        komprehensif dan berdasarkan penilaian
-                                        awal, kaitkan orang tersebut dengan
-                                        pekerjaan, pendidikan, layanan sosial
-                                        (termasuk perumahan) dan sektor terkait
-                                        lainnya.
+
+                                    <h4 class="child-mns__desc font-500">
+                                        B. Mengurangi stres dan memperkuat
+                                        dukungan sosial
+                                    </h4>
+                                    <p class="font-500 mb-0 child-mns__desc">
+                                        Mengatasi stres psikososial saat ini:
                                     </p>
-                                </li>
-                                <li>
-                                    <h4>Populasi Khusus</h4>
-                                    <h5>Anak / Remaja</h5>
-                                    <ul>
+                                    <ul class="psikososial__sub-list">
                                         <li>
-                                            Jelajahi paparan terhadap
-                                            faktor-faktor buruk seperti
-                                            kekerasan dan penelantaran yang
-                                            dapat mempengaruhi kesehatan mental
-                                            dan kesejahteraan.
-                                        </li>
-                                        <li>Kaji kebutuhan pengasuh.</li>
-                                        <li>
-                                            Perlakukan remaja yang mungkin
-                                            datang sendiri untuk meminta bantuan
-                                            meskipun tidak didampingi oleh orang
-                                            tua atau wali. Dapatkan informasi
-                                            persetujuan dari remaja tersebut.
+                                            Identifikasi dan diskusikan isu-isu
+                                            psikososial relevan yang memberikan
+                                            tekanan pada seseorang dan/atau
+                                            berdampak pada kehidupan mereka
+                                            termasuk, namun tidak terbatas pada,
+                                            masalah keluarga dan hubungan,
+                                            masalah pekerjaan/pekerjaan/mata
+                                            pencaharian, perumahan, keuangan,
+                                            akses terhadap keamanan dan layanan
+                                            dasar, stigma , diskriminasi, dll.
                                         </li>
                                         <li>
-                                            Berikan kesempatan kepada
-                                            anak/remaja untuk mengungkapkan
-                                            kekhawatirannya secara pribadi.
+                                            Bantu orang tersebut untuk mengelola
+                                            stres dengan mendiskusikan metode
+                                            seperti teknik pemecahan masalah.
                                         </li>
                                         <li>
-                                            Sesuaikan bahasa dengan tingkat
-                                            pemahaman anak/remaja.
+                                            Menilai dan menangani setiap situasi
+                                            penganiayaan, pelecehan (misalnya
+                                            kekerasan dalam rumah tangga) dan
+                                            penelantaran (misalnya terhadap
+                                            anak-anak atau orang lanjut
+                                            usia).Diskusikan dengan orang
+                                            tersebut kemungkinan rujukan ke
+                                            lembaga perlindungan terpercaya atau
+                                            jaringan perlindungan informal.
+                                            Hubungi sumber daya hukum dan
+                                            komunitas, jika diperlukan.
                                         </li>
                                         <li>
-                                            Jelajahi sumber daya yang tersedia
-                                            dalam keluarga, sekolah, dan
-                                            komunitas.
-                                        </li>
-                                    </ul>
-                                    <h5>Wanita Yang Hamil Atau Menyusui</h5>
-                                    <ul>
-                                        <li>
-                                            Jika wanita tersebut dalam usia
-                                            subur, tanyakan tentang:
-                                            <ul>
-                                                <li>Menyusui</li>
-                                                <li>Kemungkinan hamil</li>
-                                                <li>
-                                                    Haid terakhir, jika hamil
-                                                </li>
-                                            </ul>
+                                            Identifikasi anggota keluarga yang
+                                            suportif dan libatkan mereka
+                                            sebanyak mungkin dan sesuai.
                                         </li>
                                         <li>
-                                            Berhubungan dengan spesialis
-                                            kesehatan ibu untuk mengatur
-                                            perawatan.
+                                            Perkuat dukungan sosial dan coba
+                                            aktifkan kembali jaringan sosial
+                                            orang tersebut.
                                         </li>
                                         <li>
-                                            Pertimbangkan konsultasi dengan
-                                            spesialis kesehatan mental jika
-                                            tersedia.
+                                            Identifikasi aktivitas sosial
+                                            sebelumnya yang, jika dimulai
+                                            kembali, berpotensi memberikan
+                                            dukungan psikososial langsung atau
+                                            tidak langsung (misalnya pertemuan
+                                            keluarga, mengunjungi tetangga,
+                                            aktivitas komunitas, aktivitas
+                                            keagamaan, dll.).
                                         </li>
                                         <li>
-                                            Berhati-hatilah dengan intervensi
-                                            farmakologis – periksa toksisitas
-                                            pada janin dan masuk ke dalam ASI.
-                                            Konsultasikan dengan spesialis bila
-                                            diperlukan.
+                                            Ajarkan manajemen stres seperti
+                                            teknik relaksasi.
                                         </li>
                                     </ul>
-                                    <h5>Orang Tua</h5>
-                                    <ul>
+
+                                    <h4 class="child-mns__desc font-500">
+                                        C. Meningkatkan fungsi dalam aktivitas
+                                        sehari-hari
+                                    </h4>
+
+                                    <ul class="psikososial__sub-list">
                                         <li>
-                                            Atasi penyebab stres psikososial
-                                            yang sangat relevan dengan orang
-                                            tersebut, dengan menghormati
-                                            kebutuhan mereka akan otonomi.
+                                            Berikan dukungan kepada orang
+                                            tersebut untuk melanjutkan aktivitas
+                                            sosial, pendidikan, dan pekerjaan
+                                            rutinnya sebanyak mungkin.
                                         </li>
                                         <li>
-                                            Identifikasi dan obati masalah
-                                            kesehatan fisik yang terjadi
-                                            bersamaan dan atasi defisit sensorik
-                                            (seperti gangguan penglihatan atau
-                                            pendengaran yang buruk) dengan
-                                            perangkat yang sesuai (misalnya kaca
-                                            pembesar, alat bantu dengar).
+                                            Memfasilitasi inklusi dalam kegiatan
+                                            ekonomi.
                                         </li>
                                         <li>
-                                            Gunakan obat dengan dosis lebih
-                                            rendah.
+                                            Tawarkan pelatihan keterampilan
+                                            hidup, dan/atau pelatihan
+                                            keterampilan sosial jika diperlukan
                                         </li>
-                                        <li>
-                                            Antisipasi peningkatan risiko
-                                            interaksi obat.
-                                        </li>
-                                        <li>Tangani kebutuhan pengasuh.</li>
                                     </ul>
-                                </li>
-                            </ol>
+
+                                    <h4 class="child-mns__desc font-500">
+                                        D. Perawatan Psikologis
+                                    </h4>
+
+                                    <p>
+                                        Perawatan psikologis adalah intervensi
+                                        yang biasanya memerlukan waktu khusus
+                                        yang besar dan cenderung diberikan oleh
+                                        spesialis yang terlatih untuk
+                                        menyediakannya. Meskipun demikian, hal
+                                        ini dapat disampaikan secara efektif
+                                        oleh pekerja non-spesialisasi yang
+                                        terlatih dan diawasi dan melalui bantuan
+                                        mandiri yang dipandu (misalnya dengan
+                                        menggunakan program kesehatan mental
+                                        elektronik atau buku bantuan mandiri
+                                    </p>
+                                    <p>
+                                        Intervensi yang tercantum di bawah ini
+                                        dijelaskan secara singkat dalam daftar
+                                        istilah.
+                                    </p>
+
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th class="table__title">
+                                                    Contoh Intervensi
+                                                </th>
+                                                <th class="table__title">
+                                                    Direkomendasikan untuk
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Aktivasi Perilaku</td>
+                                                <td>DEP</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Pelatihan Relaksasi</td>
+                                                <td>DEP</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    Perawatan Pemecahan Masalah
+                                                </td>
+                                                <td>DEP</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    Terapi Perilaku Kognitif
+                                                    (CBT)
+                                                </td>
+
+                                                <td>DEP, CMH, PSY</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    Terapi Manajemen Kontingensi
+                                                </td>
+                                                <td>SUB</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    Konseling atau Terapi
+                                                    Keluarga
+                                                </td>
+                                                <td>PSY</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    Terapi Interpersonal (IPT)
+                                                </td>
+                                                <td>DEP</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    Pelatihan Keterampilan Orang
+                                                    Tua
+                                                </td>
+                                                <td>CMH</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                                <h4
+                                    class="list-title__sub-title child-mns__title"
+                                >
+                                    3. Interverensi Farmakologis
+                                </h4>
+
+                                <ul>
+                                    <li>
+                                        Ikuti pedoman psikofarmakologi pada
+                                        setiap modul.
+                                    </li>
+                                    <li>
+                                        Gunakan intervensi farmakologis bila
+                                        tersedia dan bila diindikasikan dalam
+                                        algoritma penatalaksanaan dan tabel yang
+                                        disediakan.
+                                    </li>
+                                    <li>
+                                        Dalam memilih obat esensial yang tepat,
+                                        pertimbangkan profil efek samping obat
+                                        (jangka pendek dan panjang), kemanjuran
+                                        pengobatan sebelumnya, interaksi
+                                        obat-obat atau interaksi obat-penyakit.
+                                    </li>
+                                    <li>
+                                        Konsultasikan dengan Formularium
+                                        Nasional atau Formularium WHO bila
+                                        diperlukan.
+                                    </li>
+                                    <li>
+                                        Mendidik orang tersebut tentang risiko
+                                        dan manfaat pengobatan, potensi efek
+                                        samping, durasi pengobatan, dan
+                                        pentingnya kepatuhan.
+                                    </li>
+                                    <li>
+                                        Berhati-hatilah saat memberikan obat
+                                        kepada kelompok khusus seperti orang
+                                        lanjut usia, penderita penyakit kronis,
+                                        wanita hamil atau menyusui, dan
+                                        anak-anak/remaja. Konsultasikan dengan
+                                        spesialis bila diperlukan.
+                                    </li>
+                                </ul>
+
+                                <h4
+                                    class="list-title__sub-title child-mns__title"
+                                >
+                                    4. Rujukan ke dokter spesialis/rumah sakit
+                                    jika diperlukan
+                                </h4>
+                                <p>
+                                    Tetap waspada terhadap situasi yang mungkin
+                                    memerlukan rujukan ke spesialis/rumah sakit,
+                                    misalnya, tidak merespons pengobatan, efek
+                                    samping serius dengan intervensi
+                                    farmakologis, kondisi fisik dan/atau MNS
+                                    penyerta, risiko melukai diri sendiri/bunuh
+                                    diri.
+                                </p>
+
+                                <h4
+                                    class="list-title__sub-title child-mns__title"
+                                >
+                                    5. Tindak lanjut
+                                </h4>
+                                <ul>
+                                    <li>
+                                        Rencanakan kunjungan tindak lanjut
+                                        setelah penilaian awal.
+                                    </li>
+                                    <li>
+                                        Setelah setiap kunjungan, jadwalkan
+                                        janji tindak lanjut dan dorong
+                                        kehadiran. Jadwalkan janji temu pada
+                                        waktu yang nyaman bagi kedua belah
+                                        pihak.
+                                    </li>
+                                    <li>
+                                        Jadwalkan kunjungan tindak lanjut awal
+                                        lebih sering sampai gejala mulai
+                                        merespons pengobatan. Begitu gejala
+                                        mulai membaik, jadwalkan janji temu yang
+                                        lebih jarang namun teratur.
+                                    </li>
+                                    <li class="fw-bold">
+                                        Pada setiap pertemuan tindak lanjut,
+                                        nilailah:
+                                        <ul>
+                                            <li>
+                                                Respon terhadap pengobatan, efek
+                                                samping pengobatan, dan
+                                                kepatuhan terhadap pengobatan
+                                                dan intervensi psikososial.
+                                            </li>
+                                            <li>
+                                                Status kesehatan umum (pastikan
+                                                untuk memantau status kesehatan
+                                                fisik secara teratur).
+                                            </li>
+                                            <li>
+                                                Perawatan diri (misalnya pola
+                                                makan, kebersihan, pakaian) dan
+                                                berfungsi lingkungan orang itu
+                                                sendiri.
+                                            </li>
+                                            <li>
+                                                Masalah psikososial dan/atau
+                                                perubahan kondisi kehidupan yang
+                                                dapat mempengaruhi manajemen.
+                                            </li>
+                                            <li>
+                                                Pemahaman dan harapan orang
+                                                tersebut dan pengasuhnya
+                                                terhadap pengobatan. Perbaiki
+                                                kesalahpahaman apa pun.
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="fw-bold">
+                                        Selama seluruh periode tindak lanjut:
+                                        <ul>
+                                            <li>
+                                                Akui semua kemajuan menuju
+                                                tujuan pengobatan dan perkuat
+                                                kepatuhan.
+                                            </li>
+                                            <li>
+                                                Pertahankan kontak teratur
+                                                dengan orang tersebut (dan
+                                                pengasuhnya, bila perlu). Jika
+                                                tersedia, tugaskan seorang
+                                                pekerja komunitas atau orang
+                                                terpercaya lainnya di komunitas
+                                                untuk mendukung orang tersebut
+                                                (misalnya anggota keluarga).
+                                            </li>
+                                            <li>
+                                                Jelaskan bahwa orang tersebut
+                                                dapat kembali ke klinik kapan
+                                                saja waktu di antara kunjungan
+                                                tindak lanjut jika diperlukan
+                                                (misalnya untuk efek samping
+                                                obat, dll).
+                                            </li>
+                                            <li>
+                                                Miliki rencana tindakan ketika
+                                                orang tersebut tidak
+                                                melakukannya muncul untuk janji
+                                                temu.
+                                            </li>
+                                            <li>
+                                                Gunakan sumber daya keluarga dan
+                                                komunitas untuk menghubungi
+                                                orang-orang yang belum kembali
+                                                untuk tindak lanjut rutin
+                                            </li>
+                                            <li>
+                                                Konsultasikan dengan spesialis
+                                                jika orang tersebut tidak
+                                                membaik atau memburuk
+                                            </li>
+                                            <li>
+                                                Dokumentasikan aspek-aspek kunci
+                                                interaksi dengan orang tersebut
+                                                dan keluarga dalam catatan
+                                                kasus.
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="fw-bold">
+                                        Lihat bagian manajemen dari modul yang
+                                        relevan untuk informasi tindak lanjut
+                                        spesifik gangguan.
+                                    </li>
+                                </ul>
+
+                                <h4
+                                    class="list-title__sub-title child-mns__title"
+                                >
+                                    6. Melibatkan Pengasuh
+                                </h4>
+                                <ul>
+                                    <li>
+                                        Bila perlu, dan dengan persetujuan orang
+                                        yang bersangkutan, libatkan pengasuh
+                                        atau anggota keluarga dalam perawatan
+                                        orang tersebut
+                                    </li>
+                                    <li>
+                                        Akui bahwa merawat orang dengan kondisi
+                                        MNS bisa menjadi tantangan.
+                                    </li>
+                                    <li>
+                                        Jelaskan kepada pengasuh pentingnya
+                                        menghormati martabat dan hak-hak orang
+                                        dengan kondisi MNS
+                                    </li>
+                                    <li>
+                                        Identifikasi dampak psikososial pada
+                                        pengasuh.
+                                    </li>
+                                    <li>
+                                        Kaji kebutuhan pengasuh untuk memastikan
+                                        dukungan dan sumber daya yang diperlukan
+                                        untuk kehidupan keluarga, pekerjaan,
+                                        kegiatan sosial,Dan kesehatan.
+                                    </li>
+                                    <li>
+                                        Dorong keterlibatan dalam kelompok
+                                        swadaya dan dukungan keluarga, jika
+                                        tersedia.
+                                    </li>
+                                    <li>
+                                        Dengan persetujuan orang tersebut, terus
+                                        berikan informasi kepada pengasuh
+                                        tentang status kesehatan orang tersebut,
+                                        termasuk masalah yang berkaitan dengan
+                                        penilaian, pengobatan, tindak lanjut,
+                                        dan potensi apa pun. efek samping.
+                                    </li>
+                                </ul>
+
+                                <h4
+                                    class="list-title__sub-title child-mns__title"
+                                >
+                                    7. Keterkaitan dengan sektor lain
+                                </h4>
+                                <p>
+                                    Untuk memastikan layanan yang komprehensif
+                                    dan berdasarkan penilaian awal, kaitkan
+                                    orang tersebut dengan pekerjaan, pendidikan,
+                                    layanan sosial (termasuk perumahan) dan
+                                    sektor terkait lainnya.
+                                </p>
+
+                                <h4
+                                    class="list-title__sub-title child-mns__title"
+                                >
+                                    8. Populasi Khusus
+                                </h4>
+                                <h5>Anak / Remaja</h5>
+                                <ul>
+                                    <li>
+                                        Jelajahi paparan terhadap faktor-faktor
+                                        buruk seperti kekerasan dan penelantaran
+                                        yang dapat mempengaruhi kesehatan mental
+                                        dan kesejahteraan.
+                                    </li>
+                                    <li>Kaji kebutuhan pengasuh.</li>
+                                    <li>
+                                        Perlakukan remaja yang mungkin datang
+                                        sendiri untuk meminta bantuan meskipun
+                                        tidak didampingi oleh orang tua atau
+                                        wali. Dapatkan informasi persetujuan
+                                        dari remaja tersebut.
+                                    </li>
+                                    <li>
+                                        Berikan kesempatan kepada anak/remaja
+                                        untuk mengungkapkan kekhawatirannya
+                                        secara pribadi.
+                                    </li>
+                                    <li>
+                                        Sesuaikan bahasa dengan tingkat
+                                        pemahaman anak/remaja.
+                                    </li>
+                                    <li>
+                                        Jelajahi sumber daya yang tersedia dalam
+                                        keluarga, sekolah, dan komunitas.
+                                    </li>
+                                </ul>
+                                <h5>Wanita Yang Hamil Atau Menyusui</h5>
+                                <ul>
+                                    <li>
+                                        Jika wanita tersebut dalam usia subur,
+                                        tanyakan tentang:
+                                        <ul>
+                                            <li>Menyusui</li>
+                                            <li>Kemungkinan hamil</li>
+                                            <li>Haid terakhir, jika hamil</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        Berhubungan dengan spesialis kesehatan
+                                        ibu untuk mengatur perawatan.
+                                    </li>
+                                    <li>
+                                        Pertimbangkan konsultasi dengan
+                                        spesialis kesehatan mental jika
+                                        tersedia.
+                                    </li>
+                                    <li>
+                                        Berhati-hatilah dengan intervensi
+                                        farmakologis – periksa toksisitas pada
+                                        janin dan masuk ke dalam ASI.
+                                        Konsultasikan dengan spesialis bila
+                                        diperlukan.
+                                    </li>
+                                </ul>
+                                <h5>Orang Tua</h5>
+                                <ul>
+                                    <li>
+                                        Atasi penyebab stres psikososial yang
+                                        sangat relevan dengan orang tersebut,
+                                        dengan menghormati kebutuhan mereka akan
+                                        otonomi.
+                                    </li>
+                                    <li>
+                                        Identifikasi dan obati masalah kesehatan
+                                        fisik yang terjadi bersamaan dan atasi
+                                        defisit sensorik (seperti gangguan
+                                        penglihatan atau pendengaran yang buruk)
+                                        dengan perangkat yang sesuai (misalnya
+                                        kaca pembesar, alat bantu dengar).
+                                    </li>
+                                    <li>
+                                        Gunakan obat dengan dosis lebih rendah.
+                                    </li>
+                                    <li>
+                                        Antisipasi peningkatan risiko interaksi
+                                        obat.
+                                    </li>
+                                    <li>Tangani kebutuhan pengasuh.</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -1305,14 +1458,12 @@ ol {
 }
 .list-title {
     font-weight: 500;
+    @include typo(title-1);
+    margin-bottom: 12px;
     &__sub-title {
         margin-top: 24px;
     }
 }
-
-// .wrap-deskripsi {
-//     padding-top: 0;
-// }
 
 .prinsip-umum {
     &__column {
@@ -1343,7 +1494,6 @@ ol {
     padding-top: 0;
 }
 .pentingnya-praktik {
-    // padding-top: 0;
     margin-top: 24px;
     &__mengambil-sejarah {
         border-radius: 8px;
@@ -1373,7 +1523,7 @@ ol {
     }
 
     &__tips {
-        color: $danger-color;
+        margin-bottom: 12px;
     }
     &__wrap-border {
         border-radius: 8px;
@@ -1381,9 +1531,27 @@ ol {
         padding: 24px;
     }
     .langkah-manajemen {
+        &__list {
+            padding-left: 0;
+            list-style-position: inside;
+        }
         &__list-title {
             font-weight: 500;
         }
+        &__sub-list {
+            padding-left: 0;
+            list-style-position: inside;
+        }
+    }
+}
+.mengambil-sejarah {
+    &__list &__sub-list {
+        padding-left: 0;
+    }
+}
+.kondisi-mns {
+    &__list &__sub-list {
+        padding-left: 0;
     }
 }
 .kesehatan-fisik {
@@ -1423,9 +1591,27 @@ ol {
         @include vwUnit(padding-bottom, $space-y);
         @include vwDesktop(padding-left, $space-x);
         border-bottom: 1px solid #dedbdb;
+        font-weight: 400;
         @media screen and (max-width: 576px) {
             text-align: center;
         }
     }
+}
+
+.child-mns {
+    &__list {
+        list-style: upper-alpha;
+        padding-left: 0;
+    }
+    &__desc {
+        margin-top: 24px;
+        @include typo(title-1);
+    }
+    &__title {
+        font-weight: 400;
+    }
+    // & .child-mns__sub-list {
+    //     // padding-left: 0;
+    // }
 }
 </style>
