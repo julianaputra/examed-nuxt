@@ -7,7 +7,7 @@
                 <LayoutsFilterbar
                     v-model:daerah-value="daerahFilter"
                     :daerah-data="daerahData"
-                    title-sort="Semua Daerah"
+                    title-sort="Pilih Daerah"
                     @search="searchRumahSakit"
                 />
                 <LayoutsListTable
@@ -296,6 +296,6 @@ const breadcrumbs: Ref<Breadcrumb[]> = ref([])
 }
 
 ::v-deep .breadcrumb {
-    @include vwUnit(padding-bottom, 40);
+    @include vwUnit(padding-bottom, 8);
 }
 </style>

@@ -76,7 +76,7 @@ const breadcrumbs: Ref<Breadcrumb[]> = ref([])
     }
 
     &__title {
-        @include vwUnit(margin-bottom, 15);
+        @include vwUnit(margin-bottom, 40);
         @include typo(heading-1);
     }
 
@@ -139,6 +139,7 @@ const breadcrumbs: Ref<Breadcrumb[]> = ref([])
 }
 
 ::v-deep .breadcrumb {
-    @include vwUnit(padding-bottom, 40);
+    @include vwUnit(padding-bottom, 0);
+    @include vwUnit(margin-bottom, 8);
 }
 </style>

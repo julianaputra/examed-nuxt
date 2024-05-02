@@ -24,6 +24,7 @@
                                 <p class="about__list-desc">{{ item.desc }}</p>
                             </div>
                         </div>
+                        <UiButton to="/tentang-kami">Tentang Kami</UiButton>
                     </div>
                 </div>
                 <div class="col-12 col-xl-5 text-center">

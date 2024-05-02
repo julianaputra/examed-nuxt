@@ -98,6 +98,7 @@ const pageData = ref({
 }
 
 .service-card {
+    background-color: #ffffff;
     display: block;
     @include vwUnit(margin-bottom, 30);
     @include vwUnit(padding, 30, 15);

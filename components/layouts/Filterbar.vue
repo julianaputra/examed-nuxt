@@ -18,7 +18,7 @@
             <div v-if="props.rsuFilter" class="col-12 col-lg-3">
                 <div class="filter-bar__item-container">
                     <select v-model="praktekValue" class="form-select">
-                        <option value="all" class="">
+                        <option value="all" class="form-select__title">
                             Pilih Tempat Praktek
                         </option>
                         <option
@@ -113,6 +113,10 @@ const searchRumahSakit = () => {
         @include vwUnit(padding-right, 15);
         @include vwUnit(padding-bottom, 15);
         @include vwUnit(padding-left, 15);
+        opacity: 0.6;
+        &__title {
+            background-color: aqua;
+        }
     }
 
     .input-group {
