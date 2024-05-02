@@ -803,7 +803,7 @@
                                     >
                                         TIPS KLINIS:
                                     </h4>
-                                    <p class="fw-bold">
+                                    <p class="font-500">
                                         Rencana pengobatan tertulis harus
                                         mencakup:
                                     </p>
