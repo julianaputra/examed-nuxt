@@ -188,15 +188,6 @@ const breadcrumbs: Ref<Breadcrumb[]> = ref([
 </script>
 
 <style lang="scss" scoped>
-.title {
-    font-size: 54px;
-    @media screen and (max-width: 991px) {
-        font-size: 48px;
-    }
-    @media screen and (max-width: 576px) {
-        font-size: 40px;
-    }
-}
 .overview {
     &__card-content {
         position: sticky;

@@ -22,9 +22,7 @@
                             </li>
                             <li>
                                 untuk presentasi darurat silahkan klik link ini
-                                <a href="" class="text-red font-500"
-                                    >Presentasi Darurat.</a
-                                >
+                                <a href="" class="text-red font-500">Presentasi Darurat.</a>
                             </li>
                         </ol>
                     </div>
@@ -82,10 +80,8 @@
                             anak-anak dan remaja.
                         </p>
 
-                        <span class="gangguan-cmh__title"
-                            >Anak/remaja yang diperiksa untuk keluhan fisik atau
-                            pemeriksaan kesehatan umum yang memiliki:</span
-                        >
+                        <span class="gangguan-cmh__title">Anak/remaja yang diperiksa untuk keluhan fisik atau
+                            pemeriksaan kesehatan umum yang memiliki:</span>
 
                         <ul>
                             <li>
@@ -102,10 +98,8 @@
                             </li>
                         </ul>
 
-                        <span class="gangguan-cmh__title"
-                            >Pengasuh yang mempunyai kekhawatiran terhadap
-                            anak/remaja:</span
-                        >
+                        <span class="gangguan-cmh__title">Pengasuh yang mempunyai kekhawatiran terhadap
+                            anak/remaja:</span>
 
                         <ul>
                             <li>
@@ -121,10 +115,8 @@
                             </li>
                         </ul>
 
-                        <span class="gangguan-cmh__title"
-                            >Guru yang mempunyai kepedulian terhadap
-                            anak/remaja</span
-                        >
+                        <span class="gangguan-cmh__title">Guru yang mempunyai kepedulian terhadap
+                            anak/remaja</span>
 
                         <ul>
                             <li>
@@ -134,11 +126,9 @@
                             </li>
                         </ul>
 
-                        <span class="gangguan-cmh__title"
-                            >Pekerja kesehatan masyarakat atau layanan sosial
+                        <span class="gangguan-cmh__title">Pekerja kesehatan masyarakat atau layanan sosial
                             yang mempunyai kekhawatiran terhadap
-                            anak/remaja</span
-                        >
+                            anak/remaja</span>
 
                         <ul>
                             <li>
@@ -196,14 +186,10 @@
                             <table class="table">
                                 <thead class="">
                                     <tr>
-                                        <th
-                                            class="list-table__darurat text-red"
-                                        >
+                                        <th class="list-table__darurat text-red">
                                             Presentasi Darurat
                                         </th>
-                                        <th
-                                            class="list-table__kondisi text-red"
-                                        >
+                                        <th class="list-table__kondisi text-red">
                                             Kondisi yang perlu Diperhatikan
                                         </th>
                                         <th class="list-table__modul text-red">
@@ -213,57 +199,51 @@
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td
-                                            data-title="Presentasi Darurat"
-                                            class="list-table__name mb-0"
-                                        >
+                                        <td data-title="Presentasi Darurat" class="list-table__name mb-0">
                                             <ul class="mb-0">
                                                 <li>
-                                                    <p>
-                                                        Tindakan menyakiti diri
-                                                        sendiri dengan
-                                                        tanda-tanda keracunan
-                                                        atau mabuk, pendarahan
-                                                        akibat luka yang
-                                                        dilakukan sendiri,
-                                                        kehilangan kesadaran
-                                                        dan/atau kelesuan
-                                                        ekstrem
-                                                    </p>
+
+                                                    Tindakan menyakiti diri
+                                                    sendiri dengan
+                                                    tanda-tanda keracunan
+                                                    atau mabuk, pendarahan
+                                                    akibat luka yang
+                                                    dilakukan sendiri,
+                                                    kehilangan kesadaran
+                                                    dan/atau kelesuan
+                                                    ekstrem
+
                                                 </li>
                                                 <li class="mb-0">
-                                                    <p class="mb-0">
-                                                        Pikiran, rencana, atau
-                                                        tindakan menyakiti diri
-                                                        sendiri atau bunuh diri
-                                                        saat ini, atau riwayat
-                                                        pemikiran, rencana, atau
-                                                        tindakan menyakiti diri
-                                                        sendiri atau bunuh diri
-                                                        pada seseorang yang saat
-                                                        ini sangat gelisah,
-                                                        melakukan kekerasan,
-                                                        tertekan, atau kurang
-                                                        komunikasi
-                                                    </p>
+                                                    Pikiran, rencana, atau
+                                                    tindakan menyakiti diri
+                                                    sendiri atau bunuh diri
+                                                    saat ini, atau riwayat
+                                                    pemikiran, rencana, atau
+                                                    tindakan menyakiti diri
+                                                    sendiri atau bunuh diri
+                                                    pada seseorang yang saat
+                                                    ini sangat gelisah,
+                                                    melakukan kekerasan,
+                                                    tertekan, atau kurang
+                                                    komunikasi
+
                                                 </li>
                                             </ul>
                                         </td>
-                                        <td
-                                            data-title="Kondisi yang Perlu Diperhatikan"
-                                        >
+                                        <td data-title="Kondisi yang Perlu Diperhatikan">
                                             <ul>
                                                 <li>
-                                                    <p>
-                                                        Tindakan merugi diri
-                                                        yang serius secara medis
-                                                    </p>
+
+                                                    Tindakan merugi diri
+                                                    yang serius secara medis
+
                                                 </li>
                                                 <li>
-                                                    <p>
-                                                        Risiko terjadi merugikan
-                                                        diri/bunuh diri
-                                                    </p>
+
+                                                    Risiko terjadi merugikan
+                                                    diri/bunuh diri
+
                                                 </li>
                                             </ul>
                                         </td>
@@ -271,33 +251,22 @@
                                             <NuxtLink to="#sui">SUI</NuxtLink>
                                         </td>
                                     </tr>
-                                    <tr class="secondary-list">
-                                        <td
-                                            data-title="Modul Terkait"
-                                            class="list-table__name"
-                                        >
+                                    <tr>
+                                        <td data-title="Modul Terkait" class="list-table__name">
                                             <ul>
                                                 <li>
-                                                    <p>
-                                                        Perilaku gelisah
-                                                        dan/atau agresif
-                                                    </p>
+
+                                                    Perilaku gelisah
+                                                    dan/atau agresif
+
                                                 </li>
                                             </ul>
                                         </td>
                                         <td><span>-</span></td>
                                         <td>
-                                            <NuxtLink
-                                                to="#demensia"
-                                                class="table__underline"
-                                                >DEM,</NuxtLink
-                                            >
+                                            <NuxtLink to="#demensia" class="table__underline">DEM,</NuxtLink>
                                             &nbsp;
-                                            <NuxtLink
-                                                to="#psikosis"
-                                                class="table__underline"
-                                                >PSY</NuxtLink
-                                            >
+                                            <NuxtLink to="#psikosis" class="table__underline">PSY</NuxtLink>
                                         </td>
                                     </tr>
                                 </tbody>
@@ -314,6 +283,7 @@
 
 <style scoped lang="scss">
 $primary-color: #303178;
+
 .sekilas-mns {
     padding-top: 0;
 }
@@ -323,9 +293,11 @@ $primary-color: #303178;
         font-weight: 500;
     }
 }
+
 .table {
     margin-bottom: 0px;
     width: 100%;
+
     %cellSpacing {
         $space-y: 15;
         $space-x: 15;
@@ -340,12 +312,15 @@ $primary-color: #303178;
         @include vwUnit(padding-top, 10);
         @include vwUnit(padding-bottom, 10);
         border-bottom: 2px solid #d50303;
+
         &:nth-child(1) {
             width: 40%;
+
             @media screen and (max-width: 767px) {
                 min-width: 220px;
             }
         }
+
         &:nth-child(2) {
             width: 40%;
 
@@ -353,13 +328,19 @@ $primary-color: #303178;
                 min-width: 220px;
             }
         }
+
         &:nth-child(3) {
             width: auto;
+
             @media screen and (max-width: 767px) {
                 min-width: 120px;
             }
         }
     }
+    tr:last-child{
+        border: 0px none transparent;
+    }
+
     td {
         $space-y: 15;
         $space-x: 15;
@@ -367,6 +348,7 @@ $primary-color: #303178;
         @include vwUnit(padding-right, $space-x);
         @include vwUnit(padding-bottom, $space-y);
         @include vwDesktop(padding-left, $space-x);
+        vertical-align: middle;
     }
 
     &__underline {
@@ -374,10 +356,4 @@ $primary-color: #303178;
     }
 }
 
-.secondary-list {
-    border: 0px none transparent;
-}
-td {
-    vertical-align: middle;
-}
 </style>

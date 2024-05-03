@@ -24,7 +24,7 @@ body {
     font-family: 'Rubik', sans-serif;
     color: #122032;
     @include typo(body);
-    background-color: #FFFFFF;
+    background-color: #E9F0FC;
 }
 
 a,
@@ -63,10 +63,8 @@ button {
 }
 
 .title {
-    font-size: 60px;
+    @include typo(display);
     color: #122032;
-    font-weight: 500;
-    line-height: 1.1;
 }
 
 .subtitle {
