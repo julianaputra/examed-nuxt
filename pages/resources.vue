@@ -11,7 +11,7 @@
                     :key="itemIndex"
                     class="col-12 col-md-6 col-lg-4 col-xl-3"
                 >
-                    <ResourcesCard :title="item.title" :file="item.file" />
+                    <ResourcesCard :title="item.title" :file="item.file" :image="item.image" />
                 </div>
             </div>
         </div>
@@ -24,12 +24,12 @@ import type { Breadcrumb } from '../types/index'
 
 const pageData = ref([
     {
-        image: '',
+        image: '/images/resouces-mhgap.png',
         title: 'MHGAP IG WHO English',
         file: ''
     },
     {
-        image: '',
+        image: '/images/resources-pelayanan.png',
         title: 'Pelayanan Kesehatan Mental dengan Pendekatan Kedokteran Keluarga',
         file: ''
     }
