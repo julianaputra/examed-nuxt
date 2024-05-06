@@ -1468,7 +1468,6 @@ ol {
 
 .prinsip-umum {
     &__column {
-        background-color: red;
         height: 100%;
         @include vwUnit(padding, 24);
         @include vwUnit(border-radius, 8);
