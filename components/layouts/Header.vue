@@ -420,6 +420,7 @@
         @include vwUnit(padding-bottom, 8);
         @include vwUnit(padding-left, 0);
         @include vwUnit(padding-right, 0);
+        transition: all 0.3s ease;
         &:hover {
             background-color: transparent;
         }
