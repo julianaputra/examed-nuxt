@@ -322,6 +322,7 @@
 
         @media screen and (max-width: 1199px) {
             width: 100%;
+            @include vwUnit(margin-top, 0);
             @include vwUnit(padding-top, 0);
             @include vwUnit(padding-bottom, 0);
             @include vwUnit(padding-right, 25);
@@ -330,6 +331,9 @@
             box-shadow: none;
             left: auto;
             transform: unset;
+        }
+        @media screen and (max-width: 991px) {
+            @include vwUnit(margin-top, 5);
         }
 
         @media screen and (max-width: 767px) {
@@ -397,8 +401,8 @@
 
         @media screen and (max-width: 767px) {
             @include vwUnit(min-height, 35);
-            @include vwUnit(padding-top, 35);
-            @include vwUnit(padding-bottom, 35);
+            @include vwUnit(padding-top, 10);
+            @include vwUnit(padding-bottom, 10);
         }
 
         .nav-item__arrow {
