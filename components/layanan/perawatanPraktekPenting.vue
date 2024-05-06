@@ -1448,28 +1448,30 @@ $primary-color: #303178;
 ul {
     list-style: disc;
     @media screen and (max-width: 767px) {
-        padding-left: 0px;
+        @include vwUnit(padding-left, 0);
     }
 }
 ol {
     @media screen and (max-width: 767px) {
-        padding-left: 0px;
+        @include vwUnit(padding-left, 0);
     }
 }
 .list-title {
     font-weight: 500;
     @include typo(title-1);
-    margin-bottom: 12px;
+    @include vwUnit(margin-bottom, 12);
+
     &__sub-title {
-        margin-top: 24px;
+        @include vwUnit(margin-top, 24);
     }
 }
 
 .prinsip-umum {
     &__column {
+        background-color: red;
         height: 100%;
-        padding: 24px;
-        border-radius: 8px;
+        @include vwUnit(padding, 24);
+        @include vwUnit(border-radius, 8);
     }
     &--lakukan {
         border: 1px solid #29cc6a;
@@ -1491,19 +1493,20 @@ ol {
     }
 }
 .column-lakukan {
-    padding-top: 0;
+    @include vwUnit(padding-top, 0);
 }
 .pentingnya-praktik {
-    margin-top: 24px;
+    @include vwUnit(margin-top, 24);
+
     &__mengambil-sejarah {
-        border-radius: 8px;
+        @include vwUnit(border-radius, 8);
+        @include vwUnit(padding, 24);
         border: 1px solid #040405;
-        padding: 24px;
     }
     &__arrow {
         display: flex;
         justify-content: center;
-        padding: 0px;
+        @include vwUnit(padding, 0);
     }
 
     &__curigai-kondisi {
@@ -1512,46 +1515,46 @@ ol {
         justify-content: center;
         align-items: center;
         border: 1px solid #040405;
-        padding: 24px;
-        border-radius: 8px;
+        @include vwUnit(padding, 24);
+        @include vwUnit(border-radius, 8);
     }
     &__title-curigai {
-        margin: 0px;
+        @include vwUnit(margin, 0);
     }
     &__title {
         color: $primary-color;
     }
 
     &__tips {
-        margin-bottom: 12px;
+        @include vwUnit(margin-bottom, 12);
     }
     &__wrap-border {
-        border-radius: 8px;
+        @include vwUnit(padding, 24);
+        @include vwUnit(border-radius, 8);
         border: 1px solid #040405;
-        padding: 24px;
     }
     .langkah-manajemen {
         &__list {
-            padding-left: 0;
+            @include vwUnit(padding-left, 0);
             list-style-position: inside;
         }
         &__list-title {
             font-weight: 500;
         }
         &__sub-list {
-            padding-left: 0;
+            @include vwUnit(padding-left, 0);
             list-style-position: inside;
         }
     }
 }
 .mengambil-sejarah {
     &__list &__sub-list {
-        padding-left: 0;
+        @include vwUnit(padding-left, 0);
     }
 }
 .kondisi-mns {
     &__list &__sub-list {
-        padding-left: 0;
+        @include vwUnit(padding-left, 0);
     }
 }
 .kesehatan-fisik {
@@ -1601,7 +1604,7 @@ ol {
 .child-mns {
     &__list {
         list-style: upper-alpha;
-        padding-left: 0;
+        @include vwUnit(padding-left, 0);
     }
     &__desc {
         margin-top: 24px;
@@ -1610,8 +1613,5 @@ ol {
     &__title {
         font-weight: 400;
     }
-    // & .child-mns__sub-list {
-    //     // padding-left: 0;
-    // }
 }
 </style>
