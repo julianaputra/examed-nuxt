@@ -424,7 +424,7 @@
             background-color: transparent;
         }
 
-        @media screen and (max-width: 991px) {
+        @media screen and (max-width: 1199px) {
             &:hover {
                 @include vwUnit(padding-top, 8);
                 @include vwUnit(padding-bottom, 8);
