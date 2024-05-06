@@ -234,7 +234,7 @@ const breadcrumbs: Ref<Breadcrumb[]> = ref([])
 
     &__title {
         @include vwUnit(margin-bottom, 15);
-        @include typo(heading-1);
+        @include typo(display);
     }
 
     &__desc {

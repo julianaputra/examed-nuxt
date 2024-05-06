@@ -51,7 +51,7 @@
                             </div>
                         </div>
                         <div class="col-auto" @click="searchRumahSakit">
-                            <UiButton>Search</UiButton>
+                            <UiButton class="button-search">Search</UiButton>
                         </div>
                     </form>
                 </div>
@@ -145,7 +145,7 @@ const searchRumahSakit = () => {
 }
 
 ::v-deep .themeBtn {
-    @include vwUnit(margin-top, 7.5);
-    @include vwUnit(margin-bottom, 7.5);
+    @include vwUnit(margin-top, 3);
+    @include vwUnit(margin-bottom, 3);
 }
 </style>

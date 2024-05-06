@@ -113,20 +113,24 @@ const pageData = ref({
             to: '/depresi'
         },
         {
+            name: 'Demensia',
+            to: '/'
+            // name: 'Psikosis',
+            // to: '/psikosis'
+        },
+        {
+            name: 'Menyakiti Diri Sendiri / Bunuh Diri',
+            to: '/menyakiti-diri-sendiri-bunuh-diri'
+            // name: 'Gangguan Mental & Perilaku Anak & Remaja',
+            // to: '/'
+        },
+        {
             name: 'Psikosis',
             to: '/psikosis'
         },
         {
             name: 'Gangguan Mental & Perilaku Anak & Remaja',
-            to: '/'
-        },
-        {
-            name: 'Demensia',
-            to: '/'
-        },
-        {
-            name: 'Menyakiti Diri Sendiri / Bunuh Diri',
-            to: '/menyakiti-diri-sendiri-bunuh-diri'
+            to: '/layanan/bagan-induk#cmh'
         },
         {
             name: 'Keluhan Kesehatan Mental Penting Lainnya',

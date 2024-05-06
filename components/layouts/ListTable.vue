@@ -59,7 +59,7 @@
                     </td>
                 </tr>
                 <tr v-for="(item, index) in displayRecords" :key="index">
-                    <td data-title="No">{{ index + 1 }}</td>
+                    <td data-title="No">{{ item.no }}</td>
                     <td data-title="Nama Psikiater">{{ item.namaDokter }}</td>
                     <td data-title="Tempat Praktek" class="list-table__name">
                         {{ item.nama }}
