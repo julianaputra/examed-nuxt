@@ -118,7 +118,7 @@
                                         <div class="col-12 col-xl-6">
                                             <NuxtLink
                                                 to="/menyakiti-diri-sendiri-bunuh-diri"
-                                                class="custom-navbar__list-dropdown custom-navbar__list-dropdown--border"
+                                                class="custom-navbar__list-dropdown "
                                             >
                                                 <span
                                                     class="dropdown-item custom-navbar__dropdown-sub-title"
@@ -135,7 +135,7 @@
                                         <div class="col-12 col-xl-6">
                                             <NuxtLink
                                                 to="/layanan/perawatan-praktek-penting"
-                                                class="custom-navbar__list-dropdown custom-navbar__list-dropdown--border"
+                                                class="custom-navbar__list-dropdown "
                                             >
                                                 <span
                                                     class="dropdown-item custom-navbar__dropdown-sub-title"
@@ -381,6 +381,10 @@
             border-bottom: 1px solid rgba(0, 0, 0, 0.07);
             @include vwUnit(padding-bottom, 14);
             @include vwUnit(margin-bottom, 14);
+        }
+        @media screen and (max-width:1399px) {
+            height: 100%;
+            padding: 0;
         }
 
         @media screen and (max-width: 1199px) {
