@@ -37,7 +37,12 @@
                                     :to="module.to"
                                     class="footer__nav-link"
                                 >
-                                    {{ module.name }}
+                                   <span> {{ module.name }}</span>
+                                   <img
+                                            src="/images/ic-arrow-right.svg"
+                                            alt="Ic-arrow"
+                                            class="footer__arrow-link"
+                                        />
                                 </nuxt-link>
                             </li>
                         </ul>
@@ -58,12 +63,17 @@
                                     :to="module.to"
                                     class="footer__nav-link"
                                 >
-                                    {{ module.title }}
+                                  <span>  {{ module.title }}</span>
+                                    <img
+                                            src="/images/ic-arrow-right.svg"
+                                            alt="Ic-arrow"
+                                            class="footer__arrow-link"
+                                        />
                                 </nuxt-link>
                             </li>
                         </ul>
                     </nav>
-                    <h3 class="footer__title">List Modul</h3>
+                    <h3 class="footer__title">Perusahaan Kami</h3>
                     <nav class="footer__nav">
                         <ul class="footer__nav-list list-unstyled">
                             <li
@@ -75,7 +85,12 @@
                                     :to="module.to"
                                     class="footer__nav-link"
                                 >
-                                    {{ module.title }}
+                                    <span>{{ module.title }}</span>
+                                    <img
+                                            src="/images/ic-arrow-right.svg"
+                                            alt="Ic-arrow"
+                                            class="footer__arrow-link"
+                                        />
                                 </nuxt-link>
                             </li>
                         </ul>
@@ -151,6 +166,7 @@ const pageData = ref({
 
 <style lang="scss" scoped>
 .footer {
+    background-color: #FFFFFF;
     @include vwUnit(padding-top, 80, 40);
     @include vwUnit(padding-bottom, 25, 50);
 
@@ -193,6 +209,17 @@ const pageData = ref({
         @include typo(body-s);
         text-decoration: none;
         @include transition(all 0.3s ease);
+        &:hover{
+            .footer__arrow-link{
+                        opacity: 1;
+            transform: translate(10px, 0px);
+            }
+        }
     }
+    &__arrow-link{
+        opacity: 0;
+      transition: all 0.3s ease;
+    }
+    
 }
 </style>

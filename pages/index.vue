@@ -1,5 +1,5 @@
 <template>
-    <main>
+    <main class="main">
         <HomeBanner />
         <HomeModule />
         <HomeServices />
@@ -15,4 +15,8 @@ definePageMeta({
 })
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.main{
+    background-color: #FFFFFF;
+}
+</style>

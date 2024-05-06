@@ -98,13 +98,16 @@ const diagnoses = ref([
 
 <style lang="scss" scoped>
 .module {
-    @include vwUnit(padding-top, 50);
-    @include vwUnit(padding-bottom, 50);
+    @include vwUnit(padding-top, 45);
+    @include vwUnit(padding-bottom, 94);
     overflow: hidden;
 
     &__title {
         @include vwUnit(margin-bottom, 30);
         @include typo(heading-1);
+    }
+    @media screen and (max-width:767px) {
+        @include vwUnit(padding-bottom, 50);
     }
 }
 
