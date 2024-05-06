@@ -192,7 +192,7 @@
                             <span class="text-red">DARURAT</span>
                             MNS Prioritas
                         </h3>
-                        <div class="table-responsive pt-0 ">
+                        <div class="table-responsive pt-0">
                             <table class="table">
                                 <thead class="list-table">
                                     <tr>
@@ -263,7 +263,7 @@
                                     <tr>
                                         <td
                                             data-title="Modul Terkait"
-                                            class="list-table__name "
+                                            class="list-table__name"
                                         >
                                             <ul class="mb-0">
                                                 <li>
@@ -305,10 +305,10 @@ $primary-color: #303178;
 .sekilas-mns {
     padding-top: 0;
 }
-.presentasi-mns{
-    &__title{
+.presentasi-mns {
+    &__title {
         @include typo(heading-1);
-        @include vwUnit(margin-bottom, 24)
+        @include vwUnit(margin-bottom, 24);
     }
 }
 

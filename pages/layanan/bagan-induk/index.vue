@@ -22,7 +22,9 @@
                                                 Sekilas Tentang Ketentuan MNS
                                                 Prioritas
                                             </a>
-                                            <ol class="overview__navbar-subtitle">
+                                            <ol
+                                                class="overview__navbar-subtitle"
+                                            >
                                                 <li
                                                     class="overview__navbar-item"
                                                     :class="[
@@ -191,7 +193,7 @@ const breadcrumbs: Ref<Breadcrumb[]> = ref([
 .overview {
     &__card-content {
         position: sticky;
-        top: 50px;
+        @include vwUnit(top, 50);
     }
 
     &__menu {
@@ -200,17 +202,15 @@ const breadcrumbs: Ref<Breadcrumb[]> = ref([
         align-content: center;
         flex-direction: column;
         @include vwUnit(margin-top, 15);
-        gap: 10px;
     }
 
     &__menu .overview__navbar {
         padding-left: 0;
         margin: 0;
         list-style: none;
-
     }
-    &__navbar-subtitle{
-        @include vwUnit(padding-left, 20, 10)
+    &__navbar-subtitle {
+        padding-left: 0;
     }
 
     &__navbar-item {
@@ -285,7 +285,4 @@ const breadcrumbs: Ref<Breadcrumb[]> = ref([
 .border-bottom {
     border: #0000;
 }
-// .overview__navbar-sub-title{
-//     background-color: green;
-// }
 </style>
