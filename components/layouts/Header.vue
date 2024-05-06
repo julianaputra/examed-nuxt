@@ -47,18 +47,16 @@
                                 </nuxt-link>
 
                                 <div
-                                    class="dropdown-menu custom-navbar__wrap-dropdown custom-navbar__wrap-dropdown--big"
+                                    class="dropdown-menu custom-navbar__wrap-dropdown custom-navbar__wrap-dropdown--big shadow-xl-sm "
                                 >
                                     <div class="row gy-1">
                                         <div class="col-12 col-xl-6">
                                             <NuxtLink
                                                 to="/depresi"
-                                                class="custom-navbar__list-dropdown custom-navbar__list-dropdown--border"
+                                                class="custom-navbar__list-dropdown custom-navbar__list-dropdown--border  "
                                             >
-                                                <span
-                                                    class="dropdown-item custom-navbar__dropdown-sub-title"
-                                                    >Depresi
-                                                </span>
+                                            Depresi
+                                                
                                                 <img
                                                     src="/images/ic-arrow-right.svg"
                                                     alt="Ic-arrow"
@@ -71,10 +69,11 @@
                                                 to="/psikosis"
                                                 class="custom-navbar__list-dropdown custom-navbar__list-dropdown--border"
                                             >
-                                                <span
+                                            Psikosis
+                                                <!-- <span
                                                     class="dropdown-item custom-navbar__dropdown-sub-title"
                                                     >Psikosis
-                                                </span>
+                                                </span> -->
                                                 <img
                                                     src="/images/ic-arrow-right.svg"
                                                     alt="Ic-arrow"
@@ -87,10 +86,11 @@
                                                 to="/psikosis"
                                                 class="custom-navbar__list-dropdown custom-navbar__list-dropdown--border"
                                             >
-                                                <span
+                                            Demensia
+                                                <!-- <span
                                                     class="dropdown-item custom-navbar__dropdown-sub-title"
                                                     >Demensia
-                                                </span>
+                                                </span> -->
                                                 <img
                                                     src="/images/ic-arrow-right.svg"
                                                     alt="Ic-arrow"
@@ -103,11 +103,14 @@
                                                 to="/layanan/perawatan-praktek-penting"
                                                 class="custom-navbar__list-dropdown custom-navbar__list-dropdown--border"
                                             >
-                                                <span
+                                            Gangguan Mental & Perilaku
+                                                    Anak & Remaja
+                                            
+                                                <!-- <span
                                                     class="dropdown-item custom-navbar__dropdown-sub-title"
                                                     >Gangguan Mental & Perilaku
                                                     Anak & Remaja
-                                                </span>
+                                                </span> -->
                                                 <img
                                                     src="/images/ic-arrow-right.svg"
                                                     alt="Ic-arrow"
@@ -120,11 +123,13 @@
                                                 to="/menyakiti-diri-sendiri-bunuh-diri"
                                                 class="custom-navbar__list-dropdown "
                                             >
-                                                <span
+                                            Menyakiti Diri Sendiri /
+                                                    Bunuh Diri
+                                                <!-- <span
                                                     class="dropdown-item custom-navbar__dropdown-sub-title"
                                                     >Menyakiti Diri Sendiri /
                                                     Bunuh Diri
-                                                </span>
+                                                </span> -->
                                                 <img
                                                     src="/images/ic-arrow-right.svg"
                                                     alt="Ic-arrow"
@@ -137,11 +142,13 @@
                                                 to="/layanan/perawatan-praktek-penting"
                                                 class="custom-navbar__list-dropdown "
                                             >
-                                                <span
+                                            Keluhan Kesehatan Mental
+                                                    Penting Lainnya
+                                                <!-- <span
                                                     class="dropdown-item custom-navbar__dropdown-sub-title"
                                                     >Keluhan Kesehatan Mental
                                                     Penting Lainnya
-                                                </span>
+                                                </span> -->
                                                 <img
                                                     src="/images/ic-arrow-right.svg"
                                                     alt="Ic-arrow"
@@ -167,16 +174,18 @@
                                 </nuxt-link>
 
                                 <div
-                                    class="dropdown-menu custom-navbar__wrap-dropdown"
+                                    class="dropdown-menu custom-navbar__wrap-dropdown shadow-xl-sm
+                                    "
                                 >
                                     <NuxtLink
                                         to="/layanan/bagan-induk"
                                         class="custom-navbar__list-dropdown custom-navbar__list-dropdown--border"
                                     >
-                                        <span
+                                    Bagan Induk
+                                        <!-- <span
                                             class="dropdown-item custom-navbar__dropdown-sub-title"
                                             >Bagan Induk
-                                        </span>
+                                        </span> -->
                                         <img
                                             src="/images/ic-arrow-right.svg"
                                             alt="Ic-arrow"
@@ -187,10 +196,11 @@
                                         to="/layanan/perawatan-praktek-penting"
                                         class="custom-navbar__list-dropdown custom-navbar__list-dropdown--border"
                                     >
-                                        <span
+                                    Perawatan & Praktek Penting
+                                        <!-- <span
                                             class="dropdown-item custom-navbar__dropdown-sub-title"
                                             >Perawatan & Praktek Penting
-                                        </span>
+                                        </span> -->
                                         <img
                                             src="/images/ic-arrow-right.svg"
                                             alt="Ic-arrow"
@@ -202,10 +212,11 @@
                                         to="/layanan/manajemen-kedokteran-keluarga"
                                         class="custom-navbar__list-dropdown"
                                     >
-                                        <span
+                                    Manajemen Kedokteran Keluarga
+                                        <!-- <span
                                             class="dropdown-item custom-navbar__dropdown-sub-title"
                                             >Manajemen Kedokteran Keluarga
-                                        </span>
+                                        </span> -->
                                         <img
                                             src="/images/ic-arrow-right.svg"
                                             alt="Ic-arrow"
@@ -314,55 +325,39 @@
     }
 
     &__wrap-dropdown {
-        @include vwUnit(width, 280);
-        @include vwUnit(padding, 30);
+        @include vwUnit(width, 280, 80);
+        padding-top: unit(30, 1920);
+        padding-bottom: unit(30, 1920);
+        @include vwUnit(padding-right, 30, 25);
+        @include vwUnit(padding-left, 30, 25);
         left: 50%;
         transform: translate(-50%, 0px);
-        @include vwUnit(margin-top, 35);
+        @include vwDesktop(margin-top, 35);
+        @include vwMobile(margin-top, 10);
+        border: none;
+        border-radius: 14px; 
 
         @media screen and (max-width: 1199px) {
+            padding-top: 0;
+            padding-bottom: 0;
+            margin-top: 10px;
             width: 100%;
-            @include vwUnit(margin-top, 0);
-            @include vwUnit(padding-top, 0);
-            @include vwUnit(padding-bottom, 0);
-            @include vwUnit(padding-right, 25);
-            @include vwUnit(padding-left, 25);
             border: none;
             box-shadow: none;
             left: auto;
             transform: unset;
-        }
-        @media screen and (max-width: 991px) {
-            @include vwUnit(margin-top, 5);
-        }
+        } 
 
-        @media screen and (max-width: 767px) {
-            @include vwUnit(margin-top, 0);
-            @include vwUnit(padding-top, 0);
-            @include vwUnit(padding-bottom, 0);
-            @include vwUnit(padding-left, 25);
-            @include vwUnit(padding-right, 25);
-        }
 
         &--big {
             @include vwUnit(width, 530);
-        }
-        @media screen and (max-width: 1199px) {
-            &--big {
+            @media screen and (max-width: 1199px) {
                 width: 100%;
-            }
         }
+        }
+       
     }
 
-    &__dropdown-sub-title {
-        display: block;
-        white-space: normal;
-        @include typo(body-s);
-
-        @media screen and (max-width: 1199px) {
-            @include typo(nav-item);
-        }
-    }
 
     &__menu-dropdown {
         display: flex;
@@ -370,6 +365,7 @@
         align-items: center;
         gap: 6px;
         cursor: pointer;
+     
     }
 
     &__list-dropdown {
@@ -378,27 +374,38 @@
         align-items: center;
         gap: 10px;
         cursor: pointer;
-        @include vwUnit(height, 48);
+        @include vwUnit(height, 54);
+        @include typo(body-s);
+        color: #122032;
         text-decoration: none;
+        transition: all 0.3s ease;
 
-        &--border {
-            border-bottom: 1px solid rgba(0, 0, 0, 0.07);
-            @include vwUnit(padding-bottom, 14);
-            @include vwUnit(margin-bottom, 14);
-        }
         @media screen and (max-width:1399px) {
             height: 100%;
             padding: 0;
         }
-
-        @media screen and (max-width: 1199px) {
-            &--border {
-                border-bottom: none;
-                @include vwUnit(padding-bottom, 0);
-                @include vwUnit(margin-bottom, 0);
+      
+        &--border {
+            border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+            @include vwUnit(padding-bottom, 14, 0);
+            @include vwUnit(margin-bottom, 14, 0);
+            @media screen and (max-width:1199px) {
+                border: none;
+                padding-bottom: 0;
+                margin-top: 0;
             }
         }
 
+          @media screen and (max-width: 1199px) {
+            @include vwUnit(padding, 8);
+            @include typo(nav-item);
+            &:hover{
+                background-color: #e9f0fc;
+                      border-radius: 5px;
+            }
+        }
+        
+       
         @media screen and (max-width: 767px) {
             @include vwUnit(min-height, 35);
             @include vwUnit(padding-top, 10);
@@ -423,35 +430,5 @@
         }
     }
 
-    .dropdown-item {
-        @include vwUnit(padding-top, 8);
-        @include vwUnit(padding-bottom, 8);
-        @include vwUnit(padding-left, 0);
-        @include vwUnit(padding-right, 0);
-        transition: all 0.3s ease;
-        &:hover {
-            background-color: transparent;
-        }
-
-        @media screen and (max-width: 1199px) {
-            &:hover {
-                @include vwUnit(padding-top, 8);
-                @include vwUnit(padding-bottom, 8);
-                @include vwUnit(padding-left, 8);
-                @include vwUnit(padding-right, 8);
-                color: #303178;
-                background-color: #e9f0fc;
-                border-radius: 5px;
-            }
-        }
-        @media screen and (max-width: 767px) {
-            &:hover {
-                @include vwUnit(padding-top, 4);
-                @include vwUnit(padding-bottom, 4);
-                @include vwUnit(padding-left, 4);
-                @include vwUnit(padding-right, 4);
-            }
-        }
-    }
 }
 </style>
