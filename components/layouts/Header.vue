@@ -3,262 +3,132 @@
         <nav class="navbar navbar-expand-xl custom-navbar">
             <div class="container">
                 <nuxt-link class="custom-navbar__logo-container" to="/">
-                    <img
-                        src="/images/examed-icon.png"
-                        alt="examed icon"
-                        class="ratio-item"
-                        width="296"
-                    />
+                    <img src="/images/examed-icon.png" alt="examed icon" class="ratio-item" width="296" />
                 </nuxt-link>
-                <button
-                    class="navbar-toggler"
-                    type="button"
-                    data-bs-toggle="offcanvas"
-                    data-bs-target="#navbarMainMenu"
-                    aria-controls="navbarMainMenu"
-                    aria-expanded="false"
-                    aria-label="Toggle navigation"
-                >
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarMainMenu"
+                    aria-controls="navbarMainMenu" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div id="navbarMainMenu" class="offcanvas offcanvas-end">
                     <div class="offcanvas-header">
-                        <button
-                            type="button"
-                            class="btn-close"
-                            data-bs-dismiss="offcanvas"
-                            aria-label="Close"
-                        ></button>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body">
                         <ul class="navbar-nav custom-navbar__navbar-nav">
                             <li class="nav-item dropdown">
-                                <nuxt-link
-                                    class="custom-navbar__nav-link custom-navbar__menu-dropdown"
-                                    role="button"
-                                    data-bs-toggle="dropdown"
-                                    aria-expanded="false"
-                                    >List Modul
-                                    <img
-                                        src="/images/ic-dropdown-bottom.svg"
-                                        alt="Dropdown-arrow"
-                                        class="custom-navbar__arrow-dropdown"
-                                    />
+                                <nuxt-link class="custom-navbar__nav-link custom-navbar__menu-dropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">List Modul
+                                    <img src="/images/ic-dropdown-bottom.svg" alt="Dropdown-arrow"
+                                        class="custom-navbar__arrow-dropdown" />
                                 </nuxt-link>
 
                                 <div
-                                    class="dropdown-menu custom-navbar__wrap-dropdown custom-navbar__wrap-dropdown--big shadow-xl-sm "
-                                >
+                                    class="dropdown-menu custom-navbar__wrap-dropdown custom-navbar__wrap-dropdown--big shadow-xl-sm ">
                                     <div class="row gy-1">
-                                        <div class="col-12 col-xl-6">
-                                            <NuxtLink
-                                                to="/depresi"
-                                                class="custom-navbar__list-dropdown custom-navbar__list-dropdown--border  "
-                                            >
-                                            Depresi
-                                                
-                                                <img
-                                                    src="/images/ic-arrow-right.svg"
-                                                    alt="Ic-arrow"
-                                                    class="nav-item__arrow"
-                                                />
+                                        <div class="col-12 col-xl-6" data-bs-dismiss="offcanvas" aria-label="Close">
+                                            <NuxtLink to="/depresi"
+                                                class="custom-navbar__list-dropdown custom-navbar__list-dropdown--border ">
+                                                Depresi
+
+                                                <img src="/images/ic-arrow-right.svg" alt="Ic-arrow"
+                                                    class="nav-item__arrow" />
                                             </NuxtLink>
                                         </div>
-                                        <div class="col-12 col-xl-6">
-                                            <NuxtLink
-                                                to="/psikosis"
-                                                class="custom-navbar__list-dropdown custom-navbar__list-dropdown--border"
-                                            >
-                                            Psikosis
-                                                <!-- <span
-                                                    class="dropdown-item custom-navbar__dropdown-sub-title"
-                                                    >Psikosis
-                                                </span> -->
-                                                <img
-                                                    src="/images/ic-arrow-right.svg"
-                                                    alt="Ic-arrow"
-                                                    class="nav-item__arrow"
-                                                />
+                                        <div class="col-12 col-xl-6" data-bs-dismiss="offcanvas" aria-label="Close">
+                                            <NuxtLink to="/psikosis"
+                                                class="custom-navbar__list-dropdown custom-navbar__list-dropdown--border">
+                                                Psikosis
+                                                <img src="/images/ic-arrow-right.svg" alt="Ic-arrow"
+                                                    class="nav-item__arrow" />
                                             </NuxtLink>
                                         </div>
-                                        <div class="col-12 col-xl-6">
-                                            <NuxtLink
-                                                to="/psikosis"
-                                                class="custom-navbar__list-dropdown custom-navbar__list-dropdown--border"
-                                            >
-                                            Demensia
-                                                <!-- <span
-                                                    class="dropdown-item custom-navbar__dropdown-sub-title"
-                                                    >Demensia
-                                                </span> -->
-                                                <img
-                                                    src="/images/ic-arrow-right.svg"
-                                                    alt="Ic-arrow"
-                                                    class="nav-item__arrow"
-                                                />
+                                        <div class="col-12 col-xl-6" data-bs-dismiss="offcanvas" aria-label="Close">
+                                            <NuxtLink to="/psikosis"
+                                                class="custom-navbar__list-dropdown custom-navbar__list-dropdown--border">
+                                                Demensia
+                                                <img src="/images/ic-arrow-right.svg" alt="Ic-arrow"
+                                                    class="nav-item__arrow" />
                                             </NuxtLink>
                                         </div>
-                                        <div class="col-12 col-xl-6">
-                                            <NuxtLink
-                                                to="/layanan/perawatan-praktek-penting"
-                                                class="custom-navbar__list-dropdown custom-navbar__list-dropdown--border"
-                                            >
-                                            Gangguan Mental & Perilaku
-                                                    Anak & Remaja
-                                            
-                                                <!-- <span
-                                                    class="dropdown-item custom-navbar__dropdown-sub-title"
-                                                    >Gangguan Mental & Perilaku
-                                                    Anak & Remaja
-                                                </span> -->
-                                                <img
-                                                    src="/images/ic-arrow-right.svg"
-                                                    alt="Ic-arrow"
-                                                    class="nav-item__arrow"
-                                                />
+                                        <div class="col-12 col-xl-6" data-bs-dismiss="offcanvas" aria-label="Close">
+                                            <NuxtLink to="/layanan/perawatan-praktek-penting"
+                                                class="custom-navbar__list-dropdown custom-navbar__list-dropdown--border">
+                                                Gangguan Mental & Perilaku
+                                                Anak & Remaja
+                                                <img src="/images/ic-arrow-right.svg" alt="Ic-arrow"
+                                                    class="nav-item__arrow" />
                                             </NuxtLink>
                                         </div>
-                                        <div class="col-12 col-xl-6">
-                                            <NuxtLink
-                                                to="/menyakiti-diri-sendiri-bunuh-diri"
-                                                class="custom-navbar__list-dropdown "
-                                            >
-                                            Menyakiti Diri Sendiri /
-                                                    Bunuh Diri
-                                                <!-- <span
-                                                    class="dropdown-item custom-navbar__dropdown-sub-title"
-                                                    >Menyakiti Diri Sendiri /
-                                                    Bunuh Diri
-                                                </span> -->
-                                                <img
-                                                    src="/images/ic-arrow-right.svg"
-                                                    alt="Ic-arrow"
-                                                    class="nav-item__arrow"
-                                                />
+                                        <div class="col-12 col-xl-6" data-bs-dismiss="offcanvas" aria-label="Close">
+                                            <NuxtLink to="/menyakiti-diri-sendiri-bunuh-diri"
+                                                class="custom-navbar__list-dropdown ">
+                                                Menyakiti Diri Sendiri /
+                                                Bunuh Diri
+                                                <img src="/images/ic-arrow-right.svg" alt="Ic-arrow"
+                                                    class="nav-item__arrow" />
                                             </NuxtLink>
                                         </div>
-                                        <div class="col-12 col-xl-6">
-                                            <NuxtLink
-                                                to="/layanan/perawatan-praktek-penting"
-                                                class="custom-navbar__list-dropdown "
-                                            >
-                                            Keluhan Kesehatan Mental
-                                                    Penting Lainnya
-                                                <!-- <span
-                                                    class="dropdown-item custom-navbar__dropdown-sub-title"
-                                                    >Keluhan Kesehatan Mental
-                                                    Penting Lainnya
-                                                </span> -->
-                                                <img
-                                                    src="/images/ic-arrow-right.svg"
-                                                    alt="Ic-arrow"
-                                                    class="nav-item__arrow"
-                                                />
+                                        <div class="col-12 col-xl-6" data-bs-dismiss="offcanvas" aria-label="Close">
+                                            <NuxtLink to="/layanan/perawatan-praktek-penting"
+                                                class="custom-navbar__list-dropdown ">
+                                                Keluhan Kesehatan Mental
+                                                Penting Lainnya
+                                                <img src="/images/ic-arrow-right.svg" alt="Ic-arrow"
+                                                    class="nav-item__arrow" />
                                             </NuxtLink>
                                         </div>
                                     </div>
                                 </div>
                             </li>
                             <li class="nav-item dropdown">
-                                <nuxt-link
-                                    class="custom-navbar__nav-link custom-navbar__menu-dropdown"
-                                    role="button"
-                                    data-bs-toggle="dropdown"
-                                    aria-expanded="false"
-                                    >Layanan Lainnya
-                                    <img
-                                        src="/images/ic-dropdown-bottom.svg"
-                                        alt="Dropdown-arrow"
-                                        class="custom-navbar__arrow-dropdown"
-                                    />
+                                <nuxt-link class="custom-navbar__nav-link custom-navbar__menu-dropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">Layanan Lainnya
+                                    <img src="/images/ic-dropdown-bottom.svg" alt="Dropdown-arrow"
+                                        class="custom-navbar__arrow-dropdown" />
                                 </nuxt-link>
 
-                                <div
-                                    class="dropdown-menu custom-navbar__wrap-dropdown shadow-xl-sm
-                                    "
-                                >
-                                    <NuxtLink
-                                        to="/layanan/bagan-induk"
-                                        class="custom-navbar__list-dropdown custom-navbar__list-dropdown--border"
-                                    >
-                                    Bagan Induk
-                                        <!-- <span
-                                            class="dropdown-item custom-navbar__dropdown-sub-title"
-                                            >Bagan Induk
-                                        </span> -->
-                                        <img
-                                            src="/images/ic-arrow-right.svg"
-                                            alt="Ic-arrow"
-                                            class="nav-item__arrow"
-                                        />
+                                <div class="dropdown-menu custom-navbar__wrap-dropdown shadow-xl-sm
+                                    ">
+                                    <div  data-bs-dismiss="offcanvas" aria-label="Close" >
+                                        <NuxtLink to="/layanan/bagan-induk"
+                                        class="custom-navbar__list-dropdown custom-navbar__list-dropdown--border">
+                                        Bagan Induk
+                                        <img src="/images/ic-arrow-right.svg" alt="Ic-arrow" class="nav-item__arrow" />
                                     </NuxtLink>
-                                    <NuxtLink
-                                        to="/layanan/perawatan-praktek-penting"
-                                        class="custom-navbar__list-dropdown custom-navbar__list-dropdown--border"
-                                    >
-                                    Perawatan & Praktek Penting
-                                        <!-- <span
-                                            class="dropdown-item custom-navbar__dropdown-sub-title"
-                                            >Perawatan & Praktek Penting
-                                        </span> -->
-                                        <img
-                                            src="/images/ic-arrow-right.svg"
-                                            alt="Ic-arrow"
-                                            class="nav-item__arrow"
-                                        />
+                                    </div>
+                                    <div data-bs-dismiss="offcanvas" aria-label="Close">
+                                        <NuxtLink to="/layanan/perawatan-praktek-penting"
+                                        class="custom-navbar__list-dropdown custom-navbar__list-dropdown--border">
+                                        Perawatan & Praktek Penting
+                                        <img src="/images/ic-arrow-right.svg" alt="Ic-arrow" class="nav-item__arrow" />
                                     </NuxtLink>
+                                    </div>
 
-                                    <NuxtLink
-                                        to="/layanan/manajemen-kedokteran-keluarga"
-                                        class="custom-navbar__list-dropdown"
-                                    >
-                                    Manajemen Kedokteran Keluarga
-                                        <!-- <span
-                                            class="dropdown-item custom-navbar__dropdown-sub-title"
-                                            >Manajemen Kedokteran Keluarga
-                                        </span> -->
-                                        <img
-                                            src="/images/ic-arrow-right.svg"
-                                            alt="Ic-arrow"
-                                            class="nav-item__arrow"
-                                        />
+                                    <div data-bs-dismiss="offcanvas" aria-label="Close">
+                                        <NuxtLink to="/layanan/manajemen-kedokteran-keluarga"
+                                        class="custom-navbar__list-dropdown">
+                                        Manajemen Kedokteran Keluarga
+                                        <img src="/images/ic-arrow-right.svg" alt="Ic-arrow" class="nav-item__arrow" />
                                     </NuxtLink>
+                                    </div>
                                 </div>
                             </li>
-                            <li class="nav-item">
-                                <nuxt-link
-                                    to="/list-rumah-sakit"
-                                    class="custom-navbar__nav-link"
-                                    >List Rumah Sakit</nuxt-link
-                                >
+                            <li class="nav-item" data-bs-dismiss="offcanvas" aria-label="Close">
+                                <nuxt-link to="/list-rumah-sakit" class="custom-navbar__nav-link">List Rumah
+                                    Sakit</nuxt-link>
                             </li>
-                            <li class="nav-item">
-                                <nuxt-link
-                                    to="/list-psikiater"
-                                    class="custom-navbar__nav-link"
-                                    >List Psikiater</nuxt-link
-                                >
+                            <li class="nav-item" data-bs-dismiss="offcanvas" aria-label="Close">
+                                <nuxt-link to="/list-psikiater" class="custom-navbar__nav-link">List
+                                    Psikiater</nuxt-link>
                             </li>
-                            <li class="nav-item">
-                                <nuxt-link
-                                    to="/tentang-kami"
-                                    class="custom-navbar__nav-link"
-                                    >Tentang Kami</nuxt-link
-                                >
+                            <li class="nav-item" data-bs-dismiss="offcanvas" aria-label="Close">
+                                <nuxt-link to="/tentang-kami" class="custom-navbar__nav-link">Tentang Kami</nuxt-link>
                             </li>
-                            <li class="nav-item">
-                                <nuxt-link
-                                    to="/resources"
-                                    class="custom-navbar__nav-link"
-                                    >Resources</nuxt-link
-                                >
+                            <li class="nav-item" data-bs-dismiss="offcanvas" aria-label="Close">
+                                <nuxt-link to="/resources" class="custom-navbar__nav-link">Resources</nuxt-link>
                             </li>
-                            <li class="nav-item">
-                                <nuxt-link
-                                    to="/kontak"
-                                    class="custom-navbar__nav-link"
-                                    >Kontak</nuxt-link
-                                >
+                            <li class="nav-item" data-bs-dismiss="offcanvas" aria-label="Close">
+                                <nuxt-link to="/kontak" class="custom-navbar__nav-link">Kontak</nuxt-link>
                             </li>
                         </ul>
                     </div>
@@ -335,7 +205,7 @@
         @include vwDesktop(margin-top, 35);
         @include vwMobile(margin-top, 10);
         border: none;
-        border-radius: 14px; 
+        border-radius: 14px;
 
         @media screen and (max-width: 1199px) {
             padding-top: 0;
@@ -346,16 +216,17 @@
             box-shadow: none;
             left: auto;
             transform: unset;
-        } 
+        }
 
 
         &--big {
             @include vwUnit(width, 530);
+
             @media screen and (max-width: 1199px) {
                 width: 100%;
+            }
         }
-        }
-       
+
     }
 
 
@@ -365,7 +236,7 @@
         align-items: center;
         gap: 6px;
         cursor: pointer;
-     
+
     }
 
     &__list-dropdown {
@@ -384,11 +255,12 @@
             height: 100%;
             padding: 0;
         }
-      
+
         &--border {
             border-bottom: 1px solid rgba(0, 0, 0, 0.07);
             @include vwUnit(padding-bottom, 14, 0);
             @include vwUnit(margin-bottom, 14, 0);
+
             @media screen and (max-width:1199px) {
                 border: none;
                 padding-bottom: 0;
@@ -396,16 +268,17 @@
             }
         }
 
-          @media screen and (max-width: 1199px) {
+        @media screen and (max-width: 1199px) {
             @include vwUnit(padding, 8);
             @include typo(nav-item);
-            &:hover{
+
+            &:hover {
                 background-color: #e9f0fc;
-                      border-radius: 5px;
+                border-radius: 5px;
             }
         }
-        
-       
+
+
         @media screen and (max-width: 767px) {
             @include vwUnit(min-height, 35);
             @include vwUnit(padding-top, 10);

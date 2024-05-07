@@ -1,14 +1,13 @@
 <template>
     <div class="swiper-custom-nav">
-        <div class="swiper-custom-nav__button" :class="prevClass">
-            <Icon name="basil:arrow-left-outline" />
+        <div class="swiper-custom-nav__button " :class="prevClass">
+            <Icon name="basil:arrow-left-outline" class="swiper-custom-nav__arrow" />
+            <Icon name="basil:arrow-left-outline" color="white" class="swiper-custom-nav__arrow--active " />
         </div>
-        <div
-            class="swiper-custom-nav__pagination"
-            :class="paginationClass"
-        ></div>
+        <div class="swiper-custom-nav__pagination" :class="paginationClass"></div>
         <div class="swiper-custom-nav__button" :class="nextClass">
-            <Icon name="basil:arrow-right-outline" />
+            <Icon name="basil:arrow-right-outline" class="swiper-custom-nav__arrow" />
+            <Icon name="basil:arrow-right-outline" color="white" class="swiper-custom-nav__arrow--active " />
         </div>
     </div>
 </template>
@@ -47,6 +46,7 @@ const props = defineProps({
     @include vwUnit(margin-bottom, 30, 15);
 
     &__button {
+        position: relative;
         flex: 0 0 auto;
         display: flex;
         align-items: center;
@@ -57,7 +57,26 @@ const props = defineProps({
         border: 1px solid #303178;
         border-radius: 100px;
         cursor: pointer;
+
+        &:hover {
+            background-color: #303178;
+            .swiper-custom-nav__arrow--active {
+                opacity: 1;
+            }
+            .swiper-custom-nav__arrow{
+                opacity: 0;
+            }
+        }
     }
+
+    &__arrow {
+        position: absolute;
+        &--active {
+            position: absolute;
+            opacity: 0;
+        }
+    }
+
 
     &__pagination {
         width: auto;

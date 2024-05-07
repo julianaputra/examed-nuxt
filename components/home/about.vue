@@ -24,7 +24,7 @@
                                 <p class="about__list-desc">{{ item.desc }}</p>
                             </div>
                         </div>
-                        <UiButton to="/tentang-kami">Tentang Kami</UiButton>
+                        <UiButton class="about__button-about"  to="/tentang-kami">Tentang Kami</UiButton>
                     </div>
                 </div>
                 <div class="col-12 col-xl-5 text-center">
@@ -67,7 +67,7 @@ const pageData = ref({
 
 <style lang="scss" scoped>
 .about {
-    @include vwUnit(padding-top, 133);
+    @include vwUnit(padding-top, 103);
     @include vwUnit(padding-bottom, 140);
 
     @include imageRatio(670, 859, true);
@@ -140,6 +140,9 @@ const pageData = ref({
         @media screen and (max-width:576px) {
             @include vwUnit(margin-top, 30);
         }
+    }
+    &__button-about{
+       @include vwUnit(width,267, 180);
     }
 }
 </style>

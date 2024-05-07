@@ -102,6 +102,7 @@ const className = computed(() => {
                 color: rgba(18, 32, 50, 0.8);
                 font-size: 18px;
                 font-weight: 400;
+                @include vwUnit(margin-bottom, 10)
             }
         }
 

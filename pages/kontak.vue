@@ -24,7 +24,7 @@
                             </p>
                             <p class="kontak__info-desc">
                                 <a
-                                    href="mailtoinfo@examed.id"
+                                    href="mailto:info@examed.id?" target="_blank"
                                     class="kontak__info-link"
                                 >
                                     info@examed.id

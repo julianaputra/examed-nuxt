@@ -1,7 +1,7 @@
 <template>
     <div class="filter-bar">
         <div class="row">
-            <div class="col-12 col-lg-3 col-xl-2">
+            <div class="col-12 col-lg-3 col-xl-2 px-0  ">
                 <div class="filter-bar__item-container">
                     <select v-model="daerahValue" class="form-select">
                         <option value="all">{{ titleSort }}</option>
