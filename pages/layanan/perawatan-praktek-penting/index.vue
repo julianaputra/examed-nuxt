@@ -10,7 +10,7 @@
                             <template #title>List Konten</template>
                             <template #content>
                                 <nav class="overview__menu">
-                                    <ul class="overview__navbar">
+                                    <ul class="overview__navbar ">
                                         <li
                                             class="overview__navbar-item"
                                             :class="[isActive('deskripsi')]"
@@ -32,7 +32,7 @@
                                             >
                                                 Prinsip Umum
                                             </a>
-                                            <ol class="overview__navbar">
+                                            <ol class="overview__sub-list">
                                                 <li
                                                     class="overview__navbar-item"
                                                     :class="[
@@ -43,7 +43,7 @@
                                                 >
                                                     <a
                                                         :href="`#gunakanKeterampilan`"
-                                                        class="overview__navbar-link"
+                                                        class="overview__sub-link"
                                                     >
                                                         Gunakan Keterampilan
                                                         Komunikasi yang Efektif
@@ -59,7 +59,7 @@
                                                 >
                                                     <a
                                                         :href="`#meningkatkanRasaHormat`"
-                                                        class="overview__navbar-link"
+                                                        class="overview__sub-link"
                                                     >
                                                         Meningkatkan Rasa Hormat
                                                         dan Martabat
@@ -80,7 +80,7 @@
                                                 Pentingnya Praktik Klinis
                                                 Kesehatan Mental
                                             </a>
-                                            <ol class="overview__navbar">
+                                            <ol class="overview__sub-list">
                                                 <li
                                                     class="overview__navbar-item"
                                                     :class="[
@@ -91,7 +91,7 @@
                                                 >
                                                     <a
                                                         :href="`#menilaiKesehatan`"
-                                                        class="overview__navbar-link"
+                                                        class="overview__sub-link"
                                                     >
                                                         Menilai Kesehatan Fisik
                                                     </a>
@@ -106,7 +106,7 @@
                                                 >
                                                     <a
                                                         :href="`#melakukanPenilaian`"
-                                                        class="overview__navbar-link"
+                                                        class="overview__sub-link"
                                                     >
                                                         Melakukan Penilaian MNS
                                                     </a>
@@ -121,7 +121,7 @@
                                                 >
                                                     <a
                                                         :href="`#kelolaKondisi`"
-                                                        class="overview__navbar-link"
+                                                        class="overview__sub-link"
                                                     >
                                                         Kelola Kondisi MNS
                                                     </a>
@@ -241,15 +241,17 @@ $primary-color: #303178;
         gap: 10px;
     }
 
-    &__navbar {
+    &__menu .overview__navbar {
         margin: 0;
         list-style: none;
-        @media screen and (max-width: 480px) {
-            padding-left: 0;
-        }
+        padding-left: 0;
         & ol.overview__navbar {
             list-style: lower-roman;
         }
+    }
+    &__sub-list{
+        @include vwUnit(padding-left, 45, 40);
+        list-style-type: lower-roman;
     }
 
     &__navbar-item {
@@ -276,6 +278,22 @@ $primary-color: #303178;
 
         &:hover {
             background-color: colorMod(rgba(18, 32, 50, 1), +90%);
+        }
+    }
+
+    &__sub-link{
+        text-decoration: none;
+        $pad-y: 5;
+        $pad-x: 0;
+        display: block;
+        @include vwUnit(margin-bottom, 10);
+        @include vwUnit(padding-top, $pad-y);
+        // @include vwUnit(padding-right, $pad-x);
+        @include vwUnit(padding-bottom, $pad-y);
+        // @include vwUnit(padding-left, $pad-x);
+        color: rgba(18, 32, 50, 1);
+        &:hover{
+            text-decoration: underline;
         }
     }
 }

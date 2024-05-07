@@ -86,7 +86,7 @@
                                     </Transition>
                                 </template>
                             </UiCard>
-                            <UiCard
+                            <UiCard class="section-content"
                                 v-else
                                 :key="activeContent?.id"
                                 title-size="small"
@@ -95,7 +95,7 @@
                                     activeContent?.title
                                 }}</template>
                                 <template #content>
-                                    <div
+                                    <div 
                                         v-if="
                                             activeContent?.slug === 'deskripsi'
                                         "
@@ -323,6 +323,11 @@ const setActiveTindakLanjut = (val: any) => {
         align-content: center;
         flex-direction: column;
         gap: 10px;
+    }
+}
+.section-content{
+    @media screen and (max-width: 991px) {
+        @include vwUnit(margin-top, 30)
     }
 }
 </style>

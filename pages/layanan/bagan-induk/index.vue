@@ -210,7 +210,7 @@ const breadcrumbs: Ref<Breadcrumb[]> = ref([
         list-style: none;
     }
     &__navbar-subtitle {
-        padding-left: 0;
+        @include vwUnit(padding-left, 30, 15);
     }
 
     &__navbar-item {

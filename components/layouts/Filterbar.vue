@@ -33,7 +33,7 @@
             </div>
             <div class="col-12 col-lg-6 col-xl-4 ms-auto">
                 <div class="filter-bar__item-container">
-                    <form class="row">
+                    <form class="row gx-2">
                         <div class="col">
                             <div class="input-group">
                                 <div class="input-group-text">
@@ -131,6 +131,7 @@ const searchRumahSakit = () => {
         padding: 0;
         @include vwUnit(padding-right, 10);
         @include vwUnit(padding-left, 10);
+        @include vwUnit(width, 49);
         background-color: transparent;
         border-right: 0;
     }
@@ -145,7 +146,7 @@ const searchRumahSakit = () => {
 }
 
 ::v-deep .themeBtn {
-    @include vwUnit(margin-top, 3);
-    @include vwUnit(margin-bottom, 3);
+    @include vwUnit(margin-top, 7.5);
+    @include vwUnit(margin-bottom, 7.5);
 }
 </style>

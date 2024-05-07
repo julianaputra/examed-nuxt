@@ -24,7 +24,7 @@
                                                 Aspek Diagnosis Holistik Bagi
                                                 Pasien Dengan Gangguan Mental
                                             </a>
-                                            <ol class="">
+                                            <ol class="overview__sub-list">
                                                 <li
                                                     class="overview__navbar-item"
                                                     :class="[
@@ -35,7 +35,7 @@
                                                 >
                                                     <a
                                                         :href="`#aspekPersonal`"
-                                                        class="overview__navbar-link"
+                                                        class="overview__sub-link"
                                                     >
                                                         Aspek Personal
                                                     </a>
@@ -48,7 +48,7 @@
                                                 >
                                                     <a
                                                         :href="`#aspekKlinis`"
-                                                        class="overview__navbar-link"
+                                                        class="overview__sub-link"
                                                     >
                                                         Aspek Klinis
                                                     </a>
@@ -63,7 +63,7 @@
                                                 >
                                                     <a
                                                         :href="`#penilaianInternal`"
-                                                        class="overview__navbar-link"
+                                                        class="overview__sub-link"
                                                     >
                                                         Penilaian Risiko
                                                         Internal
@@ -79,7 +79,7 @@
                                                 >
                                                     <a
                                                         :href="`#risikoEksternal`"
-                                                        class="overview__navbar-link"
+                                                        class="overview__sub-link"
                                                     >
                                                         Faktor Risiko Eksternal
                                                     </a>
@@ -196,15 +196,17 @@ const breadcrumbs: Ref<Breadcrumb[]> = ref([
         @include vwUnit(margin-top, 15);
         gap: 10px;
     }
-
-    &__navbar {
+    &__menu .overview__navbar {
         margin: 0;
         list-style: none;
-
-        & ol.overview__navbar {
-            list-style: lower-roman;
-        }
+        padding-left: 0;
     }
+
+    &__sub-list{
+        @include vwUnit(padding-left, 45, 40);
+        list-style-type: decimal;
+    }
+
 
     &__navbar-item {
         &.active {
@@ -230,6 +232,22 @@ const breadcrumbs: Ref<Breadcrumb[]> = ref([
 
         &:hover {
             background-color: colorMod(rgba(18, 32, 50, 1), +90%);
+        }
+    }
+
+    &__sub-link{
+        text-decoration: none;
+        $pad-y: 5;
+        $pad-x: 0;
+        display: block;
+        @include vwUnit(margin-bottom, 10);
+        @include vwUnit(padding-top, $pad-y);
+        // @include vwUnit(padding-right, $pad-x);
+        @include vwUnit(padding-bottom, $pad-y);
+        // @include vwUnit(padding-left, $pad-x);
+        color: rgba(18, 32, 50, 1);
+        &:hover{
+            text-decoration: underline;
         }
     }
 
