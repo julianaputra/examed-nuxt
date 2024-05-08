@@ -106,7 +106,7 @@
                                             activeContent?.slug === 'penilaian'
                                         "
                                     >
-                                        <UiSelectionButton
+                                        <UiSelectionButton class="list-selection"
                                             v-for="item in penilaian"
                                             :key="`menu-link-${item.id}`"
                                             :to="`/${route.params.slug}/penilaian?question=${item.id}`"
@@ -329,5 +329,8 @@ const setActiveTindakLanjut = (val: any) => {
     @media screen and (max-width: 991px) {
         @include vwUnit(margin-top, 30)
     }
+}
+.list-selection:last-child{
+    opacity: 50%;
 }
 </style>
