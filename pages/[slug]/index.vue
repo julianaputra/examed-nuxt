@@ -145,6 +145,7 @@
                 </div>
             </div>
         </section>
+        <HomeModule :active-slug="route.params.slug"/>
     </main>
 </template>
 

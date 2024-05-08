@@ -41,9 +41,10 @@
             >
                 <SwiperSlide
                     v-for="(diagnose, diagnoseIndex) in diagnoses"
-                    :key="diagnoseIndex"
+                    :key="diagnoseIndex" :class="{'d-none':  diagnose.to.substring(1) == props.activeSlug }"
+                   
                 >
-                    <nuxt-link :to="diagnose.to" class="themeBtnBold">
+                    <nuxt-link :to="diagnose.to" class="themeBtnBold" >
                         <div
                             class="themeBtnBold__square"
                             :class="diagnose.color"
@@ -62,6 +63,11 @@
 </template>
 
 <script setup lang="ts">
+const props = defineProps({
+    activeSlug:{
+        type:String,
+    }
+})
 const diagnoses = ref([
     {
         name: 'Depresi',
