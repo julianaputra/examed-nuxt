@@ -100,6 +100,9 @@ onMounted(() => {
             background-color: #303178;
             color: #fff;
         }
+        .accordion__text{
+            color: #303178;
+        }
 
         &.collapsed {
             .accordion__arrow {
@@ -107,6 +110,9 @@ onMounted(() => {
                 background-color: #fff;
                 color: #303178;
             }
+            .accordion__text{
+            color: #122032;
+        }
         }
 
         &.disabled {

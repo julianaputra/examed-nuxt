@@ -73,11 +73,19 @@
             "daerah": "Denpasar"
         },
         {
-            "kode": 11040310,
+            "kode": 1104040,
             "namaDokter": "dr. Bagus Surya Kusumadewa, Sp. KJ",
             "nama": "RSU Bhakti Rahayu Denpasar",
             "alamat": "Jl. Gatot Subroto II No. 11, Dangin Puri Kaja, Kec. Denpasar Utara, Kota Denpasar",
             "telepon": "(0361) 430270",
+            "daerah": "Denpasar"
+        },
+        {
+            "kode": 1104041,
+            "namaDokter": "dr. Desak Nym. Puriani, Sp.KJ",
+            "nama": "RS Kasih Ibu Denpasar",
+            "alamat": "Jl. Teuku Umar No. 120, Dauh Puri Kauh, Kec. Denpasar Bar., Kota Denpasar",
+            "telepon": "(0361) 3003030",
             "daerah": "Denpasar"
         }
     ]
