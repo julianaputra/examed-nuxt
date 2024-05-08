@@ -87,6 +87,62 @@
             "alamat": "Jl. Teuku Umar No. 120, Dauh Puri Kauh, Kec. Denpasar Bar., Kota Denpasar",
             "telepon": "(0361) 3003030",
             "daerah": "Denpasar"
+        },
+        {
+            "kode": 1104042,
+            "namaDokter": "dr. Desak Nym. Puriani, Sp.KJ",
+            "nama": "RS Kasih Ibu Denpasar",
+            "alamat": "Jl. Teuku Umar No. 120, Dauh Puri Kauh, Kec. Denpasar Bar., Kota Denpasar",
+            "telepon": "(0361) 3003030",
+            "daerah": "Denpasar"
+        },
+        {
+            "kode": 1104043,
+            "namaDokter": "dr. Sri Diniari, Sp.KJ,            ",
+            "nama": "RS Kasih Ibu Denpasar ",
+            "alamat": "Jl. Teuku Umar No. 120, Dauh Puri Kauh, Kec. Denpasar Bar., Kota Denpasar ",
+            "telepon": "(0361) 3003030",
+            "daerah": "Denpasar"
+        },
+        {
+            "kode": 1104043,
+            "namaDokter": " dr. I Gusti Ayu Utami Wijayanthi, Sp. KJ, M. Biomed,            ",
+            "nama": "RS Kasih Ibu Denpasar ",
+            "alamat": "Jl. Teuku Umar No. 120, Dauh Puri Kauh, Kec. Denpasar Bar., Kota Denpasar ",
+            "telepon": "(0361) 3003030",
+            "daerah": "Denpasar"
+        },
+        {
+            "kode": 1104044,
+            "namaDokter": " dr. I Putu Dharma Krisna Aji, Sp. KJ",
+            "nama": "RS Kasih Ibu Denpasar ",
+            "alamat": "Jl. Teuku Umar No. 120, Dauh Puri Kauh, Kec. Denpasar Bar., Kota Denpasar ",
+            "telepon": "(0361) 3003030",
+            "daerah": "Denpasar"
+        },
+        {
+            "kode": 1104045,
+            "namaDokter": "dr. Lely Setyawati Kurniawa, Sp.KJ (K)",
+            "nama": "RS Kasih Ibu Denpasar ",
+            "alamat": "Jl. Teuku Umar No. 120, Dauh Puri Kauh, Kec. Denpasar Bar., Kota Denpasar ",
+            "telepon": "(0361) 3003030",
+            "daerah": "Denpasar"
+        },
+        {
+            "kode": 1104046,
+            "namaDokter": "dr. Putu Agus Grantika, Sp. KJ",
+            "nama": "Siloam Hospitals Denpasar",
+            "alamat": "Jl. Sunset Road No. 818, Kuta, Badung",
+            "telepon": "(0361) 779900",
+            "daerah": "Badung"
+        },
+        {
+            "kode": 1104047,
+            "namaDokter": "dr. Monika Joy Reverger, Sp.KJ",
+            "nama": "Siloam Hospitals Denpasar",
+            "alamat": "Jl. Sunset Road No. 818, Kuta, Badung",
+            "telepon": "(0361) 779900",
+            "daerah": "Badung"
         }
     ]
 }
