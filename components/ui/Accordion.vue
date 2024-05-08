@@ -129,6 +129,9 @@ onMounted(() => {
 
     &__body {
         padding: 30px 0;
+        :deep(*) a {
+            word-break: break-all;
+        }
     }
 
     &__text {

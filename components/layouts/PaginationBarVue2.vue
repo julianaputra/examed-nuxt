@@ -22,7 +22,7 @@
                                 aria-label="Previous"
                                 @click.prevent="previousPage"
                             >
-                                ‹
+                            Previous  
                             </a>
                         </li>
                         <li v-if="isShowPreviousEllipsis" class="page-item">
@@ -100,7 +100,7 @@
                                 aria-label="Next"
                                 @click.prevent="nextPage"
                             >
-                                ›
+                            Next
                             </a>
                         </li>
                     </ul>

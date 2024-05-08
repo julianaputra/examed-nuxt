@@ -81,7 +81,7 @@ const className = computed(() => {
 
         &--big {
             @extend .card__subtitle;
-            color: #c75c91;
+            color: #8588D2;
             font-size: 32px;
             font-weight: 500;
             margin-bottom: 32px;
