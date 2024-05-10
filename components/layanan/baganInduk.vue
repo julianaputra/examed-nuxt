@@ -215,9 +215,9 @@
                                     <tr>
                                         <td
                                             data-title="Presentasi Darurat"
-                                            class="list-table__name mb-0"
+                                            class="list-table__name "
                                         >
-                                            <ul class="mb-0">
+                                            <ul class="">
                                                 <li>
                                                     Tindakan menyakiti diri
                                                     sendiri dengan tanda-tanda
@@ -227,7 +227,7 @@
                                                     kehilangan kesadaran
                                                     dan/atau kelesuan ekstrem
                                                 </li>
-                                                <li class="mb-0">
+                                                <li class="">
                                                     Pikiran, rencana, atau
                                                     tindakan menyakiti diri
                                                     sendiri atau bunuh diri saat
@@ -265,8 +265,8 @@
                                             data-title="Modul Terkait"
                                             class="list-table__name"
                                         >
-                                            <ul class="mb-0">
-                                                <li>
+                                            <ul class="">
+                                                <li class="">
                                                     Perilaku gelisah dan/atau
                                                     agresif
                                                 </li>
@@ -313,9 +313,8 @@ $primary-color: #303178;
 }
 
 .table {
-    @include vwUnit(margin-bottom, 0);
+    margin-bottom: 0;
     width: 100%;
-
     %cellSpacing {
         $space-y: 15;
         $space-x: 15;
@@ -331,26 +330,7 @@ $primary-color: #303178;
         @include vwUnit(padding-bottom, 10);
         border-bottom: 2px solid #d50303;
     }
-    .list-table {
-        &__darurat {
-            width: 43%;
-            @media screen and (max-width: 767px) {
-                @include vwUnit(min-width, 280);
-            }
-        }
-        &__kondisi {
-            width: 40%;
-            @media screen and (max-width: 767px) {
-                @include vwUnit(min-width, 280);
-            }
-        }
-        &__modul {
-            width: auto;
-            @media screen and (max-width: 767px) {
-                @include vwUnit(min-width, 120);
-            }
-        }
-    }
+    
     tr:last-child {
         border: 0px none transparent;
     }
@@ -364,9 +344,41 @@ $primary-color: #303178;
         @include vwDesktop(padding-left, $space-x);
         vertical-align: middle;
     }
+    ul {
+        &:last-child {   
+            margin-bottom: 0;
+        }
+    }
+
+    li {
+        &:last-child {   
+            margin-bottom: 0;
+        }
+    }
 
     &__underline {
         text-decoration: underline;
     }
 }
+
+.list-table {
+        &__darurat {
+            width: 43%;
+            @media screen and (max-width: 767px) {
+                min-width: 280px;
+            }
+        }
+        &__kondisi {
+            width: 40%;
+            @media screen and (max-width: 767px) {
+                min-width: 280px;
+            }
+        }
+        &__modul {
+            width: auto;
+            @media screen and (max-width: 767px) {
+                min-width: 120px;
+            }
+        }
+    }
 </style>

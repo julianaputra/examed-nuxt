@@ -347,7 +347,7 @@
     }
 
     &__wrap-dropdown {
-        @include vwUnit(width, 280);
+        width: unit(280 , 1920);
         padding-top: unit(30, 1920);
         padding-bottom: unit(30, 1920);
         @include vwUnit(padding-right, 30, 25);
@@ -359,13 +359,14 @@
         border-radius: 14px;
 
         &--big {
-            @include vwUnit(width, 530);
+            width: unit(530 , 1920);
         }
 
         @media screen and (max-width: 1199px) {
             padding-top: 0;
             padding-bottom: 0;
-            margin-top: 10px;
+            margin-top: unit(10, 1199);
+            
             width: 100%;
             box-shadow: none;
             left: auto;
