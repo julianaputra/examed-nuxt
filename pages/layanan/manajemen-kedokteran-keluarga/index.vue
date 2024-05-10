@@ -35,7 +35,7 @@
                                                 >
                                                     <a
                                                         :href="`#aspekPersonal`"
-                                                        class="overview__sub-link"
+                                                        class="overview__sub-link overview__navbar-link"
                                                     >
                                                         Aspek Personal
                                                     </a>
@@ -48,7 +48,7 @@
                                                 >
                                                     <a
                                                         :href="`#aspekKlinis`"
-                                                        class="overview__sub-link"
+                                                        class="overview__sub-link overview__navbar-link"
                                                     >
                                                         Aspek Klinis
                                                     </a>
@@ -63,7 +63,7 @@
                                                 >
                                                     <a
                                                         :href="`#penilaianInternal`"
-                                                        class="overview__sub-link"
+                                                        class="overview__sub-link overview__navbar-link"
                                                     >
                                                         Penilaian Risiko
                                                         Internal
@@ -79,7 +79,7 @@
                                                 >
                                                     <a
                                                         :href="`#risikoEksternal`"
-                                                        class="overview__sub-link"
+                                                        class="overview__sub-link overview__navbar-link"
                                                     >
                                                         Faktor Risiko Eksternal
                                                     </a>

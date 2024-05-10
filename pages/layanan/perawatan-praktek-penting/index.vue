@@ -43,7 +43,7 @@
                                                 >
                                                     <a
                                                         :href="`#gunakanKeterampilan`"
-                                                        class="overview__sub-link"
+                                                        class="overview__sub-link overview__navbar-link"
                                                     >
                                                         Gunakan Keterampilan
                                                         Komunikasi yang Efektif
@@ -59,7 +59,7 @@
                                                 >
                                                     <a
                                                         :href="`#meningkatkanRasaHormat`"
-                                                        class="overview__sub-link"
+                                                        class="overview__sub-link overview__navbar-link"
                                                     >
                                                         Meningkatkan Rasa Hormat
                                                         dan Martabat
@@ -91,7 +91,7 @@
                                                 >
                                                     <a
                                                         :href="`#menilaiKesehatan`"
-                                                        class="overview__sub-link"
+                                                        class="overview__sub-link overview__navbar-link"
                                                     >
                                                         Menilai Kesehatan Fisik
                                                     </a>
@@ -106,7 +106,7 @@
                                                 >
                                                     <a
                                                         :href="`#melakukanPenilaian`"
-                                                        class="overview__sub-link"
+                                                        class="overview__sub-link overview__navbar-link"
                                                     >
                                                         Melakukan Penilaian MNS
                                                     </a>
@@ -121,7 +121,7 @@
                                                 >
                                                     <a
                                                         :href="`#kelolaKondisi`"
-                                                        class="overview__sub-link"
+                                                        class="overview__sub-link overview__navbar-link"
                                                     >
                                                         Kelola Kondisi MNS
                                                     </a>
