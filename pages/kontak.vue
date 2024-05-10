@@ -226,4 +226,11 @@ const breadcrumbs: Ref<Breadcrumb[]> = ref([])
 ::v-deep .breadcrumb {
     @include vwUnit(padding-bottom, 40);
 }
+
+// remove increase and decrease number
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
 </style>
