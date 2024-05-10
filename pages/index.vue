@@ -1,7 +1,7 @@
 <template>
     <main class="main">
         <HomeBanner />
-        <HomeModule />
+        <HomeModule module-title="Pilihan Module" />
         <HomeServices />
         <HomeAbout />
         <HomeTesti />

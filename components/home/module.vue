@@ -3,7 +3,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 col-lg-9 col-xl-10">
-                    <h2 class="module__title">Pilihan Module</h2>
+                    <h2 class="module__title">{{ props.moduleTitle }}</h2>
                 </div>
                 <div class="col-12 col-lg-3 col-xl-2">
                     <HomeSwiperNavigation
@@ -65,6 +65,9 @@
 <script setup lang="ts">
 const props = defineProps({
     activeSlug:{
+        type:String,
+    },
+    moduleTitle:{
         type:String,
     }
 })

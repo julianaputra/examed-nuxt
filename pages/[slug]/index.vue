@@ -145,7 +145,7 @@
                 </div>
             </div>
         </section>
-        <HomeModule :active-slug="route.params.slug"/>
+        <HomeModule :active-slug="route.params.slug" module-title="List Modul Lainnya"/>
     </main>
 </template>
 
