@@ -1,7 +1,7 @@
 <template>
     <div class="filter-bar">
         <div class="row">
-            <div class="col-12 col-lg-3 col-xl-2">
+            <div class="col-12 col-lg-3 col-xl-2 px-0  ">
                 <div class="filter-bar__item-container">
                     <select v-model="daerahValue" class="form-select">
                         <option value="all">{{ titleSort }}</option>
@@ -18,7 +18,7 @@
             <div v-if="props.rsuFilter" class="col-12 col-lg-3">
                 <div class="filter-bar__item-container">
                     <select v-model="praktekValue" class="form-select">
-                        <option value="all" class="">
+                        <option value="all" class="form-select__title">
                             Pilih Tempat Praktek
                         </option>
                         <option
@@ -33,7 +33,7 @@
             </div>
             <div class="col-12 col-lg-6 col-xl-4 ms-auto">
                 <div class="filter-bar__item-container">
-                    <form class="row">
+                    <form class="row gx-2">
                         <div class="col">
                             <div class="input-group">
                                 <div class="input-group-text">
@@ -51,7 +51,7 @@
                             </div>
                         </div>
                         <div class="col-auto" @click="searchRumahSakit">
-                            <UiButton>Search</UiButton>
+                            <UiButton class="button-search">Search</UiButton>
                         </div>
                     </form>
                 </div>
@@ -113,6 +113,10 @@ const searchRumahSakit = () => {
         @include vwUnit(padding-right, 15);
         @include vwUnit(padding-bottom, 15);
         @include vwUnit(padding-left, 15);
+        opacity: 0.6;
+        &__title {
+            background-color: aqua;
+        }
     }
 
     .input-group {
@@ -127,6 +131,7 @@ const searchRumahSakit = () => {
         padding: 0;
         @include vwUnit(padding-right, 10);
         @include vwUnit(padding-left, 10);
+        @include vwUnit(width, 49);
         background-color: transparent;
         border-right: 0;
     }

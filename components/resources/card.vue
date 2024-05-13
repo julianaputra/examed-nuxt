@@ -1,9 +1,9 @@
 <template>
-    <a :href="props.file" download class="resources-card" :title="props.title">
+    <div class="resources-card" :title="props.title">
         <div class="resources-card__image-container">
             <img
                 :src="props.image"
-                alt="placeholder iamge"
+                alt="placeholder image"
                 class="ratio-item"
             />
         </div>
@@ -11,12 +11,12 @@
             <h2 class="resources-card__title">
                 {{ props.title }}
             </h2>
-            <p class="resource-card__download-text">
+            <a :href="props.file" download class="resources-card__download-text">
                 <icon name="material-symbols:download" />
                 Download Resources
-            </p>
+            </a>
         </div>
-    </a>
+    </div>
 </template>
 
 <script setup lang="ts">
@@ -60,6 +60,10 @@ const props = defineProps({
     &__title {
         @include vwUnit(margin-bottom, 30);
         @include typo(card-title-1, true, 2);
+    }
+    &__download-text{
+        text-decoration: none;
+        color: #303178;
     }
 }
 </style>

@@ -81,7 +81,6 @@ import type {
     Manajemen
 } from '~/types/index'
 
-const router = useRouter()
 const route = useRoute()
 
 const activeSection = ref('deskripsi')

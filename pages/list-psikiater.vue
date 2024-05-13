@@ -70,7 +70,7 @@ const rsList: any = ref([])
 const praktekList: any = ref([])
 const resultList: any = ref(null)
 const currentPage: any = ref(1)
-const perPage: any = ref(5)
+const perPage: any = ref(10)
 const searchQuery: Ref<string> = ref('')
 const praktekFilter = ref('all')
 
@@ -210,7 +210,7 @@ const breadcrumbs: Ref<Breadcrumb[]> = ref([])
 
     &__title {
         @include vwUnit(margin-bottom, 15);
-        @include typo(heading-1);
+        @include typo(display);
     }
 
     &__desc {

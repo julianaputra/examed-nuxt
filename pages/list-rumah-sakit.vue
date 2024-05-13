@@ -7,7 +7,7 @@
                 <LayoutsFilterbar
                     v-model:daerah-value="daerahFilter"
                     :daerah-data="daerahData"
-                    title-sort="Semua Daerah"
+                    title-sort="Pilih Daerah"
                     @search="searchRumahSakit"
                 />
                 <LayoutsListTable
@@ -67,7 +67,7 @@ const daerahFilter = ref('all')
 const rsList: any = ref([])
 const resultList: any = ref(null)
 const currentPage: any = ref(1)
-const perPage: any = ref(5)
+const perPage: any = ref(10)
 const searchQuery: Ref<string> = ref('')
 
 watch(daerahFilter, () => {
@@ -234,7 +234,7 @@ const breadcrumbs: Ref<Breadcrumb[]> = ref([])
 
     &__title {
         @include vwUnit(margin-bottom, 15);
-        @include typo(heading-1);
+        @include typo(display);
     }
 
     &__desc {
@@ -296,6 +296,6 @@ const breadcrumbs: Ref<Breadcrumb[]> = ref([])
 }
 
 ::v-deep .breadcrumb {
-    @include vwUnit(padding-bottom, 40);
+    @include vwUnit(padding-bottom, 8);
 }
 </style>

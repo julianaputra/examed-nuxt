@@ -24,7 +24,7 @@
                             </p>
                             <p class="kontak__info-desc">
                                 <a
-                                    href="mailtoinfo@examed.id"
+                                    href="mailto:info@examed.id?" target="_blank"
                                     class="kontak__info-link"
                                 >
                                     info@examed.id
@@ -225,5 +225,12 @@ const breadcrumbs: Ref<Breadcrumb[]> = ref([])
 
 ::v-deep .breadcrumb {
     @include vwUnit(padding-bottom, 40);
+}
+
+// remove increase and decrease number
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
 }
 </style>

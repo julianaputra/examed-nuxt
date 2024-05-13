@@ -1,10 +1,13 @@
 <template>
-    <main>
+    <main class="main">
         <HomeBanner />
-        <HomeModule />
+        <HomeModule module-title="Pilihan Module" />
         <HomeServices />
         <HomeAbout />
         <HomeTesti />
+        <div class="container custom-line" >
+            <hr class=" m-0 custom-line__border ">
+        </div>
     </main>
 </template>
 
@@ -15,4 +18,14 @@ definePageMeta({
 })
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.main{
+    background-color: #FFFFFF;
+}
+.custom-line{
+    @include vwUnit(margin-top, 110, 30);
+    &__border{
+        border: 1px solid rgba(19, 24, 44, 0.1)
+    }
+}
+</style>

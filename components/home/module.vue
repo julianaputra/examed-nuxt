@@ -3,7 +3,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 col-lg-9 col-xl-10">
-                    <h2 class="module__title">Pilihan Module</h2>
+                    <h2 class="module__title">{{ props.moduleTitle }}</h2>
                 </div>
                 <div class="col-12 col-lg-3 col-xl-2">
                     <HomeSwiperNavigation
@@ -41,9 +41,10 @@
             >
                 <SwiperSlide
                     v-for="(diagnose, diagnoseIndex) in diagnoses"
-                    :key="diagnoseIndex"
+                    :key="diagnoseIndex" :class="{'d-none':  diagnose.to.substring(1) == props.activeSlug }"
+                   
                 >
-                    <nuxt-link :to="diagnose.to" class="themeBtnBold">
+                    <nuxt-link :to="diagnose.to" class="themeBtnBold" >
                         <div
                             class="themeBtnBold__square"
                             :class="diagnose.color"
@@ -62,6 +63,14 @@
 </template>
 
 <script setup lang="ts">
+const props = defineProps({
+    activeSlug:{
+        type:String,
+    },
+    moduleTitle:{
+        type:String,
+    }
+})
 const diagnoses = ref([
     {
         name: 'Depresi',
@@ -92,25 +101,22 @@ const diagnoses = ref([
         to: '/menyakiti-diri-sendiri-bunuh-diri',
         short: 'SUI',
         color: 'red'
-    },
-    {
-        name: 'Keluhan Kesehatan Mental Penting Lainnya',
-        to: '/',
-        short: 'OTH',
-        color: 'blue'
     }
 ])
 </script>
 
 <style lang="scss" scoped>
 .module {
-    @include vwUnit(padding-top, 50);
-    @include vwUnit(padding-bottom, 50);
+    @include vwUnit(padding-top, 45);
+    @include vwUnit(padding-bottom, 94);
     overflow: hidden;
 
     &__title {
         @include vwUnit(margin-bottom, 30);
         @include typo(heading-1);
+    }
+    @media screen and (max-width:767px) {
+        @include vwUnit(padding-bottom, 50);
     }
 }
 

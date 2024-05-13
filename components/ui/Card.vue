@@ -47,14 +47,14 @@ const className = computed(() => {
 
             li {
                 color: rgba(18, 32, 50, 0.8);
-                font-size: 18px;
+                // font-size: 18px;
                 font-weight: 400;
             }
         }
 
         :deep(*) p {
             color: rgba(18, 32, 50, 0.8);
-            font-size: 18px;
+            // font-size: 18px;
             font-weight: 400;
         }
 

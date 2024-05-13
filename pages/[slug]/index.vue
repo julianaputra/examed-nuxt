@@ -86,7 +86,7 @@
                                     </Transition>
                                 </template>
                             </UiCard>
-                            <UiCard
+                            <UiCard class="section-content"
                                 v-else
                                 :key="activeContent?.id"
                                 title-size="small"
@@ -95,7 +95,7 @@
                                     activeContent?.title
                                 }}</template>
                                 <template #content>
-                                    <div
+                                    <div 
                                         v-if="
                                             activeContent?.slug === 'deskripsi'
                                         "
@@ -106,7 +106,7 @@
                                             activeContent?.slug === 'penilaian'
                                         "
                                     >
-                                        <UiSelectionButton
+                                        <UiSelectionButton class="list-selection"
                                             v-for="item in penilaian"
                                             :key="`menu-link-${item.id}`"
                                             :to="`/${route.params.slug}/penilaian?question=${item.id}`"
@@ -145,6 +145,7 @@
                 </div>
             </div>
         </section>
+        <HomeModule :active-slug="route.params.slug" module-title="List Modul Lainnya" class="pt-0" />
     </main>
 </template>
 
@@ -324,5 +325,13 @@ const setActiveTindakLanjut = (val: any) => {
         flex-direction: column;
         gap: 10px;
     }
+}
+.section-content{
+    @media screen and (max-width: 991px) {
+        @include vwUnit(margin-top, 30)
+    }
+}
+.list-selection:last-child{
+    opacity: 50%;
 }
 </style>

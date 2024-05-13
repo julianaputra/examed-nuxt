@@ -1,3 +1,4 @@
+
 <template>
     <section class="home-banner">
         <div class="container">
@@ -89,6 +90,7 @@ function specialClass(index: number) {
     &__title {
         @include vwUnit(margin-bottom, 30);
         @include typo(display);
+        @include vwUnit(font-size, 52, 32)
     }
 
     &__big-feature {

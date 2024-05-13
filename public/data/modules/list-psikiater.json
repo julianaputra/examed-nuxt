@@ -6,7 +6,7 @@
             "nama": "RSU Manuaba",
             "alamat": "Jalan HOS. Cokroaminoto No. 28, Denpasar Utara",
             "telepon": "(0361) 426393",
-            "daerah": "Gianyar"
+            "daerah": "Denpasar"
         },
         {
             "kode": 1104032,
@@ -14,7 +14,7 @@
             "nama": "RSU Manuaba",
             "alamat": "Jalan HOS. Cokroaminoto No. 28, Denpasar Utara",
             "telepon": "(0361) 426393",
-            "daerah": "Buleleng"
+            "daerah": "Denpasar"
         },
         {
             "kode": 1104033,
@@ -30,15 +30,15 @@
             "nama": "Bali Royal Hospital",
             "alamat": "Jl. Tantular No. 6 Renon, Denpasar",
             "telepon": "(0361) 247499, 222588",
-            "daerah": "Tabanan"
+            "daerah": "Denpasar"
         },
         {
             "kode": 1104035,
             "namaDokter": "dr. Putu Asih Primatanti, Sp. KJ",
             "nama": "Bali Royal Hospital",
-            "alamat": "Jalan HOS. Cokroaminoto No. 28, Denpasar Utara",
-            "telepon": "(0361) 426393",
-            "daerah": "Badung"
+            "alamat": "Jl. Tantular No. 6 Renon, Denpasar",
+            "telepon": "(0361) 247499, 222588",
+            "daerah": "Denpasar"
         },
         {
             "kode": 1104036,
@@ -46,55 +46,103 @@
             "nama": "Balimed Hospital",
             "alamat": "Jl. Mahendradatta No. 57X, Padang Sambian, Kec. Denpasar Bar., Kota Denpasar",
             "telepon": "081 148 4748",
-            "daerah": "Bangli"
+            "daerah": "Denpasar"
         },
         {
             "kode": 1104037,
             "namaDokter": "dr. I Putu Belly Sutrisna, Sp. KJ, M. Biomed, CHt, CI.",
             "nama": "Balimed Hospital",
-            "alamat": "Jalan HOS. Cokroaminoto No. 28, Denpasar Utara",
-            "telepon": "(0361) 426393",
-            "daerah": "Karangasem"
+            "alamat": "Jl. Mahendradatta No. 57X, Padang Sambian, Kec. Denpasar Bar., Kota Denpasar",
+            "telepon": "081 148 4748",
+            "daerah": "Denpasar"
         },
         {
             "kode": 1104038,
             "namaDokter": "dr. Ni Putu Ayu Werdhiatmi, Sp. KJ, M. Biomed",
             "nama": "RSU Bhakti Rahayu Denpasar",
-            "alamat": "Jalan HOS. Cokroaminoto No. 28, Denpasar Utara",
+            "alamat": "Jl. Gatot Subroto II No. 11, Dangin Puri Kaja, Kec. Denpasar Utara, Kota Denpasar",
             "telepon": "(0361) 430270",
-            "daerah": "Klungkung"
+            "daerah": "Denpasar"
         },
         {
             "kode": 1104039,
             "namaDokter": "dr. Sahat Hamonangan Hariandja, Sp.KJ",
             "nama": "RSU Bhakti Rahayu Denpasar",
-            "alamat": "Jalan HOS. Cokroaminoto No. 28, Denpasar Utara",
-            "telepon": "(0361) 426393",
-            "daerah": "Gianyar"
+            "alamat": "Jl. Gatot Subroto II No. 11, Dangin Puri Kaja, Kec. Denpasar Utara, Kota Denpasar",
+            "telepon": "(0361) 430270",
+            "daerah": "Denpasar"
         },
         {
-            "kode": 11040310,
+            "kode": 1104040,
             "namaDokter": "dr. Bagus Surya Kusumadewa, Sp. KJ",
             "nama": "RSU Bhakti Rahayu Denpasar",
-            "alamat": "Jalan HOS. Cokroaminoto No. 28, Denpasar Utara",
-            "telepon": "(0361) 426393",
-            "daerah": "Gianyar"
+            "alamat": "Jl. Gatot Subroto II No. 11, Dangin Puri Kaja, Kec. Denpasar Utara, Kota Denpasar",
+            "telepon": "(0361) 430270",
+            "daerah": "Denpasar"
         },
         {
-            "kode": 11040311,
-            "namaDokter": "dr. Rano Gautama, Sp. KJ",
-            "nama": "RSU Bhakti Rahayu Denpasar",
-            "alamat": "Jalan HOS. Cokroaminoto No. 28, Denpasar Utara",
-            "telepon": "(0361) 426393",
-            "daerah": "Gianyar"
+            "kode": 1104041,
+            "namaDokter": "dr. Desak Nym. Puriani, Sp.KJ",
+            "nama": "RS Kasih Ibu Denpasar",
+            "alamat": "Jl. Teuku Umar No. 120, Dauh Puri Kauh, Kec. Denpasar Bar., Kota Denpasar",
+            "telepon": "(0361) 3003030",
+            "daerah": "Denpasar"
         },
         {
-            "kode": 11040312,
-            "namaDokter": "dr. Sandri Alkatiri, Sp. KJ",
-            "nama": "RSU Bhakti Rahayu Denpasar",
-            "alamat": "Jalan HOS. Cokroaminoto No. 28, Denpasar Utara",
-            "telepon": "(0361) 426393",
-            "daerah": "Gianyar"
+            "kode": 1104042,
+            "namaDokter": "dr. Desak Nym. Puriani, Sp.KJ",
+            "nama": "RS Kasih Ibu Denpasar",
+            "alamat": "Jl. Teuku Umar No. 120, Dauh Puri Kauh, Kec. Denpasar Bar., Kota Denpasar",
+            "telepon": "(0361) 3003030",
+            "daerah": "Denpasar"
+        },
+        {
+            "kode": 1104043,
+            "namaDokter": "dr. Sri Diniari, Sp.KJ,            ",
+            "nama": "RS Kasih Ibu Denpasar ",
+            "alamat": "Jl. Teuku Umar No. 120, Dauh Puri Kauh, Kec. Denpasar Bar., Kota Denpasar ",
+            "telepon": "(0361) 3003030",
+            "daerah": "Denpasar"
+        },
+        {
+            "kode": 1104043,
+            "namaDokter": " dr. I Gusti Ayu Utami Wijayanthi, Sp. KJ, M. Biomed,            ",
+            "nama": "RS Kasih Ibu Denpasar ",
+            "alamat": "Jl. Teuku Umar No. 120, Dauh Puri Kauh, Kec. Denpasar Bar., Kota Denpasar ",
+            "telepon": "(0361) 3003030",
+            "daerah": "Denpasar"
+        },
+        {
+            "kode": 1104044,
+            "namaDokter": " dr. I Putu Dharma Krisna Aji, Sp. KJ",
+            "nama": "RS Kasih Ibu Denpasar ",
+            "alamat": "Jl. Teuku Umar No. 120, Dauh Puri Kauh, Kec. Denpasar Bar., Kota Denpasar ",
+            "telepon": "(0361) 3003030",
+            "daerah": "Denpasar"
+        },
+        {
+            "kode": 1104045,
+            "namaDokter": "dr. Lely Setyawati Kurniawa, Sp.KJ (K)",
+            "nama": "RS Kasih Ibu Denpasar ",
+            "alamat": "Jl. Teuku Umar No. 120, Dauh Puri Kauh, Kec. Denpasar Bar., Kota Denpasar ",
+            "telepon": "(0361) 3003030",
+            "daerah": "Denpasar"
+        },
+        {
+            "kode": 1104046,
+            "namaDokter": "dr. Putu Agus Grantika, Sp. KJ",
+            "nama": "Siloam Hospitals Denpasar",
+            "alamat": "Jl. Sunset Road No. 818, Kuta, Badung",
+            "telepon": "(0361) 779900",
+            "daerah": "Badung"
+        },
+        {
+            "kode": 1104047,
+            "namaDokter": "dr. Monika Joy Reverger, Sp.KJ",
+            "nama": "Siloam Hospitals Denpasar",
+            "alamat": "Jl. Sunset Road No. 818, Kuta, Badung",
+            "telepon": "(0361) 779900",
+            "daerah": "Badung"
         }
     ]
 }

@@ -41,60 +41,44 @@
             "map": "https://www.google.com/maps/place/PT.Timedoor+Indonesia/@-8.6816479,115.2378796,17z/data=!3m1!4b1!4m6!3m5!1s0x2dd240f88bb37a69:0xdf8443f1fabfe305!8m2!3d-8.6816532!4d115.2404545!16s%2Fg%2F1q6j35h5s?entry=ttu"
         },
         {
-            "kode": 5199999,
-            "nama": "RS Jiwa Bali",
-            "jenis": "RSJ",
-            "kelas": "C",
-            "daerah": "Gianyar",
+            "kode": 5107018,
+            "nama": "RS Pratama Kubu",
+            "jenis": "RSU",
+            "kelas": "D PRATAMA",
+            "daerah": "Karangasem",
             "map": "https://www.google.com/maps/place/RS+Jiwa+Bali/data=!4m2!3m1!1s0x2dd24b9c6576c6d7:0x8374a9b02dfc76fe?entry=gps"
         },
         {
-            "kode": 5150505,
-            "nama": "RS THT Bedah Abdi Medika",
+            "kode": 5105016,
+            "nama": "RSU Daerah Gema Santi Nusa Penida",
             "jenis": "RSU",
-            "kelas": "C",
-            "daerah": "Bangli",
+            "kelas": "D",
+            "daerah": "Klungkung",
             "map": "https://www.google.com/maps/place/RS+THT+Bedah+Abdi+Medika/data=!4m2!3m1!1s0x2dd4c534dccc2007:0xe4f9a9d8a5272f63?entry=gps"
         },
         {
-            "kode": 5111111,
-            "nama": "RS Bersalin Wira Husada",
-            "jenis": "RSIA",
+            "kode": 5103038,
+            "nama": "RS Bali Jimbaran",
+            "jenis": "RSU",
             "kelas": "C",
-            "daerah": "Karangasem",
+            "daerah": "Badung",
             "map": "https://www.google.com/maps/place/RS+Bersalin+Wira+Husada/data=!4m2!3m1!1s0x2dd4de8a4b536e6d:0x74d80575970c2b07?entry=gps"
         },
         {
-            "kode": 5122222,
-            "nama": "RS Kasih Ibu",
-            "jenis": "RSIA",
-            "kelas": "C",
-            "daerah": "Klungkung",
+            "kode": 5171220,
+            "nama": "RS Umum Daerah Bali Mandara Provinsi Bali",
+            "jenis": "RSU",
+            "kelas": "B",
+            "daerah": "buleleng",
             "map": "https://www.google.com/maps/place/RS+Kasih+Ibu/data=!4m2!3m1!1s0x2dd43cb7201a8bd9:0x4a3d0d892e0b0c19?entry=gps"
         },
         {
-            "kode": 5133333,
-            "nama": "RS Bersalin Ngurah Rai",
-            "jenis": "RSIA",
-            "kelas": "C",
+            "kode": 5108077,
+            "nama": "RS Umum Daerah Tangguwisia",
+            "jenis": "RSU",
+            "kelas": "D",
             "daerah": "Buleleng",
             "map": "https://www.google.com/maps/place/RS+Bersalin+Ngurah+Rai/data=!4m2!3m1!1s0x2dd4dcb7433d929b:0x751720bd5a70013e?entry=gps"
-        },
-        {
-            "kode": 5144444,
-            "nama": "RS Bersalin Bali Mandara",
-            "jenis": "RSIA",
-            "kelas": "C",
-            "daerah": "Gianyar",
-            "map": "https://www.google.com/maps/place/RS+Bersalin+Bali+Mandara/data=!4m2!3m1!1s0x2dd24c3a4f5586e5:0x3f2cf6be8908cbe3?entry=gps"
-        },
-        {
-            "kode": 5166666,
-            "nama": "RS Ibu dan Anak Bali",
-            "jenis": "RSIA",
-            "kelas": "C",
-            "daerah": "Denpasar",
-            "map": "https://www.google.com/maps/place/RS+Ibu+dan+Anak+Bali/data=!4m2!3m1!1s0x2dd2409b9155ebf7:0x66f89d43b8a4b6ef?entry=gps"
         }
     ]
 }

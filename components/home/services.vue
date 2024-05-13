@@ -51,7 +51,11 @@
 const route = useRoute()
 
 function isInPage(slug: String) {
-    return route.fullPath === slug ? 'd-none' : ''
+    const checkActive = route.fullPath.includes(slug)
+    if (checkActive) {
+        return 'd-none'
+    }
+    // return route.fullPath === slug ? 'd-none' : ''
 }
 
 const pageData = ref({
@@ -94,6 +98,7 @@ const pageData = ref({
 }
 
 .service-card {
+    background-color: #ffffff;
     display: block;
     @include vwUnit(margin-bottom, 30);
     @include vwUnit(padding, 30, 15);

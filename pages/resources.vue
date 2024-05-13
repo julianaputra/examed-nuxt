@@ -11,7 +11,7 @@
                     :key="itemIndex"
                     class="col-12 col-md-6 col-lg-4 col-xl-3"
                 >
-                    <ResourcesCard :title="item.title" :file="item.file" />
+                    <ResourcesCard class="resources__card" title="item.title" :file="item.file" :image="item.image" />
                 </div>
             </div>
         </div>
@@ -24,12 +24,12 @@ import type { Breadcrumb } from '../types/index'
 
 const pageData = ref([
     {
-        image: '',
+        image: '/images/resouces-mhgap.png',
         title: 'MHGAP IG WHO English',
         file: ''
     },
     {
-        image: '',
+        image: '/images/resources-pelayanan.png',
         title: 'Pelayanan Kesehatan Mental dengan Pendekatan Kedokteran Keluarga',
         file: ''
     }
@@ -76,8 +76,8 @@ const breadcrumbs: Ref<Breadcrumb[]> = ref([])
     }
 
     &__title {
-        @include vwUnit(margin-bottom, 15);
-        @include typo(heading-1);
+        @include vwUnit(margin-bottom, 40);
+        @include typo(display);
     }
 
     &__desc {
@@ -109,6 +109,9 @@ const breadcrumbs: Ref<Breadcrumb[]> = ref([])
             color: colorMod(rgba(48, 49, 120, 1), +25%);
         }
     }
+    &__card{
+        @include vwMobile(margin-top, 30)
+    }
 }
 
 .form {
@@ -139,6 +142,7 @@ const breadcrumbs: Ref<Breadcrumb[]> = ref([])
 }
 
 ::v-deep .breadcrumb {
-    @include vwUnit(padding-bottom, 40);
+    @include vwUnit(padding-bottom, 0);
+    @include vwUnit(margin-bottom, 8);
 }
 </style>

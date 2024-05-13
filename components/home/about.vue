@@ -24,6 +24,7 @@
                                 <p class="about__list-desc">{{ item.desc }}</p>
                             </div>
                         </div>
+                        <UiButton class="about__button-about"  to="/tentang-kami">Tentang Kami</UiButton>
                     </div>
                 </div>
                 <div class="col-12 col-xl-5 text-center">
@@ -66,10 +67,14 @@ const pageData = ref({
 
 <style lang="scss" scoped>
 .about {
-    @include vwUnit(padding-top, 50);
-    @include vwUnit(padding-bottom, 50);
+    @include vwUnit(padding-top, 103);
+    @include vwUnit(padding-bottom, 140);
 
     @include imageRatio(670, 859, true);
+    @media screen and (max-width:1199px) {
+        @include vwUnit(padding-top, 50);
+    @include vwUnit(padding-bottom, 50);
+    }
 
     &__info-container {
         padding: unit(100, 1920) unit(80, 1920);
@@ -123,6 +128,21 @@ const pageData = ref({
 
     &__list-desc {
         margin: 0;
+    }
+    &__image-container{
+        @include vwUnit(margin-top, 0);
+        @media screen and (max-width:1199px) {
+            @include vwUnit(margin-top, 50);
+        }
+        @media screen and (max-width:767px) {
+            @include vwUnit(margin-top, 40);
+        }
+        @media screen and (max-width:576px) {
+            @include vwUnit(margin-top, 30);
+        }
+    }
+    &__button-about{
+       @include vwUnit(width,267, 180);
     }
 }
 </style>

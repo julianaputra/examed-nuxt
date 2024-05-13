@@ -59,7 +59,8 @@
                                     </div>
 
                                     <div class="card__button-wrapper">
-                                        <UiButton
+                                        <UiButton 
+                                        data-bs-toggle="modal" data-bs-target="#modal13"
                                             :to="`/${route.params.slug}?menu=tindaklanjut`"
                                             >Kembali ke Menu Utama</UiButton
                                         >
@@ -68,6 +69,26 @@
                             </div>
                         </div>
                     </Transition>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal13">
+        Launch demo modal
+        </button>
+        <UiModal :id="`modal13`">
+            <template #title>
+                <h3>Perhatian</h3>
+            </template>
+            <template #body>
+                <p>Saat anda keluar dari halaman ini, <span class="text-danger">hasil pada halaman ini tidak akan tersimpan.</span></p>
+                <p>Pastikan untuk mencatatnya terlebih dahulu</p>
+            </template>
+
+            <template #footer>
+                <div class=" ">
+                    <UiButton variant="outline" >Keluar Halaman</UiButton>
+                    <UiButton class="ms-2" aria-label="Close"
+                        data-bs-dismiss="modal">Catat Dulu</UiButton>
+                </div>
+            </template>
+        </UiModal>
                 </div>
             </div>
         </section>

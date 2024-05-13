@@ -37,7 +37,12 @@
                                     :to="module.to"
                                     class="footer__nav-link"
                                 >
-                                    {{ module.name }}
+                                   <span> {{ module.name }}</span>
+                                   <img
+                                            src="/images/ic-arrow-right.svg"
+                                            alt="Ic-arrow"
+                                            class="footer__arrow-link"
+                                        />
                                 </nuxt-link>
                             </li>
                         </ul>
@@ -58,12 +63,17 @@
                                     :to="module.to"
                                     class="footer__nav-link"
                                 >
-                                    {{ module.title }}
+                                  <span>  {{ module.title }}</span>
+                                    <img
+                                            src="/images/ic-arrow-right.svg"
+                                            alt="Ic-arrow"
+                                            class="footer__arrow-link"
+                                        />
                                 </nuxt-link>
                             </li>
                         </ul>
                     </nav>
-                    <h3 class="footer__title">List Modul</h3>
+                    <h3 class="footer__title">Perusahaan Kami</h3>
                     <nav class="footer__nav">
                         <ul class="footer__nav-list list-unstyled">
                             <li
@@ -75,7 +85,12 @@
                                     :to="module.to"
                                     class="footer__nav-link"
                                 >
-                                    {{ module.title }}
+                                    <span>{{ module.title }}</span>
+                                    <img
+                                            src="/images/ic-arrow-right.svg"
+                                            alt="Ic-arrow"
+                                            class="footer__arrow-link"
+                                        />
                                 </nuxt-link>
                             </li>
                         </ul>
@@ -83,6 +98,9 @@
                 </div>
             </div>
         </div>
+        <a :href="whatsappRedirect()" target="_blank" class="whatsapp-icon" >
+            <img class="w-100" src="/images/ic-whatsapp.svg" alt="Whatsapp Icon">
+        </a>
     </footer>
 </template>
 
@@ -98,20 +116,24 @@ const pageData = ref({
             to: '/depresi'
         },
         {
+            name: 'Demensia',
+            to: '/'
+            // name: 'Psikosis',
+            // to: '/psikosis'
+        },
+        {
+            name: 'Menyakiti Diri Sendiri / Bunuh Diri',
+            to: '/menyakiti-diri-sendiri-bunuh-diri'
+            // name: 'Gangguan Mental & Perilaku Anak & Remaja',
+            // to: '/'
+        },
+        {
             name: 'Psikosis',
             to: '/psikosis'
         },
         {
             name: 'Gangguan Mental & Perilaku Anak & Remaja',
-            to: '/'
-        },
-        {
-            name: 'Demensia',
-            to: '/'
-        },
-        {
-            name: 'Menyakiti Diri Sendiri / Bunuh Diri',
-            to: '/menyakiti-diri-sendiri-bunuh-diri'
+            to: '/layanan/bagan-induk#cmh'
         },
         {
             name: 'Keluhan Kesehatan Mental Penting Lainnya',
@@ -147,13 +169,20 @@ const pageData = ref({
         }
     ]
 })
+
+const whatsappRedirect = () =>{
+    const phoneNumber = "+621234567890";
+    const message = "Hi , Examed!";
+    return `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+}
 </script>
 
 <style lang="scss" scoped>
 .footer {
+    position: relative;
+    background-color: #FFFFFF;
     @include vwUnit(padding-top, 80, 40);
     @include vwUnit(padding-bottom, 25, 50);
-
     @include imageRatio(293, 72, true);
 
     &__image-container {
@@ -193,6 +222,26 @@ const pageData = ref({
         @include typo(body-s);
         text-decoration: none;
         @include transition(all 0.3s ease);
+        &:hover{
+            .footer__arrow-link{
+                        opacity: 1;
+            transform: translate(10px, 0px);
+            }
+        }
     }
+    &__arrow-link{
+        opacity: 0;
+      transition: all 0.3s ease;
+    }
+
+    .whatsapp-icon{
+        z-index: 10;
+        position: fixed;
+        @include vwUnit(width, 81, 60);
+        @include vwUnit(bottom, 56, 40);
+        @include vwUnit(right, 28, 15);
+        cursor: pointer;
+    }
+    
 }
 </style>

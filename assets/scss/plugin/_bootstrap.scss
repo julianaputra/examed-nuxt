@@ -84,7 +84,7 @@ $container-max-widths: map-merge(
 @import 'bootstrap/scss/spinners'; // Requires helpers (visually hidden)
 @import 'bootstrap/scss/offcanvas'; // Requires transitions
 // @import "bootstrap/scss/images";
-// @import "bootstrap/scss/tables";
+@import "bootstrap/scss/tables";
 // @import "bootstrap/scss/button-group";
 // @import 'bootstrap/scss/card';
 @import 'bootstrap/scss/breadcrumb';
