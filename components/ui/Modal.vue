@@ -4,7 +4,7 @@
             <div class="modal-content" :class="contentClass">
                 <div
                     v-if="!hideHeader"
-                    class="modal-header"
+                    class="modal-header custom-modal__header"
                     :class="headerClass"
                 >
                     <h1 class="modal-title fs-5" :class="titleClass">
@@ -18,12 +18,12 @@
                         data-bs-dismiss="modal"
                     />
                 </div>
-                <div class="modal-body" :class="bodyClass">
+                <div class="modal-body custom-modal__body"  :class="bodyClass">
                     <slot name="body" />
                 </div>
                 <div
                     v-if="!hideFooter"
-                    class="modal-footer"
+                    class="modal-footer custom-modal__footer"
                     :class="footerClass"
                 >
                     <slot name="footer" />
@@ -33,6 +33,7 @@
     </div>
 </template>
 <script setup lang="ts">
+const route = useRoute()
 const props = defineProps({
     id: {
         type: String,
@@ -117,3 +118,23 @@ onMounted(() => {
     })
 })
 </script>
+
+
+<style scoped lang="scss" >
+.custom-modal{
+    &__header{
+        @include vwUnit(padding,24);
+    }
+    &__body{
+    @include typo (body-s);
+    @include vwUnit(padding, 24);
+    }
+    &__footer{
+        @include vwUnit(padding-left, 16);
+        @include vwUnit(padding-right, 16);
+        @include vwUnit(padding-top, 12);
+        @include vwUnit(padding-bottom, 12);
+        @include typo(caption-1);
+    }
+}
+</style>

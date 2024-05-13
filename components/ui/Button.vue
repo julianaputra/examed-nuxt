@@ -37,12 +37,15 @@ const emit = defineEmits(['click'])
     // min-width: 180px;
     flex: 1 1 100%;
     text-align: center;
-    padding: 15px 24px;
+    @include vwUnit(padding-top,15);
+    @include vwUnit(padding-bottom,15);
+    @include vwUnit(padding-left,24);
+    @include vwUnit(padding-right,24);
     border-radius: 12px;
     border: 1px solid #303178;
     background: linear-gradient(136deg, #42429a 0%, #1a1a4a 97.56%);
     color: #fff;
-    font-size: 18px;
+    @include typo(caption-1);
     text-decoration: none;
     line-height: 1.2;
     overflow: hidden;

@@ -61,7 +61,7 @@
                                     <div class="card__button-wrapper">
                                         <UiButton 
                                         data-bs-toggle="modal" data-bs-target="#modal13"
-                                            :to="`/${route.params.slug}?menu=tindaklanjut`"
+                                            
                                             >Kembali ke Menu Utama</UiButton
                                         >
                                     </div>
@@ -69,22 +69,21 @@
                             </div>
                         </div>
                     </Transition>
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal13">
-        Launch demo modal
-        </button>
-        <UiModal :id="`modal13`">
+        <UiModal :id="`modal13`" headerClass="border-bottom-0" footerClass="border-top-0" class="custom-modal">
             <template #title>
-                <h3>Perhatian</h3>
+                <h3 class="custom-modal__title">Perhatian</h3>
             </template>
             <template #body>
-                <p>Saat anda keluar dari halaman ini, <span class="text-danger">hasil pada halaman ini tidak akan tersimpan.</span></p>
-                <p>Pastikan untuk mencatatnya terlebih dahulu</p>
+                <div class="opacity-75">
+                    <p>Saat anda keluar dari halaman ini, <span class="text-red">hasil pada halaman ini tidak akan tersimpan.</span></p>
+                <p class="font-500">Pastikan untuk mencatatnya terlebih dahulu</p>
+                </div>
             </template>
 
             <template #footer>
                 <div class=" ">
-                    <UiButton variant="outline" >Keluar Halaman</UiButton>
-                    <UiButton class="ms-2" aria-label="Close"
+                    <UiButton class="d-inline" :to="`/${route.params.slug}`" variant="outline" >Keluar Halaman</UiButton>
+                    <UiButton class="ms-2 " aria-label="Close"
                         data-bs-dismiss="modal">Catat Dulu</UiButton>
                 </div>
             </template>
@@ -105,6 +104,7 @@ definePageMeta({
 })
 
 const route = useRoute()
+console.log(route.params.slug);
 
 onMounted(() => {
     nextTick(async () => {
@@ -249,6 +249,12 @@ onUnmounted(() => {
 
     &__button-wrapper {
         margin-top: 48px;
+    }
+}
+.custom-modal{
+    &__title{
+       @include typo(title-1);
+       margin-bottom: 0;
     }
 }
 </style>
