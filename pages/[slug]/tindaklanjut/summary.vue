@@ -60,7 +60,7 @@
 
                                     <div class="card__button-wrapper">
                                         <UiButton 
-                                        data-bs-toggle="modal" data-bs-target="#modal13"
+                                        data-bs-toggle="modal" :data-bs-target="`#${getActiveSummary.id}`"
                                             
                                             >Kembali ke Menu Utama</UiButton
                                         >
@@ -69,7 +69,7 @@
                             </div>
                         </div>
                     </Transition>
-        <UiModal :id="`modal13`" headerClass="border-bottom-0" footerClass="border-top-0" class="custom-modal">
+        <UiModal :id="`${getActiveSummary.id}`" headerClass="border-bottom-0" footerClass="border-top-0" class="custom-modal">
             <template #title>
                 <h3 class="custom-modal__title">Perhatian</h3>
             </template>

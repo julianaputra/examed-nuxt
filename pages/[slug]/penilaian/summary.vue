@@ -56,8 +56,8 @@
                                     </div>
 
                                     <div class="card__button-wrapper">
-                                        <UiButton
-                                            :to="`/${route.params.slug}?menu=penilaian`"
+                                        <UiButton data-bs-toggle="modal" :data-bs-target="`#${getActiveSummary.id}`"
+                                         
                                             >Kembali ke Menu Utama</UiButton
                                         >
                                     </div>
@@ -65,6 +65,25 @@
                             </div>
                         </div>
                     </Transition>
+                    <UiModal :id="`${getActiveSummary.id}`" headerClass="border-bottom-0" footerClass="border-top-0" class="custom-modal">
+            <template #title>
+                <h3 class="custom-modal__title">Perhatian</h3>
+            </template>
+            <template #body>
+                <div class="opacity-75">
+                    <p>Saat anda keluar dari halaman ini, <span class="text-red">hasil pada halaman ini tidak akan tersimpan.</span></p>
+                <p class="font-500">Pastikan untuk mencatatnya terlebih dahulu</p>
+                </div>
+            </template>
+
+            <template #footer>
+                <div class=" ">
+                    <UiButton class="d-inline" :to="`/${route.params.slug}`" variant="outline" >Keluar Halaman</UiButton>
+                    <UiButton class="ms-2 " aria-label="Close"
+                        data-bs-dismiss="modal">Catat Dulu</UiButton>
+                </div>
+            </template>
+        </UiModal>
                 </div>
             </div>
         </section>
