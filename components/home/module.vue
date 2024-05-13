@@ -7,9 +7,9 @@
                 </div>
                 <div class="col-12 col-lg-3 col-xl-2">
                     <HomeSwiperNavigation
-                        :prev-class="'moduke-swiper__prev'"
-                        :next-class="'moduke-swiper__next'"
-                        :pagination-class="'moduke-swiper__pagination'"
+                        :prev-class="'module-swiper__prev'"
+                        :next-class="'module-swiper__next'"
+                        :pagination-class="'module-swiper__pagination'"
                     />
                 </div>
             </div>
@@ -17,15 +17,15 @@
                 id="module-swiper"
                 class="module-swiper"
                 :modules="[SwiperNavigation, SwiperPagination]"
-                :loop="true"
+                :loop="false"
                 :slides-per-view="1"
                 :space-between="30"
                 :pagination="{
-                    el: '.moduke-swiper__pagination'
+                    el: '.module-swiper__pagination'
                 }"
                 :navigation="{
-                    prevEl: '.moduke-swiper__prev',
-                    nextEl: '.moduke-swiper__next'
+                    prevEl: '.module-swiper__prev',
+                    nextEl: '.module-swiper__next'
                 }"
                 :breakpoints="{
                     '767': {
@@ -85,12 +85,6 @@ const diagnoses = ref([
         color: 'purple'
     },
     {
-        name: 'Gangguan Mental & Perilaku Anak & Remaja',
-        to: '/',
-        short: 'CMH',
-        color: 'green'
-    },
-    {
         name: 'Demensia',
         to: '/',
         short: 'DEM',
@@ -101,7 +95,15 @@ const diagnoses = ref([
         to: '/menyakiti-diri-sendiri-bunuh-diri',
         short: 'SUI',
         color: 'red'
+    },
+    {
+        name: 'Gangguan Mental & Perilaku Anak & Remaja',
+        to: '/',
+        short: 'CMH',
+        color: 'green'
     }
+   
+    
 ])
 </script>
 
