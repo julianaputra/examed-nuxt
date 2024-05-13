@@ -14,7 +14,7 @@
                         {{ pageData.copyright }}
                     </p>
                     <p class="footer__tnc">
-                        {{ pageData.tnc }}
+                        This site is protected by reCAPTCHA and the Google <a href="https://policies.google.com/privacy" target="_blank" class="footer__tnc--link">Privacy Policy</a> and <a href="https://policies.google.com/terms" target="_blank" class="footer__tnc--link" >Terms of Service </a>apply.
                     </p>
                     <div class="footer__udayana-container">
                         <img
@@ -198,6 +198,9 @@ const whatsappRedirect = () =>{
         @include vwUnit(margin-bottom, 30);
         @include typo(body-s);
         opacity: 0.5;
+        &--link{
+            color: #122032;
+        }
     }
 
     @include imageRatio(189, 49, true, $className: udayana);

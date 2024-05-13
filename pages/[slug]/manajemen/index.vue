@@ -64,8 +64,6 @@ onMounted(() => {
 
         manajemenData.value = res.data
 
-        console.log(res)
-
         breadcrumbs.value = [
             {
                 title: 'Home',
