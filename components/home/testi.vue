@@ -75,7 +75,7 @@ const pageData = ref({
             star: 5,
             message:
                 'Website panduan ini sangat Praktis dan lengkap serta sangat membantu kami dlm Praktek sehari-hari di Puskesmas. Terimakasih karena sudah mengembangkan panduan ini.',
-            picture: 'https://i.pravatar.cc/300?img=1',
+            picture: '/images/person1.png',
             name: 'dr. Ketut Parining, Sp.KKLP',
             info: 'Puskesmas Seririt 1, Kabupaten Buleleng, Bali'
         },
@@ -83,7 +83,7 @@ const pageData = ref({
             star: 4,
             message:
                 'Aplikasi EXAMED ini sangat membantu kami melakukan skrining dan tata laksana gangguan mental yang banyak ditemui di puskesmas. Step by step-nya yang mudah diikuti sangat menghemat waktu kami saat pelayanan.',
-            picture: 'https://i.pravatar.cc/300?img=2',
+            picture: '/images/person2.png',
             name: 'dr. Luh Dani Herawati',
             info: 'Puskesmas Blahbatuh II, Kabupaten Gianyar, Bali'
         },
