@@ -75,13 +75,14 @@ button {
 }
 
 .heading {
-    font-size: 40px;
+    @include typo(heading-1);
+    // font-size: 40px;
     color: #122032;
     font-weight: 500;
 
     &--secondary {
         @extend .heading;
-        font-size: 32px;
+        @include typo(heading-2);
     }
 }
 
