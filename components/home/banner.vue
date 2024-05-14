@@ -15,7 +15,7 @@
                                 ) in pageData.features"
                                 :key="featureIndex"
                                 :class="[
-                                    'col-12 col-sm-6 col-md',
+                                    'col-6 col-sm-6 col-md',
                                     specialClass(featureIndex)
                                 ]"
                             >
