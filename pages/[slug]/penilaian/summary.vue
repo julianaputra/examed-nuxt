@@ -71,6 +71,7 @@
                             :id="`modalSummary`"
                             headerClass="border-bottom-0"
                             footerClass="border-top-0"
+                            dialog-class="modal-dialog-centered"
                             class="custom-modal"
                         >
                             <template #title>
