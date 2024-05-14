@@ -61,7 +61,7 @@
                                     <div class="card__button-wrapper">
                                         <UiButton
                                             data-bs-toggle="modal"
-                                            :data-bs-target="`#modal-summary`"
+                                            :data-bs-target="`#modalSummary`"
                                             >Kembali ke Menu Utama</UiButton
                                         >
                                     </div>
@@ -71,7 +71,7 @@
                     </Transition>
                     <Teleport to="body">
                         <UiModal
-                            :id="`modal-summary`"
+                            :id="`modalSummary`"
                             headerClass="border-bottom-0"
                             footerClass="border-top-0"
                             dialog-class="modal-dialog-centered"
