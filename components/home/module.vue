@@ -2,10 +2,10 @@
     <section class="module">
         <div class="container">
             <div class="row">
-                <div class="col-12 col-lg-9 col-xl-10">
+                <div class="col-8 col-lg-9 col-xl-10">
                     <h2 class="module__title">{{ props.moduleTitle }}</h2>
                 </div>
-                <div class="col-12 col-lg-3 col-xl-2">
+                <div class="col-4 col-lg-3 col-xl-2">
                     <HomeSwiperNavigation
                         :prev-class="'module-swiper__prev'"
                         :next-class="'module-swiper__next'"
@@ -41,10 +41,12 @@
             >
                 <SwiperSlide
                     v-for="(diagnose, diagnoseIndex) in diagnoses"
-                    :key="diagnoseIndex" :class="{'d-none':  diagnose.to.substring(1) == props.activeSlug }"
-                   
+                    :key="diagnoseIndex"
+                    :class="{
+                        'd-none': diagnose.to.substring(1) == props.activeSlug
+                    }"
                 >
-                    <nuxt-link :to="diagnose.to" class="themeBtnBold" >
+                    <nuxt-link :to="diagnose.to" class="themeBtnBold">
                         <div
                             class="themeBtnBold__square"
                             :class="diagnose.color"
@@ -64,11 +66,11 @@
 
 <script setup lang="ts">
 const props = defineProps({
-    activeSlug:{
-        type:String,
+    activeSlug: {
+        type: String
     },
-    moduleTitle:{
-        type:String,
+    moduleTitle: {
+        type: String
     }
 })
 const diagnoses = ref([
@@ -102,8 +104,6 @@ const diagnoses = ref([
         short: 'CMH',
         color: 'green'
     }
-   
-    
 ])
 </script>
 
@@ -117,7 +117,7 @@ const diagnoses = ref([
         @include vwUnit(margin-bottom, 30);
         @include typo(heading-1);
     }
-    @media screen and (max-width:767px) {
+    @media screen and (max-width: 767px) {
         @include vwUnit(padding-bottom, 50);
     }
 }
