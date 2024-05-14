@@ -236,7 +236,7 @@ onUnmounted(() => {
     &__nav-button {
         position: relative;
         color: #757575;
-        font-size: 24px;
+        @include typo(card-title-1);
         font-weight: 400;
         background-color: transparent;
         border: 0;
