@@ -87,6 +87,11 @@ function specialClass(index: number) {
     border-bottom-left-radius: 60px;
     overflow: hidden;
 
+    @media screen and (max-width:767px) {
+        border-bottom-right-radius: 35px;
+    border-bottom-left-radius: 35px;
+    }
+
     &__title {
         @include vwUnit(margin-bottom, 30);
         @include typo(display);
