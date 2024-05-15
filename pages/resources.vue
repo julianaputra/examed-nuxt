@@ -11,7 +11,12 @@
                     :key="itemIndex"
                     class="col-12 col-md-6 col-lg-4 col-xl-3"
                 >
-                    <ResourcesCard class="resources__card" title="item.title" :file="item.file" :image="item.image" />
+                    <ResourcesCard
+                        class="resources__card"
+                        :title="item.title"
+                        :file="item.file"
+                        :image="item.image"
+                    />
                 </div>
             </div>
         </div>
@@ -109,8 +114,8 @@ const breadcrumbs: Ref<Breadcrumb[]> = ref([])
             color: colorMod(rgba(48, 49, 120, 1), +25%);
         }
     }
-    &__card{
-        @include vwMobile(margin-top, 30)
+    &__card {
+        @include vwMobile(margin-top, 30);
     }
 }
 
