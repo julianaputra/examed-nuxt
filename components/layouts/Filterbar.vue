@@ -15,7 +15,7 @@
                     </select>
                 </div>
             </div>
-            <div v-if="props.rsuFilter" class="col-12 col-lg-3">
+            <div v-if="props.rsuFilter" class="col-12 col-lg-3 px-0 px-lg-2">
                 <div class="filter-bar__item-container">
                     <select v-model="praktekValue" class="form-select">
                         <option value="all" class="form-select__title">
