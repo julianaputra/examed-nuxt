@@ -1448,14 +1448,14 @@ $primary-color: #303178;
 ul {
     list-style: disc;
     @media screen and (max-width: 767px) {
-        @include vwUnit(padding-left, 0);
+        padding-left: 0;
     }
 }
-ol {
-    @media screen and (max-width: 767px) {
-        @include vwUnit(padding-left, 0);
-    }
-}
+// ol {
+//     @media screen and (max-width: 767px) {
+//         padding-left: 0;
+//     }
+// }
 .list-title {
     font-weight: 500;
     @include typo(title-1);
@@ -1534,26 +1534,31 @@ ol {
     }
     .langkah-manajemen {
         &__list {
-            @include vwUnit(padding-left, 0);
+            padding-left: 0;
             list-style-position: inside;
         }
         &__list-title {
             font-weight: 500;
         }
         &__sub-list {
-            @include vwUnit(padding-left, 0);
+            padding-left: 0;
             list-style-position: inside;
         }
     }
 }
 .mengambil-sejarah {
     &__list &__sub-list {
-        @include vwUnit(padding-left, 0);
+        padding-left: 0;
     }
 }
 .kondisi-mns {
+    &__list {
+        @media screen and (max-width: 767px) {
+            @include vwMobile(padding-left, 20);
+        }
+    }
     &__list &__sub-list {
-        @include vwUnit(padding-left, 0);
+        padding-left: 0;
     }
 }
 .kesehatan-fisik {
@@ -1579,7 +1584,7 @@ ol {
     th {
         @extend %cellSpacing;
         @include vwUnit(padding-top, 30);
-        @include vwUnit(padding-left, 0);
+        padding-left: 0;
         border-bottom: 2px solid #000000;
         @media screen and (max-width: 576px) {
             text-align: center;
@@ -1603,7 +1608,7 @@ ol {
 .child-mns {
     &__list {
         list-style: upper-alpha;
-        @include vwUnit(padding-left, 0);
+        padding-left: 0;
     }
     &__desc {
         margin-top: 24px;
