@@ -37,11 +37,13 @@ const props = defineProps({
 
     .breadcrumb-item {
         a {
-            color: #303178;
+            color: #404040;
+            text-decoration: none;
         }
 
         .active {
-            color: #404040;
+            color: #303178;
+            text-decoration: underline;
         }
     }
 }

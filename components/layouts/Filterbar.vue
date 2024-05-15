@@ -1,7 +1,7 @@
 <template>
     <div class="filter-bar">
         <div class="row">
-            <div class="col-12 col-lg-3 col-xl-2 px-0  ">
+            <div class="col-12 col-lg-3 col-xl-2 px-0">
                 <div class="filter-bar__item-container">
                     <select v-model="daerahValue" class="form-select">
                         <option value="all">{{ titleSort }}</option>
@@ -15,7 +15,7 @@
                     </select>
                 </div>
             </div>
-            <div v-if="props.rsuFilter" class="col-12 col-lg-3">
+            <div v-if="props.rsuFilter" class="col-12 col-lg-3 px-0 px-lg-2">
                 <div class="filter-bar__item-container">
                     <select v-model="praktekValue" class="form-select">
                         <option value="all" class="form-select__title">
@@ -31,7 +31,7 @@
                     </select>
                 </div>
             </div>
-            <div class="col-12 col-lg-6 col-xl-4 ms-auto">
+            <div class="col-12 col-lg-6 col-xl-4 ms-auto px-0 px-lg-2">
                 <div class="filter-bar__item-container">
                     <form class="row gx-2">
                         <div class="col">
@@ -113,6 +113,7 @@ const searchRumahSakit = () => {
         @include vwUnit(padding-right, 15);
         @include vwUnit(padding-bottom, 15);
         @include vwUnit(padding-left, 15);
+        @include typo(caption-1);
         opacity: 0.6;
         &__title {
             background-color: aqua;

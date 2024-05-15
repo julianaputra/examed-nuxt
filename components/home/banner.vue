@@ -15,7 +15,7 @@
                                 ) in pageData.features"
                                 :key="featureIndex"
                                 :class="[
-                                    'col-12 col-sm-6 col-md',
+                                    'col-6 col-sm-6 col-md',
                                     specialClass(featureIndex)
                                 ]"
                             >
@@ -86,6 +86,11 @@ function specialClass(index: number) {
     border-bottom-right-radius: 60px;
     border-bottom-left-radius: 60px;
     overflow: hidden;
+
+    @media screen and (max-width:767px) {
+        border-bottom-right-radius: 35px;
+    border-bottom-left-radius: 35px;
+    }
 
     &__title {
         @include vwUnit(margin-bottom, 30);

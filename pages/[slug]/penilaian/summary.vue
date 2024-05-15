@@ -57,7 +57,9 @@
 
                                     <div class="card__button-wrapper">
                                         <UiButton
-                                            :to="`/${route.params.slug}?menu=penilaian`"
+                                            class="card__button-btn"
+                                            data-bs-toggle="modal"
+                                            :data-bs-target="`#modalSummary`"
                                             >Kembali ke Menu Utama</UiButton
                                         >
                                     </div>
@@ -65,6 +67,51 @@
                             </div>
                         </div>
                     </Transition>
+                    <Teleport to="body">
+                        <UiModal
+                            :id="`modalSummary`"
+                            headerClass="border-bottom-0"
+                            footerClass="border-top-0"
+                            dialog-class="modal-dialog-centered"
+                            class="custom-modal"
+                        >
+                            <template #title>
+                                <h3 class="custom-modal__title">Perhatian</h3>
+                            </template>
+                            <template #body>
+                                <div class="opacity-75">
+                                    <p>
+                                        Saat anda keluar dari halaman ini,
+                                        <span class="text-red"
+                                            >hasil pada halaman ini tidak akan
+                                            tersimpan.</span
+                                        >
+                                    </p>
+                                    <p class="font-500">
+                                        Pastikan untuk mencatatnya terlebih
+                                        dahulu
+                                    </p>
+                                </div>
+                            </template>
+
+                            <template #footer>
+                                <div class=" ">
+                                    <UiButton
+                                        class="d-inline"
+                                        :to="`/${route.params.slug}`"
+                                        variant="outline"
+                                        >Keluar Halaman</UiButton
+                                    >
+                                    <UiButton
+                                        class="ms-2"
+                                        aria-label="Close"
+                                        data-bs-dismiss="modal"
+                                        >Catat Dulu</UiButton
+                                    >
+                                </div>
+                            </template>
+                        </UiModal>
+                    </Teleport>
                 </div>
             </div>
         </section>
@@ -191,7 +238,7 @@ onUnmounted(() => {
     &__nav-button {
         position: relative;
         color: #757575;
-        font-size: 24px;
+        @include typo(card-title-1);
         font-weight: 400;
         background-color: transparent;
         border: 0;
@@ -226,6 +273,11 @@ onUnmounted(() => {
 
     &__button-wrapper {
         margin-top: 48px;
+    }
+    &__button-btn {
+        @media screen and (max-width: 575px) {
+            width: 100%;
+        }
     }
 }
 </style>

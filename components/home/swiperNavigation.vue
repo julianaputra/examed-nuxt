@@ -4,7 +4,7 @@
             <Icon name="basil:arrow-left-outline" class="swiper-custom-nav__arrow" />
             <Icon name="basil:arrow-left-outline" color="white" class="swiper-custom-nav__arrow--active " />
         </div>
-        <div class="swiper-custom-nav__pagination" :class="paginationClass"></div>
+        <div class="swiper-custom-nav__pagination d-none d-sm-block" :class="paginationClass"></div>
         <div class="swiper-custom-nav__button" :class="nextClass">
             <Icon name="basil:arrow-right-outline" class="swiper-custom-nav__arrow" />
             <Icon name="basil:arrow-right-outline" color="white" class="swiper-custom-nav__arrow--active " />

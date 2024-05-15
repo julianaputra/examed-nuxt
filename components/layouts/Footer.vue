@@ -14,7 +14,20 @@
                         {{ pageData.copyright }}
                     </p>
                     <p class="footer__tnc">
-                        {{ pageData.tnc }}
+                        This site is protected by reCAPTCHA and the Google
+                        <a
+                            href="https://policies.google.com/privacy"
+                            target="_blank"
+                            class="footer__tnc--link"
+                            >Privacy Policy</a
+                        >
+                        and
+                        <a
+                            href="https://policies.google.com/terms"
+                            target="_blank"
+                            class="footer__tnc--link"
+                            >Terms of Service </a
+                        >apply.
                     </p>
                     <div class="footer__udayana-container">
                         <img
@@ -37,12 +50,12 @@
                                     :to="module.to"
                                     class="footer__nav-link"
                                 >
-                                   <span> {{ module.name }}</span>
-                                   <img
-                                            src="/images/ic-arrow-right.svg"
-                                            alt="Ic-arrow"
-                                            class="footer__arrow-link"
-                                        />
+                                    <span> {{ module.name }}</span>
+                                    <img
+                                        src="/images/ic-arrow-right.svg"
+                                        alt="Ic-arrow"
+                                        class="footer__arrow-link"
+                                    />
                                 </nuxt-link>
                             </li>
                         </ul>
@@ -63,12 +76,12 @@
                                     :to="module.to"
                                     class="footer__nav-link"
                                 >
-                                  <span>  {{ module.title }}</span>
+                                    <span> {{ module.title }}</span>
                                     <img
-                                            src="/images/ic-arrow-right.svg"
-                                            alt="Ic-arrow"
-                                            class="footer__arrow-link"
-                                        />
+                                        src="/images/ic-arrow-right.svg"
+                                        alt="Ic-arrow"
+                                        class="footer__arrow-link"
+                                    />
                                 </nuxt-link>
                             </li>
                         </ul>
@@ -87,10 +100,10 @@
                                 >
                                     <span>{{ module.title }}</span>
                                     <img
-                                            src="/images/ic-arrow-right.svg"
-                                            alt="Ic-arrow"
-                                            class="footer__arrow-link"
-                                        />
+                                        src="/images/ic-arrow-right.svg"
+                                        alt="Ic-arrow"
+                                        class="footer__arrow-link"
+                                    />
                                 </nuxt-link>
                             </li>
                         </ul>
@@ -98,8 +111,12 @@
                 </div>
             </div>
         </div>
-        <a :href="whatsappRedirect()" target="_blank" class="whatsapp-icon" >
-            <img class="w-100" src="/images/ic-whatsapp.svg" alt="Whatsapp Icon">
+        <a :href="whatsappRedirect()" target="_blank" class="whatsapp-icon">
+            <img
+                class="w-100"
+                src="/images/ic-whatsapp.svg"
+                alt="Whatsapp Icon"
+            />
         </a>
     </footer>
 </template>
@@ -170,17 +187,17 @@ const pageData = ref({
     ]
 })
 
-const whatsappRedirect = () =>{
-    const phoneNumber = "+621234567890";
-    const message = "Hi , Examed!";
-    return `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+const whatsappRedirect = () => {
+    const phoneNumber = '+621234567890'
+    const message = 'Hi , Examed!'
+    return `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`
 }
 </script>
 
 <style lang="scss" scoped>
 .footer {
     position: relative;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     @include vwUnit(padding-top, 80, 40);
     @include vwUnit(padding-bottom, 25, 50);
     @include imageRatio(293, 72, true);
@@ -198,6 +215,9 @@ const whatsappRedirect = () =>{
         @include vwUnit(margin-bottom, 30);
         @include typo(body-s);
         opacity: 0.5;
+        &--link {
+            color: #122032;
+        }
     }
 
     @include imageRatio(189, 49, true, $className: udayana);
@@ -207,7 +227,7 @@ const whatsappRedirect = () =>{
     }
 
     &__title {
-        @include vwUnit(margin-bottom, 25);
+        @include vwUnit(margin-bottom, 25, 10);
         @include typo(title-1);
     }
 
@@ -217,24 +237,24 @@ const whatsappRedirect = () =>{
 
     &__nav-link {
         display: block;
-        @include vwUnit(padding-bottom, 15);
+        @include vwUnit(padding-bottom, 15, 10);
         color: rgba(19, 24, 44, 0.8);
         @include typo(body-s);
         text-decoration: none;
         @include transition(all 0.3s ease);
-        &:hover{
-            .footer__arrow-link{
-                        opacity: 1;
-            transform: translate(10px, 0px);
+        &:hover {
+            .footer__arrow-link {
+                opacity: 1;
+                transform: translate(10px, 0px);
             }
         }
     }
-    &__arrow-link{
+    &__arrow-link {
         opacity: 0;
-      transition: all 0.3s ease;
+        transition: all 0.3s ease;
     }
 
-    .whatsapp-icon{
+    .whatsapp-icon {
         z-index: 10;
         position: fixed;
         @include vwUnit(width, 81, 60);
@@ -242,6 +262,5 @@ const whatsappRedirect = () =>{
         @include vwUnit(right, 28, 15);
         cursor: pointer;
     }
-    
 }
 </style>

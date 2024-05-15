@@ -2,14 +2,14 @@
     <section class="module">
         <div class="container">
             <div class="row">
-                <div class="col-12 col-lg-9 col-xl-10">
+                <div class="col-8 col-lg-9 col-xl-10">
                     <h2 class="module__title">{{ props.moduleTitle }}</h2>
                 </div>
-                <div class="col-12 col-lg-3 col-xl-2">
+                <div class="col-4 col-lg-3 col-xl-2">
                     <HomeSwiperNavigation
-                        :prev-class="'moduke-swiper__prev'"
-                        :next-class="'moduke-swiper__next'"
-                        :pagination-class="'moduke-swiper__pagination'"
+                        :prev-class="'module-swiper__prev'"
+                        :next-class="'module-swiper__next'"
+                        :pagination-class="'module-swiper__pagination'"
                     />
                 </div>
             </div>
@@ -17,15 +17,15 @@
                 id="module-swiper"
                 class="module-swiper"
                 :modules="[SwiperNavigation, SwiperPagination]"
-                :loop="true"
+                :loop="false"
                 :slides-per-view="1"
                 :space-between="30"
                 :pagination="{
-                    el: '.moduke-swiper__pagination'
+                    el: '.module-swiper__pagination'
                 }"
                 :navigation="{
-                    prevEl: '.moduke-swiper__prev',
-                    nextEl: '.moduke-swiper__next'
+                    prevEl: '.module-swiper__prev',
+                    nextEl: '.module-swiper__next'
                 }"
                 :breakpoints="{
                     '767': {
@@ -41,10 +41,12 @@
             >
                 <SwiperSlide
                     v-for="(diagnose, diagnoseIndex) in diagnoses"
-                    :key="diagnoseIndex" :class="{'d-none':  diagnose.to.substring(1) == props.activeSlug }"
-                   
+                    :key="diagnoseIndex"
+                    :class="{
+                        'd-none': diagnose.to.substring(1) == props.activeSlug
+                    }"
                 >
-                    <nuxt-link :to="diagnose.to" class="themeBtnBold" >
+                    <nuxt-link :to="diagnose.to" class="themeBtnBold">
                         <div
                             class="themeBtnBold__square"
                             :class="diagnose.color"
@@ -64,11 +66,11 @@
 
 <script setup lang="ts">
 const props = defineProps({
-    activeSlug:{
-        type:String,
+    activeSlug: {
+        type: String
     },
-    moduleTitle:{
-        type:String,
+    moduleTitle: {
+        type: String
     }
 })
 const diagnoses = ref([
@@ -85,12 +87,6 @@ const diagnoses = ref([
         color: 'purple'
     },
     {
-        name: 'Gangguan Mental & Perilaku Anak & Remaja',
-        to: '/',
-        short: 'CMH',
-        color: 'green'
-    },
-    {
         name: 'Demensia',
         to: '/',
         short: 'DEM',
@@ -101,6 +97,12 @@ const diagnoses = ref([
         to: '/menyakiti-diri-sendiri-bunuh-diri',
         short: 'SUI',
         color: 'red'
+    },
+    {
+        name: 'Gangguan Mental & Perilaku Anak & Remaja',
+        to: '/',
+        short: 'CMH',
+        color: 'green'
     }
 ])
 </script>
@@ -115,7 +117,7 @@ const diagnoses = ref([
         @include vwUnit(margin-bottom, 30);
         @include typo(heading-1);
     }
-    @media screen and (max-width:767px) {
+    @media screen and (max-width: 767px) {
         @include vwUnit(padding-bottom, 50);
     }
 }

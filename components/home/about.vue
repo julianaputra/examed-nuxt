@@ -9,6 +9,11 @@
                             v-for="(item, itemIndex) in pageData.list"
                             :key="itemIndex"
                             class="about__list-item"
+                            :class="
+                                itemIndex == pageData.list.length - 1
+                                    ? 'border-0 mb-0 pb-0 '
+                                    : ''
+                            "
                         >
                             <div class="about__list-icon-container">
                                 <img
@@ -24,7 +29,9 @@
                                 <p class="about__list-desc">{{ item.desc }}</p>
                             </div>
                         </div>
-                        <UiButton class="about__button-about"  to="/tentang-kami">Tentang Kami</UiButton>
+                        <UiButton class="about__button-about" to="/tentang-kami"
+                            >Tentang Kami</UiButton
+                        >
                     </div>
                 </div>
                 <div class="col-12 col-xl-5 text-center">
@@ -71,9 +78,9 @@ const pageData = ref({
     @include vwUnit(padding-bottom, 140);
 
     @include imageRatio(670, 859, true);
-    @media screen and (max-width:1199px) {
+    @media screen and (max-width: 1199px) {
         @include vwUnit(padding-top, 50);
-    @include vwUnit(padding-bottom, 50);
+        @include vwUnit(padding-bottom, 50);
     }
 
     &__info-container {
@@ -95,9 +102,11 @@ const pageData = ref({
     }
 
     &__list-item {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
         display: flex;
         align-items: center;
-        @include vwUnit(margin-bottom, 60, 40);
+        @include vwUnit(padding-bottom, 40, 20);
+        @include vwUnit(margin-bottom, 40, 20);
 
         @media screen and (max-width: 480px) {
             flex-wrap: wrap;
@@ -129,20 +138,21 @@ const pageData = ref({
     &__list-desc {
         margin: 0;
     }
-    &__image-container{
+    &__image-container {
         @include vwUnit(margin-top, 0);
-        @media screen and (max-width:1199px) {
+        @media screen and (max-width: 1199px) {
             @include vwUnit(margin-top, 50);
         }
-        @media screen and (max-width:767px) {
+        @media screen and (max-width: 767px) {
             @include vwUnit(margin-top, 40);
         }
-        @media screen and (max-width:576px) {
+        @media screen and (max-width: 576px) {
             @include vwUnit(margin-top, 30);
         }
     }
-    &__button-about{
-       @include vwUnit(width,267, 180);
+    &__button-about {
+        @include vwUnit(width, 267, 180);
+        @include vwUnit(margin-top, 60, 30);
     }
 }
 </style>

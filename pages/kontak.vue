@@ -24,7 +24,8 @@
                             </p>
                             <p class="kontak__info-desc">
                                 <a
-                                    href="mailto:info@examed.id?" target="_blank"
+                                    href="mailto:info@examed.id?"
+                                    target="_blank"
                                     class="kontak__info-link"
                                 >
                                     info@examed.id
@@ -72,9 +73,11 @@
                         <div class="form-group">
                             <label class="form-label">No. HP</label>
                             <Field
+                                @keydown="validateInput"
+                                v-model="phoneNumber"
                                 :rules="isRequired"
                                 name="no-hp"
-                                type="number"
+                                type="numeric"
                                 class="form-control"
                             />
                             <ErrorMessage
@@ -115,6 +118,7 @@
     </main>
 </template>
 
+
 <script setup lang="ts">
 import { nextTick } from 'process'
 import { Form, Field, ErrorMessage } from 'vee-validate'
@@ -124,6 +128,32 @@ definePageMeta({
     title: 'Kontak',
     description: 'This is aboutpage description'
 })
+
+const phoneNumber: any = ref('');
+const validateInput = (e: any) => {
+    const allowedKeys = [8, 37, 39, 187];
+    if (
+        (e.keyCode >= 48 && e.keyCode <= 57) || // Numeric keys
+        (e.keyCode === 43) || // +
+        allowedKeys.includes(e.keyCode)
+      ) {
+        return true; // Allow the key to be entered
+      } else {
+        e.preventDefault(); // Prevent the default action (typing the character)
+        return false; // Block the key from being entered
+      }
+};
+const extractedNumbers = ref('');
+const extractNumbers = () => {
+      // Use regex to match digits
+      const numbers = phoneNumber.value.match(/\d+/g);
+      // Join the matched digits into a single string
+      extractedNumbers.value = numbers ? numbers.join('') : '';
+    };
+   const handleInput = () => {
+      phoneNumber.value = phoneNumber.value.replace(/\D/g, '');
+      extractNumbers();
+    };
 
 onMounted(() => {
     //   nextTick(async () => {
@@ -228,9 +258,9 @@ const breadcrumbs: Ref<Breadcrumb[]> = ref([])
 }
 
 // remove increase and decrease number
-input[type=number]::-webkit-inner-spin-button, 
-input[type=number]::-webkit-outer-spin-button { 
-  -webkit-appearance: none; 
-  margin: 0; 
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
 }
 </style>

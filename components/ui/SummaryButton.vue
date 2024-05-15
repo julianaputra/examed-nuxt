@@ -54,14 +54,18 @@ const props = defineProps({
 .selection-button {
     display: flex;
     align-items: center;
-    gap: 60px;
+    @include vwUnit(gap, 60, 20);
     min-height: 81px;
     text-decoration: none;
     border-bottom: 1px solid rgba(19, 24, 44, 0.1);
     padding: 12px 0;
-    margin-bottom: 12px;
+    @include vwUnit(margin-bottom, 12);
     cursor: pointer;
     transition: 0.3s;
+    @media screen and (max-width: 767px) {
+        display: flex;
+        flex-direction: column;
+    }
 
     &.disabled {
         pointer-events: none;
@@ -90,6 +94,9 @@ const props = defineProps({
         font-weight: 400;
         color: #122032;
         transition: 0.3s;
+        @media screen and (max-width: 767px) {
+            text-align: center;
+        }
     }
 
     &__arrow {
@@ -98,6 +105,9 @@ const props = defineProps({
         padding: 11px;
         color: #303178;
         transition: 0.3s;
+        @media screen and (max-width: 767px) {
+            display: inline-block;
+        }
     }
 }
 </style>

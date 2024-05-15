@@ -11,7 +11,11 @@
             <h2 class="resources-card__title">
                 {{ props.title }}
             </h2>
-            <a :href="props.file" download class="resources-card__download-text">
+            <a
+                :href="props.file"
+                download
+                class="resources-card__download-text"
+            >
                 <icon name="material-symbols:download" />
                 Download Resources
             </a>
@@ -55,13 +59,14 @@ const props = defineProps({
 
     &__body {
         @include vwUnit(padding, 25);
+        background-color: #f6f6f6;
     }
 
     &__title {
-        @include vwUnit(margin-bottom, 30);
+        @include vwUnit(margin-bottom, 15);
         @include typo(card-title-1, true, 2);
     }
-    &__download-text{
+    &__download-text {
         text-decoration: none;
         color: #303178;
     }

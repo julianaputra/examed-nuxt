@@ -4,14 +4,14 @@
             <div class="testi__info-container">
                 <div class="testi__info-header">
                     <div class="row">
-                        <div class="col-12 col-lg-9 col-xl-10">
+                        <div class="col-12 col-lg-9 col-xl-10 order-1">
                             <h2 class="testi__title">{{ pageData.title }}</h2>
                             <p>
                                 {{ pageData.desc }}
                             </p>
                         </div>
                         <div
-                            class="col-12 col-lg-3 col-xl-2 align-self-end mb-lg-3"
+                            class="col-5 col-sm-8 col-lg-3 col-xl-2 mx-auto align-self-end mb-lg-3 order-3 order-lg-2 testi__navigation"
                         >
                             <HomeSwiperNavigation
                                 :prev-class="'testi-swiper__prev'"
@@ -19,9 +19,51 @@
                                 :pagination-class="'testi-swiper__pagination'"
                             />
                         </div>
+                        <div class="testi__info-body order-lg-3 order-2">
+                            <Swiper
+                                id="testimony-swiper"
+                                :modules="[
+                                    SwiperAutoplay,
+                                    SwiperNavigation,
+                                    SwiperPagination
+                                ]"
+                                :slides-per-view="1"
+                                :loop="true"
+                                :loop-fill-group-with-blank="true"
+                                :space-between="30"
+                                :pagination="{
+                                    el: '.testi-swiper__pagination'
+                                }"
+                                :navigation="{
+                                    prevEl: '.testi-swiper__prev',
+                                    nextEl: '.testi-swiper__next'
+                                }"
+                                :breakpoints="{
+                                    '992': {
+                                        slidesPerView: 2,
+                                        slidesPerGroup: 2
+                                    }
+                                }"
+                            >
+                                <SwiperSlide
+                                    v-for="(
+                                        testi, testiIndex
+                                    ) in pageData.testimony"
+                                    :key="testiIndex"
+                                >
+                                    <HomeTestiCard
+                                        :star="testi.star"
+                                        :message="testi.message"
+                                        :picture="testi.picture"
+                                        :name="testi.name"
+                                        :info="testi.info"
+                                    />
+                                </SwiperSlide>
+                            </Swiper>
+                        </div>
                     </div>
                 </div>
-                <div class="testi__info-body">
+                <!-- <div class="testi__info-body">
                     <Swiper
                         id="testimony-swiper"
                         :modules="[
@@ -60,7 +102,7 @@
                             />
                         </SwiperSlide>
                     </Swiper>
-                </div>
+                </div> -->
             </div>
         </div>
     </section>
@@ -75,7 +117,7 @@ const pageData = ref({
             star: 5,
             message:
                 'Website panduan ini sangat Praktis dan lengkap serta sangat membantu kami dlm Praktek sehari-hari di Puskesmas. Terimakasih karena sudah mengembangkan panduan ini.',
-            picture: 'https://i.pravatar.cc/300?img=1',
+            picture: '/images/person1.png',
             name: 'dr. Ketut Parining, Sp.KKLP',
             info: 'Puskesmas Seririt 1, Kabupaten Buleleng, Bali'
         },
@@ -83,7 +125,7 @@ const pageData = ref({
             star: 4,
             message:
                 'Aplikasi EXAMED ini sangat membantu kami melakukan skrining dan tata laksana gangguan mental yang banyak ditemui di puskesmas. Step by step-nya yang mudah diikuti sangat menghemat waktu kami saat pelayanan.',
-            picture: 'https://i.pravatar.cc/300?img=2',
+            picture: '/images/person2.png',
             name: 'dr. Luh Dani Herawati',
             info: 'Puskesmas Blahbatuh II, Kabupaten Gianyar, Bali'
         },
@@ -120,10 +162,18 @@ const pageData = ref({
         @include vwMobile(padding-left, 30);
         background-color: #e9f0fc;
         border-radius: 53px;
+        @media screen and (max-width: 767px) {
+            border-radius: 30px;
+        }
 
         @media (max-width: 320px) {
             padding-right: unit(15, 320);
             padding-left: unit(15, 320);
+        }
+    }
+    &__navigation {
+        @media screen and (max-width: 991px) {
+            margin-top: 10px;
         }
     }
 
