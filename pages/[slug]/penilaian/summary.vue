@@ -57,6 +57,7 @@
 
                                     <div class="card__button-wrapper">
                                         <UiButton
+                                            class="card__button-btn"
                                             data-bs-toggle="modal"
                                             :data-bs-target="`#modalSummary`"
                                             >Kembali ke Menu Utama</UiButton
@@ -272,6 +273,11 @@ onUnmounted(() => {
 
     &__button-wrapper {
         margin-top: 48px;
+    }
+    &__button-btn {
+        @media screen and (max-width: 575px) {
+            width: 100%;
+        }
     }
 }
 </style>
