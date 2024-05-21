@@ -5,8 +5,8 @@
         <HomeServices />
         <HomeAbout />
         <HomeTesti />
-        <div class="container custom-line" >
-            <hr class=" m-0 custom-line__border ">
+        <div class="container custom-line">
+            <hr class="m-0 custom-line__border" />
         </div>
     </main>
 </template>
@@ -19,13 +19,13 @@ definePageMeta({
 </script>
 
 <style lang="scss" scoped>
-.main{
-    background-color: #FFFFFF;
+.main {
+    background-color: #ffffff;
 }
-.custom-line{
+.custom-line {
     @include vwUnit(margin-top, 110, 30);
-    &__border{
-        border: 1px solid rgba(19, 24, 44, 0.1)
+    &__border {
+        border: 1px solid rgba(19, 24, 44, 0.1);
     }
 }
 </style>

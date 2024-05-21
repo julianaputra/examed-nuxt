@@ -86,7 +86,9 @@
                                     </Transition>
                                 </template>
                             </UiCard>
-                            <UiCard class="section-content"
+                            <UiCard
+                                class="section-content"
+                                id="content"
                                 v-else
                                 :key="activeContent?.id"
                                 title-size="small"
@@ -95,7 +97,7 @@
                                     activeContent?.title
                                 }}</template>
                                 <template #content>
-                                    <div 
+                                    <div
                                         v-if="
                                             activeContent?.slug === 'deskripsi'
                                         "
@@ -106,7 +108,8 @@
                                             activeContent?.slug === 'penilaian'
                                         "
                                     >
-                                        <UiSelectionButton class="list-selection"
+                                        <UiSelectionButton
+                                            class="list-selection"
                                             v-for="item in penilaian"
                                             :key="`menu-link-${item.id}`"
                                             :to="`/${route.params.slug}/penilaian?question=${item.id}`"
@@ -145,7 +148,11 @@
                 </div>
             </div>
         </section>
-        <HomeModule :active-slug="route.params.slug" module-title="List Modul Lainnya" class="pt-0" />
+        <HomeModule
+            :active-slug="route.params.slug"
+            module-title="List Modul Lainnya"
+            class="pt-0"
+        />
     </main>
 </template>
 
@@ -213,7 +220,7 @@ const activeContent = computed(() => {
 
 const setActiveMenu = (slug: string) => {
     activeMenu.value = slug
-    router.push(`/${route.params.slug}?menu=${slug}`)
+    router.push(`/${route.params.slug}?menu=${slug}#content`)
 
     if (slug === 'tindaklanjut' && route.params.slug === 'psikosis') {
         setActiveTindakLanjut(null)
@@ -326,12 +333,12 @@ const setActiveTindakLanjut = (val: any) => {
         gap: 10px;
     }
 }
-.section-content{
+.section-content {
     @media screen and (max-width: 991px) {
-        @include vwUnit(margin-top, 30)
+        @include vwUnit(margin-top, 30);
     }
 }
-.list-selection:last-child{
+.list-selection:last-child {
     opacity: 50%;
 }
 </style>

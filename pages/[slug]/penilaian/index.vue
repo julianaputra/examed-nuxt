@@ -9,6 +9,7 @@
                     <UiCardAssesment
                         :key="activeQuestion?.id"
                         :title-big="activeQuestion?.isResult"
+                        :breadcrumbs="breadcrumbs"
                         @back="back"
                     >
                         <template #title>{{ activeQuestion?.title }}</template>
