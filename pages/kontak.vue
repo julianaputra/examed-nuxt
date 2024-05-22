@@ -118,42 +118,46 @@
     </main>
 </template>
 
-
 <script setup lang="ts">
 import { nextTick } from 'process'
 import { Form, Field, ErrorMessage } from 'vee-validate'
 import type { Breadcrumb } from '../types/index'
 
-definePageMeta({
-    title: 'Kontak',
-    description: 'This is aboutpage description'
+useHead({
+    title: `Kontak`,
+    meta: [
+        {
+            name: 'description',
+            content: 'info@examed.id'
+        }
+    ]
 })
 
-const phoneNumber: any = ref('');
+const phoneNumber: any = ref('')
 const validateInput = (e: any) => {
-    const allowedKeys = [8, 37, 39, 187];
+    const allowedKeys = [8, 37, 39, 187]
     if (
         (e.keyCode >= 48 && e.keyCode <= 57) || // Numeric keys
-        (e.keyCode === 43) || // +
+        e.keyCode === 43 || // +
         allowedKeys.includes(e.keyCode)
-      ) {
-        return true; // Allow the key to be entered
-      } else {
-        e.preventDefault(); // Prevent the default action (typing the character)
-        return false; // Block the key from being entered
-      }
-};
-const extractedNumbers = ref('');
+    ) {
+        return true // Allow the key to be entered
+    } else {
+        e.preventDefault() // Prevent the default action (typing the character)
+        return false // Block the key from being entered
+    }
+}
+const extractedNumbers = ref('')
 const extractNumbers = () => {
-      // Use regex to match digits
-      const numbers = phoneNumber.value.match(/\d+/g);
-      // Join the matched digits into a single string
-      extractedNumbers.value = numbers ? numbers.join('') : '';
-    };
-   const handleInput = () => {
-      phoneNumber.value = phoneNumber.value.replace(/\D/g, '');
-      extractNumbers();
-    };
+    // Use regex to match digits
+    const numbers = phoneNumber.value.match(/\d+/g)
+    // Join the matched digits into a single string
+    extractedNumbers.value = numbers ? numbers.join('') : ''
+}
+const handleInput = () => {
+    phoneNumber.value = phoneNumber.value.replace(/\D/g, '')
+    extractNumbers()
+}
 
 onMounted(() => {
     //   nextTick(async () => {

@@ -90,7 +90,7 @@ const diagnoses = ref([
     },
     {
         name: 'Demensia',
-        to: '/',
+        to: '/demensia',
         short: 'DEM',
         color: 'lime'
     },

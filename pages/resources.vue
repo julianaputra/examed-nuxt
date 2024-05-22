@@ -24,6 +24,15 @@
 </template>
 
 <script setup lang="ts">
+useHead({
+    title: `Resources`,
+    meta: [
+        {
+            name: 'description',
+            content: 'Examed Resources'
+        }
+    ]
+})
 import { nextTick } from 'process'
 import type { Breadcrumb } from '../types/index'
 

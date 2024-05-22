@@ -12,9 +12,15 @@
 import { nextTick } from 'process'
 import type { Breadcrumb } from '../types/index'
 
-definePageMeta({
-    title: 'Tentang Kami',
-    description: 'This is aboutpage description'
+useHead({
+    title: `Tentang kami`,
+    meta: [
+        {
+            name: 'description',
+            content:
+                'Panduan skrining dan tata laksana gangguan mental bagi dokter dan tenaga kesehatan di puskesmas yang dapat membantu Anda dalam memberikan pelayanan kesehatan yang lebih baik.'
+        }
+    ]
 })
 
 onMounted(() => {

@@ -37,6 +37,15 @@
 </template>
 
 <script setup lang="ts">
+useHead({
+    title: `List Psikiater`,
+    meta: [
+        {
+            name: 'description',
+            content: 'List Psikiater Examed'
+        }
+    ]
+})
 // import { nextTick } from 'process' // before
 import { nextTick } from 'vue' // after
 import type { Breadcrumb } from '../types/index'

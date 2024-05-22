@@ -91,7 +91,7 @@
             "title": "STEP 1: Apakah pasien mengalami depresi?",
             "question": {
                 "title": "Apakah pasien mengalami kesulitan besar dalam menjalankan fungsi sehari-hari dalam bidang pribadi, keluarga, sosial, pendidikan, pekerjaan atau bidang lainnya?",
-                "type": "checkbox",
+                "type": "text",
                 "content": null
             },
             "isResult": false,

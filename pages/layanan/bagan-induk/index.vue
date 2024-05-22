@@ -119,6 +119,15 @@
 </template>
 
 <script setup lang="ts">
+useHead({
+    title: `Bagan Induk`,
+    meta: [
+        {
+            name: 'description',
+            content: 'Bagan induk | Examed'
+        }
+    ]
+})
 import type {
     Menu,
     Breadcrumb,

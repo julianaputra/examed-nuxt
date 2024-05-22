@@ -321,6 +321,19 @@ const setActiveTindakLanjut = (val: any) => {
 
     activeTindakLanjut.value = val
 }
+
+// SEO with Watch
+watch(title, (newTitle) => {
+    useHead({
+        title: newTitle,
+        meta: [
+            {
+                name: 'description',
+                content: 'Examed Modul'
+            }
+        ]
+    })
+})
 </script>
 
 <style lang="scss" scoped>

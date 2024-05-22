@@ -1,0 +1,201 @@
+{
+    "data": [{
+            "id": 1,
+            "title": "APAKAH PASIEN MENGALAMI MASALAH NUTRISI? (MALNUTRISI/ ANEMIA)",
+            "question": {
+                "title": null,
+                "type": "text",
+                "content": null
+            },
+            "isResult": false,
+            "isStep": true,
+            "answer": {
+                "type": "continue",
+                "target": 2
+            },
+            "href": null
+        },
+        {
+            "id": 2,
+            "title": "",
+            "question": {
+                "title": "KAJI ADA/TIDAKNYA PENYAKIT BERIKUT:",
+                "type": "text",
+                "content": "<ul> <li>Hipertensi</li> <li>Diabetes Melitus</li> <li>Kolesterolemia</li> <li>Obesitas</li> <li>Penyakit Jantung</li> <li>Stroke / TIA sebelumnya</li> </ul>"
+            },
+            "isResult": false,
+            "isStep": true,
+            "answer": {
+                "type": "true-false",
+                "target": {
+                    "true": 4,
+                    "false": 3
+                }
+            },
+            "href": null
+        },
+        {
+            "id": 3,
+            "title": "",
+            "question": {
+                "title": "EVALUASI KEBUTUHAN PENGASUH/CAREGIVER",
+                "type": "text",
+                "content": ""
+            },
+            "isResult": false,
+            "isStep": true,
+            "answer": {
+                "type": "continue",
+                "target": 5
+            },
+            "href": null
+        },
+        {
+            "id": 4,
+            "title": "",
+            "question": {
+                "title": null,
+                "type": "text",
+                "content": "<ul> <li>Atur asupan makanan (fortifikasi/beri suplemen jika mengalami anemia, malnutrisi/ atur pola diet jika obesitas)</li> <li>Konsulkan ke spesialis yang sesuai utk terapi penyakit fisik.</li> </ul>"
+            },
+            "isResult": false,
+            "isStep": true,
+            "answer": {
+                "type": "continue",
+                "target": null
+            },
+            "href": null
+        },{
+            "id": 5,
+            "title": "",
+            "question": {
+                "title": "Apakah pengasuh mengalami kesulitan atau stress dalam merawat pasien?",
+                "type": "text",
+                "content": ""
+            },
+            "isResult": false,
+            "isStep": true,
+            "answer": {
+                "type": "true-false",
+                "target": {
+                    "true": 8,
+                    "false": 6
+                }
+            },
+            "href": null
+        },{
+            "id": 6,
+            "title": "",
+            "question": {
+                "title": "Apakah pengasuh/keluar ga yang merawat mengalami suasana hati depresi?",
+                "type": "text",
+                "content": ""
+            },
+            "isResult": false,
+            "isStep": "",
+            "answer": {
+                "type": "true-false",
+                "target": {
+                    "true": 8,
+                    "false": 7
+                }
+            },
+            "href": null
+        },{
+            "id": 7,
+            "title": "",
+            "question": {
+                "title": "Apakah pengasuh/caregivers mengalami masalah ekonomi/keuangan karena harus merawat pasien?",
+                "type": "text",
+                "content": ""
+            },
+            "isResult": false,
+            "isStep": true,
+            "answer": {
+                "type": "true-false",
+                "target": {
+                    "true": 11,
+                    "false": 10
+                }
+            },
+            "href": null
+        },
+        {
+            "id": 8,
+            "title": "",
+            "question": {
+                "title": "Lakukan intervensi psikososial: Sarankan istirahat, minta dukungan keluarga/orang terdekat.",
+                "type": "text",
+                "content": ""
+            },
+            "isResult": false,
+            "isStep": true,
+            "answer": {
+                "type": "continue",
+                "target": null
+            },
+            "href": null
+        },
+        {
+            "id": 9,
+            "title": "",
+            "question": {
+                "title": "Telurusi lebih lanjut dengan bagan alur Depresi",
+                "type": "text",
+                "content": ""
+            },
+            "isResult": false,
+            "isStep": true,
+            "answer": {
+                "type": "continue",
+                "target": null
+            },
+            "href": null
+        },{
+            "id": 10,
+            "title": "",
+            "question": {
+                "title": "Apakah pasien mengalami DIMENSIA PERILAKU berikut ini?",
+                "type": "text",
+                "content": "<ul> <li>Gangguan malam hari</li> <li>Agitasi/Agresi Atau mengalami DIMENSIA dengan gejala PSIKOLOGIS berikut ini?/li> <li>Halusinasi/Delusi</li> <li>Kecemasan</li> <li>Ledakan emosi yang tidak terkendali</li> </ul>"
+            },
+            "isResult": false,
+            "isStep": true,
+            "answer": {
+                "type": "continue",
+                "target": 12
+            },
+            "href": null
+        },{
+            "id": 11,
+            "title": "",
+            "question": {
+                "title": "JELAJAHI OPSI DUKUNGAN KEUANGAN LOKAL/SOSIAL",
+                "type": "text",
+                "content": ""
+            },
+            "isResult": false,
+            "isStep": true,
+            "answer": {
+                "type": "continue",
+                "target": null
+            },
+            "href": null
+        },{
+            "id": 12,
+            "title": "",
+            "question": {
+                "title": "LANJUTKAN KE TATA LAKSANA DEMENSIA",
+                "type": "text",
+                "content": "Kaji apakah ada tanda/gejala Bunuh diri (Cek alur skrining Suicide) atau gejala gangguan mental lainnya"
+            },
+            "isResult": false,
+            "isStep": true,
+            "answer": {
+                "type": "continue",
+                "target": null
+            },
+            "href": null
+        }
+    ]
+}

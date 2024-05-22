@@ -12,9 +12,15 @@
 </template>
 
 <script setup lang="ts">
-definePageMeta({
-    title: 'Home',
-    description: 'This is homepage description'
+useHead({
+    title: 'Examed',
+    meta: [
+        {
+            name: 'description',
+            content:
+                'Panduan Skrining dan Tatalaksana Gangguan Mental di Layanan Primer'
+        }
+    ]
 })
 </script>
 

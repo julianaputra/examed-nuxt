@@ -10,7 +10,7 @@
                             <template #title>List Konten</template>
                             <template #content>
                                 <nav class="overview__menu">
-                                    <ul class="overview__navbar ">
+                                    <ul class="overview__navbar">
                                         <li
                                             class="overview__navbar-item"
                                             :class="[isActive('deskripsi')]"
@@ -144,6 +144,15 @@
 </template>
 
 <script setup lang="ts">
+useHead({
+    title: `Perawatan & Praktek Penting`,
+    meta: [
+        {
+            name: 'description',
+            content: 'Perawatan & Praktek Penting | Examed'
+        }
+    ]
+})
 import type {
     Menu,
     Breadcrumb,
@@ -249,7 +258,7 @@ $primary-color: #303178;
             list-style: lower-roman;
         }
     }
-    &__sub-list{
+    &__sub-list {
         @include vwUnit(padding-left, 45, 40);
         list-style-type: lower-roman;
     }
@@ -281,7 +290,7 @@ $primary-color: #303178;
         }
     }
 
-    &__sub-link{
+    &__sub-link {
         text-decoration: none;
         $pad-y: 5;
         $pad-x: 0;
@@ -292,7 +301,7 @@ $primary-color: #303178;
         @include vwUnit(padding-bottom, $pad-y);
         // @include vwUnit(padding-left, $pad-x);
         color: rgba(18, 32, 50, 1);
-        &:hover{
+        &:hover {
             text-decoration: underline;
         }
     }
