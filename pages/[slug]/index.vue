@@ -110,9 +110,12 @@
                                     >
                                         <UiSelectionButton
                                             class="list-selection"
-                                            v-for="item in penilaian"
+                                            v-for="(item, index) in penilaian"
                                             :key="`menu-link-${item.id}`"
                                             :to="`/${route.params.slug}/penilaian?question=${item.id}`"
+                                            :disabled="
+                                                index == penilaian.length - 1
+                                            "
                                             >{{ item.title }}</UiSelectionButton
                                         >
                                     </div>
