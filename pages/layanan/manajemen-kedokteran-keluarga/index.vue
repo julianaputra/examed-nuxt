@@ -102,6 +102,15 @@
 </template>
 
 <script setup lang="ts">
+useHead({
+    title: `Manajemen Kedokteran Keluarga`,
+    meta: [
+        {
+            name: 'description',
+            content: 'Manajemen Kedokteran Keluarga | Examed'
+        }
+    ]
+})
 import type {
     Menu,
     Breadcrumb,
@@ -202,11 +211,10 @@ const breadcrumbs: Ref<Breadcrumb[]> = ref([
         padding-left: 0;
     }
 
-    &__sub-list{
+    &__sub-list {
         @include vwUnit(padding-left, 45, 40);
         list-style-type: decimal;
     }
-
 
     &__navbar-item {
         &.active {
@@ -235,7 +243,7 @@ const breadcrumbs: Ref<Breadcrumb[]> = ref([
         }
     }
 
-    &__sub-link{
+    &__sub-link {
         text-decoration: none;
         $pad-y: 5;
         $pad-x: 0;
@@ -246,7 +254,7 @@ const breadcrumbs: Ref<Breadcrumb[]> = ref([
         @include vwUnit(padding-bottom, $pad-y);
         // @include vwUnit(padding-left, $pad-x);
         color: rgba(18, 32, 50, 1);
-        &:hover{
+        &:hover {
             text-decoration: underline;
         }
     }

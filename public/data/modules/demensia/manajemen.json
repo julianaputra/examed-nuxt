@@ -1,0 +1,44 @@
+{
+    "data": [{
+            "id": 1,
+            "parentId": null,
+            "title": "TATA LAKSANA DEMENSIA Tanpa Gangguan Perilaku",
+            "type": "collapse",
+            "content": "<ul> <li>Memberikan Psikoedukasi ke pasien & pengasuh/caregivers >>> Tanyakan apakah pasien ingin mengetahui diagnosisnya? berikan informasi yang mudah dipahami pasien dan keluarganya tentang penyakit dan pengobatannya.</li> <li>Identifikasi masalah kesehatan fisik pasien (nyeri, infeksi, atau penyakit degeneratif lain). Jika diperlukan konsulkan ke spesialis yang sesuai</li> <li>Motivasi pengasuh untuk melatih fungsi kognitif, kemandirian dan mobilitas pasien</li> <li>Edukasi keluarga/caregivers untuk mengupayakan lingkungan yang aman, seperti tata letak ruangan, benda-benda berpotensi bahaya (benda tajam, dll) yang dapat memicu cedera. Berikan beberapa tanda/tulisan pada ruangan seperti toilet, dapur), jaga kondisi lantai agar tidak licin.</li> <li>Berikan Dukungan kepada pengasuh/caregivers, periksa kemungkinan mengalami stress atau beban psikologis lain.</li> <li>Sarankan mengajak pasien melakukan aktivitas yang menyenangkan seperti rekreasi, hiburan, bersosialisasi di lingkungan banjar atau ikut dalam kegiatan adat, grup gamelan, sekeha santhi, dll namun tetap harus didampingi.</li> <li>Edukasi pengasuh untuk tetap memberikan kesempatan pasien menjalankan fungsi harian seperti mandi, makan, ke toilet. Jika terjadi incontinensia, telusuri penyebabnya dan berikan intervensi yang sesuai. Sarankan mengajak pasien berolahraga ringan seperti berjalan kaki dengan tetap didampingi.</li> <li>Anjurkan keluarga membantu pasien melatih fungsi kognitif dengan mengajak ngobrol, memberikan informasi dengan kalimat singkat dan mudah dipahami, memberikan informasi harian seperti tanggal, tempat dan jam.</li> <li>Rujuk ke spesialis/ layanan dukungan bagi penderita Alzheimer (rumah perawatan lansia/ support group).</li> </ul>"
+        },
+        {
+            "id": 2,
+            "parentId": null,
+            "title": "Dimensia Dengan Gejala Perilaku atau Psikologis",
+            "type": "link",
+            "content": null
+        },
+        {
+            "id": 3,
+            "parentId": 2,
+            "title": "IKUTI PROTOKOL 1",
+            "type": "collapse",
+            "content": "Dimensia Dengan Gejala Peril<ul> <li>Kelola Gejala Psikologis dengan obat-obatan atau terapi lainnya</li> <li>Identifikasi situasi, kejadian atau kondisi yang mencetuskan gejala gangguan perilaku pasien</li> <li>Ajak pasien melakukan aktivitas yang dapat menenangkan gejala psikologisnya, misal dengan mengajak pasien mendengarkan musik, mengajak pasien ke komunitas sosial yang disukai sebelumnya (di Bali sebagian besar lansia menyukai gamelan atau kelompok Sekeha Santhi atau mungkin sekedar nongkrong di warung kopi dan bertemu teman sebayanya).</li> <li>Kegiatan upacara adat juga bisa menjadi tempat sosialisasi dan menenangkan bagi lansia di Bali, hal ini dapat dimanfaatkan untuk terapi, namun tetap harus didampingi dan memperhatikan keselamatan pasien serta orang lain yang ada disekitarnya. Waspadai kemungkinan pasien mengalami gejala psikologis atau perilaku agresif jika berada dilingkungan yang terlalu ramai. Perlu dibatasi waktu bersosialisasi ini agar tidak malah mencetuskan gangguan perilaku agresif atau sebaliknya.</li> <li>Jika ada risiko mengancam orang atau diri sendiri:<br>>>>Pertimbangkan obat antipsikotik</li> <li>Rujuk ke spesialis bila gejala berlanjut/kompleks</li> </ul>ku atau Psikologis"
+        },
+        {
+            "id": 4,
+            "parentId": null,
+            "title": "INTERVENSI FARMAKOLOGIS DEMENSIA",
+            "type": "link",
+            "content": null
+        },{
+            "id": 5,
+            "parentId": 4,
+            "title": "DEMENSIA TANPA GANGGUAN PERILAKU/PSIKOLOGIS",
+            "type": "collapse",
+            "content": "<ul> <li>Berikan Pengobatan dengan kolinesterasi inhibitor jika dapat melakukan pemantauan yang ketat, di bawah supervisi psikiater dan tersedia obat jangka panjang.</li> <li>Obat Kolinesterasi Inhibitor: Donepezil, galantamil, Rivastigmine, Mimantamine.</li> <li>Memantine digunakan untuk pasien yang juga memiliki penyakit cardiovaskular</li> </ul>"
+        },
+        {
+            "id": 6,
+            "parentId": 4,
+            "title": "DEMENSIA dengan GANGGUAN PERILAKU/PSIKOLOGIS",
+            "type": "collapse",
+            "content": "<ul> <li>Berikan obat antipsikotik jika ada gejala perilaku agresif/agitasi (haloperidol 0,5 mg malam hari)</li> <li>Berikan obat mulai dari dosis rendah kemudian sesuaikan hingga dosis efektif terendah. Perubahan dosis dilakukan setidaknya setiap bulan.</li> <li>Adjunctive terapi: Vitamin B complex 1x1,asam folat 1 mg (1x1 di pagi hari).</li> <li>Pantau efek samping ekstrapiramidal dan tangani jika terjadi.</li> <li>Berikan terapi non farmakologis yang sesuai (psikoedukasi, dll).</li> <li>Hindari Haloperidol Intravena dan Diazepam.</li> </ul>"
+        }
+    ]
+}

@@ -1,9 +1,11 @@
 <template>
     <section class="module">
         <div class="container">
-            <div class="row">
+            <div class="row align-items-center align-items-lg-start">
                 <div class="col-8 col-lg-9 col-xl-10">
-                    <h2 class="module__title">{{ props.moduleTitle }}</h2>
+                    <h2 class="module__title mb-0">
+                        {{ props.moduleTitle }}
+                    </h2>
                 </div>
                 <div class="col-4 col-lg-3 col-xl-2">
                     <HomeSwiperNavigation
@@ -88,7 +90,7 @@ const diagnoses = ref([
     },
     {
         name: 'Demensia',
-        to: '/',
+        to: '/demensia',
         short: 'DEM',
         color: 'lime'
     },
@@ -120,6 +122,10 @@ const diagnoses = ref([
     @media screen and (max-width: 767px) {
         @include vwUnit(padding-bottom, 50);
     }
+}
+
+.module-swiper {
+    @include vwUnit(margin-top, 30, 15);
 }
 
 ::v-deep .module-swiper {

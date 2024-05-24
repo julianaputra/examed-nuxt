@@ -69,7 +69,7 @@
             "nama": "RS Umum Daerah Bali Mandara Provinsi Bali",
             "jenis": "RSU",
             "kelas": "B",
-            "daerah": "buleleng",
+            "daerah": "Buleleng",
             "map": "https://www.google.com/maps/place/RS+Kasih+Ibu/data=!4m2!3m1!1s0x2dd43cb7201a8bd9:0x4a3d0d892e0b0c19?entry=gps"
         },
         {
@@ -79,6 +79,478 @@
             "kelas": "D",
             "daerah": "Buleleng",
             "map": "https://www.google.com/maps/place/RS+Bersalin+Ngurah+Rai/data=!4m2!3m1!1s0x2dd4dcb7433d929b:0x751720bd5a70013e?entry=gps"
+        },
+        {
+            "kode": 5102049,
+            "nama": "RS Umum Semara Ratih",
+            "jenis": "RSU",
+            "kelas": "C",
+            "daerah": "",
+            "map": ""
+        },
+        {
+            "kode": 5102048,
+            "nama": "RS Umum Bali Holistik",
+            "jenis": "RSU",
+            "kelas": "D",
+            "daerah": "",
+            "map": ""
+        },
+        {
+            "kode": 5101055,
+            "nama": "RS Umum Balimed Negara",
+            "jenis": "RSU",
+            "kelas": "C",
+            "daerah": "",
+            "map": ""
+        },
+        {
+            "kode": 5102047,
+            "nama": "RS Wings Nyitdah",
+            "jenis": "RSU",
+            "kelas": "C",
+            "daerah": "",
+            "map": ""
+        },
+        {
+            "kode": 5104037,
+            "nama": "RS Umum Kasih Ibu Saba",
+            "jenis": "RSU",
+            "kelas": "C",
+            "daerah": "",
+            "map": ""
+        },
+        {
+            "kode": 5171219,
+            "nama": "RS Khusus Ibu dan Anak Pucuk Permata Hati",
+            "jenis": "RSIA",
+            "kelas": "C",
+            "daerah": "",
+            "map": ""
+        },
+        {
+            "kode": 5108079,
+            "nama": "RS Pratama Giri Emas",
+            "jenis": "RSU",
+            "kelas": "D",
+            "daerah": "",
+            "map": ""
+        },
+        {
+            "kode": 5107017,
+            "nama": "RS Umum Balimed Karangasem",
+            "jenis": "RSU",
+            "kelas": "D",
+            "daerah": "",
+            "map": ""
+        },
+        {
+            "kode": 5103036,
+            "nama": "RS Umum Surya Husadha Nusa Dua",
+            "jenis": "RSU",
+            "kelas": "C",
+            "daerah": "",
+            "map": ""
+        },
+        {
+            "kode": 5104036,
+            "nama": "RS Umum Famili Husada",
+            "jenis": "RSU",
+            "kelas": "C",
+            "daerah": "",
+            "map": ""
+        },
+        {
+            "kode": 5102046,
+            "nama": "RS Umum Kasih Ibu Tabanan",
+            "jenis": "RSU",
+            "kelas": "C",
+            "daerah": "",
+            "map": ""
+        },
+        {
+            "kode": 5103035,
+            "nama": "RS Umum Siloam Bali",
+            "jenis": "RSU",
+            "kelas": "B",
+            "daerah": "",
+            "map": ""
+        },
+        {
+            "kode": 5103034,
+            "nama": "RS Khusus Bedah BIMC Nusa Dua",
+            "jenis": "RSK BEDAH",
+            "kelas": "B",
+            "daerah": "",
+            "map": ""
+        },
+        {
+            "kode": 5106026,
+            "nama": "RS Umum Bangli Medika Canti",
+            "jenis": "RSU",
+            "kelas": "C",
+            "daerah": "",
+            "map": ""
+        },
+        {
+            "kode": 5104035,
+            "nama": "RS Umum Ari Canti",
+            "jenis": "RSU",
+            "kelas": "C",
+            "daerah": "",
+            "map": ""
+        },
+        {
+            "kode": 5171217,
+            "nama": "RS Umum Surya Husada Ubung",
+            "jenis": "RSU",
+            "kelas": "C",
+            "daerah": "",
+            "map": ""
+        },
+        {
+            "kode": 5103033,
+            "nama": "RS Umum Kasih Ibu Kedonganan",
+            "jenis": "RSU",
+            "kelas": "C",
+            "daerah": "",
+            "map": ""
+        },
+        {
+            "kode": 5102044,
+            "nama": "RS Umum Wisma Prashanti",
+            "jenis": "RSU",
+            "kelas": "C",
+            "daerah": "",
+            "map": ""
+        },
+        {
+            "kode": 5171216,
+            "nama": "RS Bhayangkara Denpasar",
+            "jenis": "RSU",
+            "kelas": "C",
+            "daerah": "",
+            "map": ""
+        },
+        {
+            "kode": 5101054,
+            "nama": "RS Umum Bunda",
+            "jenis": "RSU",
+            "kelas": "C",
+            "daerah": "",
+            "map": ""
+        },
+        {
+            "kode": 5105015,
+            "nama": "RS Umum Bintang",
+            "jenis": "RSU",
+            "kelas": "C",
+            "daerah": "",
+            "map": ""
+        },
+        {
+            "kode": 5105014,
+            "nama": "RS Umum Permata Hati",
+            "jenis": "RSU",
+            "kelas": "C",
+            "daerah": "",
+            "map": ""
+        },
+        {
+            "kode": 5104034,
+            "nama": "RS Umum Ganesha",
+            "jenis": "RSU",
+            "kelas": "C",
+            "daerah": "",
+            "map": ""
+        },
+        {
+            "kode": 5171097,
+            "nama": "RS Umum Bali Royal",
+            "jenis": "RSU",
+            "kelas": "C",
+            "daerah": "",
+            "map": ""
+        },
+        {
+            "kode": 5108075,
+            "nama": "RS Umum Shanti Graha",
+            "jenis": "RSU",
+            "kelas": "D",
+            "daerah": "",
+            "map": ""
+        },
+        {
+            "kode": 5108064,
+            "nama": "RS Umum Parama Sidhi",
+            "jenis": "RSU",
+            "kelas": "C",
+            "daerah": "",
+            "map": ""
+        },
+        {
+            "kode": 5103032,
+            "nama": "RS Daerah Mangusada",
+            "jenis": "RSU",
+            "kelas": "B",
+            "daerah": "",
+            "map": ""
+        },
+        {
+            "kode": 5102043,
+            "nama": "RS Umum Bhakti Rahayu Tabanan",
+            "jenis": "RSU",
+            "kelas": "D",
+            "daerah": "",
+            "map": ""
+        },
+        {
+            "kode": 5104023,
+            "nama": "RS Umum Premagana",
+            "jenis": "RSU",
+            "kelas": "C",
+            "daerah": "",
+            "map": ""
+        },
+        {
+            "kode": 5171215,
+            "nama": "RS Ibu dan Anak Puri Bunda",
+            "jenis": "RSIA",
+            "kelas": "C",
+            "daerah": "",
+            "map": ""
+        },
+        {
+            "kode": 5171203,
+            "nama": "RS Umum Balimed",
+            "jenis": "RSU",
+            "kelas": "C",
+            "daerah": "",
+            "map": ""
+        },
+        {
+            "kode": 5171192,
+            "nama": "RS Umum Prima Medika",
+            "jenis": "RSU",
+            "kelas": "C",
+            "daerah": "",
+            "map": ""
+        },
+        {
+            "kode": 5171181,
+            "nama": "RS Gigi dan Mulut Saraswati Denpasar",
+            "jenis": "RSK GM",
+            "kelas": "B",
+            "daerah": "",
+            "map": ""
+        },
+        {
+            "kode": 5171170,
+            "nama": "RS Umum Graha Asih",
+            "jenis": "RSU",
+            "kelas": "D",
+            "daerah": "",
+            "map": ""
+        },
+        {
+            "kode": 5171166,
+            "nama": "RS Ibu dan Anak Harapan Bunda",
+            "jenis": "RSIA",
+            "kelas": "C",
+            "daerah": "",
+            "map": ""
+        },
+        {
+            "kode": 5171155,
+            "nama": "RS Umum Bhakti Rahayu",
+            "jenis": "RSU",
+            "kelas": "D",
+            "daerah": "",
+            "map": ""
+        },
+        {
+            "kode": 5171133,
+            "nama": "RS Umum Puri Raharja",
+            "jenis": "RSU",
+            "kelas": "C",
+            "daerah": "",
+            "map": ""
+        },
+        {
+            "kode": 5171122,
+            "nama": "RS Umum Dharma Yadnya",
+            "jenis": "RSU",
+            "kelas": "C",
+            "daerah": "",
+            "map": ""
+        },
+        {
+            "kode": 5171111,
+            "nama": "RS Umum Kasih Ibu",
+            "jenis": "RSU",
+            "kelas": "C",
+            "daerah": "",
+            "map": ""
+        },
+        {
+            "kode": 5171086,
+            "nama": "RS Umum Surya Husadha",
+            "jenis": "RSU",
+            "kelas": "C",
+            "daerah": "",
+            "map": ""
+        },
+        {
+            "kode": 5171064,
+            "nama": "RS Khusus Mata Bali Mandara",
+            "jenis": "RSK Mata",
+            "kelas": "A",
+            "daerah": "",
+            "map": ""
+        },
+        {
+            "kode": 5171053,
+            "nama": "RS Umum Manuaba",
+            "jenis": "RSU",
+            "kelas": "C",
+            "daerah": "",
+            "map": ""
+        },
+        {
+            "kode": 5171031,
+            "nama": "RS TK. II Udayana",
+            "jenis": "RSU",
+            "kelas": "C",
+            "daerah": "",
+            "map": ""
+        },
+        {
+            "kode": 5171020,
+            "nama": "RS Umum Daerah Wangaya",
+            "jenis": "RSU",
+            "kelas": "B",
+            "daerah": "",
+            "map": ""
+        },
+        {
+            "kode": 5171016,
+            "nama": "RSUP Sanglah",
+            "jenis": "RSU",
+            "kelas": "A",
+            "daerah": "",
+            "map": ""
+        },
+        {
+            "kode": 5108042,
+            "nama": "RS Umum Karya Dharma Husada",
+            "jenis": "RSU",
+            "kelas": "D",
+            "daerah": "",
+            "map": ""
+        },
+        {
+            "kode": 5108031,
+            "nama": "RS Umum Kertha Usadha",
+            "jenis": "RSU",
+            "kelas": "C",
+            "daerah": "",
+            "map": ""
+        },
+        {
+            "kode": 5108020,
+            "nama": "RS TK. IV Singaraja",
+            "jenis": "RSU",
+            "kelas": "D",
+            "daerah": "",
+            "map": ""
+        },
+        {
+            "kode": 5108016,
+            "nama": "RS Umum Daerah Kab. Buleleng",
+            "jenis": "RSU",
+            "kelas": "B",
+            "daerah": "",
+            "map": ""
+        },
+        {
+            "kode": 5107015,
+            "nama": "RS Umum Daerah Karangasem",
+            "jenis": "RSU",
+            "kelas": "C",
+            "daerah": "",
+            "map": ""
+        },
+        {
+            "kode": 5106025,
+            "nama": "RS Jiwa Provinsi Bali",
+            "jenis": "RSK Jiwa",
+            "kelas": "A",
+            "daerah": "",
+            "map": ""
+        },
+        {
+            "kode": 5106014,
+            "nama": "RS Umum Daerah Kabupaten Bangli",
+            "jenis": "RSU",
+            "kelas": "B",
+            "daerah": "",
+            "map": ""
+        },
+        {
+            "kode": 5105013,
+            "nama": "RS Umum Daerah Klungkung",
+            "jenis": "RSU",
+            "kelas": "B",
+            "daerah": "",
+            "map": ""
+        },
+        {
+            "kode": 5104012,
+            "nama": "RS Umum Daerah Sanjiwani Gianyar",
+            "jenis": "RSU",
+            "kelas": "B",
+            "daerah": "",
+            "map": ""
+        },
+        {
+            "kode": 5103021,
+            "nama": "RS Khusus Bedah BIMC",
+            "jenis": "RSK BEDAH",
+            "kelas": "C",
+            "daerah": "",
+            "map": ""
+        },
+        {
+            "kode": 5102021,
+            "nama": "RS Umum Dharma Kerti",
+            "jenis": "RSU",
+            "kelas": "C",
+            "daerah": "",
+            "map": ""
+        },
+        {
+            "kode": 5102010,
+            "nama": "RS Umum Daerah Tabanan",
+            "jenis": "RSU",
+            "kelas": "B",
+            "daerah": "",
+            "map": ""
+        },
+        {
+            "kode": 5101053,
+            "nama": "RS Umum Kertayasa",
+            "jenis": "RSU",
+            "kelas": "D",
+            "daerah": "",
+            "map": ""
+        },
+        {
+            "kode": 5101016,
+            "nama": "RS Umum Daerah Negara",
+            "jenis": "RSU",
+            "kelas": "C",
+            "daerah": "",
+            "map": ""
         }
     ]
 }

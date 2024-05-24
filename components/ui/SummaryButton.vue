@@ -95,7 +95,6 @@ const props = defineProps({
         color: #122032;
         transition: 0.3s;
         @media screen and (max-width: 767px) {
-            text-align: center;
         }
     }
 

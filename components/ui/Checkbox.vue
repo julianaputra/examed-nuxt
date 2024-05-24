@@ -1,10 +1,38 @@
 <template>
     <label class="checkbox-wrapper"
         ><slot></slot>
-        <input type="checkbox" />
+        <input type="checkbox" :value="value" @change="setValue" />
         <span class="checkmark"></span>
     </label>
 </template>
+
+<script lang="ts" setup>
+const model = defineModel({
+    type: Array,
+    default: () => []
+})
+
+const setValue = (event) => {
+    const check = event.target.checked
+    const value = event.target.value
+
+    if (check) {
+        model.value?.push(value)
+    } else {
+        const index = model.value.indexOf(value)
+        if (index > -1) {
+            model.value.splice(index, 1)
+        }
+    }
+}
+
+const props = defineProps({
+    value: {
+        type: String,
+        default: ''
+    }
+})
+</script>
 
 <style lang="scss" scoped>
 /* The checkbox-wrapper */

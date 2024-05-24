@@ -1,0 +1,206 @@
+{
+    "data": [{
+            "id": 1,
+            "title": "",
+            "question": {
+                "title": null,
+                "type": "text",
+                "content": "<ul> <li>PENURUNAN DAYA INGAT DAN ORIENTASI (TEMPAT, WAKTU, DAN IDENTITAS DIRI)</li> <li>MASALAH SUASANA HATI, PERILAKU APATIS, ATAU MUDAH TERSINGGUNG</li> <li>HILANGNYA KENDALI EMOSI, KESAL, MUDAH TERSINGGUNG ATAU MENANGIS</li> <li>KESULITAN DALAM MELAKUKAN PEKERJAAN BIASA, AKTIVITAS RUMAH TANGGA, ATAU SOSIAL</li> </ul>"
+            },
+            "isResult": false,
+            "isStep": true,
+            "answer": {
+                "type": "continue",
+                "target": 2
+            },
+            "href": null
+        },
+        {
+            "id": 2,
+            "title": "",
+            "question": {
+                "title": "KAJI TANDA-TANDA DIMENSIA:",
+                "type": "text",
+                "content": "<p>Apakah ada masalah dengan memori dan /atau orientasi (misalnya lupa kejadian sehari sebelumnya, atau tidak tahu ada di mana)</p>"
+            },
+            "isResult": false,
+            "isStep": true,
+            "answer": {
+                "type": "true-false",
+                "target": {
+                    "true": 4,
+                    "false": 3
+                }
+            },
+            "href": null
+        },
+        {
+            "id": 3,
+            "title": "",
+            "question": {
+                "title": "BUKAN DEMENSIA",
+                "type": "text",
+                "content": null
+            },
+            "isResult": false,
+            "isStep": true,
+            "answer": {
+                "type": "continue",
+                "target": null
+            },
+            "href": null
+        },
+        {
+            "id": 4,
+            "title": "",
+            "question": {
+                "title": "APAKAH PASIEN MENGALAMI KESULITAN DALAM MENJALANKAN PERAN/AKTIVITAS UTAMA (Belanja, bayar tagihan, memasak)",
+                "type": "text",
+                "content": null
+            },
+            "isResult": false,
+            "isStep": true,
+            "answer": {
+                "type": "continue",
+                "target": null
+            },
+            "href": null
+        },
+        {
+            "id": 5,
+            "title": "",
+            "question": {
+                "title": "APAKAH ADA PENJELASAN LAIN UNTUK GEJALANYA DAN BERLANJUT SELAMA MINIMAL 6 BULAN:",
+                "type": "text",
+                "content": "<ul> <li>DELIRIUM</li> <li>INFEKSI CEREBRAL</li> <li>INTOKSIKASI OBAT/EFEK ALKOHOL</li> <li>KELAINAN METABOLIK</li> </ul>"
+            },
+            "isResult": false,
+            "isStep": true,
+            "answer": {
+                "type": "true-false",
+                "target": {
+                    "true": 7,
+                    "false": 6
+                }
+            },
+            "href": null
+        },
+        
+        {
+            "id": 6,
+            "title": "",
+            "question": {
+                "title": "Apakah pasien mengalami Depresi sedang hingga berat?",
+                "type": "text",
+                "content": null
+            },
+            "isResult": false,
+            "isStep": true,
+            "answer": {
+                "type": "true-false",
+                "target": {
+                    "true": 9,
+                    "false": 8
+                }
+            },
+            "href": null
+        },
+        {
+            "id": 7,
+            "title": "",
+            "question": {
+                "title": "Periksa kemungkinan penyakit lainnya",
+                "type": "text",
+                "content": null
+            },
+            "isResult": false,
+            "isStep": true,
+            "answer": {
+                "type": "continue",
+                "target": 10
+            },
+            "href": null
+        },
+        {
+            "id": 8,
+            "title": "",
+            "question": {
+                "title": "Kemungkinan DEMENSIA",
+                "type": "text",
+                "content": null
+            },
+            "isResult": false,
+            "isStep": true,
+            "answer": {
+                "type": "continue",
+                "target": 7
+            },
+            "href": null
+        },{
+            "id": 9,
+            "title": "",
+            "question": {
+                "title": "Telurusi lebih lanjut dengan bagan alur Depresi",
+                "type": "text",
+                "content": null
+            },
+            "isResult": false,
+            "isStep": true,
+            "answer": {
+                "type": "continue",
+                "target": null
+            },
+            "href": null
+        },{
+            "id": 10,
+            "title": "",
+            "question": {
+                "title": "Apakah pasien mengalami salah satu gejala berikut ini?",
+                "type": "text",
+                "content": "<ul> <li>Timbulnya gejala berhubungan dengan stroke, cedera kepala, perubahan/kehilangan kesadaran</li> <li>penyakit hipotriroid</li> <li>Riwayat Infeksi menular seksual termasuk HIV/AIDS</li> </ul>"
+            },
+            "isResult": false,
+            "isStep": true,
+            "answer": {
+                "type": "true-false",
+                "target": {
+                    "true": 12,
+                    "false": 11
+                }
+            },
+            "href": null
+        },
+        {
+            "id": 11,
+            "title": "",
+            "question": {
+                "title": "LANJUT KE CHART BERIKUTNYA",
+                "type": "text",
+                "content": null
+            },
+            "isResult": false,
+            "isStep": true,
+            "answer": {
+                "type": "continue",
+                "target": null
+            },
+            "href": null
+        },
+        {
+            "id": 12,
+            "title": "",
+            "question": {
+                "title": "RUJUK KE SPESIALIS YANG SESUAI",
+                "type": "text",
+                "content": null
+            },
+            "isResult": false,
+            "isStep": true,
+            "answer": {
+                "type": "continue",
+                "target": null
+            },
+            "href": null
+        }
+    ]
+}

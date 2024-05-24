@@ -51,7 +51,9 @@
                             </div>
                         </div>
                         <div class="col-auto" @click="searchRumahSakit">
-                            <UiButton class="button-search">Search</UiButton>
+                            <div class="input-group">
+                                <UiButton class="m-0">Search</UiButton>
+                            </div>
                         </div>
                     </form>
                 </div>
@@ -109,14 +111,13 @@ const searchRumahSakit = () => {
     .form-select {
         @include vwUnit(margin-top, 7.5);
         @include vwUnit(margin-bottom, 7.5);
-        @include vwUnit(padding-top, 15);
+        @include vwUnit(padding-top, 13);
         @include vwUnit(padding-right, 15);
-        @include vwUnit(padding-bottom, 15);
+        @include vwUnit(padding-bottom, 13);
         @include vwUnit(padding-left, 15);
         @include typo(caption-1);
         opacity: 0.6;
         &__title {
-            background-color: aqua;
         }
     }
 
@@ -130,8 +131,10 @@ const searchRumahSakit = () => {
 
     .input-group-text {
         padding: 0;
-        @include vwUnit(padding-right, 10);
-        @include vwUnit(padding-left, 10);
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
         @include vwUnit(width, 49);
         background-color: transparent;
         border-right: 0;
@@ -142,7 +145,7 @@ const searchRumahSakit = () => {
     }
 
     &__search-icon {
-        @include vwUnit(font-size, 24);
+        @include vwUnit(font-size, 20);
     }
 }
 

@@ -9,6 +9,7 @@
                     <UiCardAssesment
                         :key="activeQuestion?.id"
                         :title-big="activeQuestion?.isResult"
+                        :breadcrumbs="breadcrumbs"
                         @back="back"
                     >
                         <template #title>{{ activeQuestion?.title }}</template>
@@ -28,18 +29,29 @@
                                 "
                             >
                                 <UiCheckbox
+                                    v-model="checked"
+                                    :value="q"
                                     v-for="(q, qIndex) in activeQuestion
                                         .question.content"
                                     :key="qIndex"
                                     >{{ q }}</UiCheckbox
                                 >
                             </div>
+
                             <div
                                 v-if="activeQuestion?.question.type === 'text'"
                                 v-html="activeQuestion.question.content"
                             ></div>
                         </template>
                         <template #footer>
+                            <span
+                                v-if="
+                                    !validationCheck &&
+                                    activeQuestion?.question.type === 'checkbox'
+                                "
+                                class="error-message text-red"
+                                >Centang Minimal 1</span
+                            >
                             <div
                                 v-if="activeQuestion?.answer.target === null"
                                 class="card__buttons"
@@ -90,6 +102,7 @@
 </template>
 
 <script setup lang="ts">
+import { log } from 'console'
 import { storeToRefs } from 'pinia'
 import { usePenilaianStore } from '~/stores/penilaian'
 import type { Question, Breadcrumb } from '~/types/index'
@@ -104,6 +117,9 @@ const {
 const { questions, activeQuestion, previousUserAnswer } = storeToRefs(
     usePenilaianStore()
 )
+// checked option
+const checked = ref([])
+const errorMessage = ref(true)
 
 const route = useRoute()
 const router = useRouter()
@@ -151,9 +167,44 @@ onMounted(() => {
 
 const breadcrumbs: Ref<Breadcrumb[]> = ref([])
 
+// const validationCheck = () => {
+//     if (
+//         activeQuestion.value.question.type === 'checkbox' &&
+//         checked.value.length
+//     ) {
+//         return true
+//     } else {
+//         return false
+//     }
+// }
+
+const validationCheck = computed(() => {
+    if (activeQuestion.value) {
+        if (
+            activeQuestion.value.question.type === 'checkbox' &&
+            checked.value.length
+        ) {
+            return true
+        } else {
+            return false
+        }
+    }
+})
+
 const setNextQuestion = (id: number) => {
-    setActiveQuestionId(id)
-    setUserAnswer(activeQuestion.value as Question)
+    if (activeQuestion.value.question.type === 'checkbox') {
+        if (checked.value.length) {
+            setActiveQuestionId(id)
+            setUserAnswer(activeQuestion.value as Question)
+            checked.value = []
+        } else {
+            return
+        }
+    } else {
+        setActiveQuestionId(id)
+        setUserAnswer(activeQuestion.value as Question)
+        checked.value = []
+    }
 }
 
 const back = () => {
@@ -170,3 +221,10 @@ const finish = () => {
     router.push(`/${route.params.slug}/penilaian/summary`)
 }
 </script>
+
+<style scoped lang="scss">
+.error-message {
+    display: inline-block;
+    @include vwUnit(margin-bottom, 15);
+}
+</style>

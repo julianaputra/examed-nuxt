@@ -33,6 +33,15 @@
 </template>
 
 <script setup lang="ts">
+useHead({
+    title: `List Rumah sakit`,
+    meta: [
+        {
+            name: 'description',
+            content: 'List Rumah sakit Examed'
+        }
+    ]
+})
 // import { nextTick } from 'process' // before
 import { nextTick } from 'vue' // after
 import type { Breadcrumb } from '../types/index'

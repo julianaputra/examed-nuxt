@@ -14,11 +14,10 @@
             </div>
             <slot name="title"></slot>
         </div>
-
         <hr class="card__hr" />
         <div class="row justify-content-center">
             <div class="col-lg-10 col-xxl-8">
-                <h3 v-if="$slots.subtitle" :class="className">
+                <h3 v-if="$slots.subtitle" :class="[className, titleColor]">
                     <slot name="subtitle"></slot>
                 </h3>
                 <div v-if="$slots.content" class="card__body">
@@ -40,6 +39,10 @@ const props = defineProps({
     titleBig: {
         type: Boolean,
         default: false
+    },
+    breadcrumbs: {
+        type: Array,
+        default: () => []
     }
 })
 
@@ -47,6 +50,22 @@ defineEmits(['back'])
 
 const className = computed(() => {
     return props.titleBig === true ? 'card__subtitle--big' : 'card__subtitle'
+})
+// Class binding for font color
+const titleColor = computed(() => {
+    if (props.breadcrumbs.length < 2) return ''
+    const breadcrumb = props.breadcrumbs[1]
+    if (!breadcrumb) return ''
+    if (breadcrumb.to === '/psikosis' && props.titleBig)
+        return 'title-color__psikosis'
+    if (breadcrumb.to === '/depresi' && props.titleBig)
+        return 'title-color__depresi'
+    if (
+        breadcrumb.to === '/menyakiti-diri-sendiri-bunuh-diri' &&
+        props.titleBig
+    )
+        return 'title-color__menyakiti-diri'
+    return ''
 })
 </script>
 
@@ -81,7 +100,6 @@ const className = computed(() => {
 
         &--big {
             @extend .card__subtitle;
-            color: #8588D2;
             font-size: 32px;
             font-weight: 500;
             margin-bottom: 32px;
@@ -102,7 +120,7 @@ const className = computed(() => {
                 color: rgba(18, 32, 50, 0.8);
                 font-size: 18px;
                 font-weight: 400;
-                @include vwUnit(margin-bottom, 10)
+                @include vwUnit(margin-bottom, 10);
             }
         }
 
@@ -128,6 +146,17 @@ const className = computed(() => {
         &__hr {
             margin: 24px 0 30px 0;
         }
+    }
+}
+.title-color {
+    &__depresi {
+        color: #e1a8c4;
+    }
+    &__psikosis {
+        color: #686cc7;
+    }
+    &__menyakiti-diri {
+        color: #f2b6b5;
     }
 }
 </style>
